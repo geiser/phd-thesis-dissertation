@@ -1,0 +1,419 @@
+
+\chapter{Outliers Detection and Treatment}
+\label{appendix:outliers}
+
+In this PhD dissertation, a set of statistical parametric procedures like as ANOVA, IRTs models and correlation test has been used to conduct the data analyses. These procedures are highly sensitive to outliers by which this appendix details how the thesis author dealt with the outliers in the data collected over the empirical studies. The detection and treatment of outliers in the self-reported data gathered by motivation surveys is detailed in \autoref{sec:outliers-motivation}, where these surveys correspond to questionnaires based on the Intrinsic Motivation Inventory (IMI) and Instructional Materials Motivation Survey (IMMS). The treatment of outliers in the data related to the learning outcomes is presented in \autoref{sec:outliers-learning-outcomes}, where the data correspond to data collected over the empirical studies by means of assessments during the pre-test and post-test phases.
+The procedure of outliers detection and their treatments in the ANOVA is detailed in \autoref{sec:outliers-anova-motivation}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Treatment of Outliers in the Self-reported Data Gathered by Motivation Surveys}
+\label{sec:outliers-motivation}
+
+Prior to any statistical analysis, outliers identified as careless responses have been drop out from the data collected by motivational surveys (\autoref{subsec:removing-careless-motivation-survey}). These outliers correspond to incorrectly entered data by the students in the adapted Portuguese version of Intrinsic Motivation Inventory (IMI) and the Instructional Materials Motivation Survey (IMMS). After to remove the careless responses, outliers identified as extreme values are replaced to the trimmed minimum and maximum values by the Winsorization method (\autoref{subsec:winsorizing-motivation-survey}).
+
+\subsection{Removing Careless Responses in the Motivation Surveys}
+\label{subsec:removing-careless-motivation-survey}
+
+The questionnaires of the adapted Portuguese IMI have 24 items, so that a careless response is defined as a response in which the length of uninterrupted identical values for the items is greater than 12 (half of the items). For the data collected by the questionnaires of the adapted Portuguese IMMS, a careless response is defined as a response in which the length of uninterrupted identical values is greater than half of the items (12 items).
+
+\subsubsection*{Careless Responses in the Intrinsic Motivation Inventory Data}
+
+\autoref{tab:careless-IMI-pilot-study} shows the two careless responses identified and removed from the IMI data collected over the pilot empirical study. These two careless responses corresponds to participants with user IDs 10119 and 10133; and they were identified in 32 responses collected from computer science undergraduate students by a web-based questionnaire of the adapted Portuguese version of IMI (shown in \autoref{annex:IMI-pilot-study}).
+
+%latex.default(as.data.frame(dd$get_data()), rowname = NULL, caption = paste("Summary of careless responses",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lllllllllll}
+\caption{Summary of careless responses in the IMI data collected over the pilot empirical study}
+\label{tab:careless-IMI-pilot-study} \tabularnewline
+\hline\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Item01}&\multicolumn{1}{c}{Item02}&\multicolumn{1}{c}{Item03}&\multicolumn{1}{c}{Item04}&\multicolumn{1}{c}{Item05}&\multicolumn{1}{c}{Item06}&\multicolumn{1}{c}{Item07}&\multicolumn{1}{c}{Item08}&\multicolumn{1}{c}{...}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Item01}&\multicolumn{1}{c}{Item02}&\multicolumn{1}{c}{Item03}&\multicolumn{1}{c}{Item04}&\multicolumn{1}{c}{Item05}&\multicolumn{1}{c}{Item06}&\multicolumn{1}{c}{Item07}&\multicolumn{1}{c}{Item08}&\multicolumn{1}{c}{...}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{as.data.frame}
+&10116&3&7&4&4&2&6&4&4&...\tabularnewline
+---&10119&4&4&4&4&4&4&4&4&...\tabularnewline
+&10120&7&3&7&7&6&2&1&1&...\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&10132&1&7&7&6&4&4&3&4&...\tabularnewline
+---&10133&4&4&4&4&4&4&4&4&...\tabularnewline
+&10134&2&6&4&4&3&3&4&6&...\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+\hline
+\end{longtable}}
+
+\autoref{tab:careless-IMI-study01} shows the careless responses identified and removed from the data collected over the first empirical study. These two careless responses correspond to participants with user IDs 10229 and 10241, and they were identified in a set of 62 responses collected from computer engineer undergraduate students by means of the paper-based questionnaire version of IMI (shown in \autoref{annex:IMI-first-study}).
+
+%latex.default(as.data.frame(dd$get_data()), rowname = NULL, caption = paste("Summary of careless responses",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{llllllllll}
+\caption{Summary of careless responses in the IMI data collected over the first empirical study}
+\label{tab:careless-IMI-study01} \tabularnewline
+\hline\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Item01}&\multicolumn{1}{c}{Item02}&\multicolumn{1}{c}{Item03}&\multicolumn{1}{c}{Item04}&\multicolumn{1}{c}{Item05}&\multicolumn{1}{c}{Item06}&\multicolumn{1}{c}{Item07}&\multicolumn{1}{c}{...}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Item01}&\multicolumn{1}{c}{Item02}&\multicolumn{1}{c}{Item03}&\multicolumn{1}{c}{Item04}&\multicolumn{1}{c}{Item05}&\multicolumn{1}{c}{Item06}&\multicolumn{1}{c}{Item07}&\multicolumn{1}{c}{...}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{as.data.frame}
+...&...&...&...&...&...&...&...&...&...\tabularnewline
+&10213&7&4&2&7&4&1&4&...\tabularnewline
+---&10229&4&4&4&4&4&4&4&...\tabularnewline
+---&10241&1&1&1&1&1&1&1&...\tabularnewline
+\hline
+\end{longtable}}
+
+\autoref{tab:careless-IMI-study03} shows the four careless responses identified and removed from the IMI data collected over the third empirical study. These careless responses correspond to participants with user IDs 10178, 10196, 10211 and 10240. These four careless responses were identified in 55 responses collected from computer engineer undergraduate students by means of the web-based questionnaire version of IMI (shown in \autoref{annex:IMI-IMMS-third-study}).
+
+%latex.default(as.data.frame(dd$get_data()), rowname = NULL, caption = paste("Summary of careless responses",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{llllllll}
+\caption{Summary of careless responses in the IMI data collected over the third empirical study}
+\label{tab:careless-IMI-study03} \tabularnewline
+\hline\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Item01}&\multicolumn{1}{c}{Item02}&\multicolumn{1}{c}{Item03}&\multicolumn{1}{c}{Item04}&\multicolumn{1}{c}{Item05}&\multicolumn{1}{c}{...}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Item01}&\multicolumn{1}{c}{Item02}&\multicolumn{1}{c}{Item03}&\multicolumn{1}{c}{Item04}&\multicolumn{1}{c}{Item05}&\multicolumn{1}{c}{...}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{as.data.frame}
+...&...&...&...&...&...&...&...\tabularnewline
+&10176&3&6&4&4&5&...\tabularnewline
+---&10178&4&4&4&4&4&...\tabularnewline
+&10179&6&5&6&6&2&...\tabularnewline
+...&...&...&...&...&...&...&...\tabularnewline
+&10193&1&1&1&1&2&...\tabularnewline
+---&10196&4&4&4&4&4&...\tabularnewline
+&10197&4&4&4&4&4&...\tabularnewline
+...&...&...&...&...&...&...&...\tabularnewline
+&10210&1&7&7&4&1&...\tabularnewline
+---&10211&4&4&4&4&4&...\tabularnewline
+&10213&1&7&7&7&3&...\tabularnewline
+...&...&...&...&...&...&...&...\tabularnewline
+&10238&3&5&5&5&4&...\tabularnewline
+---&10240&4&4&4&4&4&...\tabularnewline
+\hline
+\end{longtable}}
+
+\subsubsection*{Careless Responses in the Instructional Materials Motivation Survey Data}
+
+No one careless response has been identified in 58 responses collected over the second empirical study by means of the paper-based questionnaire of the adapted Portuguese IMMS (\autoref{annex:IMMS-second-study}). \autoref{tab:careless-IMMS-study03} shows the three careless responses identified and removed in the IMMS data collected over the third empirical study. These careless responses correspond to participants with user IDs 10196, 10211 and 10240; and they were identified in 55 responses collected from computer engineering undergraduate students by means of the web-based questionnaire version of IMMS (shown in \autoref{annex:IMI-IMMS-third-study}).
+
+%latex.default(as.data.frame(dd$get_data()), rowname = NULL, caption = paste("Summary of careless responses",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{llllllll}
+\caption{Summary of careless responses in the IMMS data collected over the third empirical study}
+\label{tab:careless-IMMS-study03} \tabularnewline
+\hline\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Item01}&\multicolumn{1}{c}{Item02}&\multicolumn{1}{c}{Item03}&\multicolumn{1}{c}{Item04}&\multicolumn{1}{c}{Item06}&\multicolumn{1}{c}{...}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Item01}&\multicolumn{1}{c}{Item02}&\multicolumn{1}{c}{Item03}&\multicolumn{1}{c}{Item04}&\multicolumn{1}{c}{Item06}&\multicolumn{1}{c}{...}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{as.data.frame}
+...&...&...&...&...&...&...&...\tabularnewline
+&10193&1&1&1&2&1&...\tabularnewline
+---&10196&4&4&4&4&4&...\tabularnewline
+&10197&7&5&3&7&5&...\tabularnewline
+...&...&...&...&...&...&...&...\tabularnewline
+&10210&1&1&1&1&1&...\tabularnewline
+---&10211&4&4&4&4&4&...\tabularnewline
+&10213&5&7&7&5&7&...\tabularnewline
+...&...&...&...&...&...&...&...\tabularnewline
+&10238&4&5&5&4&5&...\tabularnewline
+---&10240&4&4&4&4&4&...\tabularnewline
+\hline
+\end{longtable}}
+
+
+\subsection{Winsorizing Extreme Values in the Motivation Surveys}
+\label{subsec:winsorizing-motivation-survey}
+
+In surveys, a extreme value is an outliers that happens when a participant has an extreme response style score \cite{Lavrakas2008}. These tendency of some participants to answer surveys indicating extreme lower and upper values generates representative outliers that cannot simply removed from the data for the statistical analyses. Thus, to reduce the impact of extreme values in the surveys, by transforming the extreme values into a specified percentile of the data, the data collected by the motivation surveys had been Winsorized. Winsorization is a method that shrink extreme values to the border of the main part of the data, and it had been carried out with the robustHD package version 0.5 \cite{Alfons2016} in R software version 3.4.3 \cite{RCoreTeam2017}.
+
+\subsubsection*{Winsorized Responses in the Intrinsic Motivation Inventory Data}
+
+\autoref{tab:winsorized-data-IMI} show the 32 responses identified as extreme values in the data collected by means of the adapted Portuguese IMI over the empirical studies. This table also shows how these extreme values had been transformed into the trimmed minimum and maximum values by the Winsorization method for the validation of the adapted Portuguese IMI detailed in \autoref{sec:validation-IMI}.
+
+%latex.default(as.data.frame(dd$get_data()), rowname = NULL, caption = paste("Summary of winzorized responses",     in_title), size = "scriptsize", longtable = T, ctable = F,     landscape = T, rowlabel = "", where = "!htbp", file = filename,     append = T)%
+\setlongtables\begin{landscape}{\fontsize{7}{7}\selectfont
+\begin{longtable}{lllllllllllllllllllllll}\caption{Summary of Winsorized responses for the validation of adapted Portuguese IMI}
+\label{tab:winsorized-data-IMI} \tabularnewline
+\hline\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{Study}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Item01}&\multicolumn{1}{c}{Item02}&\multicolumn{1}{c}{Item03}&\multicolumn{1}{c}{Item04}&\multicolumn{1}{c}{Item05}&\multicolumn{1}{c}{Item06}&\multicolumn{1}{c}{Item07}&\multicolumn{1}{c}{Item08}&\multicolumn{1}{c}{Item09}&\multicolumn{1}{c}{...}&\multicolumn{1}{c}{Item12}&\multicolumn{1}{c}{Item13}&\multicolumn{1}{c}{Item14}&\multicolumn{1}{c}{Item15}&\multicolumn{1}{c}{Item16}&\multicolumn{1}{c}{Item17}&\multicolumn{1}{c}{Item18}&\multicolumn{1}{c}{Item19}&\multicolumn{1}{c}{Item20}&\multicolumn{1}{c}{Item21}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{Study}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Item01}&\multicolumn{1}{c}{Item02}&\multicolumn{1}{c}{Item03}&\multicolumn{1}{c}{Item04}&\multicolumn{1}{c}{Item05}&\multicolumn{1}{c}{Item06}&\multicolumn{1}{c}{Item07}&\multicolumn{1}{c}{Item08}&\multicolumn{1}{c}{Item09}&\multicolumn{1}{c}{...}&\multicolumn{1}{c}{Item12}&\multicolumn{1}{c}{Item13}&\multicolumn{1}{c}{Item14}&\multicolumn{1}{c}{Item15}&\multicolumn{1}{c}{Item16}&\multicolumn{1}{c}{Item17}&\multicolumn{1}{c}{Item18}&\multicolumn{1}{c}{Item19}&\multicolumn{1}{c}{Item20}&\multicolumn{1}{c}{Item21}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{as.data.frame}
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&pilot&10126&5&2&5&7&6&2&5&1&6&...&6&1&2&2&1&2&1&2&2&6\tabularnewline
+-\textgreater &pilot&10127&4&2&5&7&6&3&5&4&6&...&6&6-\textgreater 5&2&3&4&4&2&4&1&6\tabularnewline
+-\textgreater &pilot&10128&1&4&1-\textgreater 2&1-\textgreater 3&7&1&7-\textgreater 6&7-\textgreater 6&1&...&1&7-\textgreater 5&1&1&1&1&1&7&7-\textgreater 6&1\tabularnewline
+-\textgreater &pilot&10129&1&7&7&4&2&4&2&4&2&...&1&5&7-\textgreater 5&5&5&4&7-\textgreater 5&4&2&3\tabularnewline
+&pilot&10130&4&3&6&5&4&5&2&5&5&...&4&1&4&4&5&4&5&5&3&5\tabularnewline
+-\textgreater &pilot&10131&4&5&6&7&4&7&1&2&5&...&7&3&1&7&2&7-\textgreater 6&2&7&1&7\tabularnewline
+-\textgreater &pilot&10132&1&7&7&6&4&4&3&4&1&...&1&3&2&3&2&2&2&7&7-\textgreater 6&1\tabularnewline
+&pilot&10134&2&6&4&4&3&3&4&6&2&...&2&4&3&5&3&5&3&4&4&2\tabularnewline
+&pilot&10135&5&4&5&7&7&1&5&6&5&...&5&2&4&2&4&2&4&2&2&5\tabularnewline
+-\textgreater &pilot&10136&1&7&3&1-\textgreater 3&1&6&6&7-\textgreater 6&1&...&1&5&1&5&3&7-\textgreater 6&7-\textgreater 5&4&6&1\tabularnewline
+&pilot&10137&5&1&5&4&5&1&1&1&5&...&6&1&1&4&1&1&1&3&1&6\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&pilot&10139&1&4&5&7&7&4&5&1&6&...&3&4&4&7&3&1&1&1&1&5\tabularnewline
+-\textgreater &pilot&10140&1&4&3&2-\textgreater 3&4&4&4&4&4&...&1&5&6-\textgreater 5&4&4&4&5&4&5&4\tabularnewline
+&pilot&10141&2&4&5&4&4&6&3&4&5&...&3&5&4&4&3&4&1&5&3&5\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&pilot&10143&4&4&6&6&5&3&2&2&4&...&4&2&2&4&3&2&2&2&2&5\tabularnewline
+-\textgreater &pilot&10145&1&7&7&4&1&4&1&4&4&...&4&1&4&7&4&4&4&4&7-\textgreater 6&3\tabularnewline
+&pilot&10146&5&3&6&6&6&3&2&2&5&...&5&1&3&4&3&3&3&3&3&5\tabularnewline
+&pilot&10148&4&3&6&4&4&1&1&1&4&...&4&2&2&4&5&3&5&4&1&6\tabularnewline
+-\textgreater &pilot&10149&4&3&7&1-\textgreater 3&1&7&5&7-\textgreater 6&1&...&1&1&7-\textgreater 5&6&7-\textgreater 5&6&5&7&7-\textgreater 6&7\tabularnewline
+-\textgreater &pilot&10152&7&3&7&6&7&4&7-\textgreater 6&1&7&...&7&5&3&2&2&2&2&7&2&7\tabularnewline
+&pilot&10153&5&4&5&5&7&3&2&2&5&...&5&5&2&6&2&5&2&4&4&3\tabularnewline
+-\textgreater &pilot&10154&3&6&5&4&2&6&3&5&4&...&2&5&2&6&6-\textgreater 5&6&3&4&7-\textgreater 6&1\tabularnewline
+&pilot&10158&7&3&7&7&4&4&1&1&6&...&7&1&1&4&1&1&1&2&2&6\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&first&10171&6&2&3&7&7&2&1&1&6&...&6&1&1&3&1&2&1&2&1&5\tabularnewline
+-\textgreater &first&10172&6&4&5&7&3&2&4&3&6&...&5&6-\textgreater 5&1&2&1&2&1&2&3&5\tabularnewline
+&first&10174&4&4&6&7&4&4&1&3&5&...&4&1&1&4&1&3&1&2&3&4\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&first&10201&5&2&7&7&7&3&1&2&7&...&7&1&3&2&2&2&1&2&1&7\tabularnewline
+-\textgreater &first&10202&4&7&7&7&4&4&1&5&4&...&4&1&7-\textgreater 5&4&7-\textgreater 5&4&7-\textgreater 5&4&4&4\tabularnewline
+&first&10203&7&1&5&7&7&1&5&1&7&...&7&2&1&1&2&1&1&1&1&1\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&first&10208&6&4&7&7&7&4&1&1&6&...&7&1&1&2&4&1&1&2&2&7\tabularnewline
+-\textgreater &first&10209&4&7&7&7&4&7&1&7-\textgreater 6&3&...&3&1&1&7&1&7-\textgreater 6&1&4&5&3\tabularnewline
+-\textgreater &first&10210&4&6&6&6&3&5&1&5&5&...&4&1&4&6&4&4&6-\textgreater 5&5&5&2\tabularnewline
+-\textgreater &first&10211&7&7&3&3&3&6&6&3&7&...&5&6-\textgreater 5&2&6&2&3&3&2&2&6\tabularnewline
+&first&10212&5&3&6&6&7&3&2&1&6&...&6&2&2&1&4&2&2&1&1&7\tabularnewline
+\newpage
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&first&10221&4&3&6&6&6&4&2&1&5&...&4&1&1&4&1&1&1&7&4&5\tabularnewline
+-\textgreater &first&10222&1&7&4&5&2&6&4&7-\textgreater 6&1&...&1&2&3&7&3&6&4&6&6&1\tabularnewline
+&first&10223&6&2&6&5&6&2&3&1&6&...&6&3&1&2&2&1&1&6&3&7\tabularnewline
+-\textgreater &first&10224&6&4&4&7&7&4&4&7-\textgreater 6&7&...&7&2&1&7&1&7-\textgreater 6&3&5&3&7\tabularnewline
+&first&10226&2&6&6&6&2&4&1&5&4&...&4&1&1&6&1&4&3&5&2&4\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&first&10238&4&4&5&7&3&5&2&4&3&...&4&2&4&7&4&5&5&3&2&4\tabularnewline
+-\textgreater &first&10240&4&6&5&6&6&7&4&5&3&...&4&3&1&7&1&7-\textgreater 6&1&7&7-\textgreater 6&2\tabularnewline
+-\textgreater &third&10169&7&4&5&7&5&2&5&2&7&...&7&5&7-\textgreater 5&4&7-\textgreater 5&2&6-\textgreater 5&4&2&7\tabularnewline
+&third&10170&3&2&4&6&4&1&3&3&4&...&4&3&1&3&1&2&1&2&2&6\tabularnewline
+&third&10171&5&2&7&7&6&2&1&1&7&...&5&1&2&2&2&2&1&1&2&6\tabularnewline
+-\textgreater &third&10172&4&5&4&6&5&5&5&5&5&...&5&5&4&5&6-\textgreater 5&6&5&5&5&7\tabularnewline
+-\textgreater &third&10174&3&4&4&4&5&3&2&4&4&...&6&5&4&4&5&4&6-\textgreater 5&6&5&6\tabularnewline
+&third&10175&4&1&4&5&7&1&1&1&4&...&4&1&1&3&1&1&1&1&1&4\tabularnewline
+-\textgreater &third&10176&3&6&4&4&5&5&5&4&4&...&4&4&4&4&6-\textgreater 5&4&6-\textgreater 5&5&5&4\tabularnewline
+&third&10179&6&5&6&6&2&5&1&4&4&...&4&2&1&7&1&6&2&4&4&3\tabularnewline
+-\textgreater &third&10181&2&5&1-\textgreater 2&2-\textgreater 3&3&5&4&3&3&...&2&7-\textgreater 5&4&5&1&1&5&5&4&2\tabularnewline
+-\textgreater &third&10183&3&2&2&2-\textgreater 3&2&3&3&5&3&...&2&4&4&4&4&4&5&4&4&3\tabularnewline
+&third&10184&4&3&3&5&3&4&4&4&3&...&4&4&4&4&3&5&4&4&4&4\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&third&10189&1&5&5&4&1&4&3&4&2&...&2&1&1&5&1&5&2&6&5&4\tabularnewline
+-\textgreater &third&10190&2&3&4&5&5&5&5&4&4&...&4&3&5&7&7-\textgreater 5&7-\textgreater 6&6-\textgreater 5&4&5&3\tabularnewline
+&third&10191&1&5&4&4&2&4&4&5&2&...&2&2&1&5&1&5&1&6&4&3\tabularnewline
+&third&10192&4&3&7&6&4&4&5&4&5&...&1&1&4&3&4&2&4&4&3&4\tabularnewline
+-\textgreater &third&10193&1&1&1-\textgreater 2&1-\textgreater 3&2&1&2&1&1&...&2&1&1&1&1&1&2&1&1&1\tabularnewline
+&third&10197&4&4&4&4&4&2&3&4&2&...&2&3&3&2&3&3&5&3&3&5\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&third&10203&5&1&7&7&4&1&1&1&4&...&4&1&2&4&5&1&1&1&5&3\tabularnewline
+-\textgreater &third&10204&1&7&4&4&1&7&1&7-\textgreater 6&1&...&1&4&7-\textgreater 5&7&7-\textgreater 5&7-\textgreater 6&7-\textgreater 5&7&4&1\tabularnewline
+&third&10206&3&3&5&5&5&2&2&2&5&...&4&2&3&3&2&2&3&2&3&4\tabularnewline
+&third&10208&3&4&5&3&5&4&2&2&4&...&4&2&2&4&2&2&2&5&5&4\tabularnewline
+-\textgreater &third&10209&2&7&3&3&1&7&3&7-\textgreater 6&2&...&2&2&2&7&1&7-\textgreater 6&1&5&6&2\tabularnewline
+-\textgreater &third&10210&1&7&7&4&1&7&1&7-\textgreater 6&1&...&1&1&7-\textgreater 5&7&7-\textgreater 5&7-\textgreater 6&7-\textgreater 5&7&7-\textgreater 6&1\tabularnewline
+-\textgreater &third&10213&1&7&7&7&3&7&1&7-\textgreater 6&4&...&4&1&1&7&7-\textgreater 5&7-\textgreater 6&7-\textgreater 5&7&1&4\tabularnewline
+&third&10214&1&6&7&4&1&7&1&6&1&...&1&1&5&6&1&2&4&5&6&2\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&third&10218&4&4&4&4&3&5&4&4&4&...&4&4&4&4&5&5&4&3&3&4\tabularnewline
+-\textgreater &third&10219&4&1&1-\textgreater 2&1-\textgreater 3&1&4&7-\textgreater 6&7-\textgreater 6&1&...&2&5&1&7&1&7-\textgreater 6&1&7&7-\textgreater 6&1\tabularnewline
+&third&10220&1&1&4&7&7&4&1&1&4&...&4&1&1&1&1&1&1&1&4&4\tabularnewline
+\newpage
+-\textgreater &third&10221&2&6&5&3&2&5&3&6&3&...&3&2&4&4&2&4&6-\textgreater 5&4&6&3\tabularnewline
+&third&10223&5&4&5&5&4&3&4&4&5&...&5&4&4&4&4&4&2&4&3&6\tabularnewline
+&third&10224&4&4&5&5&3&4&5&4&4&...&4&4&4&5&5&5&5&4&3&4\tabularnewline
+-\textgreater &third&10226&1&7&1-\textgreater 2&1-\textgreater 3&1&7&7-\textgreater 6&7-\textgreater 6&1&...&1&7-\textgreater 5&7-\textgreater 5&7&7-\textgreater 5&7-\textgreater 6&7-\textgreater 5&4&4&4\tabularnewline
+&third&10227&5&3&4&5&5&3&3&3&3&...&5&5&5&4&4&4&3&3&3&6\tabularnewline
+-\textgreater &third&10228&1&1&1-\textgreater 2&1-\textgreater 3&1&1&1&2&1&...&2&2&2&2&3&2&2&1&2&2\tabularnewline
+-\textgreater &third&10230&4&3&3&6&4&3&2&5&5&...&5&3&5&5&4&4&6-\textgreater 5&6&3&5\tabularnewline
+-\textgreater &third&10231&6&2&1-\textgreater 2&6&7&2&4&2&4&...&5&3&1&1&1&1&1&2&4&4\tabularnewline
+&third&10232&4&3&5&5&4&4&1&4&4&...&5&1&2&3&2&3&2&1&2&5\tabularnewline
+-\textgreater &third&10234&1&7&1-\textgreater 2&5&3&6&6&6&2&...&2&6-\textgreater 5&4&6&2&6&2&6&5&2\tabularnewline
+-\textgreater &third&10237&4&3&4&5&5&3&4&4&5&...&6&2&6-\textgreater 5&6&5&3&4&4&4&3\tabularnewline
+&third&10238&3&5&5&5&4&5&2&4&4&...&4&1&5&7&5&5&5&4&4&4\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+
+
+\subsubsection*{Winsorized Responses in the Instructional Materials Motivation Survey Data}
+
+\autoref{tab:winsorized-data-IMMS} presents the 32 responses identified as extreme values in the data collected over the empirical studies by means of the adapted Portuguese version of IMMS. This table also shows the changes in these extreme values by the Winsorization method for the validation of the adapted Portuguese IMMS (\autoref{sec:validation-IMMS}).
+
+%latex.default(as.data.frame(dd$get_data()), rowname = NULL, caption = paste("Summary of Winsorized responses",     in_title), size = "scriptsize", longtable = T, ctable = F,     landscape = T, rowlabel = "", where = "!htbp", file = filename,     append = T)%
+\setlongtables\begin{landscape}{\fontsize{7}{7}\selectfont
+\begin{longtable}{lllllllllllllllllllll}\caption{Summary of Winsorized responses for the validation of adapted Portuguese IMMS}
+\label{tab:winsorized-data-IMMS} \tabularnewline
+\hline\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{Study}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Item01}&\multicolumn{1}{c}{Item02}&\multicolumn{1}{c}{Item03}&\multicolumn{1}{c}{Item04}&\multicolumn{1}{c}{Item06}&\multicolumn{1}{c}{Item07}&\multicolumn{1}{c}{Item08}&\multicolumn{1}{c}{Item09}&\multicolumn{1}{c}{Item10}&\multicolumn{1}{c}{Item11}&\multicolumn{1}{c}{...}&\multicolumn{1}{c}{Item20}&\multicolumn{1}{c}{Item21}&\multicolumn{1}{c}{Item22}&\multicolumn{1}{c}{Item23}&\multicolumn{1}{c}{Item24}&\multicolumn{1}{c}{Item25}&\multicolumn{1}{c}{Item26}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{Study}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Item01}&\multicolumn{1}{c}{Item02}&\multicolumn{1}{c}{Item03}&\multicolumn{1}{c}{Item04}&\multicolumn{1}{c}{Item06}&\multicolumn{1}{c}{Item07}&\multicolumn{1}{c}{Item08}&\multicolumn{1}{c}{Item09}&\multicolumn{1}{c}{Item10}&\multicolumn{1}{c}{Item11}&\multicolumn{1}{c}{...}&\multicolumn{1}{c}{Item20}&\multicolumn{1}{c}{Item21}&\multicolumn{1}{c}{Item22}&\multicolumn{1}{c}{Item23}&\multicolumn{1}{c}{Item24}&\multicolumn{1}{c}{Item25}&\multicolumn{1}{c}{Item26}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{as.data.frame}
+-\textgreater &second&10169&2&2&1-\textgreater 2&2&4&2&5&1&6&2&...&2&3&6&4&3&7&2\tabularnewline
+&second&10170&4&6&6&5&4&6&4&4&2&5&...&3&2&3&2&6&6&6\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&second&10185&4&4&4&5&4&3&2&3&3&4&...&3&4&2&2&4&4&4\tabularnewline
+-\textgreater &second&10186&1&5&1-\textgreater 2&4&7&4&4&4&4&3&...&4&3&4&1&7&7&6\tabularnewline
+&second&10187&6&5&5&4&4&4&5&5&5&4&...&5&6&6&5&5&5&6\tabularnewline
+&second&10188&4&4&5&5&5&4&1&4&2&4&...&4&4&4&3&5&4&4\tabularnewline
+-\textgreater &second&10189&1&2&2&1&1-\textgreater 2&1&7-\textgreater 6&1&7-\textgreater 6&1&...&2&7-\textgreater 6&2&7-\textgreater 6&1-\textgreater 2&3&1\tabularnewline
+-\textgreater &second&10190&3&5&7&4&4&5&1&4&6&6&...&1&5&5&7-\textgreater 6&7&5&2\tabularnewline
+&second&10191&6&7&7&6&6&7&2&4&1&5&...&6&2&4&1&7&7&7\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&second&10193&3&2&4&3&5&4&1&3&4&1&...&3&3&2&5&4&3&4\tabularnewline
+-\textgreater &second&10196&4&7&3&1&7&4&4&4&7-\textgreater 6&4&...&4&5&4&3&2&4&5\tabularnewline
+&second&10197&7&5&5&5&5&4&4&4&1&3&...&4&3&3&5&4&6&3\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&second&10208&4&5&4&3&5&3&3&4&6&5&...&4&4&4&3&5&4&5\tabularnewline
+-\textgreater &second&10209&1&1-\textgreater 2&7&1&4&2&1&4&6&1&...&1&6&1&1&1-\textgreater 2&4&4\tabularnewline
+&second&10210&4&4&4&4&6&2&2&2&3&4&...&3&6&6&3&3&3&3\tabularnewline
+-\textgreater &second&10211&1&1-\textgreater 2&1-\textgreater 2&1&1-\textgreater 2&1&1&2&5&3&...&1&4&1&4&4&1-\textgreater 2&1\tabularnewline
+&second&10212&2&4&6&4&4&3&2&3&4&5&...&3&3&2&3&4&5&4\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&second&10218&4&7&3&2&7&4&3&4&2&5&...&2&3&4&1&7&7&7\tabularnewline
+-\textgreater &second&10219&1&2&4&1&1-\textgreater 2&1&4&4&4&3&...&3&6&4&5&2&3&4\tabularnewline
+&second&10220&1&7&5&1&7&7&1&7&1&7&...&4&1&1&4&7&7&7\tabularnewline
+&second&10221&4&4&6&2&4&6&2&4&6&6&...&4&5&5&5&4&6&4\tabularnewline
+-\textgreater &second&10223&1&1-\textgreater 2&4&1&2&4&4&2&5&4&...&3&6&2&4&2&2&2\tabularnewline
+&second&10224&4&7&7&7&7&5&1&4&1&4&...&5&2&6&2&6&6&5\tabularnewline
+-\textgreater &second&10226&6&7&1-\textgreater 2&4&5&4&3&4&1&6&...&5&1&4&6&6&6&4\tabularnewline
+&second&10227&7&7&6&5&6&6&2&6&2&6&...&6&2&4&2&6&6&6\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&second&10231&3&3&6&4&6&5&1&1&4&3&...&2&5&4&4&6&5&4\tabularnewline
+-\textgreater &second&10232&5&5&5&5&6&5&2&5&2&6&...&5&1&6&1&7&1-\textgreater 2&6\tabularnewline
+&second&10233&2&4&6&3&2&1&4&1&5&4&...&7&5&5&4&6&4&3\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&second&10240&2&2&4&2&2&4&4&2&5&4&...&2&5&2&4&3&2&2\tabularnewline
+-\textgreater &second&10242&1&1-\textgreater 2&1-\textgreater 2&1&5&1&4&1&7-\textgreater 6&1&...&1&6&3&3&7&4&4\tabularnewline
+&third&10169&7&7&5&7&7&7&3&7&2&6&...&7&1&7&1&7&7&7\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&third&10188&3&3&4&4&4&3&2&2&1&2&...&3&2&2&3&4&4&4\tabularnewline
+-\textgreater &third&10189&1&3&1-\textgreater 2&2&4&1&1&1&3&3&...&1&6&1&5&2&4&3\tabularnewline
+\newpage
+-\textgreater &third&10190&3&6&5&6&6&5&4&4&5&3&...&5&5&5&4&1-\textgreater 2&3&3\tabularnewline
+&third&10191&4&4&3&2&4&2&6&2&3&3&...&2&3&1&2&3&3&5\tabularnewline
+&third&10192&4&4&5&4&4&4&4&4&4&4&...&7&1&7&4&6&5&6\tabularnewline
+-\textgreater &third&10193&1&1-\textgreater 2&1-\textgreater 2&2&1-\textgreater 2&2&1&1&2&1&...&1&1&1&1&1-\textgreater 2&1-\textgreater 2&1\tabularnewline
+&third&10197&7&5&3&7&5&4&4&5&1&4&...&4&5&1&3&5&4&3\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&third&10203&4&7&4&4&7&7&3&6&4&4&...&4&4&2&1&5&4&5\tabularnewline
+-\textgreater &third&10204&1&1-\textgreater 2&4&1&1-\textgreater 2&1&4&1&7-\textgreater 6&1&...&1&1&1&7-\textgreater 6&1-\textgreater 2&4&1\tabularnewline
+&third&10206&4&5&4&4&6&4&3&4&3&5&...&4&3&4&3&4&6&5\tabularnewline
+&third&10208&2&4&3&2&4&2&3&4&6&3&...&3&5&3&3&4&3&4\tabularnewline
+-\textgreater &third&10209&2&4&1-\textgreater 2&2&4&1&1&4&6&4&...&3&4&1&5&4&4&4\tabularnewline
+-\textgreater &third&10210&1&1-\textgreater 2&1-\textgreater 2&1&1-\textgreater 2&1&7-\textgreater 6&1&7-\textgreater 6&1&...&1&7-\textgreater 6&4&1&1-\textgreater 2&4&1\tabularnewline
+&third&10213&5&7&7&5&7&7&1&3&1&4&...&2&2&5&5&7&4&4\tabularnewline
+-\textgreater &third&10214&3&2&2&1&1-\textgreater 2&1&3&1&5&3&...&2&5&1&6&2&2&2\tabularnewline
+&third&10215&5&2&2&4&2&1&1&5&1&4&...&1&1&1&1&2&4&3\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&third&10220&4&7&4&1&7&1&1&4&1&4&...&1&1&4&4&4&7&1\tabularnewline
+-\textgreater &third&10221&2&2&4&4&3&3&7-\textgreater 6&3&4&4&...&2&6&3&4&4&3&2\tabularnewline
+&third&10223&4&4&3&3&4&4&4&4&3&4&...&4&2&5&3&5&7&5\tabularnewline
+&third&10224&5&5&5&4&5&4&3&4&3&5&...&4&4&4&4&4&5&4\tabularnewline
+-\textgreater &third&10226&4&4&3&3&2&1&5&1&4&4&...&4&4&4&5&1-\textgreater 2&5&2\tabularnewline
+&third&10227&5&4&5&5&4&5&2&5&2&5&...&6&4&6&4&5&6&6\tabularnewline
+-\textgreater &third&10228&1&1-\textgreater 2&1-\textgreater 2&1&1-\textgreater 2&1&1&1&2&1&...&2&7-\textgreater 6&1&2&2&2&3\tabularnewline
+&third&10230&4&5&5&3&2&2&3&6&4&7&...&5&3&2&5&3&4&4\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+&third&10232&4&6&5&4&5&4&1&4&2&6&...&4&2&7&2&6&7&4\tabularnewline
+-\textgreater &third&10234&6&2&1-\textgreater 2&2&6&2&2&1&1&1&...&6&4&1&6&5&4&2\tabularnewline
+&third&10237&3&5&3&4&2&3&2&4&4&5&...&4&4&2&4&5&5&4\tabularnewline
+...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...&...\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+
+
+\section{Treatment of Outliers in the ANOVA}
+\label{sec:outliers-anova-motivation}
+
+\autoref{tab:winsorized-anova-intrinsic-motivation-pilot-study}
+
+%latex.default(as.data.frame(dd$get_data()), rowname = NULL, caption = paste("Summary of Winsorized responses",     in_title), size = "scriptsize", longtable = T, ctable = F,     landscape = T, rowlabel = "", where = "!htbp", file = filename,     append = T)%
+\setlongtables\begin{landscape}{\scriptsize
+\begin{longtable}{llllllllll}\caption{Summary of winsorized latent trait estimates by the RSM-based instrument used to measure the intrinsic motivation of participants in the pilot study} \tabularnewline
+\hline\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Type}&\multicolumn{1}{c}{...}&\multicolumn{1}{c}{PlayerRole}&\multicolumn{1}{c}{Interest/Enjoyment}&\multicolumn{1}{c}{Perceived Choice}&\multicolumn{1}{c}{Pressure/Tension}&\multicolumn{1}{c}{Effort/Importance}&\multicolumn{1}{c}{Intrinsic Motivation}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Type}&\multicolumn{1}{c}{...}&\multicolumn{1}{c}{PlayerRole}&\multicolumn{1}{c}{Interest/Enjoyment}&\multicolumn{1}{c}{Perceived Choice}&\multicolumn{1}{c}{Pressure/Tension}&\multicolumn{1}{c}{Effort/Importance}&\multicolumn{1}{c}{Intrinsic Motivation}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{tab:winsorized-anova-intrinsic-motivation-pilot-study}
+&10116&non-gamified&...&&-0.1136&-0.8425&0.2071&-0.5948&-0.4395\tabularnewline
+-\textgreater &10120&ont-gamified&...&Yee Socializer&1.9056&1.3725&-1.1261-\textgreater -0.9289&0.6939-\textgreater 0.4319&1.2745\tabularnewline
+&10121&ont-gamified&...&Yee Achiever&0.3992&0.5869&0.3455&-0.1185&0.1305\tabularnewline
+...&...&...&...&...&...&...&...&...&...\tabularnewline
+&10127&ont-gamified&...&Yee Achiever&1.9056&0.2358&-0.1951&-0.7794&0.3893\tabularnewline
+-\textgreater &10128&ont-gamified&...&Yee Achiever&-3.5153-\textgreater -2.1861&0.5869&-0.3363&-2.8168-\textgreater -1.5308&-1.3522-\textgreater -0.8439\tabularnewline
+-\textgreater &10129&non-gamified&...&&-1.7852&-0.6224&3.1729-\textgreater 1.176&0.0434&-1.3843\tabularnewline
+-\textgreater &10130&non-gamified&...&&0.553&-0.305&1.4131-\textgreater 1.176&0.6939&-0.1178\tabularnewline
+&10131&ont-gamified&...&Yee Achiever&2.3996&-0.9591&-0.8605&0.4291&0.6825\tabularnewline
+-\textgreater &10132&non-gamified&...&&-3.5153-\textgreater -3.0847&-0.1992&-0.1951&0.2212&-0.8245\tabularnewline
+&10134&ont-gamified&...&Yee Socializer&-1.2851&-0.7308&0.3455&-0.5948&-0.7391\tabularnewline
+&10135&non-gamified&...&&0.3992&0.3492&0.3455&-0.2738&0.0323\tabularnewline
+-\textgreater &10136&non-gamified&...&&-3.5153-\textgreater -3.0847&-1.3707&0.0732&-1.8693-\textgreater -1.003&-1.7071-\textgreater -1.4863\tabularnewline
+-\textgreater &10137&ont-gamified&...&Yee Achiever&1.4745&1.3725&-2.6208-\textgreater -1.2957&0.6939&1.5404-\textgreater 1.3322\tabularnewline
+-\textgreater &10138&ont-gamified&...&Yee Socializer&0.553&-0.4104&0.3455&1.9023-\textgreater 1.2937&0.4249\tabularnewline
+&10139&ont-gamified&...&Yee Achiever&-0.2234&0.1247&-0.4881&-0.5948&-0.0514\tabularnewline
+-\textgreater &10140&non-gamified&...&&-1.0447&-0.1992&0.8454&-1.0037-\textgreater -1.003&-0.7732\tabularnewline
+&10141&ont-gamified&...&Yee Socializer&0.0021&-0.4104&-0.0598&-0.4299&-0.1946\tabularnewline
+...&...&...&...&...&...&...&...&...&...\tabularnewline
+&10143&ont-gamified&...&Yee Socializer&0.125&0.3492&-0.0598&0.4291&0.2408\tabularnewline
+-\textgreater &10145&non-gamified&...&&-0.631&-0.8425&0.4928&1.9023-\textgreater 1.2937&-0.016\tabularnewline
+&10146&non-gamified&...&&0.8946&0.3492&-0.3363&0.6939&0.5685\tabularnewline
+&10148&ont-gamified&...&Yee Socializer&0.2569&0.7142&0.8454&0.6939&0.2049\tabularnewline
+-\textgreater &10149&non-gamified&...&&-0.9361&-1.0832&3.1729-\textgreater 1.176&0.2212&-1.2427\tabularnewline
+-\textgreater &10152&ont-gamified&...&Yee Achiever&5.2206-\textgreater 3.1382&0.7142&-0.1951&-0.5948&1.3838\tabularnewline
+&10153&non-gamified&...&&0.553&-0.1992&-0.3363&-0.2738&0.1041\tabularnewline
+&10154&non-gamified&...&&-1.16&-1.2185&0.4928&-0.4299&-0.8253\tabularnewline
+-\textgreater &10158&non-gamified&...&&3.026-\textgreater 2.8511&0.5869&-2.6208-\textgreater -1.2957&1.9023-\textgreater 0.9279&2.034-\textgreater 1.088\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+
+\section{Treatment of Outliers in the Learning-Outcome Data}
+\label{sec:outliers-learning-outcomes}
+
+
+
+
+
+

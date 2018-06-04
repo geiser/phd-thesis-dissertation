@@ -1,0 +1,522 @@
+
+\chapter[IRT-based Models for Measuring Motivation and Learning Outcomes]{Item Response Theory-based Models for Measuring Motivation and Learning Outcomes}
+\label{appendix:irt-models}
+
+For the empirical studies conducted in this PhD dissertation, statistical instruments based on the Item Response Theory (IRT) had been used to estimate the participants' motivation and the learning outcomes. Instead to use the average scores of motivation surveys as measurement of motivation, Rating Scale Model (RSM) is used to estimate the intrinsic motivation and the level of motivation. The learning outcomes had been calculated as gains in skills/knowledge by stacking pre-test and post-test data with Generalized Partial Credit Model (GPCM) to estimate skills/knowledge when the data had been gathered from multiple choice questionnaires and programming tasks. The first section (\autoref{sec:irt-motivation}) details the construction and validation procedure of IRT-based models for measuring the motivation and skills/knowledge of participants in the empirical studies. The second section (\autoref{sec:irt-learning-outcomes}) details the procedure for stacking pre-test and post-test data with GPCM for estimating gains in skills/knowledge.
+
+The rest of sections are organized as follows:
+\begin{itemize}
+\item
+\autoref{sec:irt-motivation-pilot-study} presents the RSM-based instruments used to estimate the intrinsic motivation of participants in the pilot empirical study;
+\item
+\autoref{sec:irt-learning-outcomes-pilot-study} details the stacking procedure of pre-test and post-data with GPCM to estimate the gains in skills/knowledge of participants over the pilot empirical study;
+\item
+\autoref{sec:irt-motivation-first-study} presents the RSM used to estimate the intrinsic motivation of participants in the first empirical study;
+\item
+\autoref{sec:irt-learning-outcomes-first-study} details the stacking procedure of pre-test and post-data with GPCM to estimate the gains in skills/knowledge of participants over the first empirical study;
+\item
+\autoref{sec:irt-motivation-second-study} presents the RSM used to estimate the level of motivation of participants in the second empirical study;
+\item
+\autoref{sec:irt-learning-outcomes-second-study} details the stacking procedure of pre-test and post-data with GPCM to estimate the gains in skills/knowledge of participants over the second empirical study; 
+\item
+\autoref{sec:irt-intrinsic-motivation-third-study} presents the RSM used to estimate the intrinsic motivation of participants in the third empirical study; 
+\item
+\autoref{sec:irt-level-motivation-third-study} presents the RSM used to estimate the level of motivation of participants in the third empirical study; and
+\item
+\autoref{sec:irt-learning-outcomes-third-study} details the stacking procedure of pre-test and post-test data with GPCM to estimate the gains in skills/knowledge of participants over the third empirical study.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section[Construction and Validation Procedure of IRT-based Models]{Construction and Validation Procedure of IRT-based Models for Measuring Motivation and Skills/Knowledge of Participants in the Empirical Studies}
+\label{sec:irt-motivation}
+
+Let be $i = \{1,2, ..., I\}$ the items in a set of responses; and let be $x = \{0,1, ..., X\}$ the categories of responses for the item $i$; then, the probability that a person $n$ scores $x$ on the item $i$ is described in a nonparametric IRT-based model by the item response model \cite{AdamsWu2007, AdamsWilsonWu1997} as:
+
+$P(X_{n,i} = x | \theta_{n}) \propto exp(b_{i,x} \theta_{n} + a_{i,x} \xi)$.
+
+where the symbol \aspas{$\propto$} means that the probabilities in the responses are normalized such that $\sum_{x=0}^{X} P(X_{n,i} = x | \theta_{n}) = 1$; the parameter $a_{i,x} \xi$ is the item intercept ($AXsi$) related to the location on latent trait; and the parameter $b_{i,x}$ is the slope related to the item discrimination.
+
+As this item response model is a generalization of nonparametric models (such as Rasch model, Rating Scale Model - RSM, Partial Credit Model - PCM, General Partial Credit Model - GPCM, and Nominal Response Model - NRM), to be used as an instrument for measuring unidimensional latent traits such as the motivation and skills/knowledge of participants in the empirical studies, three fundamental assumptions related to unidimensional nonparametric models must be checked. These assumptions are the the unidimensionality of data structure, the local independence of items, and the monotonicity of the item characteristic curve. The unidimensionality determines whether items in the instrument measure only one latent trait $\theta$, the local independence verifies the statistical relationship between examinees’ responses for each pair of items in the instrument, and the monotonicity checks the relationship between the item responses and the latent trait $\theta$ measured by the instrument.
+
+After to check these three fundamental assumptions, the values for the intercept and slope parameters are estimated by means of the Marginal Maximum Likelihood (MML) method \cite{BockAitkin1981}; then, the latent trait $\theta$ that represents the measurement of motivation or skills/knowledge for the participants in the empirical studies are computed by the Weighted Likelihood Estimator (WLE) \cite{Warm1989}. 
+
+\subsection{Checking Assumptions}
+\label{sec:checking-assumptions-irt-motivation}
+
+\subsubsection*{Test of Unidimensionality}
+
+Currently, there are a variety of statistic methods to assess the dimensionality of IRT-based models \cite{Hattie1985, NandakumarYuLiStout1998}, but not one of them is universal to determine the dimensionality. The most common statistic methods are based on factor analysis with eigenvalue-greater-than-one rule, ratio of first-to-second eigenvalues, parallel analysis, Root Means Square Error of Approximation (RMSEA) or chi-square tests. For the data gathered by means of motivation surveys, the unidimensional Confirmatory Factor Analysis (CFA) \cite{Brown2014} and the DETECT analysis \cite{StoutHabingDouglasKimRoussosZhang1996, Zhang2004} had been carried out to determine the dimensionality of IRT-based models.
+
+Indices based on factor analysis, Chi-square (${\chi}^2$), Adjusted Goodness of Fit Index (AGFI), Tucker-Lewis Index (TLI), and Comparative Fit Index (CFI) are used in the unidimensional CFA as indices to evaluate whether the items in  is unidimensional \cite{Brown2014}. Lower values of the Chi-square (${\chi}^2$) indicates best fit. Values of AGFI, TLI and CFI are considered acceptable for the range of $0.90$ to $0.95$, and they indicate good fit when these values are higher than $0.95$. The DETECT analysis under a conditional covariance-based nonparametric multidimensionality assessment computes the indices DETECT, ASSI and RATIO \cite{Zhang2007}, where DETECT index greater than $1.00$ indicates strong multidimensionality, DETECT index between $0.40$ and $1.00$ indicates moderate multidimensionality, DETECT index between $0.20$ and $0.40$ indicates weak multidimensionality, and DETECT index lower than $0.20$ indicates essential unidimensionality. \emph{Essential unidimensionality} in the data structure is indicated when the ASSI $< 0.25$ and RATIO $< 0.36$, and \emph{essential deviation from unidimensionality} is indicated when the ASSI $> 0.25$ and RATIO $> 0.36$.
+
+The test of unidimensionality had been carried out in R software version 3.4.3 \cite{RCoreTeam2017} in which the lavaan package version 0.5 \cite{Rosseel2012} and the sirt package version 2.6 \cite{Robitzsch2018} had been used to conduct the unidimensional CFA and the DETECT analysis, respectively. The R scripts for the test of unidimensionality are available at the URL: \url{https://geiser.github.io/phd-thesis-evaluation/}
+
+\subsubsection*{Test of Local Independence}
+
+For unidimensional IRT models:
+
+\begin{citacao}
+\aspas{Local independence means that when abilities influencing test performance are held constant, examinees' responses to any pair of items are statistically independent. In other words, after taking examinees' abilities into account, no relationship exists between examinees' responses to different items. Simply put, this means that the abilities specified in the model are the only factors influencing examinees' responses to test items} \cite{HambletonSwaminathanRogers1991}
+\end{citacao}
+
+Thus, the independence is tested by the $Q3$ statistic of item pairs $i$ and $j$ in which the correlation of items $i$ and $j$ is calculated as $Q3_{i,j} = Cor(e_{n,i}; e_{n,j})$, where $e_{n,i} = X_{n,i} - E(X_{n,i})$ represents the residual between the response of a person $n$ for the item $i$ and the expected response. According to the null test in the condition of independence, the effect size of model fit is defined by the average of absolute values of adjusted correlation Q3 ($MADaQ3$), and by the maximum adjusted correlation Q3 ($maxaQ3$). In this sense, under local independence the average of absolute of adjusted correlation Q3 is slightly smaller than zero ($MADaQ3 \approx 0$), and the null condition is not rejected ($p > 0.05$).
+
+The TAM: Test analysis modules package version 2.10 \cite{RobitzschKieferWu2018} is employed to carried out the test of local independence in R software version 3.4.3 \cite{RCoreTeam2017}. The R scripts for the test of local independence are available at the URL: \url{https://geiser.github.io/phd-thesis-evaluation/}
+
+\subsubsection*{Test of Monotonicity}
+
+For evaluating the manifest monotonicity in the IRT-based models, the Mokken scale analysis \cite{Mokken1971, VanderArk2007} had been carried out with the data gathered through motivation surveys. In this analysis, the monotone homogeneity model and the double monotonicity model are used to check the assumptions of monotonicity. Employing these models, the \emph{item step response function} $P(X_{i} \geq x | \theta)$ calculates the ordering of the scores for each item $i$ reflecting the hypothesized ordering on the latent trait $\theta$. The violation of monotonicity in this function  is indicated at a significance level $\alpha = 0.05$ when the criteria $minvi$ is greater than $0.03$.
+
+The test of monotonicity is carried out in R software version 3.4.3 \cite{RCoreTeam2017} by employing the mokken package version 2.8.10 \cite{VanderArk2012,VanderArk2007}. The R scripts for the test of monotonicity are available at the URL: \url{https://geiser.github.io/phd-thesis-evaluation/}
+
+\subsection{Estimating Item Parameters}
+\label{sec:estimating-parameters-irt-motivation}
+
+Employing the Marginal Maximum Likelihood (MML) method \cite{BockAitkin1981}, the item intercepts \emph{AXsi} ($a_{i,k} \xi$) and the slopes related to the item discrimination ($b_{i,x}$) had been calculated by the TAM: Test analysis modules package version 2.10 \cite{RobitzschKieferWu2018} in the R software version 3.4.3 \cite{RCoreTeam2017}. The R scripts used for estimating the item parameters are available at the URL: \url{https://geiser.github.io/phd-thesis-evaluation/}
+
+\subsection{Obtaining the Latent Trait Estimates}
+\label{sec:obtaining-latent-trait-irt-motivation}
+
+The latent trait estimates (intrinsic motivation, level of motivation and skills/knowledge) is calculated by the Weighted Likelihood Estimator (WLE) \cite{Warm1989} in which the latent trait distribution is assumed as a normal distribution with mean of $\mu = 0$ and units in \emph{logits}. These estimates had been calculated in the R software version 3.4.3 \cite{RCoreTeam2017} employing the TAM: Test analysis modules package version 2.10 \cite{RobitzschKieferWu2018}. The R scripts used to obtain the latent trait estimates are available at the URL: \url{https://geiser.github.io/phd-thesis-evaluation/}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Stacking Procedure with GPCM for Estimating Gains in Skills/Knowledge}
+\label{sec:irt-learning-outcomes}
+
+Traditionally, the measures of change in skills/knowledge are calculated as a difference of scores. Such difference is calculated by subtracting the initial score obtained in a pre-test assessments from the final score obtained in post-test assessments, but this measurement causes some errors of measurements and misinterpretation \cite{Lord1956, Lord1958}. In addition, the variance, correlations, and reliability of score difference are dependent of population. To overcome these difficulties, different statistical methods such as residual change scores, and multi-wave methods have been proposed for measuring changes in skills/knowledge \cite{DimitrovRumrill2003, RogosaWillett1985}, but the use of IRT-based models is the most effective in solving the classical problems in the measurement of change in skills/knowledge \cite{GluckSpiel1997, QueirozPrimiCarvalhoEnumo2013}.
+
+Measurement of change in skills/knowledge using IRT-based models presents a challenge in which the measurement of skills/knowledge from Time 1 to Time 2 should also consider a change in the item parameters. To measure this change, it is necessary to define a reference frame encompassing both times in one unambiguous representation. This process of placing Time 1 data and Time 2 data together in an unique frame of reference is known as \emph{stacking procedure} \cite{Wright2003}. For the empirical studies conducted in this PhD dissertation, the stacking procedure involves the treating of formative assessments as source of data in which the Time 1 is the pre-test phase and Time 2 is the post-test phase. As these data are gathered from programming tasks and multiple choice questionnaires, the General Partial Credit Model (GPCM) \cite{MastersWright1996} had been used as instrument to estimate the skills/knowledge. With this model, the measure of gains in skills and knowledge is carried out in three steps: (1) Data verification, (2) Item splitting, and (3) Calculating changes. This stacking procedure had been carried out in the R software version 3.4.3 \cite{RCoreTeam2017} using the TAM: Test analysis modules package version 2.10 \cite{RobitzschKieferWu2018}. The R scripts for the stacking procedure with GPCM are available at the URL: \url{https://geiser.github.io/phd-thesis-evaluation/}
+
+\subsection{Step 1: Data Verification}
+
+The data verification consists into carried out GPCM analyses for the data gathered in pre-test phase and post-test phase, independently. This verification aims to detect and eliminate gross errors in the data entry. As result of these analyses, items and observations that distort or degrade the measurement system had been removed from the stacked analysis. For the identification of these items and observations, \emph{Infit} and \emph{Outfit} statistics are used in which mean-square values greater than $2$ indicate the distortion and degradation. The stability of the reference frame is also obtained in this step by plotting the item parameters estimated by the GPCM analyses with the post-test data (Time 2 data) against those item parameters estimated with the pre-test data (Time 1). In this plot, a close fit to the identity line indicates stability in the reference frame. % Figure illustrate this data verification - adapted for the thesis author
+
+Prior to the data verification, the responses gathered from multiple choice questionnaires and the programming tasks are scored according to the rules described below.
+
+\subsubsection*{Scoring-rule for Multiple Choice Questionnaires}
+
+Let $NBC$ be the number of correct responses which have been checked, $NM$ be the number of wrong responses; and $NMC$ be the number of wrong responses which have been checked; then, the scoring rule for a n-th question in a multiple choice questionnaire is given by:
+
+$ score(n) = \begin{cases}
+0 & \text{if } NBC = 0 \text{ or }  \\
+(NBC)(NM+1) - NMC & \text{otherwise}
+\end{cases}$
+
+\subsubsection*{Construction of Guttman-based Scoring-rules for Programming Tasks}
+
+Guttman-based scoring rules for programming tasks \cite{Guttman2017} are scoring rules based on the principle of Guttman scale in which a unidimensional scale is defined as an aggregation of different indicators. In this sense, a Guttman-based scoring rule consists in a function that defines the combination of indicators based on a set of thresholds. For example, giving the indicators of correctness ($Q$) and time ($T$); and the thresholds of $Q = 1$ when the programming task has been solved adequately, and $T_{n} = 1$ when the time to solve the programming task is less than n-th percentile; then, a Guttman-structure scoring rule can be defined by the cartesian product $Q{\times}T_{75}{\times}T_{50}{\times}T_{25}$ as follows ($x$ denotes either of 0 and 1):
+
+\begin{center}\small
+\begin{tabular}{ll}
+$(0,x,x,x) = 0$ & when the solution is incorrect\\
+ & and the solving time is irrelevant\\
+$(1,0,x,x) = 1$ & when the solution is correct\\
+& and the solving time is greater than 75-th percentile (3rd quartile)\\
+$(1,1,0,x) = 2$ & when the solution is correct\\
+& and the solving time is greater than 50-th percentile (median)\\
+$(1,1,1,0) = 3$ & when the solution is correct\\
+ & and the solving time is greater than 25-th percentile (1st quartile)\\
+$(1,1,1,1) = 4$ & when the solution is correct\\
+ & and the solving time is less than 25-th percentile (1st quartile)\\
+\end{tabular}
+\end{center}
+
+Let $P_{i}$ be a programming task solved by the participants during the pre-test and post-test phases, it has been scored according to the following four Guttman-based scoring rules: 
+
+\begin{center}\small
+\begin{tabular}{lll}
+$P_{i}S_{1}$:&\multicolumn{2}{l}{$Q$}   \\
+& $(0) = 0$ &  when the solution is incorrect \\
+& $(1) = 0$ &  when the solution is correct \\
+& & \\
+$P_{i}S_{2}$:&\multicolumn{2}{l}{$Q{\times}T_{50}$} \\
+& $(0,x) = 0$ & when the solution is incorrect\\
+&  & and the solving time is irrelevant\\
+& $(1,0) = 1$ & when the solution is correct\\
+& & and the solving time is greater than median\\
+& $(1,1) = 2$ & when the solution is correct\\
+& & and the solving time is less than median\\
+& & \\
+$P_{i}S_{3}$:&\multicolumn{2}{l}{$Q{\times}T_{67}{\times}T_{33}$} \\
+& $(0,x,x) = 0$ & when the solution is incorrect\\
+&  & and the solving time is irrelevant\\
+& $(1,0,x) = 1$ & when the solution is correct\\
+& & and the solving time is greater than 33-th percentile\\
+& $(1,1,0) = 2$ & when the solution is correct\\
+& & and the solving time is greater than 67-th percentile\\
+& $(1,1,1) = 3$ & when the solution is correct\\
+&  & and the solving time is less than 67-th percentile\\
+& & \\
+$P_{i}S_{4}$:&\multicolumn{2}{l}{$Q{\times}T_{75}{\times}T_{50}{\times}T_{25}$} \\
+& $(0,x,x,x) = 0$ & when the solution is incorrect\\
+&  & and the solving time is irrelevant\\
+& $(1,0,x,x) = 1$ & when the solution is correct\\
+& & and the solving time is greater than 75-th percentile (3rd quartile)\\
+& $(1,1,0,x) = 2$ & when the solution is correct\\
+& & and the solving time is greater than 50-th percentile (median)\\
+& $(1,1,1,0) = 3$ & when the solution is correct\\
+&  & and the solving time is greater than 25-th percentile (1st quartile)\\
+& $(1,1,1,1) = 4$ & when the solution is correct\\
+&  & and the solving time is less than 25-th percentile (1st quartile)\\
+\end{tabular}
+\end{center}
+
+After scoring the programing tasks with the four Guttman-based scoring rules ($P_{i}S_{1}$, $P_{i}S_{2}$, $P_{i}S_{3}$ and $P_{i}S_{4}$) defined above, each possible combination of rules is tested one by one using the GPCM and a set of programming tasks related to the pre-test phase or post-test phase. With the results of these tests, the measurement instrument of skills/knowledge for the pre-test phase or post-test phase is built employing the combination of rules that best fits with the data gathered over the empirical studies. The chosen set of Guttman-based scoring rules is the one that has best indices in the tests of unidimentionality, local independence and monotonicity for the GPCM (detailed in \autoref{sec:checking-assumptions-irt-motivation}).
+
+\subsection{Step 2: Item Splitting}
+
+In this step, data gathered from the pre-test phase (Time 1) and post-test phase (Time 2) are stacked together vertically, so that each participant in the empirical study appears twice times and each item appears once time. With these stacked data, the item parameters are estimated employing the MML method in the GPCM. These item parameters are used to plot the stability of reference frame, where: (1) items that are away from the identity line are \aspas{\emph{splitting}} into two separate items by splitting their responses into two data sets with missing data at the other time point in which the item is defined; and (2) items that are close to the identity line defines the calibration items for calculating the changes in skills/knowledge.
+
+\subsection{Step 3: Calculating Changes in Skills/Knowledge}
+
+For calculating the changes in skills/knowledge, the post-test phase (Time 2) is installed as the benchmark to measure the change from the pre-test phase (Time 1). Item parameters ($D2$) and skills/knowledge ($B2$) for the calibration of measurement system are obtained by a GPCM using data gathered from the post-test phase (Time 2). These item parameters ($D2$) are applied in the GPCM with the data gathered from the pre-test phase (Time 1) for estimating the skills/knowledge ($B1$) and the item parameters for the split items ($D1$).
+
+With the skills/knowledge measured in the pre-test phase (Time 1, $B1$) against the skills/knowledge in the post-test phase (Time 2, $B2$), the changes in the skills/knowledge are calculated as $B2-B1$ that define an unambiguously frame of reference.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{RSM-based Instrument for Measuring the Intrinsic Motivation of Participants in the Pilot Study}
+\label{sec:irt-motivation-pilot-study}
+
+\subsection{Checking Assumptions}
+
+\subsubsection*{Test of Unidimensionality}
+
+\autoref{tab:test-unidimensionality-irt-motivation-pilot-study} shows the results for the test of unidimensionality in which the goodness of fit statistics indicate moderate multidimensionality ($0.40 < DETECT < 1.00$) to measure the intrinsic motivation with a DETECT index of $0.565$. Essential unidimensionality ($ASSI < 0.25$ and $RATIO < 0.36$) is indicated by the ASSI and RATIO indices with values of $0.020$ and $0.015$, respectively. The index of $AGFI = 0.945$ in the unidimensional CFA indicates an acceptable fit for measuring the \emph{Intrinsic Motivation}. The scales of \emph{Interest/Enjoyment}, \emph{Perceived Choice}, \emph{Pressure/Tension} and \emph{Effort/Importance} have a good fit indicated by the AGFI index with values greater than $0.95$. A good fit with the unidimensional CFA is indicated by the TLI and CFI indices for all the scales with exception of the \emph{Perceived Choice}. The ASSI index indicates essential unidimensionality in the scales of \emph{Interest/Enjoyment} and \emph{Perceived Choice}, and it indicates an essential deviation from unidimensionality in the scales of \emph{Pressure/Tension} and \emph{Effort/Importance}. Essential unidimensionality is indicated by the RATIO index in the scales of \emph{Interest/Enjoyment} and \emph{Effort/Importance}, and essential deviation from unidimensionality is indicated in the scale of \emph{Perceived Choice} and \emph{Pressure/Tension} by this index.
+
+%latex.default(data_df, caption = paste("Goodness of fit statistics related to the test of unidimensionality",     "in RSM-based instruments", in_title), size = "small", longtable = T,     ctable = F, landscape = F, where = "!htbp", file = filename,     append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrrrrrr}\caption{Goodness of fit statistics related to the test of unidimensionality in the RSM-based instrument for measuring the intrinsic motivation of participants in the pilot study}
+\tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{chisq}&\multicolumn{1}{c}{AGFI}&\multicolumn{1}{c}{TLI}&\multicolumn{1}{c}{CFI}&\multicolumn{1}{c}{DETECT}&\multicolumn{1}{c}{ASSI}&\multicolumn{1}{c}{RATIO}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{chisq}&\multicolumn{1}{c}{AGFI}&\multicolumn{1}{c}{TLI}&\multicolumn{1}{c}{CFI}&\multicolumn{1}{c}{DETECT}&\multicolumn{1}{c}{ASSI}&\multicolumn{1}{c}{RATIO}\tabularnewline
+\hline
+\endhead
+\hline
+\multicolumn{9}{r}{\tiny df: degree of freedom; AGFI: Adjusted Goodness of Fit Index; CFI: Comparative Fit Index; TLI: Tucker-Lewis Index;}
+\endfoot
+\label{tab:test-unidimensionality-irt-motivation-pilot-study}
+\emph{Intrinsic Motivation}&$8.451$&$19.955$&$0.945$&$0.690$&$0.729$&$ 0.565$&$0.020$&$0.015$\tabularnewline
+Interest/Enjoyment&$2.468$&$1.426$&$0.998$&$1.023$&$1.000$&$ 0.716$&$0.067$&$0.049$\tabularnewline
+Perceived Choice&$3.064$&$9.713$&$0.978$&$0.711$&$0.788$&$22.998$&$0.200$&$0.714$\tabularnewline
+Pressure/Tension&$1.982$&$0.534$&$0.998$&$1.117$&$1.000$&$17.068$&$0.333$&$0.873$\tabularnewline
+Effort/Importance&$0.000$&$0.000$&$1.000$&$1.000$&$1.000$&$10.746$&$0.333$&$0.358$\tabularnewline
+\hline
+\end{longtable}}
+
+\subsubsection*{Test of Local Independence}
+
+Results from the test of local independence in the RSM-based instrument for measuring the intrinsic motivation of participants in the pilot empirical study are summarized in \autoref{tab:test-local-independence-irt-motivation-pilot-study}. According to the p-values, the null condition of local independence is not rejected in any of the four scales of RSM-based instrument. The Standardized Root Mean Squared Residual (SRMSR) indicates a good fit ($< 0.10$) for the scales of \emph{Interest/Enjoyment} and \emph{Effort/Importance}, and acceptable fit ($0.10$s) for the \emph{Perceived Choice} and \emph{Pressure/Tension}.
+
+%latex.default(data_df, caption = paste("Q3 statistics related to the test of local independence",     "in the RSM-based instrument", in_title), size = "small",     longtable = T, ctable = F, landscape = F, where = "!htbp",     file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrrr}\caption{Item residual correlation statistics related to the test of local independence in the RSM-based instrument for measuring the intrinsic motivation of participants in the pilot study} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{max.chisq}&\multicolumn{1}{c}{maxaQ3}&\multicolumn{1}{c}{MADaQ3}&\multicolumn{1}{c}{SRMSR}&\multicolumn{1}{c}{p.value}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{max.chisq}&\multicolumn{1}{c}{maxaQ3}&\multicolumn{1}{c}{MADaQ3}&\multicolumn{1}{c}{SRMSR}&\multicolumn{1}{c}{p.value}\tabularnewline
+\hline
+\endhead
+\hline
+\multicolumn{6}{r}{\tiny aQ3: adjusted correlation of item residuals; maxaQ3: maximum aQ3;}\tabularnewline
+\multicolumn{6}{r}{\tiny MADaQ3: Median Absolute Deviation of aQ3;}
+\endfoot
+\label{tab:test-local-independence-irt-motivation-pilot-study}
+Interest/Enjoyment&$498.445$&$0.353$&$0.157$&$0.083$&$1.000$\tabularnewline
+Perceived Choice&$114.058$&$0.500$&$0.248$&$0.165$&$0.093$\tabularnewline
+Pressure/Tension&$ 36.673$&$0.302$&$0.214$&$0.153$&$0.696$\tabularnewline
+Effort/Importance&$ 38.718$&$0.066$&$0.044$&$0.037$&$1.000$\tabularnewline
+\hline
+\end{longtable}}
+%\begin{flushright}{\tiny Q3: correlation of item residuals; maxaQ3: maximum adjusted correlation Q3; MADaQ3: Median Absolute Deviation in the adjusted Q3; }\end{flushright}
+
+\subsubsection*{Test of Monotonicity}
+
+\autoref{tab:test-monotonicity-irt-motivation-pilot-study} summarizes the test of monotonicity in the RSM-based instrument for measuring the intrinsic motivation of participants in the pilot empirical study. These results indicates that there are no one violation of monotonicity in the items at a significance level $\alpha = 0.05$.
+
+%latex.default(data_df, caption = paste("Summary of the violations of monotonicity",     "in the RSM-based instrument", in_title), size = "small",     longtable = T, ctable = F, landscape = F, where = "!htbp",     file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrrrrrrrr}\caption{Test of monotonicity in the RSM-based instrument for measuring the intrinsic motivation of participants in the pilot study} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{ItemH}&\multicolumn{1}{c}{ac}&\multicolumn{1}{c}{vi}&\multicolumn{1}{c}{vi/ac}&\multicolumn{1}{c}{maxvi}&\multicolumn{1}{c}{sum}&\multicolumn{1}{c}{sum/ac}&\multicolumn{1}{c}{zmax}&\multicolumn{1}{c}{zsig}&\multicolumn{1}{c}{crit}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{ItemH}&\multicolumn{1}{c}{ac}&\multicolumn{1}{c}{vi}&\multicolumn{1}{c}{vi/ac}&\multicolumn{1}{c}{maxvi}&\multicolumn{1}{c}{sum}&\multicolumn{1}{c}{sum/ac}&\multicolumn{1}{c}{zmax}&\multicolumn{1}{c}{zsig}&\multicolumn{1}{c}{crit}\tabularnewline
+\hline
+\endhead
+\hline
+\multicolumn{11}{r}{\tiny vi: number of violations; vi/ac: proportion of active pairs; maxvi: maximum violations;}\tabularnewline
+\multicolumn{11}{r}{\tiny sum: sum of all violations; zmax: maximum z-value; zsig: number of significant z-values; crit: critical value}
+\endfoot
+\label{tab:test-monotonicity-irt-motivation-pilot-study}
+Interest/Enjoyment:Item22IE&$0.85$&$0$&$0$&$$&$0.00$&$0.0$&$$&$0$&$0$&$  0$\tabularnewline
+Interest/Enjoyment:Item09IE&$0.79$&$0$&$0$&$$&$0.00$&$0.0$&$$&$0$&$0$&$  0$\tabularnewline
+Interest/Enjoyment:Item12IE&$0.81$&$0$&$0$&$$&$0.00$&$0.0$&$$&$0$&$0$&$  0$\tabularnewline
+Interest/Enjoyment:Item24IE&$0.77$&$4$&$0$&$0.0$&$0.00$&$0.0$&$0.00$&$0$&$0$&$  0$\tabularnewline
+Interest/Enjoyment:Item21IE&$0.72$&$0$&$0$&$$&$0.00$&$0.0$&$$&$0$&$0$&$  0$\tabularnewline
+Interest/Enjoyment:Item01IE&$0.69$&$0$&$0$&$$&$0.00$&$0.0$&$$&$0$&$0$&$  0$\tabularnewline
+Perceived Choice:Item17PC&$0.60$&$4$&$0$&$0.0$&$0.00$&$0.0$&$0.00$&$0$&$0$&$  0$\tabularnewline
+Perceived Choice:Item15PC&$0.47$&$4$&$0$&$0.0$&$0.00$&$0.0$&$0.00$&$0$&$0$&$  0$\tabularnewline
+Perceived Choice:Item06PC&$0.52$&$1$&$0$&$0.0$&$0.00$&$0.0$&$0.00$&$0$&$0$&$  0$\tabularnewline
+Perceived Choice:Item02PC&$0.47$&$5$&$0$&$0.0$&$0.00$&$0.0$&$0.00$&$0$&$0$&$  0$\tabularnewline
+Perceived Choice:Item08PC&$0.38$&$0$&$0$&$$&$0.00$&$0.0$&$$&$0$&$0$&$  0$\tabularnewline
+Pressure/Tension:Item16PT&$0.53$&$0$&$0$&$$&$0.00$&$0.0$&$$&$0$&$0$&$  0$\tabularnewline
+Pressure/Tension:Item14PT&$0.45$&$3$&$0$&$0.0$&$0.00$&$0.0$&$0.00$&$0$&$0$&$  0$\tabularnewline
+Pressure/Tension:Item18PT&$0.56$&$4$&$0$&$0.0$&$0.00$&$0.0$&$0.00$&$0$&$0$&$  0$\tabularnewline
+Pressure/Tension:Item11PT&$0.36$&$0$&$0$&$$&$0.00$&$0.0$&$$&$0$&$0$&$  0$\tabularnewline
+Effort/Importance:Item13EI&$0.46$&$0$&$0$&$$&$0.00$&$0.0$&$$&$0$&$0$&$  0$\tabularnewline
+Effort/Importance:Item03EI&$0.44$&$0$&$0$&$$&$0.00$&$0.0$&$$&$0$&$0$&$  0$\tabularnewline
+Effort/Importance:Item07EI&$0.48$&$0$&$0$&$$&$0.00$&$0.0$&$$&$0$&$0$&$  0$\tabularnewline
+\hline
+\end{longtable}}
+%\begin{flushright}{\tiny vi: numer of violations; vi/ac: proportion of active pairs; maxvi: maximum violations; sum: sum of all violations; zmax: maximum z-value; zsig: number of significant z-values; crit: Critical value }\end{flushright}
+
+\subsection{Item Parameters}
+
+\autoref{tab:item-parameters-interest-enjoyment-pilot-study} shows the estimated parameters for the RSM-based instrument used to measure the \emph{Interest/Enjoyment} of participants in the pilot empirical study. These parameters had been calculated using the MML method \cite{BockAitkin1981}, so that the value in row \aspas{B.Cat$x$} and column \aspas{$i$} is the item slope $b_{i,x}$ of item $i$ in the category \aspas{$x$}, and the value in the row \aspas{AXsi.Cat$x$} and column \aspas{$i$} is the item intercept $a_{i,x}\xi$ of item $i$ in the category \aspas{$x$}. According to the Infit/Outfit statistics of items, no one mean-square value is greater than $2.0$ indicating that the measurement system of \emph{Interest/Enjoyment} is not distorted or degraded by the items.
+
+%latex.default(estimated_params_df, caption = paste("Estimated parameters in the RSM-based instrument",     "for measuring the", lname), size = "small", longtable = T,     ctable = F, landscape = F, where = "!htbp", file = filename,     append = T)%
+\setlongtables{\scriptsize
+\begin{longtable}{lrrrrrr}\caption{Estimated parameters in the RSM-based instrument for measuring the Interest/Enjoyment of participants in the pilot empirical study} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Item01IE}&\multicolumn{1}{c}{Item09IE}&\multicolumn{1}{c}{Item12IE}&\multicolumn{1}{c}{Item21IE}&\multicolumn{1}{c}{Item22IE}&\multicolumn{1}{c}{Item24IE}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Item01IE}&\multicolumn{1}{c}{Item09IE}&\multicolumn{1}{c}{Item12IE}&\multicolumn{1}{c}{Item21IE}&\multicolumn{1}{c}{Item22IE}&\multicolumn{1}{c}{Item24IE}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{tab:item-parameters-interest-enjoyment-pilot-study}
+xsi.item&$ 0.888$&$-0.023$&$ 0.368$&$-0.132$&$ 0.332$&$ 0.472$\tabularnewline
+B.Cat0&$ 0.000$&$ 0.000$&$ 0.000$&$ 0.000$&$ 0.000$&$ 0.000$\tabularnewline
+B.Cat1&$ 1.000$&$ 1.000$&$ 1.000$&$ 1.000$&$ 1.000$&$ 1.000$\tabularnewline
+B.Cat2&$ 2.000$&$ 2.000$&$ 2.000$&$ 2.000$&$ 2.000$&$ 2.000$\tabularnewline
+B.Cat3&$ 3.000$&$ 3.000$&$ 3.000$&$ 3.000$&$ 3.000$&$ 3.000$\tabularnewline
+B.Cat4&$ 4.000$&$ 4.000$&$ 4.000$&$ 4.000$&$ 4.000$&$ 4.000$\tabularnewline
+B.Cat5&$ 5.000$&$ 5.000$&$ 5.000$&$ 5.000$&$ 5.000$&$ 5.000$\tabularnewline
+B.Cat6&$ 6.000$&$ 6.000$&$ 6.000$&$ 6.000$&$ 6.000$&$ 6.000$\tabularnewline
+AXsi.Cat0&$ 0.000$&$ 0.000$&$ 0.000$&$ 0.000$&$ 0.000$&$ 0.000$\tabularnewline
+AXsi.Cat1&$ 0.451$&$ 1.362$&$ 0.971$&$ 1.471$&$ 1.007$&$ 0.867$\tabularnewline
+AXsi.Cat2&$ 0.349$&$ 2.172$&$ 1.390$&$ 2.390$&$ 1.460$&$ 1.180$\tabularnewline
+AXsi.Cat3&$ 0.783$&$ 3.517$&$ 2.345$&$ 3.844$&$ 2.450$&$ 2.030$\tabularnewline
+AXsi.Cat4&$-0.153$&$ 3.493$&$ 1.929$&$ 3.929$&$ 2.070$&$ 1.510$\tabularnewline
+AXsi.Cat5&$-2.115$&$ 2.442$&$ 0.487$&$ 2.987$&$ 0.663$&$-0.037$\tabularnewline
+AXsi.Cat6&$-5.328$&$ 0.140$&$-2.205$&$ 0.794$&$-1.995$&$-2.834$\tabularnewline
+\hline
+Outfit&$ 1.532$&$ 0.815$&$ 0.773$&$ 1.058$&$ 0.580$&$ 0.836$\tabularnewline
+Infit&$ 1.386$&$ 0.882$&$ 0.801$&$ 1.284$&$ 0.635$&$ 0.957$\tabularnewline
+\hline
+\end{longtable}}
+
+\autoref{tab:item-parameters-perceived-choice-pilot-study} shows the estimated parameters for the measurement instrument of \emph{Perceived Choice} in which the Infit/Outfit statistics of items indicate that no one item distorts or degrades the measurement system with mean-square greater than $2.0$.
+
+%latex.default(estimated_params_df, caption = paste("Estimated parameters in the RSM-based instrument",     "for measuring the", lname), size = "small", longtable = T,     ctable = F, landscape = F, where = "!htbp", file = filename,     append = T)%
+\setlongtables{\scriptsize
+\begin{longtable}{lrrrrr}\caption{Estimated parameters in the RSM-based instrument for measuring the Perceived Choice of participants in the pilot empirical study} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Item02PC}&\multicolumn{1}{c}{Item06PC}&\multicolumn{1}{c}{Item08PC}&\multicolumn{1}{c}{Item15PC}&\multicolumn{1}{c}{Item17PC}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Item02PC}&\multicolumn{1}{c}{Item06PC}&\multicolumn{1}{c}{Item08PC}&\multicolumn{1}{c}{Item15PC}&\multicolumn{1}{c}{Item17PC}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{tab:item-parameters-perceived-choice-pilot-study}
+xsi.item&$ 0.112$&$-0.237$&$-0.491$&$ 0.030$&$-0.469$\tabularnewline
+B.Cat0&$ 0.000$&$ 0.000$&$ 0.000$&$ 0.000$&$ 0.000$\tabularnewline
+B.Cat1&$ 1.000$&$ 1.000$&$ 1.000$&$ 1.000$&$ 1.000$\tabularnewline
+B.Cat2&$ 2.000$&$ 2.000$&$ 2.000$&$ 2.000$&$ 2.000$\tabularnewline
+B.Cat3&$ 3.000$&$ 3.000$&$ 3.000$&$ 3.000$&$ 3.000$\tabularnewline
+B.Cat4&$ 4.000$&$ 4.000$&$ 4.000$&$ 4.000$&$ 4.000$\tabularnewline
+B.Cat5&$ 5.000$&$ 5.000$&$ 5.000$&$ 5.000$&$ 5.000$\tabularnewline
+B.Cat6&$ 6.000$&$ 6.000$&$ 6.000$&$ 6.000$&$ 6.000$\tabularnewline
+AXsi.Cat0&$ 0.000$&$ 0.000$&$ 0.000$&$ 0.000$&$ 0.000$\tabularnewline
+AXsi.Cat1&$ 1.185$&$ 1.534$&$ 1.788$&$ 1.267$&$ 1.766$\tabularnewline
+AXsi.Cat2&$ 0.898$&$ 1.597$&$ 2.104$&$ 1.062$&$ 2.061$\tabularnewline
+AXsi.Cat3&$ 2.082$&$ 3.130$&$ 3.891$&$ 2.328$&$ 3.826$\tabularnewline
+AXsi.Cat4&$ 1.103$&$ 2.500$&$ 3.515$&$ 1.431$&$ 3.428$\tabularnewline
+AXsi.Cat5&$ 0.368$&$ 2.115$&$ 3.383$&$ 0.779$&$ 3.275$\tabularnewline
+AXsi.Cat6&$-0.674$&$ 1.422$&$ 2.944$&$-0.181$&$ 2.814$\tabularnewline
+\hline
+Outfit&$ 1.066$&$ 0.968$&$ 1.452$&$ 1.025$&$ 0.700$\tabularnewline
+Infit&$ 1.007$&$ 0.994$&$ 1.375$&$ 1.001$&$ 0.704$\tabularnewline
+\hline
+\end{longtable}}
+
+
+\autoref{tab:item-parameters-pressure-tension-pilot-study} shows the estimated parameters for the measurement instrument of \emph{Pressure/Tension} for the participants of pilot empirical study in which the Infit/Outfit statistics of items indicate that no one item distorts or degrades the measurement system with mean-square greater than $2.0$.
+
+%latex.default(estimated_params_df, caption = paste("Estimated parameters in the RSM-based instrument",     "for measuring the", lname), size = "small", longtable = T,     ctable = F, landscape = F, where = "!htbp", file = filename,     append = T)%
+\setlongtables{\scriptsize
+\begin{longtable}{lrrrr}\caption{Estimated parameters in the RSM-based instrument for measuring the Pressure/Tension of participants in the pilot empirical study} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Item11PT}&\multicolumn{1}{c}{Item14PT}&\multicolumn{1}{c}{Item16PT}&\multicolumn{1}{c}{Item18PT}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Item11PT}&\multicolumn{1}{c}{Item14PT}&\multicolumn{1}{c}{Item16PT}&\multicolumn{1}{c}{Item18PT}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{tab:item-parameters-pressure-tension-pilot-study}
+xsi.item&$-0.036$&$ 0.288$&$-0.054$&$ 0.347$\tabularnewline
+B.Cat0&$ 0.000$&$ 0.000$&$ 0.000$&$ 0.000$\tabularnewline
+B.Cat1&$ 1.000$&$ 1.000$&$ 1.000$&$ 1.000$\tabularnewline
+B.Cat2&$ 2.000$&$ 2.000$&$ 2.000$&$ 2.000$\tabularnewline
+B.Cat3&$ 3.000$&$ 3.000$&$ 3.000$&$ 3.000$\tabularnewline
+B.Cat4&$ 4.000$&$ 4.000$&$ 4.000$&$ 4.000$\tabularnewline
+B.Cat5&$ 5.000$&$ 0.000$&$ 0.000$&$ 0.000$\tabularnewline
+B.Cat6&$ 6.000$&$ 0.000$&$ 0.000$&$ 0.000$\tabularnewline
+AXsi.Cat0&$ 0.000$&$ 0.000$&$ 0.000$&$ 0.000$\tabularnewline
+AXsi.Cat1&$ 1.034$&$ 0.272$&$ 0.614$&$ 0.213$\tabularnewline
+AXsi.Cat2&$ 1.249$&$-0.275$&$ 0.410$&$-0.392$\tabularnewline
+AXsi.Cat3&$ 2.096$&$-0.190$&$ 0.837$&$-0.367$\tabularnewline
+AXsi.Cat4&$ 1.895$&$-1.152$&$ 0.217$&$-1.387$\tabularnewline
+AXsi.Cat5&$ 1.711$&$$&$$&$$\tabularnewline
+AXsi.Cat6&$ 0.216$&$$&$$&$$\tabularnewline
+\hline
+Outfit&$ 1.355$&$ 1.000$&$ 0.861$&$ 0.850$\tabularnewline
+Infit&$ 1.361$&$ 0.915$&$ 0.842$&$ 0.919$\tabularnewline
+\hline
+\end{longtable}}
+
+\autoref{tab:item-parameters-effort-importance-pilot-study} shows the estimated parameters for the measurement instrument of \emph{Effort/Importance} in which the Infit/Outfit statistics of items indicate that no one item distorts or degrades the measurement system with mean-square greater than $2.0$.
+
+%latex.default(estimated_params_df, caption = paste("Estimated parameters in the RSM-based instrument",     "for measuring the", lname), size = "small", longtable = T,     ctable = F, landscape = F, where = "!htbp", file = filename,     append = T)%
+\setlongtables{\scriptsize
+\begin{longtable}{lrrr}\caption{Estimated parameters in the RSM-based instrument for measuring the Effort/Importance of participants in the pilot empirical study} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Item03EI}&\multicolumn{1}{c}{Item07EI}&\multicolumn{1}{c}{Item13EI}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Item03EI}&\multicolumn{1}{c}{Item07EI}&\multicolumn{1}{c}{Item13EI}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{tab:item-parameters-effort-importance-pilot-study}
+xsi.item&$-1.793$&$-1.571$&$-1.620$\tabularnewline
+B.Cat0&$ 0.000$&$ 0.000$&$ 0.000$\tabularnewline
+B.Cat1&$ 1.000$&$ 1.000$&$ 1.000$\tabularnewline
+B.Cat2&$ 2.000$&$ 2.000$&$ 2.000$\tabularnewline
+B.Cat3&$ 3.000$&$ 3.000$&$ 3.000$\tabularnewline
+B.Cat4&$ 4.000$&$ 4.000$&$ 4.000$\tabularnewline
+B.Cat5&$ 5.000$&$ 5.000$&$ 5.000$\tabularnewline
+B.Cat6&$ 6.000$&$ 6.000$&$ 6.000$\tabularnewline
+AXsi.Cat0&$ 0.000$&$ 0.000$&$ 0.000$\tabularnewline
+AXsi.Cat1&$ 7.416$&$ 7.195$&$ 7.243$\tabularnewline
+AXsi.Cat2&$ 9.886$&$ 9.444$&$ 9.541$\tabularnewline
+AXsi.Cat3&$ 9.821$&$ 9.158$&$ 9.303$\tabularnewline
+AXsi.Cat4&$10.943$&$10.059$&$10.252$\tabularnewline
+AXsi.Cat5&$10.732$&$ 9.626$&$ 9.868$\tabularnewline
+AXsi.Cat6&$10.756$&$ 9.429$&$ 9.719$\tabularnewline
+\hline
+Outfit&$ 1.012$&$ 1.063$&$ 0.987$\tabularnewline
+Infit&$ 0.992$&$ 1.035$&$ 1.030$\tabularnewline
+\hline
+\end{longtable}}
+
+
+\subsection{Intrinsic Motivation as Latent Trait Estimates}
+
+\autoref{tab:intrinsic-motivation-estimates-pilot-study} shows the \emph{Intrinsic motivation} and the scales of \emph{Interest/Enjoyment}, \emph{Perceived Choice}, \emph{Pressure/Tension} and \emph{Effort/Importance} that had been estimated by the RSM-based instrument for the participants of pilot empirical study.
+
+%latex.default(data_df, caption = paste("Latent trait estimates and person model fit of the RSM-based instrument",     in_title), size = "scriptsize", longtable = T, ctable = F,     landscape = T, rowlabel = "", where = "!htbp", file = filename,     append = T)%
+\setlongtables\begin{landscape}{\scriptsize
+\begin{longtable}{l|rrrr|rrrr|rrrr|rrrr|rrrr}\caption{Latent trait estimates and person model fit of the RSM-based instrument for measuring the intrinsic motivation of participants in the pilot study} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{4}{|c}{Intrinsic Motivation}&\multicolumn{4}{|c}{Interest/Enjoyment}&\multicolumn{4}{|c}{Perceived Choice}&\multicolumn{4}{|c}{Pressure/Tension}&\multicolumn{4}{|c}{Effort/Importance} \tabularnewline
+\multicolumn{1}{l}{UserID}&\multicolumn{1}{|c}{theta}&\multicolumn{1}{c}{error}&\multicolumn{1}{c}{Outfit}&\multicolumn{1}{c}{Infit}&\multicolumn{1}{|c}{theta}&\multicolumn{1}{c}{error}&\multicolumn{1}{c}{Outfit}&\multicolumn{1}{c}{Infit}&\multicolumn{1}{|c}{theta}&\multicolumn{1}{c}{error}&\multicolumn{1}{c}{Outfit}&\multicolumn{1}{c}{Infit}&\multicolumn{1}{|c}{theta}&\multicolumn{1}{c}{error}&\multicolumn{1}{c}{Outfit}&\multicolumn{1}{c}{Infit}&\multicolumn{1}{|c}{theta}&\multicolumn{1}{c}{error}&\multicolumn{1}{c}{Outfit}&\multicolumn{1}{c}{Infit}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{4}{|c}{Intrinsic Motivation}&\multicolumn{4}{|c}{Interest/Enjoyment}&\multicolumn{4}{|c}{Perceived Choice}&\multicolumn{4}{|c}{Pressure/Tension}&\multicolumn{4}{|c}{Effort/Importance} \tabularnewline
+\multicolumn{1}{l}{UserID}&\multicolumn{1}{|c}{theta}&\multicolumn{1}{c}{error}&\multicolumn{1}{c}{Outfit}&\multicolumn{1}{c}{Infit}&\multicolumn{1}{|c}{theta}&\multicolumn{1}{c}{error}&\multicolumn{1}{c}{Outfit}&\multicolumn{1}{c}{Infit}&\multicolumn{1}{|c}{theta}&\multicolumn{1}{c}{error}&\multicolumn{1}{c}{Outfit}&\multicolumn{1}{c}{Infit}&\multicolumn{1}{|c}{theta}&\multicolumn{1}{c}{error}&\multicolumn{1}{c}{Outfit}&\multicolumn{1}{c}{Infit}&\multicolumn{1}{|c}{theta}&\multicolumn{1}{c}{error}&\multicolumn{1}{c}{Outfit}&\multicolumn{1}{c}{Infit}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{tab:intrinsic-motivation-estimates-pilot-study}
+10116&$-0.404$&$0.154$&$0.569$&$0.557$&$-0.114$&$0.340$&$0.991$&$1.063$&$-0.842$&$0.347$&$0.487$&$0.456$&$ 0.207$&$0.387$&$0.482$&$0.499$&$-0.595$&$0.444$&$0.020$&$0.021$\tabularnewline
+10120&$ 0.969$&$0.240$&$0.595$&$0.566$&$ 1.906$&$0.483$&$0.791$&$0.888$&$ 1.372$&$0.492$&$0.530$&$0.588$&$-1.126$&$0.578$&$0.398$&$0.306$&$ 0.694$&$0.577$&$0.864$&$0.879$\tabularnewline
+10121&$ 0.050$&$0.161$&$0.661$&$0.694$&$ 0.399$&$0.382$&$1.481$&$1.713$&$ 0.587$&$0.361$&$0.402$&$0.425$&$ 0.345$&$0.396$&$0.487$&$0.452$&$-0.119$&$0.426$&$0.017$&$0.017$\tabularnewline
+10122&$-0.171$&$0.155$&$1.833$&$1.867$&$-2.052$&$0.572$&$0.878$&$0.690$&$ 1.170$&$0.443$&$0.441$&$0.480$&$-0.488$&$0.420$&$1.565$&$1.940$&$-0.119$&$0.426$&$1.391$&$1.366$\tabularnewline
+10123&$-0.311$&$0.154$&$0.497$&$0.495$&$-0.832$&$0.330$&$0.240$&$0.260$&$ 0.236$&$0.340$&$0.375$&$0.387$&$ 0.207$&$0.387$&$0.821$&$0.793$&$-0.430$&$0.428$&$0.672$&$0.685$\tabularnewline
+10126&$ 0.490$&$0.188$&$0.917$&$0.803$&$ 1.273$&$0.443$&$0.452$&$0.457$&$ 1.170$&$0.443$&$0.156$&$0.122$&$-0.488$&$0.420$&$0.854$&$0.996$&$-0.119$&$0.426$&$1.376$&$1.400$\tabularnewline
+10127&$ 0.183$&$0.167$&$1.085$&$1.042$&$ 1.906$&$0.483$&$0.740$&$0.808$&$ 0.236$&$0.340$&$0.780$&$0.781$&$-0.195$&$0.390$&$0.330$&$0.359$&$-0.779$&$0.473$&$0.434$&$0.443$\tabularnewline
+10128&$-0.521$&$0.155$&$2.364$&$2.405$&$-3.515$&$1.347$&$0.087$&$0.096$&$ 0.587$&$0.361$&$3.270$&$3.014$&$-0.336$&$0.401$&$2.149$&$2.637$&$-2.817$&$1.034$&$0.766$&$0.763$\tabularnewline
+10129&$-0.794$&$0.164$&$0.817$&$0.850$&$-1.785$&$0.486$&$0.427$&$0.471$&$-0.622$&$0.335$&$0.418$&$0.391$&$ 3.173$&$1.487$&$0.122$&$0.133$&$ 0.043$&$0.438$&$1.521$&$1.516$\tabularnewline
+10130&$-0.147$&$0.155$&$0.870$&$0.817$&$ 0.553$&$0.395$&$0.119$&$0.119$&$-0.305$&$0.330$&$0.676$&$0.674$&$ 1.413$&$0.633$&$0.328$&$0.321$&$ 0.694$&$0.577$&$0.282$&$0.288$\tabularnewline
+10131&$ 0.239$&$0.170$&$1.986$&$2.120$&$ 2.400$&$0.530$&$2.083$&$2.163$&$-0.959$&$0.358$&$1.745$&$1.866$&$-0.860$&$0.496$&$0.247$&$0.199$&$ 0.429$&$0.504$&$0.534$&$0.572$\tabularnewline
+10132&$-0.474$&$0.154$&$1.148$&$1.144$&$-3.515$&$1.347$&$0.087$&$0.096$&$-0.199$&$0.330$&$1.129$&$1.136$&$-0.195$&$0.390$&$0.252$&$0.298$&$ 0.221$&$0.462$&$0.454$&$0.421$\tabularnewline
+10134&$-0.666$&$0.159$&$0.281$&$0.298$&$-1.285$&$0.375$&$0.139$&$0.130$&$-0.731$&$0.340$&$0.743$&$0.778$&$ 0.345$&$0.396$&$0.232$&$0.232$&$-0.595$&$0.444$&$0.020$&$0.021$\tabularnewline
+10135&$-0.025$&$0.159$&$1.089$&$1.052$&$ 0.399$&$0.382$&$1.010$&$1.099$&$ 0.349$&$0.345$&$2.289$&$2.180$&$ 0.345$&$0.396$&$0.861$&$0.901$&$-0.274$&$0.422$&$0.757$&$0.757$\tabularnewline
+10136&$-1.021$&$0.178$&$0.958$&$0.997$&$-3.515$&$1.347$&$0.087$&$0.096$&$-1.371$&$0.418$&$0.510$&$0.401$&$ 0.073$&$0.383$&$1.402$&$1.309$&$-1.869$&$0.792$&$0.419$&$0.393$\tabularnewline
+10137&$ 0.969$&$0.240$&$0.854$&$0.798$&$ 1.474$&$0.455$&$0.324$&$0.317$&$ 1.372$&$0.492$&$1.290$&$1.524$&$-2.621$&$1.373$&$0.129$&$0.145$&$ 0.694$&$0.577$&$1.150$&$1.098$\tabularnewline
+10138&$-0.001$&$0.159$&$0.790$&$0.756$&$ 0.553$&$0.395$&$0.711$&$0.716$&$-0.410$&$0.330$&$0.489$&$0.492$&$ 0.345$&$0.396$&$0.297$&$0.304$&$ 1.902$&$1.193$&$0.177$&$0.179$\tabularnewline
+10139&$-0.099$&$0.157$&$1.163$&$1.175$&$-0.223$&$0.334$&$0.920$&$0.888$&$ 0.125$&$0.336$&$2.016$&$2.018$&$-0.488$&$0.420$&$1.866$&$1.854$&$-0.595$&$0.444$&$0.269$&$0.266$\tabularnewline
+10140&$-0.617$&$0.157$&$0.514$&$0.490$&$-1.045$&$0.346$&$0.503$&$0.513$&$-0.199$&$0.330$&$0.115$&$0.115$&$ 0.845$&$0.472$&$1.194$&$1.258$&$-1.004$&$0.524$&$0.275$&$0.277$\tabularnewline
+10141&$-0.218$&$0.154$&$0.484$&$0.470$&$ 0.002$&$0.349$&$0.430$&$0.449$&$-0.410$&$0.330$&$0.483$&$0.485$&$-0.060$&$0.384$&$0.718$&$0.632$&$-0.430$&$0.428$&$0.455$&$0.450$\tabularnewline
+10142&$ 0.076$&$0.162$&$0.798$&$0.791$&$ 0.553$&$0.395$&$0.872$&$0.821$&$-0.305$&$0.330$&$0.364$&$0.365$&$-0.860$&$0.496$&$1.680$&$1.816$&$-0.119$&$0.426$&$0.500$&$0.494$\tabularnewline
+10143&$ 0.102$&$0.163$&$0.125$&$0.127$&$ 0.125$&$0.358$&$0.118$&$0.119$&$ 0.349$&$0.345$&$0.140$&$0.137$&$-0.060$&$0.384$&$0.136$&$0.149$&$ 0.429$&$0.504$&$0.028$&$0.029$\tabularnewline
+10145&$-0.357$&$0.154$&$0.864$&$0.851$&$-0.631$&$0.324$&$0.606$&$0.600$&$-0.842$&$0.347$&$0.785$&$0.731$&$ 0.493$&$0.411$&$0.398$&$0.413$&$ 1.902$&$1.193$&$0.177$&$0.179$\tabularnewline
+10146&$ 0.327$&$0.176$&$0.384$&$0.356$&$ 0.895$&$0.420$&$0.102$&$0.108$&$ 0.349$&$0.345$&$0.135$&$0.136$&$-0.336$&$0.401$&$1.140$&$1.388$&$ 0.694$&$0.577$&$0.282$&$0.288$\tabularnewline
+10148&$ 0.076$&$0.162$&$1.010$&$0.904$&$ 0.257$&$0.370$&$0.588$&$0.542$&$ 0.714$&$0.373$&$0.766$&$0.739$&$ 0.845$&$0.472$&$1.200$&$1.263$&$ 0.694$&$0.577$&$0.301$&$0.323$\tabularnewline
+10149&$-0.716$&$0.161$&$1.830$&$1.804$&$-0.936$&$0.337$&$3.322$&$3.288$&$-1.083$&$0.371$&$2.091$&$1.735$&$ 3.173$&$1.487$&$0.122$&$0.133$&$ 0.221$&$0.462$&$2.008$&$2.064$\tabularnewline
+10152&$ 0.562$&$0.194$&$2.241$&$1.987$&$ 5.221$&$1.494$&$0.080$&$0.089$&$ 0.714$&$0.373$&$0.625$&$0.606$&$-0.195$&$0.390$&$0.201$&$0.184$&$-0.595$&$0.444$&$2.314$&$2.363$\tabularnewline
+10153&$-0.001$&$0.159$&$0.675$&$0.682$&$ 0.553$&$0.395$&$1.292$&$1.194$&$-0.199$&$0.330$&$0.880$&$0.877$&$-0.336$&$0.401$&$0.073$&$0.082$&$-0.274$&$0.422$&$0.853$&$0.854$\tabularnewline
+10154&$-0.741$&$0.162$&$0.489$&$0.499$&$-1.160$&$0.358$&$1.153$&$1.092$&$-1.218$&$0.391$&$0.078$&$0.091$&$ 0.493$&$0.411$&$0.679$&$0.655$&$-0.430$&$0.428$&$0.455$&$0.450$\tabularnewline
+10158&$ 1.160$&$0.269$&$1.112$&$1.220$&$ 3.026$&$0.623$&$0.865$&$0.850$&$ 0.587$&$0.361$&$0.827$&$0.784$&$-2.621$&$1.373$&$0.129$&$0.145$&$ 1.902$&$1.193$&$0.177$&$0.179$\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Stacking Procedure for Estimating Gains in the Skills and Knowledge in the Pilot Study}
+\label{sec:irt-learning-outcomes-pilot-study}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{First Study: RSM-based Instrument for Measuring the Intrinsic Motivation}
+\label{sec:irt-motivation-first-study}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{First Study: Stacking Procedure for Estimating the Gains in Skills and Knowledge}
+\label{sec:irt-learning-outcomes-first-study}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Second Study: RSM-based Instrument for Measuring the Level of Motivation}
+\label{sec:irt-motivation-second-study}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Second Study: Stacking Procedure for Estimating the Gains in Skills and Knowledge}
+\label{sec:irt-learning-outcomes-second-study}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Third Study: RSM-based Instrument for Measuring the Intrinsic Motivation}
+\label{sec:irt-intrinsic-motivation-third-study}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Third Study: RSM-based Instrument for Measuring the Level of Motivation}
+\label{sec:irt-level-motivation-third-study}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Third Study: Stacking Procedure for Estimating the Gains in Skills and Knowledge}
+\label{sec:irt-learning-outcomes-third-study}
