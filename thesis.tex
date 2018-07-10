@@ -29,6 +29,7 @@
 \usepackage{graphicx}
 \usepackage{soul}
 % ---------------------------------------------------------------------------
+\algnewcommand{\LeftComment}[1]{\Statex \(\triangleright\) #1}
 
 
 % ---
@@ -110,18 +111,16 @@
 
 \newcommand{\comando}[1]{\textbf{$\backslash$#1}}
 
-\chapter{Introduction}
-\label{chapter:introducao}
+
 \input{tex/introduction}
 
 \chapter{General Background and Fundamental Concepts}
 \label{chapter:general-background}
 %\input{tex/general-background}
 
-
 \input{tex/ontogacles-1}
 \input{tex/ontogacles-2}
-
+\input{tex/model-gmif}
 
 %\chapter[Ontological Model to Represent Gamified Collaborative Learning Scenarios]{Ontological Model to Represent Gamified Collaborative Learning Scenarios and the Personalization of Gamification}
 %\label{chapter:ontogacles-1}
@@ -168,7 +167,7 @@
 % Inicia os apêndices
 % ---
 \begin{apendicesenv}
-\input{tex/appendix/ontology-ontogacles}
+%\input{tex/appendix/ontology-ontogacles}
 %	
 %    \label{appendix:tree-overview-states}
 %    \input{tex/appendix/tree-overview-states} 
