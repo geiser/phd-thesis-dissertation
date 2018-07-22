@@ -31,7 +31,9 @@
 % ---------------------------------------------------------------------------
 \algnewcommand{\LeftComment}[1]{\Statex \(\triangleright\) #1}
 
-
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
@@ -41,8 +43,7 @@
 
 \autor[Challco, G. C.]{Geiser Chalco Challco}
 \genero{M} % Gênero do autor (M = Masculino / F = Feminino)
-\orientador[Orientadora]{Prof. Dr.}{Seiji Isotani}
-%\coorientador{Prof. Dr.}{Fulano de Tal}
+\orientador[Orientadora]{Prof. Dr.}{Seiji Isotani}%\coorientador{Prof. Dr.}{Fulano de Tal}
 \curso{CCMC}
 \data{07}{07}{2018} % Data do depósito
 \idioma{EN} % Idioma principal do documento (PT = português / EN = inglês)
@@ -122,15 +123,19 @@
 \input{tex/ontogacles-2}
 \input{tex/model-gmif}
 
-%\chapter[Ontological Model to Represent Gamified Collaborative Learning Scenarios]{Ontological Model to Represent Gamified Collaborative Learning Scenarios and the Personalization of Gamification}
-%\label{chapter:ontogacles-1}
-%\input{tex/ontogacles-2}
-
-
 \chapter[Computer-based Mechanisms and Procedures to Gamify CL Scenarios]{Computer-based Mechanisms and Procedures to Gamify Collaborative Learning Scenarios}
 \label{chapter:computer-based-mechanisms-procedures}
 
-%\input{tex/evaluation}
+\begin{figure}[htb]
+ \caption{Conceptual flow to gamify CL scenarios}
+ \label{fig:conceptual-flow-gamify-cl-scenarios}
+ \centering
+% \includegraphics[width=1\textwidth]{images/chap-evaluation/graphical-empirical-studies.png}
+ \fautor
+\end{figure}
+
+
+\input{tex/evaluation}
 
 % ---
 % Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
@@ -141,7 +146,7 @@
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
 % ----------------------------------------------------------
-%\postextual
+\postextual
 
 % ----------------------------------------------------------
 % Referências bibliográficas
@@ -167,31 +172,12 @@
 % Inicia os apêndices
 % ---
 \begin{apendicesenv}
-%\input{tex/appendix/ontology-ontogacles}
-%	
-%    \label{appendix:tree-overview-states}
-%    \input{tex/appendix/tree-overview-states} 
-
-%\input{tex/appendix/i-mot-goal}
-
-%	\chapter{Player role}
-%    \label{appendix:player-role}
-%    \input{tex/appendix/player-role}
-
-%    
-%    \label{appendix:ind-motivational-strategy}
-%    \input{tex/appendix/ind-motivational-strategy}
-
-%\input{tex/appendix/outliers}
-%\input{tex/appendix/validation-motivation-surveys}
-%\input{tex/appendix/irt-models}
-
-%    \chapter{Configuração do programa JabRef}
-%    \label{chapter:configuracao-jabref}
-%    \input{tex/appendix/configuracao-jabref}
+ \input{tex/appendix/ontology-ontogacles}
+ \input{tex/appendix/outliers}
+ \input{tex/appendix/validation-motivation-surveys}
+ \input{tex/appendix/irt-models}
 \end{apendicesenv}
 % ---
-
 
 % ----------------------------------------------------------
 % Anexos
@@ -200,9 +186,9 @@
 % ---
 % Inicia os anexos
 % ---
-%\begin{anexosenv}
-%\input{tex/annex}
-%\end{anexosenv}
+\begin{anexosenv}
+ \input{tex/annex}
+\end{anexosenv}
 % ---
 
 \end{document}

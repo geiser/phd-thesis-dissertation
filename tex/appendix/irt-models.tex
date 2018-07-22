@@ -2,33 +2,33 @@
 \chapter[IRT-based Models for Measuring Motivation and Learning Outcomes]{Item Response Theory-based Models for Measuring Motivation and Learning Outcomes}
 \label{appendix:irt-models}
 
-For the empirical studies conducted in this PhD dissertation, statistical instruments based on the Item Response Theory (IRT) had been used to estimate the participants' motivation and the learning outcomes. Instead to use the average scores of motivation surveys as measurement of motivation, Rating Scale Model (RSM) is used to estimate the intrinsic motivation and the level of motivation. The learning outcomes had been calculated as gains in skills/knowledge by stacking pre-test and post-test data with Generalized Partial Credit Model (GPCM) to estimate skills/knowledge when the data had been gathered from multiple choice questionnaires and programming tasks. The first section (\autoref{sec:irt-motivation}) details the construction and validation procedure of IRT-based models for measuring the motivation and skills/knowledge of participants in the empirical studies. The second section (\autoref{sec:irt-learning-outcomes}) details the procedure for stacking pre-test and post-test data with GPCM for estimating gains in skills/knowledge.
+For the empirical studies conducted in this PhD dissertation, statistical instruments based on the Item Response Theory (IRT) had been used to estimate the participants' motivation and the learning outcomes. Instead to use the average scores of motivation surveys as measurement of motivation, Rating Scale Model (RSM) is used to estimate the intrinsic motivation and the level of motivation. The learning outcomes had been calculated as gains in skill/knowledge by stacking pre-test and post-test data with Generalized Partial Credit Model (GPCM) to estimate skill/knowledge when the data had been gathered from multiple choice questionnaires and programming tasks. The first section (\autoref{sec:irt-motivation}) details the construction and validation procedure of IRT-based models for measuring the motivation and skill/knowledge of participants in the empirical studies. The second section (\autoref{sec:irt-learning-outcomes}) details the procedure for stacking pre-test and post-test data with GPCM for estimating gains in skill/knowledge.
 
 The rest of sections are organized as follows:
 \begin{itemize}
 \item
 \autoref{sec:irt-motivation-pilot-study} presents the RSM-based instruments used to estimate the intrinsic motivation of participants in the pilot empirical study;
 \item
-\autoref{sec:irt-learning-outcomes-pilot-study} details the stacking procedure of pre-test and post-data with GPCM to estimate the gains in skills/knowledge of participants over the pilot empirical study;
+\autoref{sec:irt-learning-outcomes-pilot-study} details the stacking procedure of pre-test and post-data with GPCM to estimate the gains in skill/knowledge of participants over the pilot empirical study;
 \item
 \autoref{sec:irt-motivation-first-study} presents the RSM used to estimate the intrinsic motivation of participants in the first empirical study;
 \item
-\autoref{sec:irt-learning-outcomes-first-study} details the stacking procedure of pre-test and post-data with GPCM to estimate the gains in skills/knowledge of participants over the first empirical study;
+\autoref{sec:irt-learning-outcomes-first-study} details the stacking procedure of pre-test and post-data with GPCM to estimate the gains in skill/knowledge of participants over the first empirical study;
 \item
 \autoref{sec:irt-motivation-second-study} presents the RSM used to estimate the level of motivation of participants in the second empirical study;
 \item
-\autoref{sec:irt-learning-outcomes-second-study} details the stacking procedure of pre-test and post-data with GPCM to estimate the gains in skills/knowledge of participants over the second empirical study; 
+\autoref{sec:irt-learning-outcomes-second-study} details the stacking procedure of pre-test and post-data with GPCM to estimate the gains in skill/knowledge of participants over the second empirical study; 
 \item
 \autoref{sec:irt-intrinsic-motivation-third-study} presents the RSM used to estimate the intrinsic motivation of participants in the third empirical study; 
 \item
 \autoref{sec:irt-level-motivation-third-study} presents the RSM used to estimate the level of motivation of participants in the third empirical study; and
 \item
-\autoref{sec:irt-learning-outcomes-third-study} details the stacking procedure of pre-test and post-test data with GPCM to estimate the gains in skills/knowledge of participants over the third empirical study.
+\autoref{sec:irt-learning-outcomes-third-study} details the stacking procedure of pre-test and post-test data with GPCM to estimate the gains in skill/knowledge of participants over the third empirical study.
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section[Construction and Validation Procedure of IRT-based Models]{Construction and Validation Procedure of IRT-based Models for Measuring Motivation and Skills/Knowledge of Participants in the Empirical Studies}
+\section[Construction and Validation Procedure of IRT-based Models]{Construction and Validation Procedure of IRT-based Models for Measuring Motivation and Skill/Knowledge of Participants in the Empirical Studies}
 \label{sec:irt-motivation}
 
 Let be $i = \{1,2, ..., I\}$ the items in a set of responses; and let be $x = \{0,1, ..., X\}$ the categories of responses for the item $i$; then, the probability that a person $n$ scores $x$ on the item $i$ is described in a nonparametric IRT-based model by the item response model \cite{AdamsWu2007, AdamsWilsonWu1997} as:
@@ -37,16 +37,16 @@ $P(X_{n,i} = x | \theta_{n}) \propto exp(b_{i,x} \theta_{n} + a_{i,x} \xi)$.
 
 where the symbol \aspas{$\propto$} means that the probabilities in the responses are normalized such that $\sum_{x=0}^{X} P(X_{n,i} = x | \theta_{n}) = 1$; the parameter $a_{i,x} \xi$ is the item intercept ($AXsi$) related to the location on latent trait; and the parameter $b_{i,x}$ is the slope related to the item discrimination.
 
-As this item response model is a generalization of nonparametric models (such as Rasch model, Rating Scale Model - RSM, Partial Credit Model - PCM, General Partial Credit Model - GPCM, and Nominal Response Model - NRM), to be used as an instrument for measuring unidimensional latent traits such as the motivation and skills/knowledge of participants in the empirical studies, three fundamental assumptions related to unidimensional nonparametric models must be checked. These assumptions are the the unidimensionality of data structure, the local independence of items, and the monotonicity of the item characteristic curve. The unidimensionality determines whether items in the instrument measure only one latent trait $\theta$, the local independence verifies the statistical relationship between examinees’ responses for each pair of items in the instrument, and the monotonicity checks the relationship between the item responses and the latent trait $\theta$ measured by the instrument.
+As this item response model is a generalization of nonparametric models (such as Rasch model, Rating Scale Model - RSM, Partial Credit Model - PCM, General Partial Credit Model - GPCM, and Nominal Response Model - NRM), to be used as an instrument for measuring unidimensional latent traits such as the motivation and skill/knowledge of participants in the empirical studies, three fundamental assumptions related to unidimensional nonparametric models must be checked. These assumptions are the the unidimensionality of data structure, the local independence of items, and the monotonicity of the item characteristic curve. The unidimensionality determines whether items in the instrument measure only one latent trait $\theta$, the local independence verifies the statistical relationship between examinees’ responses for each pair of items in the instrument, and the monotonicity checks the relationship between the item responses and the latent trait $\theta$ measured by the instrument.
 
-After to check these three fundamental assumptions, the values for the intercept and slope parameters are estimated by means of the Marginal Maximum Likelihood (MML) method \cite{BockAitkin1981}; then, the latent trait $\theta$ that represents the measurement of motivation or skills/knowledge for the participants in the empirical studies are computed by the Weighted Likelihood Estimator (WLE) \cite{Warm1989}. 
+After to check these three fundamental assumptions, the values for the intercept and slope parameters are estimated by means of the Marginal Maximum Likelihood (MML) method \cite{BockAitkin1981}; then, the latent trait $\theta$ that represents the measurement of motivation or skill/knowledge for the participants in the empirical studies are computed by the Weighted Likelihood Estimator (WLE) \cite{Warm1989}. 
 
 \subsection{Checking Assumptions}
 \label{sec:checking-assumptions-irt-motivation}
 
 \subsubsection*{Test of Unidimensionality}
 
-Currently, there are a variety of statistic methods to assess the dimensionality of IRT-based models \cite{Hattie1985, NandakumarYuLiStout1998}, but not one of them is universal to determine the dimensionality. The most common statistic methods are based on factor analysis with eigenvalue-greater-than-one rule, ratio of first-to-second eigenvalues, parallel analysis, Root Means Square Error of Approximation (RMSEA) or chi-square tests. For the data gathered by means of motivation surveys, the unidimensional Confirmatory Factor Analysis (CFA) \cite{Brown2014} and the DETECT analysis \cite{StoutHabingDouglasKimRoussosZhang1996, Zhang2004} had been carried out to determine the dimensionality of IRT-based models.
+Currently, there are a variety of statistic methods to assess the dimensionality of IRT-based models \cite{Hattie1985, NandakumarYuLiStout1998}, but not one of them is universal to determine the dimensionality. The most common statistic methods are based on factor analysis with eigenvalue-greater-than-one rule, ratio of first-to-second eigenvalues, parallel analysis, Root Means Square Error of Approximation (RMSEA) or chi-square tests. For the data gathered by means of motivation surveys, the unidimensional Confirmatory Factor Analysis (CFA) \cite{Brown2014} and the DETECT analysis \cite{StoutHabingDouglasKimRoussosZhang1996, Zhang2007} had been carried out to determine the dimensionality of IRT-based models.
 
 Indices based on factor analysis, Chi-square (${\chi}^2$), Adjusted Goodness of Fit Index (AGFI), Tucker-Lewis Index (TLI), and Comparative Fit Index (CFI) are used in the unidimensional CFA as indices to evaluate whether the items in  is unidimensional \cite{Brown2014}. Lower values of the Chi-square (${\chi}^2$) indicates best fit. Values of AGFI, TLI and CFI are considered acceptable for the range of $0.90$ to $0.95$, and they indicate good fit when these values are higher than $0.95$. The DETECT analysis under a conditional covariance-based nonparametric multidimensionality assessment computes the indices DETECT, ASSI and RATIO \cite{Zhang2007}, where DETECT index greater than $1.00$ indicates strong multidimensionality, DETECT index between $0.40$ and $1.00$ indicates moderate multidimensionality, DETECT index between $0.20$ and $0.40$ indicates weak multidimensionality, and DETECT index lower than $0.20$ indicates essential unidimensionality. \emph{Essential unidimensionality} in the data structure is indicated when the ASSI $< 0.25$ and RATIO $< 0.36$, and \emph{essential deviation from unidimensionality} is indicated when the ASSI $> 0.25$ and RATIO $> 0.36$.
 
@@ -78,16 +78,16 @@ Employing the Marginal Maximum Likelihood (MML) method \cite{BockAitkin1981}, th
 \subsection{Obtaining the Latent Trait Estimates}
 \label{sec:obtaining-latent-trait-irt-motivation}
 
-The latent trait estimates (intrinsic motivation, level of motivation and skills/knowledge) is calculated by the Weighted Likelihood Estimator (WLE) \cite{Warm1989} in which the latent trait distribution is assumed as a normal distribution with mean of $\mu = 0$ and units in \emph{logits}. These estimates had been calculated in the R software version 3.4.3 \cite{RCoreTeam2017} employing the TAM: Test analysis modules package version 2.10 \cite{RobitzschKieferWu2018}. The R scripts used to obtain the latent trait estimates are available at the URL: \url{https://geiser.github.io/phd-thesis-evaluation/}
+The latent trait estimates (intrinsic motivation, level of motivation and skill/knowledge) is calculated by the Weighted Likelihood Estimator (WLE) \cite{Warm1989} in which the latent trait distribution is assumed as a normal distribution with mean of $\mu = 0$ and units in \emph{logits}. These estimates had been calculated in the R software version 3.4.3 \cite{RCoreTeam2017} employing the TAM: Test analysis modules package version 2.10 \cite{RobitzschKieferWu2018}. The R scripts used to obtain the latent trait estimates are available at the URL: \url{https://geiser.github.io/phd-thesis-evaluation/}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Stacking Procedure with GPCM for Estimating Gains in Skills/Knowledge}
+\section{Stacking Procedure with GPCM for Estimating Gains in Skill/Knowledge}
 \label{sec:irt-learning-outcomes}
 
-Traditionally, the measures of change in skills/knowledge are calculated as a difference of scores. Such difference is calculated by subtracting the initial score obtained in a pre-test assessments from the final score obtained in post-test assessments, but this measurement causes some errors of measurements and misinterpretation \cite{Lord1956, Lord1958}. In addition, the variance, correlations, and reliability of score difference are dependent of population. To overcome these difficulties, different statistical methods such as residual change scores, and multi-wave methods have been proposed for measuring changes in skills/knowledge \cite{DimitrovRumrill2003, RogosaWillett1985}, but the use of IRT-based models is the most effective in solving the classical problems in the measurement of change in skills/knowledge \cite{GluckSpiel1997, QueirozPrimiCarvalhoEnumo2013}.
+Traditionally, the measures of change in skill/knowledge are calculated as a difference of scores. Such difference is calculated by subtracting the initial score obtained in a pre-test assessments from the final score obtained in post-test assessments, but this measurement causes some errors of measurements and misinterpretation \cite{Lord1956, Lord1958}. In addition, the variance, correlations, and reliability of score difference are dependent of population. To overcome these difficulties, different statistical methods such as residual change scores, and multi-wave methods have been proposed for measuring changes in skill/knowledge \cite{DimitrovRumrill2003, RogosaWillett1985}, but the use of IRT-based models is the most effective in solving the classical problems in the measurement of change in skill/knowledge \cite{GluckSpiel1997, QueirozPrimiCarvalhoEnumo2013}.
 
-Measurement of change in skills/knowledge using IRT-based models presents a challenge in which the measurement of skills/knowledge from Time 1 to Time 2 should also consider a change in the item parameters. To measure this change, it is necessary to define a reference frame encompassing both times in one unambiguous representation. This process of placing Time 1 data and Time 2 data together in an unique frame of reference is known as \emph{stacking procedure} \cite{Wright2003}. For the empirical studies conducted in this PhD dissertation, the stacking procedure involves the treating of formative assessments as source of data in which the Time 1 is the pre-test phase and Time 2 is the post-test phase. As these data are gathered from programming tasks and multiple choice questionnaires, the General Partial Credit Model (GPCM) \cite{MastersWright1996} had been used as instrument to estimate the skills/knowledge. With this model, the measure of gains in skills and knowledge is carried out in three steps: (1) Data verification, (2) Item splitting, and (3) Calculating changes. This stacking procedure had been carried out in the R software version 3.4.3 \cite{RCoreTeam2017} using the TAM: Test analysis modules package version 2.10 \cite{RobitzschKieferWu2018}. The R scripts for the stacking procedure with GPCM are available at the URL: \url{https://geiser.github.io/phd-thesis-evaluation/}
+Measurement of change in skill/knowledge using IRT-based models presents a challenge in which the measurement of skill/knowledge from Time 1 to Time 2 should also consider a change in the item parameters. To measure this change, it is necessary to define a reference frame encompassing both times in one unambiguous representation. This process of placing Time 1 data and Time 2 data together in an unique frame of reference is known as \emph{stacking procedure} \cite{Wright2003}. For the empirical studies conducted in this PhD dissertation, the stacking procedure involves the treating of formative assessments as source of data in which the Time 1 is the pre-test phase and Time 2 is the post-test phase. As these data are gathered from programming tasks and multiple choice questionnaires, the General Partial Credit Model (GPCM) \cite{MastersWright1996} had been used as instrument to estimate the skill/knowledge. With this model, the measure of gains in skills and knowledge is carried out in three steps: (1) Data verification, (2) Item splitting, and (3) Calculating changes. This stacking procedure had been carried out in the R software version 3.4.3 \cite{RCoreTeam2017} using the TAM: Test analysis modules package version 2.10 \cite{RobitzschKieferWu2018}. The R scripts for the stacking procedure with GPCM are available at the URL: \url{https://geiser.github.io/phd-thesis-evaluation/}
 
 \subsection{Step 1: Data Verification}
 
@@ -163,17 +163,17 @@ $P_{i}S_{4}$:&\multicolumn{2}{l}{$Q{\times}T_{75}{\times}T_{50}{\times}T_{25}$} 
 \end{tabular}
 \end{center}
 
-After scoring the programing tasks with the four Guttman-based scoring rules ($P_{i}S_{1}$, $P_{i}S_{2}$, $P_{i}S_{3}$ and $P_{i}S_{4}$) defined above, each possible combination of rules is tested one by one using the GPCM and a set of programming tasks related to the pre-test phase or post-test phase. With the results of these tests, the measurement instrument of skills/knowledge for the pre-test phase or post-test phase is built employing the combination of rules that best fits with the data gathered over the empirical studies. The chosen set of Guttman-based scoring rules is the one that has best indices in the tests of unidimentionality, local independence and monotonicity for the GPCM (detailed in \autoref{sec:checking-assumptions-irt-motivation}).
+After scoring the programing tasks with the four Guttman-based scoring rules ($P_{i}S_{1}$, $P_{i}S_{2}$, $P_{i}S_{3}$ and $P_{i}S_{4}$) defined above, each possible combination of rules is tested one by one using the GPCM and a set of programming tasks related to the pre-test phase or post-test phase. With the results of these tests, the measurement instrument of skill/knowledge for the pre-test phase or post-test phase is built employing the combination of rules that best fits with the data gathered over the empirical studies. The chosen set of Guttman-based scoring rules is the one that has best indices in the tests of unidimentionality, local independence and monotonicity for the GPCM (detailed in \autoref{sec:checking-assumptions-irt-motivation}).
 
 \subsection{Step 2: Item Splitting}
 
-In this step, data gathered from the pre-test phase (Time 1) and post-test phase (Time 2) are stacked together vertically, so that each participant in the empirical study appears twice times and each item appears once time. With these stacked data, the item parameters are estimated employing the MML method in the GPCM. These item parameters are used to plot the stability of reference frame, where: (1) items that are away from the identity line are \aspas{\emph{splitting}} into two separate items by splitting their responses into two data sets with missing data at the other time point in which the item is defined; and (2) items that are close to the identity line defines the calibration items for calculating the changes in skills/knowledge.
+In this step, data gathered from the pre-test phase (Time 1) and post-test phase (Time 2) are stacked together vertically, so that each participant in the empirical study appears twice times and each item appears once time. With these stacked data, the item parameters are estimated employing the MML method in the GPCM. These item parameters are used to plot the stability of reference frame, where: (1) items that are away from the identity line are \aspas{\emph{splitting}} into two separate items by splitting their responses into two data sets with missing data at the other time point in which the item is defined; and (2) items that are close to the identity line defines the calibration items for calculating the changes in skill/knowledge.
 
-\subsection{Step 3: Calculating Changes in Skills/Knowledge}
+\subsection{Step 3: Calculating Changes in Skill/Knowledge}
 
-For calculating the changes in skills/knowledge, the post-test phase (Time 2) is installed as the benchmark to measure the change from the pre-test phase (Time 1). Item parameters ($D2$) and skills/knowledge ($B2$) for the calibration of measurement system are obtained by a GPCM using data gathered from the post-test phase (Time 2). These item parameters ($D2$) are applied in the GPCM with the data gathered from the pre-test phase (Time 1) for estimating the skills/knowledge ($B1$) and the item parameters for the split items ($D1$).
+For calculating the changes in skill/knowledge, the post-test phase (Time 2) is installed as the benchmark to measure the change from the pre-test phase (Time 1). Item parameters ($D2$) and skill/knowledge ($B2$) for the calibration of measurement system are obtained by a GPCM using data gathered from the post-test phase (Time 2). These item parameters ($D2$) are applied in the GPCM with the data gathered from the pre-test phase (Time 1) for estimating the skill/knowledge ($B1$) and the item parameters for the split items ($D1$).
 
-With the skills/knowledge measured in the pre-test phase (Time 1, $B1$) against the skills/knowledge in the post-test phase (Time 2, $B2$), the changes in the skills/knowledge are calculated as $B2-B1$ that define an unambiguously frame of reference.
+With the skill/knowledge measured in the pre-test phase (Time 1, $B1$) against the skill/knowledge in the post-test phase (Time 2, $B2$), the changes in the skill/knowledge are calculated as $B2-B1$ that define an unambiguously frame of reference.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -485,12 +485,159 @@ Infit&$ 0.992$&$ 1.035$&$ 1.030$\tabularnewline
 \hline
 \end{longtable}}\end{landscape}
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Stacking Procedure for Estimating Gains in the Skills and Knowledge in the Pilot Study}
+\section{Stacking Procedure for Estimating Gains in the Skill and Knowledge in the Pilot Study}
 \label{sec:irt-learning-outcomes-pilot-study}
+
+
+%latex.default(data_df, caption = paste0("Goodness of fit statistics related to the test of unidimensionality",     "in the ", irt.short.name, "-based instrument ", in_title),     size = "small", longtable = T, ctable = F, landscape = F,     where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrrrrrr}\caption{Goodness of fit statistics related to the test of unidimensionalityin the GPCM-based instrument for measuring gains in the skill/knowledge of participants in the pilot empirical study} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{data}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{chisq}&\multicolumn{1}{c}{AGFI}&\multicolumn{1}{c}{TLI}&\multicolumn{1}{c}{CFI}&\multicolumn{1}{c}{DETECT}&\multicolumn{1}{c}{ASSI}&\multicolumn{1}{c}{RATIO}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{data}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{chisq}&\multicolumn{1}{c}{AGFI}&\multicolumn{1}{c}{TLI}&\multicolumn{1}{c}{CFI}&\multicolumn{1}{c}{DETECT}&\multicolumn{1}{c}{ASSI}&\multicolumn{1}{c}{RATIO}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{data}
+Pre-test&$2$&$2.591$&$0.548$&$ 0.912$&$0.971$&$0.009$&$0.167$&$0.998$\tabularnewline
+Post-test&$2$&$0.387$&$0.990$&$-1.852$&$1.000$&$3.187$&$0.333$&$0.582$\tabularnewline
+\hline
+\end{longtable}}
+%\begin{flushright}{\tiny df: degree of freedom; AGFI: Adjusted Goodness of Fit Index; CFI: Comparative Fit Index; TLI: Tucker-Lewis Index; }\end{flushright}
+
+%latex.default(data_df, caption = paste0("Item residual correlation statistics",     "related to the test of local independence", "in the ", irt.short.name,     "-based instrument ", in_title), size = "small", longtable = T,     ctable = F, landscape = F, where = "!htbp", file = filename,     append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrrr}\caption{Item residual correlation statistics related to the test of local independence in the GPCM-based instrument for measuring gains in the skill/knowledge of participants in the pilot empirical study} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{data}&\multicolumn{1}{c}{max.chisq}&\multicolumn{1}{c}{maxaQ3}&\multicolumn{1}{c}{MADaQ3}&\multicolumn{1}{c}{SRMSR}&\multicolumn{1}{c}{p.value}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{data}&\multicolumn{1}{c}{max.chisq}&\multicolumn{1}{c}{maxaQ3}&\multicolumn{1}{c}{MADaQ3}&\multicolumn{1}{c}{SRMSR}&\multicolumn{1}{c}{p.value}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{data}
+Pre-test&$5.639$&$0.225$&$0.086$&$0.089$&$1.000$\tabularnewline
+Post-test&$9.115$&$0.288$&$0.116$&$0.107$&$0.767$\tabularnewline
+\hline
+\end{longtable}}
+%\begin{flushright}{\tiny aQ3: adjusted correlation of item residuals; maxaQ3: maximum aQ3; MADaQ3: Median Absolute Deviation of aQ3; }\end{flushright}
+
+
+%latex.default(estimated_params_df, caption = paste0("Estimated parameters in the ",     irt.short.name, "-based instrument", " for measuring the ",     lname), size = "scriptsize", longtable = T, ctable = F, landscape = F,     where = "!htbp", file = filename, append = T)%
+\setlongtables{\scriptsize
+\begin{longtable}{lrrrr}\caption{Estimated parameters in the GPCM-based instrument for measuring the Pre-test} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{estimated}&\multicolumn{1}{c}{P1s0}&\multicolumn{1}{c}{P2s0}&\multicolumn{1}{c}{P3s2}&\multicolumn{1}{c}{P4s0}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{estimated}&\multicolumn{1}{c}{P1s0}&\multicolumn{1}{c}{P2s0}&\multicolumn{1}{c}{P3s2}&\multicolumn{1}{c}{P4s0}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{estimated}
+xsi.item&$-0.643$&$ 0.433$&$  4.444$&$ 4.227$\tabularnewline
+B.Cat0&$ 0.000$&$ 0.000$&$  0.000$&$ 0.000$\tabularnewline
+B.Cat1&$ 1.000$&$ 1.000$&$  1.000$&$ 1.000$\tabularnewline
+B.Cat2&$ 0.000$&$ 0.000$&$  2.000$&$ 0.000$\tabularnewline
+B.Cat3&$ 0.000$&$ 0.000$&$  3.000$&$ 0.000$\tabularnewline
+AXsi.Cat0&$ 0.000$&$ 0.000$&$  0.000$&$ 0.000$\tabularnewline
+AXsi.Cat1&$ 0.643$&$-0.433$&$ -4.177$&$-4.227$\tabularnewline
+AXsi.Cat2&$$&$$&$ -7.924$&$$\tabularnewline
+AXsi.Cat3&$$&$$&$-13.332$&$$\tabularnewline
+max.Outfit&$ 0.649$&$ 0.537$&$  0.994$&$ 0.386$\tabularnewline
+max.Infit&$ 0.844$&$ 0.755$&$  1.500$&$ 0.961$\tabularnewline
+\hline
+\end{longtable}}
+
+%latex.default(estimated_params_df, caption = paste0("Estimated parameters in the ",     irt.short.name, "-based instrument", " for measuring the ",     lname), size = "scriptsize", longtable = T, ctable = F, landscape = F,     where = "!htbp", file = filename, append = T)%
+\setlongtables{\scriptsize
+\begin{longtable}{lrrrr}\caption{Estimated parameters in the GPCM-based instrument for measuring the Post-test} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{estimated}&\multicolumn{1}{c}{PAs2}&\multicolumn{1}{c}{PBs3}&\multicolumn{1}{c}{PCs0}&\multicolumn{1}{c}{PDs0}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{estimated}&\multicolumn{1}{c}{PAs2}&\multicolumn{1}{c}{PBs3}&\multicolumn{1}{c}{PCs0}&\multicolumn{1}{c}{PDs0}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{estimated}
+xsi.item&$-0.506$&$-0.040$&$-0.518$&$ 1.901$\tabularnewline
+B.Cat0&$ 0.000$&$ 0.000$&$ 0.000$&$ 0.000$\tabularnewline
+B.Cat1&$ 1.000$&$ 1.000$&$ 1.000$&$ 1.000$\tabularnewline
+B.Cat2&$ 2.000$&$ 2.000$&$ 0.000$&$ 0.000$\tabularnewline
+B.Cat3&$ 3.000$&$ 3.000$&$ 0.000$&$ 0.000$\tabularnewline
+B.Cat4&$ 0.000$&$ 4.000$&$ 0.000$&$ 0.000$\tabularnewline
+AXsi.Cat0&$ 0.000$&$ 0.000$&$ 0.000$&$ 0.000$\tabularnewline
+AXsi.Cat1&$ 2.044$&$ 1.341$&$ 0.518$&$-1.901$\tabularnewline
+AXsi.Cat2&$ 1.845$&$ 1.192$&$$&$$\tabularnewline
+AXsi.Cat3&$ 1.518$&$ 0.708$&$$&$$\tabularnewline
+AXsi.Cat4&$$&$ 0.161$&$$&$$\tabularnewline
+max.Outfit&$ 1.198$&$ 1.915$&$ 1.060$&$ 0.927$\tabularnewline
+max.Infit&$ 1.149$&$ 1.078$&$ 1.071$&$ 0.950$\tabularnewline
+\hline
+\end{longtable}}
+
+
+%latex.default(data_df, caption = paste0("Latent trait estimates and person model fit of the ",     irt.short.name, "-based instrument ", in_title), size = "scriptsize",     longtable = T, ctable = F, landscape = T, rowlabel = "",     where = "!htbp", file = filename, append = T)%
+\setlongtables\begin{landscape}{\scriptsize
+\begin{longtable}{lrrrrrrrr}\caption{Latent trait estimates and person model fit of the GPCM-based instrument for measuring gains in the skill/knowledge of participants in the pilot empirical study} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Pre-test.theta}&\multicolumn{1}{c}{Pre-test.error}&\multicolumn{1}{c}{Pre-test.Outfit}&\multicolumn{1}{c}{Pre-test.Infit}&\multicolumn{1}{c}{Post-test.theta}&\multicolumn{1}{c}{Post-test.error}&\multicolumn{1}{c}{Post-test.Outfit}&\multicolumn{1}{c}{Post-test.Infit}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Pre-test.theta}&\multicolumn{1}{c}{Pre-test.error}&\multicolumn{1}{c}{Pre-test.Outfit}&\multicolumn{1}{c}{Pre-test.Infit}&\multicolumn{1}{c}{Post-test.theta}&\multicolumn{1}{c}{Post-test.error}&\multicolumn{1}{c}{Post-test.Outfit}&\multicolumn{1}{c}{Post-test.Infit}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{data}
+10116&$ 3.666$&$0.940$&$0.160$&$0.129$&$ 0.259$&$0.639$&$0.814$&$1.117$\tabularnewline
+10119&$-1.876$&$1.955$&$0.099$&$0.226$&$-3.280$&$1.766$&$0.216$&$0.232$\tabularnewline
+10120&$ 4.987$&$1.035$&$0.121$&$0.112$&$-0.514$&$0.715$&$0.343$&$0.243$\tabularnewline
+10121&$ 3.046$&$1.280$&$0.167$&$0.355$&$-1.684$&$1.085$&$0.422$&$0.422$\tabularnewline
+10122&$ 3.046$&$1.280$&$0.167$&$0.355$&$ 0.310$&$0.659$&$1.253$&$0.704$\tabularnewline
+10126&$ 2.620$&$1.298$&$0.148$&$0.199$&$-1.090$&$0.831$&$0.163$&$0.108$\tabularnewline
+10127&$ 3.046$&$1.280$&$0.167$&$0.355$&$-1.684$&$1.085$&$0.422$&$0.422$\tabularnewline
+10128&$ 2.620$&$1.298$&$0.148$&$0.199$&$ 0.606$&$0.660$&$0.184$&$0.109$\tabularnewline
+10129&$-1.876$&$1.955$&$0.099$&$0.226$&$-0.094$&$0.656$&$0.351$&$0.368$\tabularnewline
+10130&$-0.103$&$1.443$&$0.394$&$0.567$&$-0.477$&$0.723$&$0.431$&$0.262$\tabularnewline
+10131&$-2.145$&$2.095$&$0.223$&$0.223$&$-0.052$&$0.668$&$0.581$&$0.226$\tabularnewline
+10132&$-1.876$&$1.955$&$0.099$&$0.226$&$ 0.606$&$0.660$&$1.016$&$1.429$\tabularnewline
+10133&$ 2.620$&$1.298$&$0.148$&$0.199$&$-1.921$&$1.050$&$0.377$&$0.405$\tabularnewline
+10134&$-1.876$&$1.955$&$0.099$&$0.226$&$-0.514$&$0.715$&$0.343$&$0.243$\tabularnewline
+10135&$ 2.620$&$1.298$&$0.148$&$0.199$&$ 0.259$&$0.639$&$1.477$&$1.865$\tabularnewline
+10136&$-1.876$&$1.955$&$0.099$&$0.226$&$ 0.606$&$0.660$&$0.482$&$0.531$\tabularnewline
+10137&$-1.874$&$1.962$&$0.131$&$0.228$&$-0.094$&$0.656$&$0.357$&$0.290$\tabularnewline
+10138&$-1.876$&$1.955$&$0.099$&$0.226$&$ 1.010$&$0.733$&$0.309$&$0.243$\tabularnewline
+10139&$-2.145$&$2.095$&$0.223$&$0.223$&$ 0.674$&$0.697$&$1.548$&$1.065$\tabularnewline
+10140&$-0.103$&$1.443$&$0.394$&$0.567$&$ 0.259$&$0.639$&$1.703$&$0.703$\tabularnewline
+10141&$-1.876$&$1.955$&$0.099$&$0.226$&$ 3.106$&$1.673$&$0.117$&$0.181$\tabularnewline
+10143&$ 3.046$&$1.280$&$0.167$&$0.355$&$-3.002$&$2.068$&$0.379$&$0.379$\tabularnewline
+10144&$ 4.271$&$0.903$&$0.300$&$0.360$&$ 0.606$&$0.660$&$1.102$&$0.605$\tabularnewline
+10145&$ 4.987$&$1.035$&$0.121$&$0.112$&$ 0.606$&$0.660$&$0.184$&$0.109$\tabularnewline
+10146&$-0.104$&$1.424$&$0.299$&$0.552$&$ 1.628$&$0.929$&$0.832$&$0.865$\tabularnewline
+10148&$-1.876$&$1.955$&$0.099$&$0.226$&$ 1.010$&$0.733$&$1.138$&$1.138$\tabularnewline
+10149&$-1.876$&$1.955$&$0.099$&$0.226$&$ 0.606$&$0.660$&$0.184$&$0.109$\tabularnewline
+10152&$ 4.987$&$1.035$&$0.858$&$1.461$&$-0.514$&$0.715$&$0.446$&$0.384$\tabularnewline
+10153&$-0.103$&$1.443$&$0.394$&$0.567$&$ 1.628$&$0.929$&$0.385$&$0.411$\tabularnewline
+10154&$-2.145$&$2.095$&$0.223$&$0.223$&$-3.002$&$2.068$&$0.379$&$0.379$\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{First Study: RSM-based Instrument for Measuring the Intrinsic Motivation}
