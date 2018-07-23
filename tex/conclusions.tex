@@ -1,0 +1,134 @@
+\chapter{Conclusions and Future Work}
+\label{chapter:conclusions} 
+
+This chapter presents the conclusions of this PhD thesis dissertation along with its contributions as well as the directions of future work. 
+These conclusions and future work are related to the three main topics combined in this dissertation: (1) CSCL and scripted collaboration, (2) Gamification, and (3) Ontologies and ontology engineering.
+
+The number of publications related to the work presented in this dissertation (four journal papers, three full papers in international conferences and workshops, two short papers in international conferences and workshops, and one full paper in a national conference), the award that the author of this dissertation received in the 26\textsuperscript{th} Brazilian Symposium on Computer in Education (2015) are relevant indicators of the success of this PhD research and the importance of its derived future work.
+
+\section{Conclusions and Contributions}
+\label{sec:conclusions-contributions}
+
+Throughout this thesis dissertation, the author has tackled several challenges around the formalization of an ontology to encode the knowledge extracted from the best practices and theories related to gamification, and the definition of computer-based mechanisms and procedure that employ this ontology to deal with the motivation problem caused by the scripted collaboration. in CL activities where the CSCL scripts are used as a method to orchestrate and structure the collaboration.
+
+The literature review presented in \autoref{chapter:general-background} has led us to answer the research question \textbf{RQ1}: 
+\aspas{\emph{Which concepts from the theories and practices related to gamification should be taking into account to deal with the motivation problem caused by the scripted collaboration? and How should these concepts be applied in the gamification of CL scenarios?},} by concluding that the need-based theories of motivation (e.g. ERG theory, SDT theory) and player type models (e.g. Yee's model, Dodecad player type model) are essential to solve the context-dependency of gamification related to the individual personality traits, preferences, and affective state. Need-based theories of motivation allow us to identify the reason why the motivation problem occurs in CL activities in which CSCL scripts are used to orchestrate and structure the CL process. Player type models define segmentation of participants in groups that share the same preferences and liking for game elements. These theories and models give support to personalize the game elements according the segmentation provided by the player types models. To solve the context-dependency of gamification related to the non-game context (CL scenarios) and the target behavior that is being gamified (Persuade the participants to follow the interactions defined by the sequencing mechanism of a CSCL script), Persuasive design models (e.g. PSD - Persuasive System Design model) and Persuasive game design models (e.g. Model-driven persuasive game), defined as game design models that are embedded in persuasive design principles, have been found relevant to setting up the interactions between the game elements and the participants of CL scenario by linking the design of CL process and the game interactions. Finally, flow theory has been identify as the most relevant theory to deal with the persons' affective state in game-like systems, and in the gamification of CL scenario, its principles/conditions can be applied to, or intend to apply to, provide an optimal experience in the CL process to achieve and maintain the participants in the flow state.
+
+In order to answer the research question \textbf{RQ2}: \aspas{\emph{How can the concepts extracted from the theories and best practices related to gamification, and identified as relevant to deal with the motivation problem caused by the scripted collaboration, be represented as ontological structures?},}
+
+\begin{itemize}
+\item
+\autoref{chapter:ontogacles-1} has formalized ontological structures to represent concepts extracted from need-based theories and player types models, and thus, to solve the context-dependency of gamification related to the individual personality traits, preferences, and affective state. These ontological structures, encoded into the ontology OntoGaCLeS, were: \emph{individual motivational strategy} (\emph{Y<=I-mot goal}) to represent guidelines extracted from theories and best practices of gamication to motivate a participant to interact with others by using a learning strategy; \emph{individual motivational goal} (\emph{I-mot goal}) to represent what is expected to happen in the participants' motivational stage when an individual motivational strategy is applied in the CL scenario; \emph{player role} to represent the segmentation of participants in groups according to a player type model; and \emph{individual gameplay strategy} (\emph{I-gameplay}) to describe the game elements that are necessary to implement a individual motivational strategy.
+
+\item
+\autoref{chapter:ontogacles-2} has formalized the ontological structures to solve the context-dependency of gamification related to persuade the participants to follow the interactions defined by the sequencing mechanism of a CSCL scripts. These ontological structures, encoded into the ontology OntoGaCLeS, were: \emph{gameplay event} to explicitly represent the link between persuasive game design and the CL process; \emph{WAY-knowledge of PGDS} to support the prescriptive representation of persuasive game design and the CL process; \emph{Gameplay Scenario Model} to describe the design rationale of how to apply persuasive game design in the interactions defined by the sequencing mechanism of a CSCL script; \emph{Gamified I\_L event} to represent an interaction in which the persuasive game design has been applied to persuade the participants of a CL scenario to perform an instructional action and a learning action; \emph{CL Game Dynamic} to describe the run-time behaviors of game elements acting to persuade the persuade the participants to follow the interactions defined by the sequencing mechanism of a CSCL script; and \emph{CL Gameplay} to describe the whole CL process in a gamified CL scenario as CL Game Dynamics.
+
+\item
+\autoref{chapter:unify-modeling-learner-growth-flow-theory} has proposed a computer-based model to apply the condition of good balance between the perceived ability and challenges in the CL Game play of a gamified CL scenario. Thus, this model known as GMIF model has been proposed to integrate the learner's growth process and the condition of good balance by labeling the LGM model with intervals that indicate the proper challenge levels to maintain the learner's flow state in gamified CL scenarios. An algorithm for labeling the LGM model with a n-scale of challenge levels has been proposed in the chapter, and to demonstrate its usefulness an application to set the proper level of game rewards in gamified CL scenarios has been presented in the chapter.
+\end{itemize}
+
+
+\autoref{chapter:computer-based-mechanisms-procedures} answered the research question \textbf{RQ3}: \aspas{\emph{What computer-based mechanisms and procedure are necessary in intelligent-theory aware systems to give a helpful support in the gamification of CL scenarios? and How can the knowledge encoded in the ontology OntoGaCLeS be used by these mechanisms and procedures for dealing with the motivation problem caused by the scripted collaboration?},} by proposing a conceptual flow to gamify CL sessions as a computer-based procedure to be used by intelligent-theory aware system for extracting the knowledge encoded in the ontology OntoGaCLeS, and thus, to use the proposed ontological structures to provide helpful suggestion that will lead us to obtain ontology-based CL sessions (most concrete level of gamified CL scenarios in which the content-domain and participants are well defined). A reference architecture based on the conceptual flow to gamify CL sessions has also been proposed to build different intelligent theory-aware systems.
+
+
+Finally, \autoref{chapter:evaluation} answered the research question 
+\textbf{RQ4}: \aspas{\emph{What are the effects of ontology-based gamified CL sessions on the participants’ motivation and learning outcomes? and What are the effectiveness and efficiency of these sessions to deal with the motivation problem caused by the scripted collaboration?},} by conducting four empirical studies in which the effectiveness has been demonstrated by significant differences on the participants' motivation and learning outcomes between ontology-based CL sessions and non-gamified CL sessions, and the efficiency has been demonstrated by significant differences on the participants' motivation and learning outcomes between ontology-based CL sessions and CL sessions that were gamified without using the support given by the ontology OntoGaCLeS. The results indicated that the ontological engineering approach to gamify CL scenarios is an effective and efficient method to deal with the motivation problem caused by the scripted collaboration because the ontology-based CL sessions significantly have better participants' perceived choice and intrinsic motivation than non-gamified CL sessions, and because the ontology-based CL sessions significantly have better participants' perceived choice, intrinsic motivation and effort/importance than CL sessions that were gamified without the support given by the ontology OntoGaCLeS. These empirical studies demonstrated that ontology-based CL sessions affect in a proper way the participants' motivation to obtain positive learning outcomes the participants' gains in skill/knowledge as measurement of learning outcomes were not significantly different in non-gamified CL sessions and ont-gamified CL sessions, and the participants' gains in skill/knowledge obtained in ont-gamified CL sessions are better than in CL sessions that were gamified without using the support given by the ontology OntoGaCLeS. The pilot empirical study also demonstrated, as a benefit of the effectiveness to deal with the motivation problem caused by the scripted collaboration, that ontology-based gamified CL sessions had better percentages of participation per groups than non-gamified CL sessions.
+
+\section{Future Research Directions}
+\label{sec:future-research-directions}
+
+Besides the research objectives of this PhD thesis dissertation have been achieved, this work has identified a number of open research problems that are summarized next.
+
+Regarding the concepts identified as relevant in theories and practices related to gamification that should be taking into account to deal with the motivation problem caused by the scripted collaboration (RO1) in CL activities in which CSCL scripts are used as method to orchestrate and structure the CL process, future work includes:
+
+\begin{itemize}
+\item The identification of relevant concepts in the theory of fun \cite{Koster2004, Lazzaro2009} that can be apply to deal with the motivation problem caused by the scripted collaboration. The research objective in this direction can be to identify the concepts in this theory that influenced changes in the affective state of participants to engender an immersion in the CL process, and thus, to be more likely to achieve the flow state.
+
+\item The identification of relevant concepts in game aesthetics and game art design \cite{NamKimKimLee2016, Dickey2012} that can be apply to deal with the motivation problem caused by the scripted collaboration. Representation used in game, such as concept art, item sprites, icons, and character models, and their functional aspect affect the participants' motivational state, so that their design can be important to persuade the participants to follow the interactions defined by the sequencing mechanism of a CSCL script. The research goal, in this direction, can be the use of these concepts to gamify CL scenarios.
+
+\item The identification of relevant concepts from the theories and best practices related to gamification with the potential to affect the participants' acceptance of CL roles assigned by CSCL scripts. Not only, the lack of choice causes the motivation problem, the acceptance of a CL role may also cause the motivation problem when the participant does not like the functions, goals, duties, and responsibilities that he/she has playing a CL role. Thus, the research objective can be the gamification of CL scenarios to convince the participants to accept the CL roles assigned by the CSCL scripts. 
+\end{itemize}
+
+The proposed ontological structures to represent the most relevant concepts from the theories and practices related to the gamification of CL scenarios for dealing with the motivation problem caused by the scripted collaboration (RO2) can be extended according to the following interesting research directions:
+
+\begin{itemize}
+\item The formalization of emotional responses evoked by the participants in gamified CL scenarios when he/she interacts with the game elements. So, this formalization will be directly related to extend the ontological structures to represent gamified I\_L events, CL game dinamics and CL gameplay, including the emotional responses as changes of affective states in these ontological structures.
+\end{itemize}
+
+With regard to the development of computer-based mechanisms and procedures that should be used by intelligent theory-award systems to give helpful support in the gamification of CL sessions for dealing with the motivation problem caused by the scripted collaboration (RO3), it is possible to point out the following open problems:
+
+\begin{itemize}
+\item The definition of computer-based mechanisms for an automatic interaction analysis in the data gathered by the execution of ontology-based CL sessions. These mechanisms should provide support to recognize under which conditions a ontology-based gamified CL session failed or not. In this direction, a future research work would be the definition of criteria and indicators to automatically identify what game elements and game actions should be changed to deal in better way with the motivation problem caused by the scripted collaboration. These support will help to improve the ontology-based model to personalize the gamification of CL sessions and the ontology-based model to apply gamification as persuasive technology. Here, data mining techniques can be used to analyze the data gathered by the execution of ontology-based gamified CL sessions.
+
+\item The development of a complete intelligent theory-aware authoring environment to make CL sessions more motivating and engaging based on well-grounded theoretical knowledge related to theories and practices related to gamification. At the moment, only a little part of the needed functionalities that should be provided by the support systems defined in the architecture of reference of intelligent theory-aware systems to gamify CL systems have been developed. For example, the algorithm proposed (in \autoref{chapter:computer-based-mechanisms-procedures}) to set player roles and game elements for the participants in CL sessions is being incorporated in the \emph{visual grouping tool}\footnote{Management group formation tool defined as a block module for the Moodle platform - URL: \url{https://github.com/geiser/vgrouping}}. It is done to make this tool into a Player Roles \& Game Elements Decision Support System for the Moodle platform system when this tool will be integrated with \emph{Gamification Plugins for Moodle}. However, to build a complete Intelligent theory-aware authoring environment for the Moodle platform as was proposed in \autoref{chapter:computer-based-mechanisms-procedures} by the reference architecture, it is necessary to build a CL Gameplay Design Support System, and an Interaction Analysis Support System for the Moodle platform.
+\end{itemize}
+
+Finally, additional empirical studies are needed to further evaluate the effectiveness and efficiency of \aspas{\emph{the ontological engineering approach to gamify CL scenarios}} as a method to deal with the motivation problem caused by the scripted collaboration (RO4).
+This further evaluation should be accomplished in other educational contexts, employing content-domains related to other topics (than cond. structures, loop structures, and recursion) and courses (than Introduction to Computer Science), and with other groups of participants (than undergraduate Brazilian students in the age range from 17 to 25 years old). This evaluation should also be conducted using other CSCL scripts (than the CSCL scripts inspired by the Cognitive Apprentice theory) to instantiate the CL sessions, and to orchestrate and structure the CL process of the group activities. Besides to change the educational contexts and the CSCL scripts used in the evaluation of the ontological approach proposed in this dissertation, the further evaluation should be carried out using other ontology-based models to personalize the gamification and to apply gamification as gamification as persuasive technology.
+
+\section{List of Publications and Awards}
+
+\subsubsection*{Journal Papers}
+
+\begin{enumerate}
+\item
+\aspas{\emph{Personalization of Gamification in Collaborative Learning Contexts using Ontologies}} published as Volume 13, Issue 6, in the journal of IEEE Latin America Transactions, 2015 \cite{ChallcoMoreiraBittencourtMizoguchiIsotani2015}.
+
+\item
+\aspas{\emph{Computer-based Systems for Automating Instructional Design of Collaborative Learning Scenarios: A Systematic Literature Review}} published as Volume 11, Issue 4, in the International Journal of Knowledge and Learning - IJKL, 2016
+\cite{ChallcoBittencourtIsotani2016}.
+
+
+\item
+\aspas{\emph{An Ontology Framework to Apply Gamification in CSCL Scenarios as Persuasive Technology}} published as Volume 24, Issue 2, in the Brazilian Journal of Computers in Education - RBIE, 2016 \cite{ChallcoMizoguchiIsotani2016}.
+
+\item
+\aspas{\emph{Toward A Unified Modeling of Learner's Growth Process and Flow Theory}} published in the International Journal of Educational Technology \& Society, Vol. 19, No. 2, April 2016 \cite{ChallcoAndradeBorgesBittencourtIsotani2016}.
+\end{enumerate}
+
+\subsubsection*{Full Papers in International Conferences and Workshops}
+
+
+\begin{enumerate}
+\item
+\aspas{\emph{An Ontology Engineering Approach to Gamify Collaborative Learning Scenarios}} published in the 20\textsuperscript{th} International Conference on Collaboration and Technology, CRIWG 2014, held in Santiago, Chile \cite{ChallcoMoreiraMizoguchiIsotani2014}.
+
+\item
+\aspas{\emph{Gamification of Collaborative Learning Scenarios: Structuring Persuasive Strategies Using Game Elements and Ontologies}} published in the 1\textsuperscript{st} International Workshop on Social Computing in Digital Education, SocialEdu 2015, held in Stanford, CA, USA \cite{ChallcoMizoguchiBittencourtIsotani2015}.
+
+\item
+\aspas{\emph{Using Ontology and Gamification to Improve Students' Participation and Motivation in CSCL}} that will be published as chapter of book \aspas{\emph{First International Workshop on Social, Semantic, Adaptive and Gamification Techniques and Technologies for Distance Learning},} HEFA 2017 \cite{ChallcoMizoguchiIsotani2017}.
+\end{enumerate}
+
+
+\subsubsection*{Short Papers in International Conferences and Workshops}
+
+\begin{enumerate}
+\item
+\aspas{\emph{Towards an Ontology for Gamifying Collaborative Learning Scenarios}} published in the 12\textsuperscript{th} International Conference on Intelligent Tutoring Systems, ITS 2014, held in Honolulu, HI, USA \cite{ChallcoMoreiraMizoguchiIsotani2014a}.
+
+\item
+\aspas{\emph{Steps Towards the Gamification of Collaborative Learning Scenarios Supported by Ontologies}} published in the 17\textsuperscript{th} International Conference on Artificial Intelligence in Education, AIED 2015, held in Madrid, Spain \cite{ChallcoMizoguchiBittencourtIsotani2015a}.
+\end{enumerate}
+
+
+\subsubsection*{Full Papers in National Conferences and Workshops}
+
+\begin{enumerate}
+\item
+\aspas{\emph{An Ontological Model to Apply Gamification as Persuasive Technology in Collaborative Learning Scenarios}} published in the 26\textsuperscript{th} Brazilian Symposium on Computer in Education, SBIE 2015, held in Maceió, AL, Brazil \cite{ChallcoAndradeOliveiraMizoguchiIsotani2015}.
+\end{enumerate}
+
+
+
+\subsubsection*{Awards}
+
+\begin{enumerate}
+\item
+Honored mention in the 26\textsuperscript{th} Brazilian Symposium on Computer in Education, 2015.
+\end{enumerate}
+
+
+
+
+
