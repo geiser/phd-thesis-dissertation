@@ -455,7 +455,8 @@ The third step is the design of system qualities based on design principles clas
 
 \textbf{Primary Task Support}: techniques that help the users to achieve their goals by the principles of:
 
-\begin{itemize}\item \emph{Reduction}: to make the complex behavior into simple tasks by helping the users to perform the target behavior, and thus, to increase the benefit/cost ratio of a behavior.
+\begin{itemize}
+\item \emph{Reduction}: to make the complex behavior into simple tasks by helping the users to perform the target behavior, and thus, to increase the benefit/cost ratio of a behavior.
 Example: Listing a few options to be chosen, so that the user does not have to select one him/herself.
 \item \emph{Tunneling}: to guide the users through a process or experience providing opportunities to persuade along the way.
 Example: An interactive guide in which the step by step indicates how the user should perform a process.
@@ -465,10 +466,12 @@ Example: Giving different interface to a beginner, intermediate and advanced use
 Example: Adjusting personalized information in a search engine.
 
 \item \emph{Simulation}: to provide simulations that can persuade the users to observe immediately the link between cause and effect.
-Example: Before-and-after pictures of people that a people has lost weight.\item \emph{Rehearsal}: to provide means with which to rehearse a behavior can enable people to change their attitudes or behavior in the real world.
+Example: Before-and-after pictures of people that a people has lost weight.
+\item \emph{Rehearsal}: to provide means with which to rehearse a behavior can enable people to change their attitudes or behavior in the real world.
 Example: A fight simulator to help pilots in their practices.
 \end{itemize}
-\textbf{Dialogue Support}: techniques used in dialogue with the user in a similar way in which human-to-human interaction occur. Their principles are:
+
+\textbf{Dialogue Support}: techniques used in dialogue with the user in a similar way in which human-to-human interaction occur. Their principles are:
 
 \begin{itemize}
 \item \emph{Praise}: by offering this type of message, a system can make users more open to persuasion
@@ -505,7 +508,8 @@ Example: Quotes given by an authority, such as the government in a web-site.
 \item \emph{Third-party endorsements}: Third-party endorsements, especially from well-known and respected sources, boost perceptions on system credibility.
 Example: Guarantee certificates provide certain quality.
 \item \emph{Verifiability}: Credibility perceptions will be enhanced if a system makes it easy to verify the accuracy of site content via outside sources.
-Example: Claims on a website are supported by links to relevantsources.
+Example: Claims on a website are supported by links to relevant
+sources.
 \end{itemize}
 
 \textbf{Social Support}: Social factors have ability to influence humans because they are social creatures. Thus, the following principles determine the system's persuasiveness.
@@ -518,7 +522,8 @@ Example: Leaderboards in a learn-to-type application shows how well someone is d
 \item \emph{Normative influence}: A system can leverage normative influence or peer pressure to increase the likelihood that a person will adopt a target behavior.
 Example: A smoking cessation application shows pictures of newborn babies with serious health problems.
 \item \emph{Social facilitation}: System users are more likely to perform target behavior if they discern via the system that others are performing the behavior along with them.
-Example: A homework application shows how many children in theuser's class are doing homework at the same time.
+Example: A homework application shows how many children in the
+user's class are doing homework at the same time.
 \item \emph{Cooperation}: A system can motivate users to adopt a target attitude or behavior by leveraging human beings' natural drive to co-operate.
 Example: A homework application giving multiple users parts of an equation.
 \item \emph{Competition}: A system can motivate users to adopt a target attitude or behavior by leveraging human beings' natural drive to compete.
@@ -535,106 +540,215 @@ In gamification, several models concerning to the game design are used to descri
 \subsubsection{Player Types Models}
 \label{subsec:player-types}
 
-The term game player (or player, for simplicity) is frequently used to describe individuals who play games, and there are different types of game players. There are people who take gaming seriously, playing full-fledged games a significant part of their daily lives. These players refer themselves as serious or hardcore gamers \citep{bosser2006hardcore}. On the other hand, casual gamers are people ranging from occasional game players \citep{kuittinen2007casual}. Based on characteristic that players exhibit within games such as competitiveness, sociability, exploratory behaviors, and individual personality traits, \citet{laws2002robin, nacke2011brainhex, bartle2004designing, marczewski2013gamification} identify different player typologies. 
+The term game player (or player, for simplicity) is frequently used to describe individuals who play games, and there are different types of game players. There are people who take gaming seriously, playing full-fledged games a significant part of their daily lives. These players refer themselves as serious or hardcore gamers \cite{BosserNakatsu2006}. On the other hand, casual gamers are people ranging from occasional game players \cite{KuittinenKultimaNiemelaPaavilainen2007}. Based on characteristic that players exhibit within games such as competitiveness, sociability, exploratory behaviors, and individual personality traits, \cite{LawsJackson2002, NackeBatemanMandryk2014, Bartle2004, Marczewski2013} identify different player typologies. 
 
-Below, three main typologies of player types applied deeply explored in this dissertation are summarized.
+Three main typologies of player types deeply explored in this dissertation are summarized below.
 
-%\begin{description}
-%\item[Bartle's player types] \citep{bartle2004designing, bartle1996hearts} is the most popular classification of four-player types based on preferences of persons when they are playing a game. By studying players of the Multi-User Dungeon (MUD) game, \citet{bartle2004designing} identifies four players types (achievers, socializer, explorer, and killers) as shown in Figure \ref{fig:bartle-player-types}, in which there are two dimension of preferences: (1) the preference of interacting with other players (user-orientation) vs. exploring the game (system-orientation); and (2) the preference of unilateral action (action-orientation) vs. interaction in the game (interaction-orientation). Employing these preferences, the four player types are defined as follows:
+\textbf{Bartle's player types} \cite{Bartle2004, Bartle1996} is the most popular classification of four-player types based on preferences of persons when they are playing a game.
+By studying players of the Multi-User Dungeon (MUD) game, \citeonline{Bartle2004} identifies four players types (achievers, socializer, explorer, and killers) as shown in \autoref{fig:bartle-player-types}, in which there are two dimension of preferences: (1) the preference of interacting with other players (user-orientation) vs. exploring the game (system-orientation); and (2) the preference of unilateral action (action-orientation) vs. interaction in the game (interaction-orientation).
+Employing these preferences, the four player types are defined as follows:
 
-%\begin{itemize}
-%\item \emph{Achievers}: These players in general play games to win, they are goal-oriented players with great sense of achievement. The gameplay experience of this player type is driven by goals that either explicitly stated by the game (for example, gathering coins, or leveling up) or personally created (for example, accumulating much money or exclusive items).
+\begin{figure}[htb]
+ \caption{Bartle's model of four-player types}
+ \label{fig:bartle-player-types}
+ \centering
+ \includegraphics[width=0.55\textwidth]{images/chap-general-background/bartle-player-types.png}
+ \fadaptada{Bartle2004}
+\end{figure}
 
-%\item  \emph{Socializers}: These players are driven by communication and relationship. Socializers interacting with others players using communication tools provided by the game, and they find the greatest reward in what the others players have to say about them in the games.
+\begin{itemize}
+\item \emph{Achievers}: These players in general play games to win, they are goal-oriented players with great sense of achievement. The gameplay experience of this player type is driven by goals that either explicitly stated by the game (for example, gathering coins, or leveling up) or personally created (for example, accumulating much money or exclusive items).
 
-%\item \emph{Explorers}: These players like interact with the world, and they are driven by finding new areas and gaining new knowledge about the virtual world. The activities that a player of this type may like to include things like: exploring every corner of a map, finding interesting features such as bugs, and understanding how everything functions.
+\item  \emph{Socializers}: These players are driven by communication and relationship. Socializers interacting with others players using communication tools provided by the game, and they find the greatest reward in what the others players have to say about them in the games.
 
-%\item \emph{Killers}: These players act on other players to obtain enjoyment by attacking, killing or causing anxiety on others. Players of this player type like imposing themselves on the game to dominate others. For example, a player who likes to obtain powerful weapons to attack other players with the goal of killing the characters of other players is a killer.
-%\end{itemize}
+\item \emph{Explorers}: These players like interact with the world, and they are driven by finding new areas and gaining new knowledge about the virtual world. The activities that a player of this type may like to include things like: exploring every corner of a map, finding interesting features such as bugs, and understanding how everything functions.
 
-%\begin{figure}[thbp]
-%\begin{center}
-%\includegraphics[width=0.55\textwidth]{bartle-player-types.png}
-%\caption[Bartle's four-player types]{Bartle's four-player types (Adapted from \citep{bartle2004designing}).}
-%\label{fig:bartle-player-types}
-%\end{center}
-%\end{figure}
+\item \emph{Killers}: These players act on other players to obtain enjoyment by attacking, killing or causing anxiety on others. Players of this player type like imposing themselves on the game to dominate others. For example, a player who likes to obtain powerful weapons to attack other players with the goal of killing the characters of other players is a killer.
+\end{itemize}
 
-%\item[Yee's Motivational Components] \citep{yee2006motivations, yee2006demographics} is a study done by Nick Yee who devised an experiment based on Bartle's four player types in which he conducted an extensive survey of Massive Multiplayer Online Role-Playing Games (MMORPGs) players for 3200 players answered 39 multiple-choice questions. Based on the results of this experiments, he derived ten motivational components grouped in three main components as shown in Table \ref{tab:yee-motivation-components}, where the main components are independent of each other. 
+\textbf{Yee's Motivational Components} \cite{Yee2006, Yee2006a} is a model of player type developed by Nick Yee who devised an experiment based on Bartle's four player types by conducting an extensive survey of Massive Multiplayer Online Role-Playing Games (MMORPGs) players for 3200 individuals who answered 39 multiple-choice questions. Based on the results of this experiments, he derived ten motivational components grouped in three main components as shown in \autoref{qua:yee-motivation-components}, where the main components are independent of each other. 
 
-%\begin{table}[thbp] \scriptsize
-%\begin{center}
-%\begin{tabular}{|c|c|c|} \hline
-%\textbf{Achievement} & \textbf{Social} & \textbf{Immersion} \\
-%(\emph{mastery need}) & (\emph{relatedness need}) & (\emph{autonomy need}) \\ \hline \hline
-%\textbf{Advancement} & \textbf{Socializing} & \textbf{Discovery} \\
-%progress, power,  & casual chat, helping others, & exploration, lore, \\
-%accumulation, status & making friends & finding hidden things \\ \hline
-%\textbf{Mechanics} & \textbf{Relationship} & \textbf{Role-Playing} \\
-%numbers, optimization, & personal, self-disclosure, & story line, character history, \\
-%templating, analysis & find and give support & roles, fantasy \\ \hline
-%\textbf{Competition} & \textbf{Teamwork} & \textbf{Customization} \\
-%challenging others, & collaboration, groups, & appearances, accessories, \\
-%provocation, domination & collaboration, groups, & appearances, accessories, style, color schemes \\ \hline
-%& & \textbf{Escapism} \\
-%& & relax, escape from reality \\ 
-%& & avoid reality problems \\ \hline
-%\end{tabular}
-%\caption[Motivational components in the Yee's experiment]{Motivational components revealed by the factor analysis in the Yee's experiment (Adapted from \citep{yee2006motivations}).}
-%\label{tab:yee-motivation-components}
-%\end{center}
-%\end{table}
+\begin{quadro}[htb]
+\caption{Motivational components revealed by the factor analysis in the Yee's experiment}
+\label{qua:yee-motivation-components}
+\centering
+\scriptsize
+\begin{tabular}{|c|c|c|} \hline
+\textbf{Achievement} & \textbf{Social} & \textbf{Immersion} \\
+(\emph{mastery need}) & (\emph{relatedness need}) & (\emph{autonomy need}) \\ \hline \hline
+\textbf{Advancement} & \textbf{Socializing} & \textbf{Discovery} \\
+progress, power,  & casual chat, helping others, & exploration, lore, \\
+accumulation, status & making friends & finding hidden things \\ \hline
+\textbf{Mechanics} & \textbf{Relationship} & \textbf{Role-Playing} \\
+numbers, optimization, & personal, self-disclosure, & story line, character history, \\
+templating, analysis & find and give support & roles, fantasy \\ \hline
+\textbf{Competition} & \textbf{Teamwork} & \textbf{Customization} \\
+challenging others, & collaboration, groups, & appearances, accessories, \\
+provocation, domination & collaboration, groups, & appearances, accessories, style, color schemes \\ \hline
+& & \textbf{Escapism} \\
+& & relax, escape from reality \\ 
+& & avoid reality problems \\ \hline
+\end{tabular}
+ \fadaptada{Yee2006}
+\end{quadro}
 
-%With the SDT theory as background and the mapping showed in Table \ref{tab:yee-motivation-components} (autonomy need for achievement component, mastery need for immersion component, and relatedness need for social component), \citet{yee2005motivations} points that Bartle's player types conflicted with the results analyzed through factor analysis. He states that socializing and role-playing are two independent motivations, while Bartle proposed that people who like chat and make friends are also people who like to role-play. While Bartle proposed that achievers and griefers (killers) are separate types, there is correlation between advancement and competition that defines the desire of achievers and killers, respectively. The explorer defined by Bartle as people who enjoy both exploring the world and gathering information is in reality two different kinds of people defined by the two separate factors: discovery, and mechanics. Finally, the immersion component is a motivation that did not exist in Bartle's type.
+With the SDT theory as background and the mapping showed in \autoref{qua:yee-motivation-components} (autonomy need for achievement component, mastery need for immersion component, and relatedness need for social component), \citeonline{Yee2006a} points that Bartle's player types conflicted with the results analyzed through factor analysis. He states that socializing and role-playing are two independent motivations, while Bartle proposed that people who like chat and make friends are also people who like to role-play. While Bartle proposed that achievers and griefers (killers) are separate types, there is correlation between advancement and competition that defines the desire of achievers and killers, respectively. The explorer defined by Bartle as people who enjoy both exploring the world and gathering information is in reality two different kinds of people defined by the two separate factors: discovery, and mechanics. Finally, the immersion component is a motivation that did not exist in Bartle's type.
 
-%These motivations are not solely for MMORPGs but they are also applicable to other game-like systems such as gamification. Through the incorporation of these principles, a gamified system will induce larger amounts of user engagements. However, it does not define a component related with the purpose need widespread by the theory proposed by \citet{pink2011drive}. The purpose need is a general class of need that varies from person to person, it is behind all 10 components.
+These motivations are not solely for MMORPGs but they are also applicable to other game-like systems such as gamification. Through the incorporation of these principles, a gamified system will induce larger amounts of user engagements. However, it does not define a component related with the purpose need widespread by the theory proposed by \citeonline{Pink2011}. The purpose need is a general class of need that varies from person to person, it is behind all 10 components.
 
-%\item[Marczewski's player types] \citep{marczewski2013gamification} expands the Bartle's model through the addition of one dimension related with type of motivation (intrinsic motivation, extrinsic motivation). As show in Figure \ref{fig:marczewski-player-types} (a), Marczewski describes eight player types, four of whom are intrinsic motivated (socializer, free spirits, achiever and philanthropists) and four extrinsic motivated (networker, exploiter, consumer and self seeker). According to \citet{marczewski2013gamification}, Bartle's player types is useful but flawed, at the end, a gamified system is not a MUD game where all users want to participate, and rewards plays an important role to define whom can be engaged with extrinsic motivators like badges and trophies.
+\textbf{Marczewski's player types} \cite{Marczewski2015a, Marczewski2015d} expands the Bartle's model through the addition of one dimension related with type of motivation (intrinsic motivation, extrinsic motivation). As show in \autoref{fig:marczewski-player-types} (a), Marczewski describes eight player types, four of whom are intrinsic motivated (socializer, free spirits, achiever and philanthropists) and four extrinsic motivated (networker, exploiter, consumer and self seeker). According to \citeonline{Marczewski2013}, Bartle's player types is useful but flawed, at the end, a gamified system is not a MUD game where all users want to participate, and rewards plays an important role to define whom can be engaged with extrinsic motivators like badges and trophies.
 
-%\begin{figure}[thbp]
-%\begin{center}
-%\includegraphics[width=0.95\textwidth]{marczewski-player-types.png}
-%\caption[Marczewski's eight-playe and six-player types models]{Marczewski's (a) eight-player types model, and (b) six-player types model.}
-%\label{fig:marczewski-player-types}
-%\end{center}
-%\end{figure}
+\begin{figure}[htb]
+ \caption{Marczewski's eight-playe and six-player types models}
+ \label{fig:marczewski-player-types}
+ \centering
+ \includegraphics[width=0.9\textwidth]{images/chap-general-background/marczewski-player-types.png}
+ \fadaptada{Marczewski2013}
+\end{figure}
 
-%Based in the four needs defined in SDT theory \citep{deci2010self} and the theory proposed by \citet{pink2011drive} (Relatedness, Autonomy, Mastery, and Purpose), Marczewski redefines the eight-player types model to six-player types model as shown in Figure \ref{fig:marczewski-player-types}\footnote{Source: \url{http://www.gamified.uk/user-types}} (b). He defines four basic intrinsic player types: Achiever, Socializer, Philanthropist, and Free Spirit that are respectively motivated by relatedness need, autonomy need, mastery need, and purpose need. Next, the player type \emph{player} groups the extrinsic player types (Self-seeker, Consumer, Networker, and Exploiter) as the players who are motivated by rewards. They will do similar thing to the intrinsic motivated player types, buy only if there is a reward at the end of it. Finally, the player type \emph{disruptor} is a group of players that act in a system motivated by change. They like to disrupt a system in some way, and rather than a single type, this player type is a group, in which there are four types: Griefer, Destroyer, Influencer, and Improver that are related with Philanthropist, Achiever, Socializer, and Free Spirit, respectively.
-%\end{description}
-
+Based in the four needs defined in SDT theory \cite{DeciRyan2010} and the theory proposed by \citeonline{Pink2011} (Relatedness, Autonomy, Mastery, and Purpose), Marczewski redefines the eight-player types model to six-player types model as shown in \autoref{fig:marczewski-player-types} (b). He defines four basic intrinsic player types: Achiever, Socializer, Philanthropist, and Free Spirit that are respectively motivated by relatedness need, autonomy need, mastery need, and purpose need. Next, the player type \emph{player} groups the extrinsic player types (Self-seeker, Consumer, Networker, and Exploiter) as the players who are motivated by rewards. They will do similar thing to the intrinsic motivated player types, buy only if there is a reward at the end of it. Finally, the player type \emph{disruptor} is a group of players that act in a system motivated by change. They like to disrupt a system in some way, and rather than a single type, this player type is a group, in which there are four types: Griefer, Destroyer, Influencer, and Improver that are related with Philanthropist, Achiever, Socializer, and Free Spirit, respectively.
 
 \subsubsection{MDA model}
 \label{subsec:mda-model-need-theories}
 
-%In game design, the Mechanics-Dynamics-Aesthetics (MDA) model \citep{hunicke2004mda} as shown in Figure \ref{fig:mda-model} is a tool used to analyze game-like systems. It formalizes the consumption of games by breaking them down into mechanics, dynamics, and aesthetics, in which the \emph{mechanics} are the base components of the game, its rules, and elements  related with basic action that a player can take in the game, such as algorithms and data structures. The \emph{dynamics} are the run-time behavior of the mechanics acting on player input. The \emph{aesthetics} are the emotional responses evoked in the player, such as challenge, discover, fantasy, and fellowship.
+In game design, the Mechanics-Dynamics-Aesthetics (MDA) model \cite{HunickeLeBlancZubek2004} as shown in \autoref{fig:mda-model} is a tool used to analyze game-like systems. It formalizes the consumption of games by breaking them down into mechanics, dynamics, and aesthetics, in which the \emph{mechanics} are the base components of the game, its rules, and elements  related with basic action that a player can take in the game, such as algorithms and data structures. The \emph{dynamics} are the run-time behavior of the mechanics acting on player input. The \emph{aesthetics} are the emotional responses evoked in the player, such as challenge, discover, fantasy, and fellowship.
 
-%\begin{figure}[thbp]
-%\begin{center}
-%\includegraphics[width=0.85\textwidth]{mda-model.png}
-%\caption[MDA Model: Mechanics, Dynamics and Aesthetics Model]{MDA Model: Mechanics, Dynamics and Aesthetics Model (Adapted from \citep{hunicke2004mda}).}
-%\label{fig:mda-model}
-%\end{center}
-%\end{figure}
+\begin{figure}[htb]
+ \caption{MDA Model: Mechanics, Dynamics and Aesthetics model}
+ \label{fig:mda-model}
+ \centering
+ \includegraphics[width=0.85\textwidth]{images/chap-general-background/mda-model.png}
+ \fdireta{HunickeLeBlancZubek2004}
+\end{figure}
 
-%According to this model, the mechanics itself is not as important inside a game-like system as the dynamics and aesthetics. The authors of MDA model state that "thinking about games as designed artifacts helps frame them as systems that build behavior via interaction." Thus, a game-like system must provide multiple aesthetics depending on its goals. Therefore, it is important that the dynamics correspond with the aesthetics to provide an optimal environment in which the player can develop the desired behaviors, attaining the goals of game-like system. In this sense, \citet{bunchball2010gamification} propose a framework of gamification showed in \ref{fig:bunchball-framework} that sets the relationship between game mechanics and human desires (aesthetics in MDA model).
+According to this model, the mechanics itself is not as important inside a game-like system as the dynamics and aesthetics. The authors of MDA model state that \aspas{\emph{thinking about games as designed artifacts helps frame them as systems that build behavior via interaction}.} Thus, a game-like system must provide multiple aesthetics depending on its goals. Therefore, it is important that the dynamics correspond with the aesthetics to provide an optimal environment in which the player can develop the desired behaviors, attaining the goals of game-like system. In this sense, \citeonline{Bunchball2010} propose a framework of gamification showed in \autoref{fig:bunchball-framework} that sets the relationship between game mechanics and human desires (aesthetics in MDA model).
 
-%\begin{figure}[thbp]
-%\begin{center}
-%\includegraphics[width=0.85\textwidth]{bunchball-framework.png}
-%\caption[Human desires vs. Game mechanics]{Human desires vs. Game mechanics (Taken from \citep{bunchball2010gamification}).}
-%\label{fig:bunchball-framework}
-%\end{center}
-%\end{figure}
+\begin{figure}[htb]
+ \caption{Human desires vs. Game mechanics}
+ \label{fig:bunchball-framework}
+ \centering
+ \includegraphics[width=0.85\textwidth]{images/chap-general-background/bunchball-framework.png}
+ \fdireta{Bunchball2010}
+\end{figure}
 
-%In the same way of the framework proposed by \citet{bunchball2010gamification}, as shown in Figure \ref{fig:sdt-game-elements}, we can define the relationship between some game elements and the psychological needs defined in the SDT theory. Thus, the competence need is excellently supported by game elements, such as progression tool, levels system, and point system, because they contain sophisticated mechanics that provide granular and timely feedback in term of indicators to satisfy the competence need. The relatedness need is satisfied by social interactions that have always been an important part of game-like systems through the game elements such as collaboration tool, social connection tool, social discovery, and competition tool. As the most of games placed players in the role of fictional characters providing a wide range of in-game choices through the game elements such as unlockable system, creativity tool, customization tool, and exploration tool, these elements provide support to satisfy the need of autonomy.
 
-%\begin{figure}[thbp]
-%\begin{center}
-%\includegraphics[width=0.85\textwidth]{sdt-game-elements.png}
-%\caption{Relation between game elements and SDT theory}
-%\label{fig:sdt-game-elements}
-%\end{center}
-%\end{figure}
+In the same way of the framework proposed by \citeonline{Bunchball2010}, as shown in \autoref{fig:sdt-game-elements}, we can define the relationship between some game elements and the psychological needs defined in the SDT theory. Thus, the competence need is excellently supported by game elements, such as progression tool, levels system, and point system, because they contain sophisticated mechanics that provide granular and timely feedback in term of indicators to satisfy the competence need. The relatedness need is satisfied by social interactions that have always been an important part of game-like systems through the game elements such as collaboration tool, social connection tool, social discovery, and competition tool. As the most of games placed players in the role of fictional characters providing a wide range of in-game choices through the game elements such as unlockable system, creativity tool, customization tool, and exploration tool, these elements provide support to satisfy the need of autonomy.
+
+\begin{figure}[htb]
+ \caption{Relation between game elements and SDT theory}
+ \label{fig:sdt-game-elements}
+ \centering
+ \includegraphics[width=0.85\textwidth]{images/chap-general-background/sdt-game-elements.png}
+ \fautor
+\end{figure}
+
+
+\subsubsection{Persuasive Game Design Models}
+\label{subsub:persuasive-game-design-models}
+
+Developing persuasive technology in the form of games has become a common practice. These types of games referred as persuasive games have been designed with the the primary purpose of changing  players' behaviors, feelings, or thoughts. In the last decade, several persuasive games have been developed by researchers as a novel approach to modifying users' behaviors. For example, \aspas{\emph{What Remains}?} is a persuasive game in which using stories are used to personalize the Alzheimers' patients care giving \cite{CadamuroVisch2013}, \aspas{\emph{Smoke}?} is a persuasive game aimed to support players in smoking cessation \cite{KhaledBarrNobleFischerBiddle2007a}, and \aspas{\emph{OrderUP}!} is a persuasivegame that motivates healthy eating habits \cite{GrimesKantrooGrinter2010}.
+
+Despite the growing interest of researchers in using and develop persuasive games, little attention has been given to develop models that would help the designers to design persuasive games and/or tailored these games to increase their efficacy at achieving their intended objective of motivating behavior change. In the following paragraphs, a model-driven persuasive game design proposed by \cite{OrjiVassilevaMandryk2014} is summarized.
+
+\textbf{Model-driven Persuasive Game Design}: It is a model developed following the steps indicated in the model-driven approach to persuasive game design proposed by \cite{Orji2014}. This model consists in guidelines for tailoring persuasive games based on the BrainHex player-type model \cite{NackeBatemanMandryk2014}. Therefore, the best and worst persuasive strategies, as shown in \autoref{qua:mpg-best-worst-strategies}, for each one of the seven player types of BrainHex model were identified in the Model-driven persuasive game design.
+
+
+\begin{quadro}[htb]
+\caption{Best and worst persuasive strategies for the player types of BrainHex model}
+\label{qua:mpg-best-worst-strategies}
+\small
+\centering
+
+\begin{tabular}{|l|L{6.5cm}|L{6.5cm}|}
+\hline
+\multicolumn{1}{|c}{\textbf{Player Type}}&
+\multicolumn{1}{|c|}{\textbf{Best strategy}}&
+\multicolumn{1}{c|}{\textbf{Worst strategy}}\tabularnewline
+\hline
+
+Achiever&
+\textbf{Cooperation}, reward, self-monitoring, and suggestion&
+\tabularnewline \hline
+
+Conqueror&
+\textbf{Competition and comparison}, simulation, personalization, self-monitoring and suggestion&
+\tabularnewline \hline
+
+Daredevil&
+\textbf{Simulation}&
+\textbf{Self-monitoring and suggestion}, competition and comparison\tabularnewline \hline
+
+Mastermind&
+\textbf{Self-monitoring and suggestion}, competition and comparison, personalization, simulation, customization&
+\tabularnewline \hline
+
+Seeker&
+\textbf{Customization}, personalization, competition and comparison, praise&
+\tabularnewline \hline
+
+Socializer&
+\textbf{Cooperation}, competition and comparision&
+\textbf{Self-monitoring}, praise, customization\tabularnewline \hline
+
+Survivor&
+\textbf{Self-monitoring and suggestion}, competition and comparision&
+\textbf{Cooperation}, reward, customization\tabularnewline \hline
+
+
+\multicolumn{3}{r}{\tiny Strategies presented in order of strength (bold are the higest)}\tabularnewline
+\end{tabular}
+\fadaptada{Orji2014}
+\end{quadro}
+
+
+After to identify the best and worst persuasive design for each player type of BrainHex model, the persuasive game design strategies have been associated to the game elements for the building of the model-driven persuasive game design as shown in \autoref{qua:mpg-strategies-game-elements}.
+
+\begin{quadro}[htb]
+\caption{Mapping of persuasive game design strategies to common game elements}
+\label{qua:mpg-strategies-game-elements}
+\small
+\centering
+\begin{tabular}{|L{4.5cm}|L{10.5cm}|}
+\hline
+\multicolumn{1}{|c}{\textbf{Persuasive Strategy}}&
+\multicolumn{1}{|c|}{\textbf{Game Elements}}\tabularnewline
+\hline
+
+Praise&
+Level, pride
+\tabularnewline \hline
+
+Cooperation&
+Pride, communal discovery, social fabric of game, viral game mechanics, companion gaming
+\tabularnewline \hline
+
+Competition and comparison&
+Status, envy, countdown, leaderboard
+\tabularnewline \hline
+
+Reward&
+Physical goods, virtual items, rewards schedules, lottery, free lunch, points, bonuses
+\tabularnewline \hline
+
+Simulation&
+Appointments, leaderboards, achievements, status, epic meaning, behavior momentum, urgent optimism, blissful productivity
+\tabularnewline \hline
+
+Personalization&
+Cascading information theory, epic meaning, privacy
+\tabularnewline \hline
+
+Customization&
+Shell game, discovery, epic meaning
+\tabularnewline \hline
+
+Self-monitoring and suggestion&
+Quest, achievement, level, loss aversion, repeat simple action
+\tabularnewline \hline
+
+\end{tabular}
+\fadaptada{Orji2014}
+\end{quadro}
 
 
 %\subsubsection{Feedback and Engagement Loops}
@@ -732,35 +846,28 @@ The definitions of ontology presented above also indicate the reasons \aspas{\em
 \item The \emph{axiomatization} of semantic constraints between those concepts and relations.
 \end{itemize}
 
-%Usually, when developing ontologies, large amount of time is spent over the discussing about the terminology to be used (vocabulary) rather than understanding the critical concepts of the domain \cite{isotani2010ontological,mizoguchi2003part}. However, to create a good ontology the definition of concepts is more important, and the labeling of these concepts pass to have less importance. Thus, when there are terminological problems, it is not a bad practice to use a sentence or a provisional term to denote a concept. For this concept-oriented viewpoint process, the quality of an ontology is decided by the knowledge that can be explained by the ontology and the essential properties of concepts that are explicitly represented it \cite{mizoguchi2004tutorial}.
+Usually, when developing ontologies, large amount of time is spent over the discussing about the terminology to be used (vocabulary) rather than understanding the critical concepts of the domain. However, to create a good ontology the definition of concepts is more important, and the labeling of these concepts pass to have less importance. Thus, when there are terminological problems, it is not a bad practice to use a sentence or a provisional term to denote a concept. For this concept-oriented viewpoint process, the quality of an ontology is decided by the knowledge that can be explained by the ontology and the essential properties of concepts that are explicitly represented it \cite{Mizoguchi2004}.
 
-%According to \cite{isotani2010ontological}, to create the body of knowledge of an ontology, besides the definition of concepts and terms to label them, it's more important to make: 
-%\begin{enumerate}%[(a)]
-%\item a clear distinction between roles and basic concepts,
-%\item identify the appropriate use of relations, especially \emph{is-a} and \emph{part-of} relations,
-%\item avoid multiple inheritance, and
-%\item properly distinguish what an attribute is and what a property is, as well as many other import an decisions that need to be made in order to produce a \emph{good} ontology.
-%\end{enumerate}
+According to \citeonline{Mizoguchi2004a}, to create the body of knowledge of an ontology, besides the definition of concepts and terms to label them, it's more important to make: 
+\begin{enumerate}%[(a)]
+\item a clear distinction between roles and basic concepts,
+\item identify the appropriate use of relations, especially \emph{is-a} and \emph{part-of} relations,
+\item avoid multiple inheritance, and
+\item properly distinguish what an attribute is and what a property is, as well as many other import an decisions that need to be made in order to produce a \emph{good} ontology.
+\end{enumerate}
 
-%According to\cite{mizoguchi2003part, isotani2010ontological}, a \emph{good ontology} is the \emph{more ontological}. By ontological, we mean close to the fundamental conceptualization where the knowledge can be explained and the essential properties of concept are explicitly represented.
+Thereby, a \emph{good ontology} is modeling when it is \emph{more ontological}, and by ontological, it means the ontology is close to the fundamental conceptualization where the knowledge can be explained and the essential properties of concept are explicitly represented.
 
 \subsection{Types of Ontologies}
 \label{subsec:types-otologies}
 
-%According to different characteristic of ontologies, they can be classified in different types, using the level of dependence (upper ontology, task ontology, domain ontology and application ontology) \cite{guarino1997semantic}, and the level of formal representation (lightweight and heavyweight ontologies) \cite{wong2012ontology}. 
+According to different characteristic of ontologies, they can be classified in different types, using the level of dependence (upper ontology, task ontology, domain ontology and application ontology) \cite{Guarino1997a}, and the level of formal representation (lightweight and heavyweight ontologies) \cite{WongLiuBennamoun2012}. 
 
 \subsubsection{Classification by Level of Dependence}
 \label{subsubsec:classification-level-dependence}
 
-%Figure \ref{fig:ontologies-level-dependence} shows the classification of ontologies based on the level of dependence. Thus, the ontologies are classified in:
 
-%\begin{itemize}
-%\item \emph{upper ontologies} describe what exist in the world, using very general concepts like space, time, matter, objects, events, actions, among others. The description of concepts in this type of ontology is independently of the problem or domain. These ontologies should always be used in conjunction with other ontologies. Examples of upper ontologies are Standard Upper Ontology (SUO) \cite{pease2002ieee}, Suggested Upper Merged Ontology (SUMO) \cite{pease2002suggested}, and Cyc / OpenCyc \cite{matuszek2006introduction}.
-
-%\item \emph{domain ontologies} and \emph{task ontologies} describe, respectively, the vocabulary related to a generic domain (i.e. vehicles and places) and activity (i.e. repairing and traveling). The domain ontologies define a vocabulary with common terms for reuse and sharing of information for a specific domain. In the task ontologies, the vocabulary is associated with the problem solving, independent of domain.
-
-%\item \emph{application ontologies} describe concepts depending both on the particular domain (domain ontology) and task (task ontology). These concepts often correspond to roles played by domain entities while performing a certain activity with the resolution of a problem. The concepts defined in this type of ontologies are often described by specializations of domain and task ontologies.
-%\end{itemize}
+\autoref{fig:ontologies-level-dependence} shows the classification of ontologies based on the level of dependence, where the ontologies are classified in:
 
 \begin{figure}[htb]
  \caption{Types of ontologies according to level of dependence}
@@ -770,24 +877,34 @@ The definitions of ontology presented above also indicate the reasons \aspas{\em
  \fdireta{Guarino1997a}
 \end{figure}
 
+\begin{itemize}
+\item \emph{upper ontologies} describe what exist in the world, using very general concepts like space, time, matter, objects, events, actions, among others. The description of concepts in this type of ontology is independently of the problem or domain. These ontologies should always be used in conjunction with other ontologies. Examples of upper ontologies are Standard Upper Ontology (SUO) \cite{PeaseNiles2002}, Suggested Upper Merged Ontology (SUMO) \cite{PeaseNilesLi2002}, and Cyc / OpenCyc \cite{MatuszekCabralWitbrockDeOliveira2006}.
+
+\item \emph{domain ontologies} and \emph{task ontologies} describe, respectively, the vocabulary related to a generic domain (i.e. vehicles and places) and activity (i.e. repairing and traveling). The domain ontologies define a vocabulary with common terms for reuse and sharing of information for a specific domain. In the task ontologies, the vocabulary is associated with the problem solving, independent of domain.
+
+\item \emph{application ontologies} describe concepts depending both on the particular domain (domain ontology) and task (task ontology). These concepts often correspond to roles played by domain entities while performing a certain activity with the resolution of a problem. The concepts defined in this type of ontologies are often described by specializations of domain and task ontologies.
+\end{itemize}
+
+
+
 \subsubsection{Lightweight Ontologies and Heavyweight Ontologies}
 \label{subsubsec:lightweight-ontologies}
 
-%Based on the level of formal representation, ontologies can be classified in lightweight ontologies and heavyweight ontologies. As we can see in the Figure \ref{fig:spectrum-ontologies}, at one extreme, there are lightweight ontologies that consist of terms with little or no specification of the meaning. At the other end of the spectrum, we have heavyweight ontologies that comprise ontologies rigorously formalized by logical theories. As we move along the continuum, the amount of meaning specified and the degree of formality increases, reducing possible ambiguities \cite{uschold2004ontologies}.
+Based on the level of formal representation, ontologies can be classified in lightweight ontologies and heavyweight ontologies. As we can see in \autoref{fig:spectrum-ontologies}, at one extreme, there are lightweight ontologies that consist of terms with little or no specification of the meaning. At the other end of the spectrum, we have heavyweight ontologies that comprise ontologies rigorously formalized by logical theories. As we move along the continuum, the amount of meaning specified and the degree of formality increases, reducing possible ambiguities \cite{UscholdGruninger2004}.
 
 \begin{figure}[htb]
  \caption{The spectrum of lightweight and heavyweight ontologies}
  \label{fig:spectrum-ontologies}
  \centering
- \includegraphics[width=1\textwidth]{images/chap-general-background/spectrum-ontologies.png}
+ \includegraphics[width=0.9\textwidth]{images/chap-general-background/spectrum-ontologies.png}
  \fdireta{WongLiuBennamoun2012}
 \end{figure}
 
-%The \emph{ligthweight ontologies} are ontologies based on topical hierarchies with lack rigorous conceptual definitions, principled conceptual organization, and label-concept distinctions. As instance of this kind of ontologies, we have terms, glossaries, thesauri, and database schemas. The main purpose of this kind of ontology is to provide a weak categorization of content to improve search engine functionality. Thus, the ligthweight ontologies are broadly used on the Web to categorize a large amount of data, such as available data on Web portals. However, these ontologies tend to be very usage-dependent and user-dependent of applications.
+The \emph{ligthweight ontologies} are ontologies based on topical hierarchies with lack rigorous conceptual definitions, principled conceptual organization, and label-concept distinctions. As instance of this kind of ontologies, we have terms, glossaries, thesauri, and database schemas. The main purpose of this kind of ontology is to provide a weak categorization of content to improve search engine functionality. Thus, the ligthweight ontologies are broadly used on the Web to categorize a large amount of data, such as available data on Web portals. However, these ontologies tend to be very usage-dependent and user-dependent of applications.
 
-%The \emph{heavyweight ontologies} are much more than just lightweight ontologies. They are ontologies enriched with axioms for semantic interpretation of concepts and relations. Thus, the development of heavyweight ontologies needs a rigorous definition of concepts, an organization of defined concepts based on philosophical principles, a precise and formal semantic definition of relations among concepts, and so on. Heavyweight ontologies are important to create shareable and reusable knowledge bases, because they give more value to concepts represented on them by providing greater semantic precision and ensuring the fidelity and consistency of concepts about a target world.
+The \emph{heavyweight ontologies} are much more than just lightweight ontologies. They are ontologies enriched with axioms for semantic interpretation of concepts and relations. Thus, the development of heavyweight ontologies needs a rigorous definition of concepts, an organization of defined concepts based on philosophical principles, a precise and formal semantic definition of relations among concepts, and so on. Heavyweight ontologies are important to create shareable and reusable knowledge bases, because they give more value to concepts represented on them by providing greater semantic precision and ensuring the fidelity and consistency of concepts about a target world.
 
-%In this dissertation, we will develop the ontology OntoGaCLes as a heavyweight ontology, and application ontology for the domain of gamified CL scenarios.
+In this dissertation, we will develop the ontology OntoGaCLes as a heavyweight ontology, and application ontology for the domain of gamified CL scenarios.
 
 \subsection{Ontology Representation}
 \label{subsec:ontology-representation}
@@ -812,7 +929,7 @@ There are three variants of OWL referred as OWL Lite, OWL DL and OWL Full. These
  \caption{Part of bicycle ontology in the OWL}
  \label{fig:owl-example}
  \centering
- \includegraphics[width=0.85\textwidth]{images/chap-general-background/owl-example.png}
+ \includegraphics[width=0.8\textwidth]{images/chap-general-background/owl-example.png}
  \fdireta{Isotani2009}
 \end{figure}
 
@@ -828,7 +945,7 @@ As an ontology is mainly composed by concepts and their relations, the graph is 
  \caption{A graph representation of a bicycle ontology}
  \label{fig:graph-bicycle-ontology}
  \centering
- \includegraphics[width=1\textwidth]{images/chap-general-background/graph-bicycle-ontology.png}
+ \includegraphics[width=0.8\textwidth]{images/chap-general-background/graph-bicycle-ontology.png}
  \fdireta{Isotani2009}
 \end{figure}
 
@@ -849,7 +966,7 @@ The basic concepts are used as class constraints, and the instances that satisfy
  \caption{The learner role holder in Hozo representation}
  \label{fig:learner-role-hozo}
  \centering
- \includegraphics[width=0.85\textwidth]{images/chap-general-background/learner-role-hozo.png}
+ \includegraphics[width=0.8\textwidth]{images/chap-general-background/learner-role-hozo.png}
  \fautor
 \end{figure}
 
@@ -883,7 +1000,7 @@ Developing ontologies is a time-consuming and difficult task that requires knowl
  \caption{Three-layer classification model of guidelines proposed in methodologies and methods to develop ontologies}
  \label{fig:three-layer-model}
  \centering
- \includegraphics[width=0.75\textwidth]{images/chap-general-background/three-layer-model.png}
+ \includegraphics[width=0.7\textwidth]{images/chap-general-background/three-layer-model.png}
  \fdireta{Mizoguchi2004}
 \end{figure}
 
