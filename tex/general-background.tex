@@ -26,7 +26,7 @@ In order to narrow the number of elements used to describe the CSCL scripts, and
  \caption{Components and mechanisms of CSCL scripts}
  \label{fig:components-and-mechanisms-of-cscl-scripts}
  \centering
- \includegraphics[width=0.95\textwidth]{images/components-and-mechanisms-of-cscl-scripts}
+ \includegraphics[width=0.95\textwidth]{images/chap-general-background/components-and-mechanisms-of-cscl-scripts}
  \fadaptada{Fischer2007}
 \end{figure}
 
@@ -34,10 +34,8 @@ The structural \emph{components} of CSCL scripts are the participants, groups, a
 
 The \emph{mechanisms} of CSCL scripts are the group formation, component distribution and sequencing. The mechanism of \emph{group formation} consists in the specifications of how the participants will be distributed over the groups. The mechanism of \emph{task distribution} provides the specification about how the components of scripts are distributed over groups using the mapping of groups, activities, roles, and resources. The mechanism of \emph{sequencing} consists in the definition of how the components and groups defined in scripts are distributed over time. In general, this sequencing describes the execution order of activities in the CL process.
 
-\autoref{qua:social-script-framework-kobbe} shows the description of social script \cite{WeinbergerErtlFischerMandl2005} using the framework proposed by \citeonline{KobbeWeinbergerDillenbourgHarrerHamalainenHakkinenFischer2007}. In this example, the CL scenarios orchestrated by the social script foster the acquisition of knowledge through a set of case studies (\emph{resources}) that are analyzed and reviewed by the students groups. The number of students in each group is equal to the number of case studies, and the ideal number is three. In the first step of sequencing, each learner playing the \emph{analysis} role writes down an analysis of case study, and then, he critiques the analyses made by other learners playing the \emph{critics} role. In the second step of sequencing, each learner revises his/her own analysis, taking into consideration the critiques received by the other learners in the case group.
-
 \begin{quadro}[htb]
-\caption{Social script describes using the framework proposed by  \citeonline{ KobbeWeinbergerDillenbourgHarrerHamalainenHakkinenFischer2007}}
+\caption{Components and mechanisms of social script}
 \label{qua:social-script-framework-kobbe}
 \centering
 \footnotesize
@@ -74,16 +72,18 @@ Each case group receives one case study, and the roles are distributed in a way 
 \end{quadro}
 
 
-Having the description of CSCL scripts only in natural language does not allow the computers programs to interpret them, and to run a CL scenario following the instructions indicated by the scripts without human intervention. Therefore, to represent the CSCL scripts in a computer readable manner, the IMS-Learning Design\footnote{\url{http://www.imsglobal.org/learningdesign/}} (IMS-LD) specification has been adopted by different tools, such as (web)COLLAGE \cite{Hernandez-LeoVillasclaras-FernandezAsensio-PerezDimitriadisJorrin-AbellanRuiz-RequiesRubia-Avi2006,Villasclaras-FernandezHernandez-LeoAsensio-PerezDimitriadis2013}, CIAN \cite{MolinaRedondoOrtega2012}, LeadFlow4LD \cite{Palomino-RamirezBote-LorenzoAsensio-PerezDimitriadis2008}, NUCLEO \cite{SanchoFuentes-FernandezFernandez-Manjon2008}, CoLearn \cite{StylianakisArapiMoumoutzisChristodoulakis2013}, CeLS \cite{RonenKohen-Vacs2009}, and LAMS \cite{Romero-MorenoOrtegaTroyano2007}, as the language to describe CSCL scripts.
- 
-Despite the benefits that brings  the use of the IMS-LD specification to represent CSCL scripts, several researchers had indicated that this language is insufficient to fully support the modeling of CSCL scripts \cite{AlharbiAthaudaChiong2014, CaeiroAnidoLlamas2003}. Of course, the purpose of IMS-LD specification is not to provide a full support for describing CSCL scripts in a computer-readable manner, the IMS-LD has been developed as a neutral, generic and flexible educational modeling language to describe a wide range of pedagogies approaches (the teaching strategies, pedagogical goals and their associated activities) \cite{Koper2005}. In this sense, to support the representation of CSCL scripts in a computer-readable manner, a wide variety of extensions on the IMS-LD elements has been proposed in by several researchers \cite{Bote-LorenzoVaquero-GonzalezVega-GorgojoDimitriadisAsensio-PerezGomez-SanchezHernandez-Leo2004, LeoPerezDimitriadis2004, MagnisalisDemetriadis2012, MiaoHoeksemaHoppeHarrer2005, Vega-GorgojoBote-LorenzoGomez-SanchezDimitriadisAsensio-Perez2005}.
+\autoref{qua:social-script-framework-kobbe} shows the description of the \emph{social script} \cite{WeinbergerErtlFischerMandl2005} using the framework proposed by \citeonline{KobbeWeinbergerDillenbourgHarrerHamalainenHakkinenFischer2007}. In this example, the CL scenarios orchestrated by the social script foster the acquisition of knowledge through a set of case studies (\emph{resources}) that are analyzed and reviewed by the students groups. The number of students in each group is equal to the number of case studies, and the ideal number is three. In the first step of sequencing, each learner playing the \emph{analysis} role writes down an analysis of case study, and then, he critiques the analyses made by other learners playing the \emph{critics} role. In the second step of sequencing, each learner revises his/her own analysis, taking into consideration the critiques received by the other learners in the case group.
 
-Instead, to simply provide a computer-readable representation of CSCL scripts, the work of \citeonline{Isotani2009} proposes the formalization of these scripts in a computer-understandable manner through the use of ontologies. This solution consists in a set of ontological structures that makes the description of CSCL scripts more semantically-rich, allowing the explicit specification of learning goals, purposes, and other relevant information that cannot be represented using the IMS-LD specification, i.e., learning strategies, group goals, interaction patters from learning theories. Providing this formalization in the CL ontology, \citeonline{IsotaniMizoguchiIsotaniCapeliIsotanideAlbuquerqueBittencourtJaques2013} demonstrates that intelligent-theory aware systems can interpret these scripts and provide advice and recommendation to support for the modeling of learners' development \cite{InabaIkedaMizoguchi2003}, the formation of effective groups \cite{IsotaniMizoguchi2008a}, and the instructional design of CL activities \cite{IsotaniMizoguchiIsotaniCapeliIsotanideAlbuquerqueBittencourtJaques2013}.
+Having the description of CSCL scripts only in natural language does not allow the computers programs to interpret them, and to run a CL scenario following the instructions indicated by the scripts without human intervention. Therefore, to represent the CSCL scripts in a computer readable manner, the IMS-Learning Design\footnote{URL: \url{http://www.imsglobal.org/learningdesign/}} (IMS-LD) specification has been adopted by different tools, such as (web)COLLAGE \cite{Hernandez-LeoVillasclaras-FernandezAsensio-PerezDimitriadisJorrin-AbellanRuiz-RequiesRubia-Avi2006,Villasclaras-FernandezHernandez-LeoAsensio-PerezDimitriadis2013}, CIAN \cite{MolinaRedondoOrtega2012}, LeadFlow4LD \cite{Palomino-RamirezBote-LorenzoAsensio-PerezDimitriadis2008}, NUCLEO \cite{SanchoFuentes-FernandezFernandez-Manjon2008}, CoLearn \cite{StylianakisArapiMoumoutzisChristodoulakis2013}, CeLS \cite{RonenKohen-Vacs2009}, and LAMS \cite{Romero-MorenoOrtegaTroyano2007}, as the language to describe CSCL scripts.
+ 
+Despite the benefits that brings the use of the IMS-LD specification to represent CSCL scripts, several researchers had indicated that this language is insufficient to fully support the modeling of CSCL scripts \cite{AlharbiAthaudaChiong2014, CaeiroAnidoLlamas2003}. Of course, the purpose of IMS-LD specification is not to provide a full support for describing CSCL scripts in a computer-readable manner, the IMS-LD has been developed as a neutral, generic and flexible educational modeling language to describe a wide range of pedagogies approaches - the teaching strategies, pedagogical goals and their associated activities \cite{Koper2005}. In this sense, to support the representation of CSCL scripts in a computer-readable manner, a wide variety of extensions on the IMS-LD elements has been proposed in by several researchers \cite{Bote-LorenzoVaquero-GonzalezVega-GorgojoDimitriadisAsensio-PerezGomez-SanchezHernandez-Leo2004, LeoPerezDimitriadis2004, MagnisalisDemetriadis2012, MiaoHoeksemaHoppeHarrer2005, Vega-GorgojoBote-LorenzoGomez-SanchezDimitriadisAsensio-Perez2005}.
+
+Instead, to simply provide a computer-readable representation of CSCL scripts, the work of \citeonline{Isotani2009, IsotaniMizoguchiIsotaniCapeliIsotanideAlbuquerqueBittencourtJaques2013} proposes the formalization of these scripts in a computer-understandable manner through the use of ontologies. This solution consists in a set of ontological structures that makes the description of CSCL scripts more semantically-rich, allowing the explicit specification of learning goals, purposes, and other relevant information that cannot be represented using the IMS-LD specification, i.e., learning strategies, group goals, interaction patters from learning theories. Providing this formalization in the CL ontology, \citeonline{IsotaniMizoguchiIsotaniCapeliIsotanideAlbuquerqueBittencourtJaques2013} demonstrates that intelligent-theory aware systems can interpret these scripts and provide advice and recommendation to support for the modeling of learners' development \cite{InabaIkedaMizoguchi2003}, the formation of effective groups \cite{IsotaniMizoguchi2008a}, and the instructional design of CL activities \cite{IsotaniMizoguchiIsotaniCapeliIsotanideAlbuquerqueBittencourtJaques2013}.
 
 \subsection{Levels of Abstraction and Granularity of CSCL Scripts}
 \label{sec:level-of-abstraction-and-granularity-of-cscl-scripts}
 
-CSCL scripts have different levels of abstraction and granularity in the description of CL scenarios \cite{Dillenbourg2002, DillenbourgJermann2007, Villasclaras-FernandezIsotaniHayashiMizoguchi2009}. This classification of scripts in two dimension, abstraction and granularity, gives them an enormous flexibility to be reused in the instructional design process of CL scenarios, and it also allows the use of multiple scripts to describe different aspects of CL scenario in separated scripts. Whereas the levels of abstraction classify a script according to the completeness of elements described by them (from the most abstract to the most concrete), the levels of granularity classify the scripts according to the aggregation level of elements described by them (from the most coarser grained to the finest grained).
+CSCL scripts have different levels of abstraction and granularity in the description of CL scenarios \cite{Dillenbourg2002, DillenbourgJermann2007, Villasclaras-FernandezIsotaniHayashiMizoguchi2009}. This classification of scripts in two dimension, abstraction and granularity, gives them an enormous flexibility to be reused in the instructional design process of CL scenarios, and it also allows the use of multiple scripts to describe different aspects of CL scenario in separated scripts. Whereas the levels of abstraction classify a script according to the completeness of elements described by them, from the most abstract to the most concrete, the levels of granularity classify the scripts according to the aggregation level of elements described by them, from the most coarser grained to the finest grained.
 
 According to \citeonline{DillenbourgJermann2007}, a CSCL script can be classified in one of the four levels of abstraction defined as follows as:
 
@@ -106,22 +106,584 @@ Regarding to the level of granularity \cite{FischerKollarStegmannWeckerZottmann2
 \begin{description}
 \item[\emph{Macro-scripts}:] are scripts that basically describe the CL process in a courser-grained level without detailing the specific interactions among participants. A macro-script describes how to attain a set of pedagogical objective indicating the sequencing of individual and group activities that must be follow by participants. Thus, for example, in the Jigsaw macro-script, to promotes the individual accountability and positive interdependence, the sequencing of activities consists in three activities: an individual activity, expert group activity, and jigsaw group activity. In the individual activity, each student studies a particular part of a whole problem. In the expert group, the students of different groups that study the same part of the whole problem meet together for exchanging ideas. At last activity, students of each jigsaw group meet to contribute with their expertise to solve the whole problem.
 
-\item[\emph{Micro-scripts}:] are scripts that describe the CL process in a fine-grained level \cite{WeinbergerFischerStegmann2005}, they indicate, for example, the dialogues that must happen among student to achieve the pedagogical objectives, and they are intended to describe the communication model between participants. Thus, for example, to facilitate the negotiation and elaboration of a domain concepts, Weinberger, Ertl, Fischer, and Mandl  \cite{WeinbergerErtlFischerMandl2005} describe a micro-scripts for online peer discussion using a sequence of sentence openers (e.g. my proposal for an adjustment of the analysis is….) that prompted learners to contribute with the discussion and critique one another's contributions.
+\item[\emph{Micro-scripts}:] are scripts that describe the CL process in a fine-grained level \cite{WeinbergerFischerStegmann2005}, they indicate, for example, the dialogues that must happen among student to achieve the pedagogical objectives, and they are intended to describe the communication model between participants. Thus, for example, to facilitate the negotiation and elaboration of a domain concepts, \citeonline{WeinbergerErtlFischerMandl2005} describe a micro-scripts for online peer discussion using a sequence of sentence openers (e.g. my proposal for an adjustment of the analysis is….) that prompted learners to contribute with the discussion and critique one another's contributions.
 \end{description}
 
 As can be noticed above, the macro-scripts and micro-scripts have a hierarchical relationship to describe the CL process of CL activities. The micro-scripts describe the communication process in a CL activity \cite{WeinbergerFischerStegmann2005}, whereas the macro-scripts describe groups, roles, and flow of CL activities \cite{DillenbourgHong2008}. Despite this explicit hierarchical relationship, there are few models and tools in which all the elements of macro-scripts and micro-scripts are combined to support the design of CL scenarios \cite{AlharbiAthaudaChiong2014, ChallcoBittencourtIsotani2016}. \citeonline{Hernandez-LeoVillasclaras-FernandezAsensio-PerezDimitriadisRetalis2006} propose a hierarchical model in which schemata and classes of macro-scripts and micro-scripts are used as templates to generate scripts. In the work of \citeonline{ChallcoGerosaBittencourtIsotani2014}, the hierarchical relationships of macro-scripts and micro-scripts is represented as hierarchical task networks to support the automatic generation of unit of learning.
 
-In the CL ontology \cite{IsotaniInabaIkedaMizoguchi2009}, and therefore in the ontology OntoGaCLeS, the hierarchical relationship of macro-scripts and micro-scripts is not explicitly described as a direct link between macro- and micro-scripts. The hierarchical relationship is implicitly described as part of the conceptualization of events and processes proposed by Galton and Mizoguchi \cite{GaltonMizoguchi2009}. Based on in this conceptualization in which the representation of an event can be constituted by many distinct sub-events to describe a process, the hierarchical relationship of macro- and micro-scripts can be inferred from these events that are explicitly described in the CL ontology and the ontology OntoGaCLeS.
+In the CL ontology \cite{IsotaniInabaIkedaMizoguchi2009}, and therefore in the ontology OntoGaCLeS, the hierarchical relationship between the macro-scripts and micro-scripts is not explicitly described as a direct link between macro-scripts and micro-scripts. The hierarchical relationship is implicitly described as part of the conceptualization of events and processes proposed by \citeonline{GaltonMizoguchi2009}. Based on in this conceptualization in which the representation of an event can be constituted by many distinct sub-events to describe a process, the hierarchical relationship of macro- and micro-scripts can be inferred from these events that are explicitly described in the CL ontology and the ontology OntoGaCLeS.
+
+\subsection{Motivation Problem Caused by the Scripted Collaboration}
+\label{subsec:motivation-problem}
+
+The motivation problem caused by the scripted collaboration should be interpreted in his dissertation as the negative effects caused by the scripts on participants' motivation, and implicitly it also includes the negative effects on the learning outcome. 
+\citeonline{Dillenbourg2002} indicated that there may be a danger to overscript the CL process. The sequencing of interactions is rejected by some students when they had difficulties to adapt to perform structured tasks, in specially, for highly coercive scripts which dictate interaction in a very detailed and inflexible way. This kind of scripting collaboration prevent the independent, exploratory thinking, and when they are designed with high degree of coercion, it decreases student motivation. 
+
+Similar to the research works of \citeonline{RummelSpada2007,WeinbergerStegmannFischer2010}, this thesis dissertation argues that the scripted collaboration may cause motivational problems and reactance towards the script based on the self-determination theory \cite{DeciRyan2010} as a central element for motivation. Depending on the individual attribution pattern, students would suffer motivational problems to uphold learning efforts, e.g., when students do not have a optimal fit between the external scripts (guidelines provided by the system that specifies the sequencing) and the internal script (low-structure script in the mind of students), and the external script provides scaffolds that guide procedures for which internal scripts are already represented by the learner or where a learner might even hold more effective or efficient internal script, the performance of the learner will decrease \cite{StegmannMuGehlen-BaumFischer2011}.
+
+In the same direction, negative effects on the participants' motivation have been pointed out by many researchers who have successfully applied CSCL scripts to enhance and/or to mediated the CL process. For example, \citeonline{Brehm1966} proved that, for some students, overlaying scripting produces reactance, and the work of \citeonline{KollarFischerSlotta2005} indicates that motivation loss for students occurred when there is a overlaying of scripting. When the scripted collaboration is over extended for a long period of time and over many collaborative sessions, the motivation problem occurs \cite{HronHesseReinhardPicard1997,SchmittWeinberger2018}.
+
+%Against this background, an important question is, whether central elements of a collaboration script can be learned from a scripted session, and then serve to promote subsequent unscripted collaboration (in the following called learning-from-script hypothesis). Such learning effect of a collabora- tion script would make it unnecessary to continue the scripting and risk mo- tivational drawbacks, but collaborators could themselves maintain a fruitful collaboration following their internalized script rules.
+
+%In the following paragraphs, we first discuss some relevant approaches to deal with the motivation problem caused by the scripting collaboration found in the literature that are related to the approach proposed in this dissertation.%We characterize our collaboration script within a classification framework proposed by Dillenbourg (2002) and introduce the experimental paradigm it has been investigated with. We provide empirical support for our hypothesis from a recent study (see Rummel & Spada, 2005b)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Gamification}
 \label{sec:gamification}
 
-\subsection{Gamification of Learning and Instruction}
+\subsection{Games, Game Elements, and Gameplay}
+
+Based on the similarities and differences between games and problem-solving activities shown in \autoref{qua:game-and-problem-solving}, \citeonline{Schell2008} defines a game as \aspas{\emph{a problem-solving activities approached with a playful attitude}.}  
+
+\begin{quadro}[htb]
+\caption{Similarities and differences between the games and the problem-solving activities}
+\label{qua:game-and-problem-solving}
+\centering
+\small
+\begin{tabular}{m{5.5cm}|m{9.5cm}}
+\textbf{Games} (read in top-down order) & \textbf{Problem-Solving Activities} \\ \hline \hline
+- Games are entered willfully, &  \\
+- have clear goals,  & - The problem that is trying to solve defines a clear goal, \\
+- have conflict, & - it involves conflicts, in which \\
+- have rules, & - we determine the rules of problem, \\
+- can be won an lost, & - we eventually defeat the problem or are defeated by it; \\
+- are interactive, interact with it & - the problem is like a cleaner, smaller version of a real-world situation, which we can more easily consider, manipulate, or interact with it, \\
+- have challenge, & - this is usually challenging, \\
+- can create their own internal value, & - has its space with internal importance, if we are closed to attain the goal of solving this problem; \\
+- engage game players, and & - we quickly become engaged if we care about the problem, and \\
+- are closed and formal systems & - we will be establishing a closed and formal system if the problem is well understand \\
+\end{tabular}
+ \fadaptada{Schell2008}
+\end{quadro}
+
+Frequently, the problems are viewed as something negative, but people really do get pleasure from solving them. As humans, our complex brains enjoy solve problems, and this is our primary advantage as a species. Frequently, people who enjoy solving problems are going to solve more problems, and get better at solving problems. Games are not simply problem-solving activities, one who plays games must have sufficient motivation to solve problem, and it means having playful attitude.
+
+\begin{figure}[htb]
+ \caption{Elements and components of games}
+ \label{fig:schell-game-elements}
+ \centering
+ \includegraphics[width=0.85\textwidth]{images/chap-general-background/schell-game-elements.png}
+ \fdireta{Schell2008}
+\end{figure}
+
+There are many ways to classify the elements that are part of a game. According to \citeonline{Schell2008}, these elements as shown in \autoref{fig:schell-game-elements} are classified in the following four basic elements:
+
+\begin{description}
+\item[Mechanics:] These are rules and procedures that are used to describe the goals of games, how game players can try to achieve them, and what happen when they try.
+\item[Story:] This is the sequence of events (script) that unfold in your game. It may be pre-scripted, linear, or complex with branching and emergent. In general, the mechanics that will be used must strengthen the story, and the mechanics will also help reinforce the ideas of story.
+\item[Aesthetics:] There are how your game looks, sounds, smells, tastes, and \emph{feels}. They are an important aspect of game design that have most direct relationship to a player's experience during the game (gameplay experience).
+\item[Technology:] This is the materials and interactions that make your game possible. It is the medium in which the aesthetics happen, in which the mechanics will occur, and through which the story will be told. 
+\end{description}
 
 
-\subsection{Flow Theory and Learning and Gamification}
+Although the elements listed above define the components of a game, the essence of a game is rooted in the interactive nature in which the users act as players \cite{Schell2008}.
+The player puts his mind inside the game world, but the game world really only exists in the mind of the player.
+This magical situation is made possible by the game interface, which is where player and game come together.
+Thus, the goal of a good game interface is not to look nice or to be fluid, although those are nice qualities, the goal of a game interface is to make players feel in control of their experience because the purpose of a game is by itself to create an experience in the user mind.
 
+According to \citeonline{WerbachHunter2012}, the game elements are described as smaller pieces used to build blocks that, in an integrate form, constitutes gameplay experience. Thus, these game elements are separate in three categories: dynamics, mechanics and components, described in \autoref{fig:game-elements-pyramid}.
+
+\begin{figure}[htb]
+ \caption{Hierarchical classification of game elements}
+ \label{fig:game-elements-pyramid}
+ \centering
+ \includegraphics[width=0.85\textwidth]{images/chap-general-background/game-elements-pyramid.png}
+ \fdireta{WerbachHunter2012}
+\end{figure}
+
+Based on the hierarchy of game elements showed in \autoref{fig:game-elements-pyramid}, the game elements are classified as:
+\begin{description}
+\item[Game Dynamics] when the game element are the big-picture aspects of the game-like system that can be to consider and manage but which you can never directly enter into the game. e.g. constraints, emotions, narrative, progression, relationships, and personalization.
+\item[Game Mechanics] when the game element is part of the basic processes that drive the action forward and generate player engagement. e.g. challenges, chance, competition, cooperation, feedback, resource acquisition, rewards, transactions, turns, win-states, and profiles.
+\item[Game Component] when the game element is the more-specific forms that mechanics or dynamics can take. e.g. achievements, badges, collections, leaderboards, levels, notifications, points, progress bars, quests/missions, status, teams, and virtual goods.
+\end{description}
+
+The \emph{gameplay experience}, or simply called \emph{gameplay}, is the player's interpretation of manner in which a player or players interacted in a game world \cite{SalenZimmerman2004, Lindley2004, MayraErmi2005}. Figure \ref{fig:gameplay-experience} shows the relation among the fundamental components which are part in the formation of gameplay experience. The model showed here is not intended to constitute a comprehensive analysis of all possible elements between a game and a player, the game is represented as a structure (of mechanics, story, and space) that engenders the gameplay experience in the mind of the player through a game interface. Thus, the gameplay experience happens by linking perception, cognition, and emotions when a person does actions that are motivated by the game (motivation).
+
+\begin{figure}[htb]
+ \caption{Fundamental components in the gameplay experience}
+ \label{fig:gameplay-experience}
+ \centering
+ \includegraphics[width=1\textwidth]{images/chap-general-background/gameplay-experience.png}
+ \fadaptada{MayraErmi2005}
+\end{figure}
+
+There are certain feelings, feelings of choice, feelings of freedom, feelings of responsibility, feelings of accomplishment, feelings of friendship, and many others, which only gameplay experience seems to offer \cite{Schell2008}. The gameplay experience is not identical in people, each person has completely different and unique experience playing a game, but the experience is imaginary. Thus, the game designers must have careful selection the proper game elements, such as game mechanics, game interfaces, among others, that are used to create certain kinds of experiences when a player interacts with them. This task is known as \emph{game design}, and it is basic when some situation, scenario or application is being gamified.
+
+\subsection{What Is Gamification? and What Is It Not?}
+
+While no standard conceptualization of gamification exists, most studies agree that gamification generally refers to the use of game-based elements, such as game mechanics, aesthetics, and game thinking in non-game contexts aimed at engaging people, motivating action, enhancing learning, and solving problems \cite{BorgesDurelliReisIsotani2014,  Kapp2012}. However, it is important a deeper and scientific conceptualization to identify theoretical foundations, purposes, and knowledge about how to apply gamification in practice. In this sense, based on the work of academics and industry practitioners, \citeonline{DeterdingDixonKhaledNacke2011} establish the conceptualization of gamification as the use of game design elements in non-game contexts, and \citeonline{Werbach2014} defines gamification as the process of making activities more game-like.
+In other words, it covers coordinated practices that objectively manifest the intent to produce more of the kinds of experiences that typify games.
+%Gamification is a process in the world manifesting that intent to create player's subjective gameplay experience as an aspect of the gamification, but not as a necessary condition.
+
+\begin{figure}[htb]
+ \caption{Situating gamification in the scope of game design technology}
+ \label{fig:game-design-technology}
+ \centering
+ \includegraphics[width=0.85\textwidth]{images/chap-general-background/game-design-technology.png}
+ \fadaptada{DeterdingDixonKhaledNacke2011}
+\end{figure}
+
+
+\autoref{fig:game-design-technology} shows where gamification and others game design technology are situated based on the degree of design (as whole or parts) and purpose (for playing or gaming). As we can see in the figure, gamification and serious game are similar in terms of purpose, but they differ in the degree of design, both are made for non-entertainment purposes, serious game describes the design of application as a whole game, while gamification describes the design of application as part of whole. Gamification and playful design have the same degree of design, both implements parts of application as game, while the purpose of playful design is entertainment as a desirable user experience or mode of interaction, and gamification is made for non-entertainment.
+
+According to \citeonline{DeterdingDixonKhaledNacke2011}, gamification is related to gaming, not playing or playfulness, where playing denotes a free-form of expression, improvisational, even tumultuous recombination of behaviors and meanings. Gaming consists in the capture of playing that is structured by rules-base systems. Gamification does not describe the design of full-fledged games, gamified applications merely incorporate elements of games (also called game atoms \cite{BrathwaiteSchreiber2009}). However, these elements do not refer game-based technologies or other game related practices (e.g. as authoring tools, graphic engines), gamification is only reserved for the use of game design. The use of game design elements in gamification is for purposes other than the normal expected use as part of an entertainment game (for non-entertainment purpose).
+
+%Game design elements are themselves difficult to specify. There is only one effort done by \citet{deterding2011from} that order from concrete to abstract levels the game design elements. Table \ref{tab:game-design-elements} summarizes the levels of abstraction identified in this study.
+
+%\begin{table}[thbp] \footnotesize
+%\begin{center}
+%\begin{tabular}{|p{2.5cm}|p{7cm}|p{3cm}|} \hline
+%\textbf{Level} & \textbf{Description} & \textbf{Example} \\ \hline \hline
+%Game Interface Design Patterns &
+%Common, successful interaction design components and design solutions for a known problem in a context including prototypical implementations. &
+%Badges, leaderboards, levels \\ \hline
+%Game Design Patterns and Mechanics & 
+%Commonly reoccurring parts of the design of a game that concern gameplay. &
+%Time constraints, limited resources, turns \\ \hline
+%Game Design Principles and Heuristics &
+%Evaluative guidelines to approach a design problem or analyze a given design solution. &
+%Enduring play, clear goals, variety of game styles \\ \hline
+%Game Models &
+%Conceptual models of the components of games or game experience. &
+%MDA model, game design atoms, CEGE model, challenge-fantasy-curiosity  \\ \hline
+%Game Design Methods &
+%Game design-specific practices and processes &
+%Playtesting, playcentrinc design, value conscious \\ \hline
+%\end{tabular}
+%\end{center}
+%\caption[Taxonomy of game design elements by level of abstraction]{Taxonomy of game design elements by level of abstraction (Adapted from \citep{deterding2011from}).}
+%\label{tab:game-design-elements}
+%\end{table}
+
+\subsection{Outcomes of Gamification}
+\label{subsec:outcomes-gamification}
+
+When gamification is properly applied, a wide range of desired outcomes can be achieved, such as enjoyment, engagement, fun, satisfaction, motivation, loyalty, participation, efficiency, and behavior change \cite{HamariKoivistoSarsa2014}. In this sense, the outcomes of gamification as shown in \autoref{fig:outcomes-gamification} can be seen as: (1) the psychological outcomes (i.e. motivation, engagement, enjoyment, and fun) that are results of implemented motivational affordance (i.e. badges, points, leaderboards, and feedbacks); and (2) the behavioral outcomes (i.e. response pattern, duration of interactions, participation, and learning) that are result of psychological outcomes.
+
+\begin{figure}[htb]
+ \caption{Expected outcomes of gamification}
+ \label{fig:outcomes-gamification}
+ \centering
+ \includegraphics[width=0.85\textwidth]{images/chap-general-background/outcomes-gamification.png}
+ \fadaptada{HamariKoivistoSarsa2014}
+\end{figure}
+
+
+In educational contexts, most studies, as shown in \autoref{qua:outcomes-gamification-education}, propose the engagement of learners as psychological outcomes, and the improving of learning as behavioral outcomes \cite{BorgesDurelliReisIsotani2014}.
+For example, \citeonline{LiGrossmanFitzmaurice2012} investigated how story/theme, clear goals, feedbacks, challenge and rewards (motivational affordance) could be used to increase the engagement and enjoyment (psychological outcomes) of students, and the results showed an increase in the speed of completion of tasks (behavioral outcomes).
+
+
+\begin{quadro}[htb]
+\caption{Outcomes of gamification in educational contexts}
+\label{qua:outcomes-gamification-education}
+\centering
+\footnotesize
+\begin{tabular}{|p{3cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|} \hline
+\textbf{Source} & \textbf{Motivational Affordances} & \textbf{Psychological Outcomes} & \textbf{Behavioral Outcomes} \\ \hline \hline
+\cite{CheongCheongFilippou2013} & points, feedback, leaderboards, time constraints (challenge) & enjoyment, engagement & impact on learning (usefulness) \\ \hline
+\cite{Denny2013} & badges & enjoyment, attitude towards badges & level and quality of participation \\ \hline
+\cite{DominguezSaenz-de-Navarretede-MarcosFernandez-SanzPagesMartinez-Herraiz2013} & leaderboards, badges & attitude towards gamification & learning outcomes \\ \hline
+\cite{DongDontchevaJosephKarahaliosNewmanAckerman2012} & clear goals, challenge, feedback, levels, story/theme & engagement, fun & effectiveness of learning \\ \hline
+\cite{Fitz-WalterTjondronegoroWyeth2011} & achievements, clear goals & perceived added value of gamification, fun & exploration of the campus while interacting with the application \\ \hline
+\cite{HakulinenAuvinenKorhonen2013} & badges & & impact on time management, carefulness and achieving learning goals \\ \hline
+\cite{HalanRossenCendanLok2010} & leaderboards, narrative (story/theme), deadline (challenge) & difference in users' approach to virtual patient interaction & Number and duration of interactions with virtual patients, likelihood of voluntary participation to a virtual patient interaction \\ \hline
+\cite{LiGrossmanFitzmaurice2012} & story/theme, clear goals, feedback, challenge, rewards & engagement, enjoyment & task performance \\ \hline
+\cite{SmithBaker2011} & story/theme, rewards & & increasing knowledge about the library, its services and resources, teaching library skills \\ \hline
+\end{tabular}
+ \fadaptada{HamariKoivistoSarsa2014}
+\end{quadro}
+
+\subsection{Theories and Models of Motivation}
+\label{subsec:theories-motivation}
+
+As defined by \citeonline{MitchellDaniels2003}, motivation is an internal set of processes what is referred as hypothetical construct associated with three general psychological processes (arousal, direction, and intensity). The arousal is the first component caused by the need or desire to some object or state that is at least partially unfulfilled or below expectation. This discrepancy initiates the action to satisfy the need, to obtain the desired object or to achieve the unfulfilled state. Moreover, this discrepancy is personal, and differs in each individual, different people have different needs and different things that they think are important. Thus, the second is a directional component defined by personal goals and goal discrepancies that are seen as major goads to attention and action. The third component is the intensity dimension defined by the goal difficulty and importance of arousal because some needs are more
+important than others, and some goals are more difficult to attain
+than others.
+
+Having knowledge about how to motivate people, it is possible to build and formalize the proper understanding of what pushes people to interact in a gamified application, what make it fun, and why it is enjoyable. In this direction, there are different theories and models of motivation related to gamification, that are briefly summarized as follows. 
+
+\subsubsection{Need-based Theories}
+\label{subsubsec:need-theories}
+
+There are many theories that revolve around the fulfillment of humans' needs, defined as the arousal component of motivation. 
+These theories describe what make certain outcomes appear attractive, and they constitute the basic foundations of motivation. 
+With relation to gamification, there are three main need theories that are detailed in the paragraphs below.
+
+\textbf{Maslow's hierarchy of needs theory} states that a person has a pyramid hierarchy of needs that a person must satisfy from bottom to top \cite{Maslow1954,Goble1970}. As shown in \autoref{fig:maslow-pyramid}, the Maslow's need pyramid classifies the needs from basic to complex in five categories: physiological, safety, love/belonging, esteem, and self-actualization.
+
+\begin{figure}[htb]
+ \caption{Maslow's pyramid of need}
+ \label{fig:maslow-pyramid}
+ \centering
+ \includegraphics[width=0.85\textwidth]{images/chap-general-background/maslow-pyramid.png}
+ \fadaptada{Maslow1954}
+\end{figure}
+
+According to \citeonline{Huitt2004}, only unsatisfied human needs influence behavior, if there is a deficit in a lower level, all behaviors of an individual will be oriented to satisfy this deficit. In the Maslow's need pyramid, needs are arranged in order of importance to human life, as said before from the basic to the complex. 
+
+\textbf{Alderfer's ERG Theory}, as shown \autoref{fig:erg-theory}, condenses Maslow’s pyramid hierarchy of needs in three categories: Existence (material and physiological), Relatedness (social and external esteem) and Growth (internal esteem and self-actualization) \cite{Alderfer1969,Alderfer1972}.
+
+\begin{figure}[htb]
+ \caption{Relation between Maslow's hierarchy of needs theory and Aldefer's ERG theory}
+ \label{fig:erg-theory}
+ \centering
+ \includegraphics[width=0.85\textwidth]{images/chap-general-background/erg-theory.png}
+ \fautor
+\end{figure}
+
+
+Different to Maslow's hierarchy of needs theory, a person can regress to a basic level from a complex level if a relatively more significant need (of complex level) is not satisfied \cite{Alderfer1972}. Thus, a person may satisfy a need at hand, whether or not a previous need has been satisfied. Finally, the theory states that the order of needs to differ for different people.
+
+\textbf{Self-Determination Theory} (SDT) is one of the most well-known theory related to motivation. Through the understanding of needs and motivation, this theory explains the human beings' innate psychological needs for personal development and well-being, and the impact of the environment on individual's motivation \cite{DeciRyan2010,RyanDeci2000}. SDT defines three innate needs (competence, relatedness, and autonomy) that cause individual motivation, and when these needs are fulfilled they invoke great personal growth \cite{ArazyGellatly2012}.
+
+According to SDT theory, the three needs are not learned, and they are seen as universal necessities in humanity across time, gender and culture. They are summarized as follows:
+\begin{itemize}
+\item \emph{Autonomy} is the need to have independence and to be able make own choices \cite{DeciRyan2010}. \citeonline{DeciVansteenkiste2004} states that autonomy does not mean to be independent of other persons. In a game, an example is to give a player freedom to make his own choices among various paths to choose.
+\item \emph{Relatedness} is the need to be connected with others, iterate with them, and experience caring for them \cite{BaumeisterLeary1995}. In a game, there are many elements that allow a player socializer with other players.
+\item \emph{Competence} is the need to control the outcomes and experience a sense of ability (mastery) \cite{White1959}. In a game, when a player sees a leaderboard or progress state, he or she increases their proficiency and skills.
+\end{itemize}
+
+In the SDT, there are two categories of motivation: intrinsic motivation, and extrinsic motivation \cite{DeciVansteenkiste2004}. Extrinsic motivation occurs when an external stimulus evokes a target behavior. Some of these stimulus can be rewards, threats, punishment, pressure, external regulations, and rules. The intrinsic motivation comes from individuals, and pushes them to act for the sake of the activity itself \cite{DeciRyan2010}. The intrinsic motivation occurs when the behavior is itself rewarding or engaging for the individual. The intrinsic motivators act on the human predisposition to strive for novelty and challenges, to extend and exercise one's capacities, to explore and to learn \cite{RyanDeci2000}. These intrinsic motivators include altruism, competition, cooperation, sense of belonging, love or aggression \cite{Muntean2011}.
+
+On the one hand, the use of extrinsic motivators is a highly reliable technique for behavioral change, but the behavior disappears instantly when these external motivators are halted \cite{HaggerChatzisarantis2007}. On the other hand, intrinsic motivation is intense, and lasting engagement in the behavior, but it cannot be predicted every each person as it is internalized \cite{DeciRyan2010}. Internalization of motivation refers to the active attempt to transform an extrinsic motive into personally endorsed values. It means the assimilation of behavioral regulations that were originally external.
+
+\subsubsection{Skinner's reinforcement theory}
+\label{subsubsec:operant-conditioning}
+
+The reinforcement theory or operant conditioning theory proposed by \citeonline{Skinner1976} states that reinforced behaviors will tend to be repeated, while punished behavior tend to be decrease and will eventually end. Thus, the operant conditioning is a process that attempts to modify behavior by positive and negative reinforcement. Therefore, through operant condition, an individual makes an association between consequences and behaviors. For example, telling a child to go to his room is a punishment frequently used to avoid the cursing.
+
+\begin{quadro}[htb]
+\caption{Forms of operand conditioning to human behavior}
+\label{qua:operant-conditioning}
+\centering
+\scriptsize
+\begin{tabular}{|c|c|c|} \hline
+ & \textbf{Positive} & \textbf{Negative} \\ \hline
+\multirow{4}{*}{\textbf{Reinforcement}} & \multirow{4}{*}{add appetitive stimulus} & \emph{Escape} \\
+ & & remove noxious stimuli \\ \cline{3-3}
+ & & \emph{Active Avoidance} \\
+ & & avoid noxious stimulus \\ \hline
+\textbf{Punishment} & add noxious stimuli & remove appetitive stimulus \\ \hline
+\end{tabular}
+ \fautor
+\end{quadro}
+
+In this sense, the reinforcement and punishment as shown in  \autoref{qua:operant-conditioning} are operant conditioning that come in two forms: positive and negative. As we can see in this table, the negative reinforcement has two forms, one related to remove the noxious stimuli (escape) and other related to avoid the stimuli (active avoidance).
+
+%\subsubsection{Mood, Emotion and Affect Theories}
+%\label{subsubsec:mood-emotion-affect-theories}
+\subsubsection{Csikszentmihalyi's Flow Theory}
+\label{subsubsec:flow-theory}
+
+Csikszentmihalyi's flow theory constitutes an important theory regarding the study of affective states during active activities for intrinsic purposes, such as discussions, exercises, and learning activities \cite{SnyderLopezPedrotti2010, Csikszentmihalyi2014}. Passive activities like listening music or watching TV usually do not need individuals to actively do something. The flow theory describes the experiences of intrinsically motivated persons in tasks chose for its own sake. Thus, this theory states that in order for a task to be fully engaging it must reach an optimal mind state named flow, which is a state of optimal intrinsic motivation, full concentration, absorption and intense immersion \cite{Wu2011, Xu2011}. In other words, if a user is in flow state during the performance of a task, he or she feels naturally in control and neither overwhelmed by difficulty nor uninterested. The users in flow state experience a loss of self-awareness, forgetting about time, worry, ego and physical symptoms.
+
+\begin{figure}[htb]
+ \caption{Graph of the three-flow channel model}
+ \label{fig:flow-channel}
+ \centering
+ \includegraphics[width=0.55\textwidth]{images/chap-general-background/flow-channel.png}
+ \fadaptada{Csikszentmihalyi2008}
+\end{figure}
+
+It is not a simple task to reach a flow state, and according to the flow theory, the following conditions must be satisfied to achieve the flow state:
+
+\begin{itemize}
+\item Clear goals, in which the expectations and rules are clearly discernable.
+\item Direct and immediate feedback, in which the successes and failures of task are apparent, so that behavior can be adjusted as needed.
+\item Good balance between ability level and challenge.
+\end{itemize}
+
+In the flow theory, the most important condition is accomplishing and maintaining the right balance between difficulty and ability to do some task. There must be enough challenge so that the user will not become bored but not so much that the user will feel frustrated by the complexity \cite{Csikszentmihalyi2008}. This delicate equilibrium is denominated as flow channel and is depicted on \autoref{fig:flow-channel}.
+
+The ability to create the flow state in games and game-like systems as gamification is essential to engagement users in these applications \cite{Xu2011}. However, it is typically challenging to create activities that induce the right balance between ability and difficulty that matches all users of an application.
+
+\subsection{Persuasion and Persuasive Design Models}
+\label{subsec:persuasive-theories-persuasive-design-models}
+
+Persuasion as a practice is as old as human existence, and it is defined as the process of influencing changes of peoples' beliefs, attitudes, intentions, and motivations toward target behaviors \cite{SeiterGass2004}. Human-to-human persuasion was broadly researched since early 400 BC when Aristotle defined rhetoric as \aspas{… \emph{the faculty of observing in any given case the available means of persuasion}} \cite{Natanson1955}. Thus, there are many persuasive models that are concentrated on addressing aim to change the mental state of the persuades through communication \cite{GueriniStockZancanaro2007}.
+In the last decade, many researches pointed out that similar to a human persuader, computing technologies can be used to produce changes in human behaviors, beliefs, attitudes, intentions, and motivation in various ways of designing technology to influence these changes in different contexts, such as sports \cite{HarjumaaSegerstaahlOinas-Kukkonen2009}, health \cite{OrjiVassilevaMandryk2014}, and education \cite{LuceroZuloagaMotaMunoz2006, GohSeetChen2011}.
+
+In this section, an overview of most relevant persuasive design models to develop computer as persuasive technologies, defined as Captology \cite{Fogg2002}, is summarized below.
+
+\subsubsection{Fogg's Behavior Model}
+\label{subsubsec:fogg-behavior-model}
+
+According to \citeonline{Fogg2009}, for a behavior to occur, the motivation, ability, and trigger must converge at the same moment reaching the activation threshold. \autoref{fig:foggs-behavior-model} depicts the Fogg's behavior model, in which the components of model (motivation, ability, and trigger) show that, to pass the activation threshold and trigger the behavior, an event or task must be motivating and not too difficult. In this sense, the three components of Fogg's behavior model are defined as follows:
+
+\begin{itemize}
+\item \emph{Motivation} is the process used to allocate energy in actions to maximize the satisfaction of needs \cite{PritchardAshwood2008}. In this process, energy is the time and effort available to meet those needs, and needs are the magnet that drives motivation. Thus, motivation can be measured by the degree in which someone is willing or engaged in performing the behavior \cite{Xu2011}.
+\item \emph{Ability} is the degree to which someone has the skills or tools to carry out the behavior \cite{Xu2011}. There are six factors that work together in the context of a trigger to define the ability, these factors are: time, money, physical effort, brain cycles, social deviance, and non-routine.
+\item \emph{Trigger} is what prompts people to take a behavior. The trigger is also known with different names such as cue, prompt, call to action, request, and so on. The trigger is related to the degree to which someone is provoked to perform the behavior \cite{Xu2011}. Sometimes a trigger can from our daily routine (e.g. walking through the kitchen may trigger us to open the fridge), other times the triggers can be external, such as alarms, messages, and so on.
+\end{itemize}
+
+\begin{figure}[htb]
+ \caption{Visual depiction of Foog's Behavior Model}
+ \label{fig:foggs-behavior-model}
+ \centering
+ \includegraphics[width=0.6\textwidth]{images/chap-general-background/foggs-behavior-model.png}
+ \fadaptada{Fogg2009}
+\end{figure}
+
+When a target behavior does not occur, at least one of those three factors is missing, or one is not enough sufficient to attain the activation threshold.
+The fact, if the individual has a high motivation to accomplish the task, but if he/she does not have the ability to perform it, the behavior will not occur.
+On other hand, if the individual lacks motivation to perform a target behavior, this behavior does not occur.
+Having the ability and motivation alone are not enough to cause a behavior, people need triggers that them \aspas{\emph{to complete the action in a certain moment}} \cite{Fogg2009}. This trigger is not simply something that prompts or tells something to the users, independent of level of motivation and ability, a trigger at the proper time leads to the target behavior in a predictable way using this trigger as facilitator, spark, or signal.
+
+\begin{itemize}
+\item \emph{Facilitators} is a proper type of trigger for users that have high motivation but lack ability to perform certain behavior. The goal is these triggers is to make the behavior easier to do, and these facilitators can be embodied in text, video, graphics, and others medias used in games.
+\item \emph{Sparks} are one type of trigger used when a person lacks motivation to perform a target behavior. Thus, triggers of this type should be designed in tandem with a motivational element. Some examples of sparks can be text or videos that inspire to hope or highlights fear.
+\item \emph{Signals} is a trigger type that works best when people have both the ability and the motivation to perform the target behavior. The signals do not seek to simplify the task or to motivate people, they are only reminder because the individuals have both motivation and ability.
+\end{itemize}
+
+The game elements, more specifically game mechanics in the game design and gamification, acts as influencers that push users over the activation threshold and trigger them to perform a targeted behavior \cite{Wu2011}. In essence, a successful gamified system must cause all three elements of the behavior model to occur all at once.
+
+\subsubsection{Persuasive System Design Model}
+\label{subsubsec:psd-model}
+
+Following the research work of Captology \cite{Fogg2002}, several models have been proposed to guide the design and evaluation of persuasive technology. The most popular of these models is the Persuasive System Design (PSD) model proposed by \citeonline{Oinas-KukkonenHarjumaa2009}. \autoref{fig:persuasive-system-design} shows the phases for the context analysis of PSD in which, from the first step of understanding the key issues behind persuasive system, the second step of analyzing the persuasion context identifies: the intent (of the persuader), the event (that triggers the persuasion) and the strategy (by which the subject is persuaded).
+
+\begin{figure}[htb]
+ \caption{Phases for the context analysis of Persuasive Systems Development}
+ \label{fig:persuasive-system-design}
+ \centering
+ \includegraphics[width=0.85\textwidth]{images/chap-general-background/persuasive-system-design.png}
+ \fdireta{Oinas-KukkonenHarjumaa2009}
+\end{figure}
+
+The third step is the design of system qualities based on design principles classified in 4 categories: primary task, dialogue, credibility, and social support.
+
+\textbf{Primary Task Support}: techniques that help the users to achieve their goals by the principles of:
+
+\begin{itemize}\item \emph{Reduction}: to make the complex behavior into simple tasks by helping the users to perform the target behavior, and thus, to increase the benefit/cost ratio of a behavior.
+Example: Listing a few options to be chosen, so that the user does not have to select one him/herself.
+\item \emph{Tunneling}: to guide the users through a process or experience providing opportunities to persuade along the way.
+Example: An interactive guide in which the step by step indicates how the user should perform a process.
+\item \emph{Tailoring}: to adapt the information for the potential needs, interests, personality, usage context or other factors relevant to a user group.
+Example: Giving different interface to a beginner, intermediate and advanced users.
+\item \emph{Personalization}: to offer personalized content or services with a greater capability of persuasion.
+Example: Adjusting personalized information in a search engine.
+
+\item \emph{Simulation}: to provide simulations that can persuade the users to observe immediately the link between cause and effect.
+Example: Before-and-after pictures of people that a people has lost weight.\item \emph{Rehearsal}: to provide means with which to rehearse a behavior can enable people to change their attitudes or behavior in the real world.
+Example: A fight simulator to help pilots in their practices.
+\end{itemize}
+\textbf{Dialogue Support}: techniques used in dialogue with the user in a similar way in which human-to-human interaction occur. Their principles are:
+
+\begin{itemize}
+\item \emph{Praise}: by offering this type of message, a system can make users more open to persuasion
+Example: Compliments given by an application when the users perform target behaviors.
+\item \emph{Rewards}: by given rewards to the users when they perform target behaviors.
+Example: The users earn a virtual trophy when they complete a task.
+\item \emph{Reminders}: by reminding the users of their target behavior, the users will more likely achieve their goals.
+Example: A program that reminds the users to perform a target behavior.
+\item \emph{Suggestion}: by offering fitting suggestions, an application has greater persuasive powers.
+Example: An application that suggests the users change their habits
+\item \emph{Similarity}: by imitating the users' behaviors,  people are more readily persuaded through systems that remind them of themselves in meaningful way.
+Example: Using slang in the communication, an application is targeted at young people.
+\item \emph{Self-monitoring}: to keep the track of the user progress/performance.
+Example: Presenting a daily step count of fitness trainer.
+\item \emph{Liking}: by being visually attractive for the users, a system is likely to be more persuasive.
+Example: Pet-related symbols are adequate for a website targeted at pet owners.
+\item \emph{Social-role}: by adopting a social role, a system is more likely to be used by the users.
+Example: A virtual specialist in an application provides better support to communicate users and specialists.
+\end{itemize}
+
+\textbf{Credibility Support}: focuses in maintaining credibility on the importance of a system in which the principles are:
+
+\begin{itemize}
+\item \emph{Trustworthiness}: in a system is viewed as trustworthy increasing the powers of persuasion.
+Example: A well-known 3rd party using to verify the strengths of products instead of just relying on advertising.
+\item \emph{Expertise}: A system that is viewed as incorporating expertise will have increased powers of persuasion.
+Example: Incorporating expertise opinions in a system.
+\item \emph{Surface credibility}: People make initial assessments of the system credibility based on a firsthand inspection.
+Example: A fast, clean and highly polished website without advertising feels more credible.
+\item \emph{Real-world feel}: A system that highlights people or organization behind its content or services will have more credibility.
+Example: A contact form in a system to support questions and/or feedback from its users.
+\item \emph{Authority}: A system that leverages roles of authority will have enhanced powers of persuasion.
+Example: Quotes given by an authority, such as the government in a web-site.
+\item \emph{Third-party endorsements}: Third-party endorsements, especially from well-known and respected sources, boost perceptions on system credibility.
+Example: Guarantee certificates provide certain quality.
+\item \emph{Verifiability}: Credibility perceptions will be enhanced if a system makes it easy to verify the accuracy of site content via outside sources.
+Example: Claims on a website are supported by links to relevantsources.
+\end{itemize}
+
+\textbf{Social Support}: Social factors have ability to influence humans because they are social creatures. Thus, the following principles determine the system's persuasiveness.
+
+\begin{itemize}
+\item \emph{Social learning}: A person will be more motivated to perform a target behavior when he/she can be used to observe others performing the behavior.
+Example: An application sharing the journal of others to motivate him/she to perform the behavior indicated in the journal.
+\item \emph{Social comparison}: System users will have a greater motivation to perform the target behavior if they can compare their performance with the performance of others.
+Example: Leaderboards in a learn-to-type application shows how well someone is doing compared to others.
+\item \emph{Normative influence}: A system can leverage normative influence or peer pressure to increase the likelihood that a person will adopt a target behavior.
+Example: A smoking cessation application shows pictures of newborn babies with serious health problems.
+\item \emph{Social facilitation}: System users are more likely to perform target behavior if they discern via the system that others are performing the behavior along with them.
+Example: A homework application shows how many children in theuser's class are doing homework at the same time.
+\item \emph{Cooperation}: A system can motivate users to adopt a target attitude or behavior by leveraging human beings' natural drive to co-operate.
+Example: A homework application giving multiple users parts of an equation.
+\item \emph{Competition}: A system can motivate users to adopt a target attitude or behavior by leveraging human beings' natural drive to compete.
+Example: An online competition, such as Quit and Win (stop smoking for a month and win a prize).
+\item \emph{Recognition}: Public recognition for an individual or group increases the likelihood that a person/group will adopt a target behavior.
+Example: Names of top contributors, and published on a website as user of the month.
+\end{itemize}
+ 
+\subsection{Game Design Models}
+\label{subsec:game-design-models}
+
+In gamification, several models concerning to the game design are used to describe the manners in how to combine and apply game elements in the non-game context. These models are based on  theories and models of motivation and human behavior, as well as persuasion and persuasive design model. In the following subsections, an overview of most relevant game design models are presented.
+
+\subsubsection{Player Types Models}
+\label{subsec:player-types}
+
+The term game player (or player, for simplicity) is frequently used to describe individuals who play games, and there are different types of game players. There are people who take gaming seriously, playing full-fledged games a significant part of their daily lives. These players refer themselves as serious or hardcore gamers \citep{bosser2006hardcore}. On the other hand, casual gamers are people ranging from occasional game players \citep{kuittinen2007casual}. Based on characteristic that players exhibit within games such as competitiveness, sociability, exploratory behaviors, and individual personality traits, \citet{laws2002robin, nacke2011brainhex, bartle2004designing, marczewski2013gamification} identify different player typologies. 
+
+Below, three main typologies of player types applied deeply explored in this dissertation are summarized.
+
+%\begin{description}
+%\item[Bartle's player types] \citep{bartle2004designing, bartle1996hearts} is the most popular classification of four-player types based on preferences of persons when they are playing a game. By studying players of the Multi-User Dungeon (MUD) game, \citet{bartle2004designing} identifies four players types (achievers, socializer, explorer, and killers) as shown in Figure \ref{fig:bartle-player-types}, in which there are two dimension of preferences: (1) the preference of interacting with other players (user-orientation) vs. exploring the game (system-orientation); and (2) the preference of unilateral action (action-orientation) vs. interaction in the game (interaction-orientation). Employing these preferences, the four player types are defined as follows:
+
+%\begin{itemize}
+%\item \emph{Achievers}: These players in general play games to win, they are goal-oriented players with great sense of achievement. The gameplay experience of this player type is driven by goals that either explicitly stated by the game (for example, gathering coins, or leveling up) or personally created (for example, accumulating much money or exclusive items).
+
+%\item  \emph{Socializers}: These players are driven by communication and relationship. Socializers interacting with others players using communication tools provided by the game, and they find the greatest reward in what the others players have to say about them in the games.
+
+%\item \emph{Explorers}: These players like interact with the world, and they are driven by finding new areas and gaining new knowledge about the virtual world. The activities that a player of this type may like to include things like: exploring every corner of a map, finding interesting features such as bugs, and understanding how everything functions.
+
+%\item \emph{Killers}: These players act on other players to obtain enjoyment by attacking, killing or causing anxiety on others. Players of this player type like imposing themselves on the game to dominate others. For example, a player who likes to obtain powerful weapons to attack other players with the goal of killing the characters of other players is a killer.
+%\end{itemize}
+
+%\begin{figure}[thbp]
+%\begin{center}
+%\includegraphics[width=0.55\textwidth]{bartle-player-types.png}
+%\caption[Bartle's four-player types]{Bartle's four-player types (Adapted from \citep{bartle2004designing}).}
+%\label{fig:bartle-player-types}
+%\end{center}
+%\end{figure}
+
+%\item[Yee's Motivational Components] \citep{yee2006motivations, yee2006demographics} is a study done by Nick Yee who devised an experiment based on Bartle's four player types in which he conducted an extensive survey of Massive Multiplayer Online Role-Playing Games (MMORPGs) players for 3200 players answered 39 multiple-choice questions. Based on the results of this experiments, he derived ten motivational components grouped in three main components as shown in Table \ref{tab:yee-motivation-components}, where the main components are independent of each other. 
+
+%\begin{table}[thbp] \scriptsize
+%\begin{center}
+%\begin{tabular}{|c|c|c|} \hline
+%\textbf{Achievement} & \textbf{Social} & \textbf{Immersion} \\
+%(\emph{mastery need}) & (\emph{relatedness need}) & (\emph{autonomy need}) \\ \hline \hline
+%\textbf{Advancement} & \textbf{Socializing} & \textbf{Discovery} \\
+%progress, power,  & casual chat, helping others, & exploration, lore, \\
+%accumulation, status & making friends & finding hidden things \\ \hline
+%\textbf{Mechanics} & \textbf{Relationship} & \textbf{Role-Playing} \\
+%numbers, optimization, & personal, self-disclosure, & story line, character history, \\
+%templating, analysis & find and give support & roles, fantasy \\ \hline
+%\textbf{Competition} & \textbf{Teamwork} & \textbf{Customization} \\
+%challenging others, & collaboration, groups, & appearances, accessories, \\
+%provocation, domination & collaboration, groups, & appearances, accessories, style, color schemes \\ \hline
+%& & \textbf{Escapism} \\
+%& & relax, escape from reality \\ 
+%& & avoid reality problems \\ \hline
+%\end{tabular}
+%\caption[Motivational components in the Yee's experiment]{Motivational components revealed by the factor analysis in the Yee's experiment (Adapted from \citep{yee2006motivations}).}
+%\label{tab:yee-motivation-components}
+%\end{center}
+%\end{table}
+
+%With the SDT theory as background and the mapping showed in Table \ref{tab:yee-motivation-components} (autonomy need for achievement component, mastery need for immersion component, and relatedness need for social component), \citet{yee2005motivations} points that Bartle's player types conflicted with the results analyzed through factor analysis. He states that socializing and role-playing are two independent motivations, while Bartle proposed that people who like chat and make friends are also people who like to role-play. While Bartle proposed that achievers and griefers (killers) are separate types, there is correlation between advancement and competition that defines the desire of achievers and killers, respectively. The explorer defined by Bartle as people who enjoy both exploring the world and gathering information is in reality two different kinds of people defined by the two separate factors: discovery, and mechanics. Finally, the immersion component is a motivation that did not exist in Bartle's type.
+
+%These motivations are not solely for MMORPGs but they are also applicable to other game-like systems such as gamification. Through the incorporation of these principles, a gamified system will induce larger amounts of user engagements. However, it does not define a component related with the purpose need widespread by the theory proposed by \citet{pink2011drive}. The purpose need is a general class of need that varies from person to person, it is behind all 10 components.
+
+%\item[Marczewski's player types] \citep{marczewski2013gamification} expands the Bartle's model through the addition of one dimension related with type of motivation (intrinsic motivation, extrinsic motivation). As show in Figure \ref{fig:marczewski-player-types} (a), Marczewski describes eight player types, four of whom are intrinsic motivated (socializer, free spirits, achiever and philanthropists) and four extrinsic motivated (networker, exploiter, consumer and self seeker). According to \citet{marczewski2013gamification}, Bartle's player types is useful but flawed, at the end, a gamified system is not a MUD game where all users want to participate, and rewards plays an important role to define whom can be engaged with extrinsic motivators like badges and trophies.
+
+%\begin{figure}[thbp]
+%\begin{center}
+%\includegraphics[width=0.95\textwidth]{marczewski-player-types.png}
+%\caption[Marczewski's eight-playe and six-player types models]{Marczewski's (a) eight-player types model, and (b) six-player types model.}
+%\label{fig:marczewski-player-types}
+%\end{center}
+%\end{figure}
+
+%Based in the four needs defined in SDT theory \citep{deci2010self} and the theory proposed by \citet{pink2011drive} (Relatedness, Autonomy, Mastery, and Purpose), Marczewski redefines the eight-player types model to six-player types model as shown in Figure \ref{fig:marczewski-player-types}\footnote{Source: \url{http://www.gamified.uk/user-types}} (b). He defines four basic intrinsic player types: Achiever, Socializer, Philanthropist, and Free Spirit that are respectively motivated by relatedness need, autonomy need, mastery need, and purpose need. Next, the player type \emph{player} groups the extrinsic player types (Self-seeker, Consumer, Networker, and Exploiter) as the players who are motivated by rewards. They will do similar thing to the intrinsic motivated player types, buy only if there is a reward at the end of it. Finally, the player type \emph{disruptor} is a group of players that act in a system motivated by change. They like to disrupt a system in some way, and rather than a single type, this player type is a group, in which there are four types: Griefer, Destroyer, Influencer, and Improver that are related with Philanthropist, Achiever, Socializer, and Free Spirit, respectively.
+%\end{description}
+
+
+\subsubsection{MDA model}
+\label{subsec:mda-model-need-theories}
+
+%In game design, the Mechanics-Dynamics-Aesthetics (MDA) model \citep{hunicke2004mda} as shown in Figure \ref{fig:mda-model} is a tool used to analyze game-like systems. It formalizes the consumption of games by breaking them down into mechanics, dynamics, and aesthetics, in which the \emph{mechanics} are the base components of the game, its rules, and elements  related with basic action that a player can take in the game, such as algorithms and data structures. The \emph{dynamics} are the run-time behavior of the mechanics acting on player input. The \emph{aesthetics} are the emotional responses evoked in the player, such as challenge, discover, fantasy, and fellowship.
+
+%\begin{figure}[thbp]
+%\begin{center}
+%\includegraphics[width=0.85\textwidth]{mda-model.png}
+%\caption[MDA Model: Mechanics, Dynamics and Aesthetics Model]{MDA Model: Mechanics, Dynamics and Aesthetics Model (Adapted from \citep{hunicke2004mda}).}
+%\label{fig:mda-model}
+%\end{center}
+%\end{figure}
+
+%According to this model, the mechanics itself is not as important inside a game-like system as the dynamics and aesthetics. The authors of MDA model state that "thinking about games as designed artifacts helps frame them as systems that build behavior via interaction." Thus, a game-like system must provide multiple aesthetics depending on its goals. Therefore, it is important that the dynamics correspond with the aesthetics to provide an optimal environment in which the player can develop the desired behaviors, attaining the goals of game-like system. In this sense, \citet{bunchball2010gamification} propose a framework of gamification showed in \ref{fig:bunchball-framework} that sets the relationship between game mechanics and human desires (aesthetics in MDA model).
+
+%\begin{figure}[thbp]
+%\begin{center}
+%\includegraphics[width=0.85\textwidth]{bunchball-framework.png}
+%\caption[Human desires vs. Game mechanics]{Human desires vs. Game mechanics (Taken from \citep{bunchball2010gamification}).}
+%\label{fig:bunchball-framework}
+%\end{center}
+%\end{figure}
+
+%In the same way of the framework proposed by \citet{bunchball2010gamification}, as shown in Figure \ref{fig:sdt-game-elements}, we can define the relationship between some game elements and the psychological needs defined in the SDT theory. Thus, the competence need is excellently supported by game elements, such as progression tool, levels system, and point system, because they contain sophisticated mechanics that provide granular and timely feedback in term of indicators to satisfy the competence need. The relatedness need is satisfied by social interactions that have always been an important part of game-like systems through the game elements such as collaboration tool, social connection tool, social discovery, and competition tool. As the most of games placed players in the role of fictional characters providing a wide range of in-game choices through the game elements such as unlockable system, creativity tool, customization tool, and exploration tool, these elements provide support to satisfy the need of autonomy.
+
+%\begin{figure}[thbp]
+%\begin{center}
+%\includegraphics[width=0.85\textwidth]{sdt-game-elements.png}
+%\caption{Relation between game elements and SDT theory}
+%\label{fig:sdt-game-elements}
+%\end{center}
+%\end{figure}
+
+
+%\subsubsection{Feedback and Engagement Loops}
+%\label{subsec:feedback-engagement-loops}
+
+%Feedbacks include anything from indication of progress, records of accomplishments, and comments on their manner of achieving goals \citep{nahl2012technology}. In these sense, based on the operant conditioning proposed by \citet{skinner1976about}, a positive feedback loops in a game amplify something, whereas a negative feedback loops will reduce something. According to \citet{marczewski2013feedback}, feedback loops as shown in Figure \ref{fig:feedback-loops} (a) are constructed with two or more cyclical phases, in which the user firstly performs an action; next, something happens  as reaction; and finally, the user experience is modified.
+
+%\begin{figure}[thbp]
+%\begin{center}
+%\includegraphics[width=0.95\textwidth]{feedback-loops.png}
+%\caption[Basic feedback loop, example of positive feedback loop, and example of negative feedback loop]{(a) Basic feedback loop, (b) Example of positive feedback loop, and (c) Example of negative feedback loop (Adapted from \citep{marczewski2013feedback}).}
+%\label{fig:feedback-loops}
+%\end{center}
+%\end{figure}
+
+%In a multiplayer shooting game, an example of a positive feedback loop is showed in Figure \ref{fig:feedback-loops} (b), where an action to kill other players gives points that lead to get powerups, like increasing speed or strength. Figure \ref{fig:feedback-loops} (c) shows an example of negative feedback loop that is used when a player gains advantage over rivals. In this example, by reducing the ability to find health packs or powerful weapons, the game gives fewer powerups to the player. The difficulty rises for advance player as reaction to this action, and as consequence, there are fewer kills, leaving the less skilled player better chance of winning. This kind of balancing in games helps to keep novice players engaged.
+
+%The engagement loops \citep{werbach2012for} as shown in Figure \ref{fig:engagement-loop} is a cycle used to define "what the players do, why they do it, and what the system does in response." Based on the Skinner's theory \citep{skinner1976about} and the Fogg's Behavior Model \citep{fogg2009a}, this cycle describes the sequence of events after each action at the micro level of a gamified system. The engagement loop starts with a player being motivated by a game element (as trigger), and as consequence, the player performs behavior, doing actions. Each one of these actions provokes a response from the system, such as rewarding point/badges or providing feedback. In general, this response is defined by a feedback loop, increasing the player's motivation which then pushes him or her to act again.
+
+%\begin{figure}[thbp]
+%\begin{center}
+%\includegraphics[width=0.55\textwidth]{engagement-loops.png}
+%\caption[Engagement cycle]{Engagement cycle (Taken from \citep{werbach2012for}).}
+%\label{fig:engagement-loop}
+%\end{center}
+%\end{figure}
+
+%\subsubsection{Progression Steps: Player's  Journey and Flow Theory}
+%\label{subsec:player-journey}
+
+%According to \citet{kim2010designing}, good games take the player on a journey toward mastery as shown in Figure \ref{fig:player-journey}, the gameplay experience in these games changes over time in meaningful ways. Kim suggests the use of different gameplay experiences to meet player’s needs. When player is newbie, it is necessary an onboarding experience, in which the game teaches the ropes and sets expectations for what’s to come. To turn newbies into regulars, the triggers, activity loops and feedback systems build a habit-building experience. For enthusiast player, who has mastered the system and want to go deeper, it is necessary a mastery experience. 
+
+%\begin{figure}[thbp]
+%\begin{center}
+%\includegraphics[width=0.55\textwidth]{player-journey.png}
+%\caption[Amy Jo Kim's player journey]{Amy Jo Kim's player journey (Taken from \citep{kim2010designing}).}
+%\label{fig:player-journey}
+%\end{center}
+%\end{figure}
+
+%Based on the combination of flow theory and the player's journey, \citet{werbach2012for} describes the user's transition from the moment they join the system through to the end of the game. Figure \ref{fig:progression-stairs} gives an overview of how the gameplay experience is modified by a gradual escalation of difficulty. In order to retain the users at the start, the commencement of the game should be simple, informative and should guide the users to understand the basic functionality of the application. The progression cycles commence and increase the difficulty at variable rates when the users understand how to navigate the application, giving a habit-building experience. To give mastery experience in the gameplay, the \emph{rest} period or plateau is included at the commencement of each cycle to let the users to catch their breath after the sudden increase in difficulty and giving players time to put the new skills to use. At the end of each rest period, there is a final challenge, commonly known as \emph{the boss fight} that needs a larger amount of effort to complete it compared to regular missions. However, when the boss fight is completed, it is provided greater satisfaction and motivation. The boss fight completes the end of each cycle or level, and at this point the user continues to the next rank where the cycle commences again with a higher level of complexity.
+
+%\begin{figure}[thbp]
+%\begin{center}
+%\includegraphics[width=0.85\textwidth]{progression-stairs.png}
+%\caption[Progression stairs]{Progression stairs (Taken from \citep{werbach2012for}).}
+%\label{fig:progression-stairs}
+%\end{center}
+%\end{figure}
 
 %In the context of education, learners in the flow state frequently experience positive affect and better scores/performances compared with other learners who are in a similar situation but not in the flow state \cite{BaydasKarakusTopuYilmazOzturkGoktas2015, IbanezDiSerioVillaranDelgadoKloos2014, ShernoffCsikszentmihalyiSchneiderShernoff2014}. For example, several empirical studies conducted by D’Mello, Graesser, and colleagues using intelligent tutoring systems (e.g. AutoTutor) have shown strong positive correlations between learning gains, confusion, and flow state \cite{D'MelloGraesser2012}. Another example is the study of Choi et al., where participants used a web-based e-learning system in a program on Enterprise Resource Planning. The data of this study revealed that flow experiences were directly linked with learning outcomes and leaners’ attitude towards e-learning.
 
@@ -144,41 +706,31 @@ In the CL ontology \cite{IsotaniInabaIkedaMizoguchi2009}, and therefore in the o
 
 %The related work and frameworks presented in the previous paragraph are important for guiding educators and game designers to create better learning situations. Nevertheless, they were not created to automate the process of learning design and do not have the necessary formalization to be implemented and included as a feature in a learning design authoring tool. This means that, if an instructional designer wants to maintain the learner's flow state, he/she will need to do so manually, without any computational support. Such a manual approach is infeasible to be carried out when there is a need to plan personalized sequences of activities for a class of students with different needs, using a database with multiple learning objects (e.g. games, texts, videos, images, etc.) and taking into consideration several pedagogical approaches to support flow experiences. Toward the automation of detecting and using flow state to create better learning experiences, Lee and colleagues provide adaptive learning contents by selecting appropriate problems based on the three-channel flow model \cite{LeeJhengHsiao2014}. They propose an automatic flow detector where the three-channel flow model is built based on features related to affective dimensions (i.e. valence and arousal) and interactions (i.e. mouse click duration, keystroke duration) with learning software.
 
-\newpage
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Ontologies and Ontology Engineering}
 \label{sec:ontologies-and-ontology-engineering}
 
-This formalization is achieved through ontology engineering in which the similarities and differences of these concepts are identified to describe their application in the gamification of CL scenarios and the building of gamification model for CL scenarios.
+%This formalization is achieved through ontology engineering in which the similarities and differences of these concepts are identified to describe their application in the gamification of CL scenarios and the building of gamification model for CL scenarios.
 
 
 
 %In Section \ref{sec:relevant-technologies}, we presented the fundamental concepts about ontologies and ontology engineering. In this section, we detail these concepts and the techniques to create ontologies. The most of the concepts and ideas presented in this section come from the tutorial on ontology engineering published in three parts in \cite{mizoguchi2003part, mizoguchi2004tutorial, mizoguchi2004part}.
 
-\subsection{Ontology and Its Elements}
+\subsection{What is an ontologies? and Why is an ontology important?}
 \label{subsec:ontologies}
 
-%For philosophers, ontology (from the Greek "being, that which is," present participle of the verb "be," and "science, study, and theory") is the philosophical study of the nature of being, becoming, existence, or reality, as well as the basic categories of being and their relations \cite{wikipedia2014ontology}. In computer science, \cite{gruber1993a} defines an ontology as an explicit specification of a conceptualization, in which this conceptualization refers to the meaningfulness of concepts and their relationship given the context of the target world. 
+For philosophers, the definition of ontology came from the Greek \aspas{\emph{being, that which is},} present participle of the verb \aspas{\emph{be},} and \aspas{science, study, and theory}, is the philosophical study of the nature of being, becoming, existence, or reality, as well as the basic categories of being and their relations \cite{Wikipedia2014}. In computer science, for \citeonline{Gruber1993}, an ontology is defined as an explicit specification of a conceptualization in which the conceptualization refers to the meaningfulness of concepts and their relationship given the context of the target world. \citeonline{SwartoutTate1999} defines an ontology as the basic structure or armature around a knowledge base that can be built. As the knowledge bases are composed by facts of a given domain \cite{Hayes-RothWatermanLenat1983}, an ontology is an framework in which these facts are represented. For \cite{GuarinoOberleStaab2009}, an ontology is not a simple representation of concepts and their relations. An ontology contains restrictions defined through axioms in which these axioms are formal logical expressions that validate and check the consistency of domain. Finally, an ontology constitute agreements to achieve the mutual understanding of the target domain in a human and computer understandable manner \cite{Mizoguchi2004a}.
 
-%\cite{swartout1999guest} defines an ontology as the basic structure or armature around a knowledge base that can be built. As the knowledge bases are composed by facts of a given domain \cite{hayes1984building}, an ontology can also be defined as a framework in which these facts are represented. For \cite{guarino2009ontology}, an ontology is not a simple representation of concepts and their relations. The ontologies contain restrictions defined through axioms, in which these axioms are formal logical expressions that validate and check the consistency of domain. Finally, \cite{mizoguchi2003part} states that ontologies constitute agreements to achieve the mutual understanding of the target domain in a human and computer understandable manner.
+The definitions of ontology presented above also indicate the reasons \aspas{\emph{why}} many researches and practitioners have been attracted to develop and use ontologies as knowledge source in powerful and intelligent computational systems and applications. In these applications, an ontology first provide a common conceptual structure that enables the development of sharable and reusable knowledge-based by computer-based mechanisms and procedures, and second an ontology facilitates the interoperability of information enabling them to merge and integrate data from different sources.
 
-%The definitions of ontologies presented above are the reasons why ontologies have attracted many researches and practitioners to use them in the development of powerful and intelligent computational applications. In these applications, ontologies first provide a common conceptual structure that enables the development of sharable and reusable knowledge-based, and second they facilitate the interoperability of information enabling the merge and integration of data from different sources.
-
-%The common components of ontologies are individuals, classes, attributes, and relations \cite{biemann2005ontology, sugumaran2002ontologies}. Individuals are instances or objects that constitute the basic or ground level of ontologies. The classes are sets, collections, concepts, types of objects, or kinds of things. Attributes are aspects, properties, features, characteristics, or parameters that classes can have. Relations are ways in which classes and individuals can be related to one another.
-
-%According to \cite{mizoguchi2003part}, an ontology is a theory of concepts rather than terms, where it is constituted by the following two elements \cite{isotani2010ontological}:
-
-%\begin{enumerate}
-%\item A \emph{set of essential concepts} that result from the articulation of basic knowledge present in a given domain, where the concepts can be represent using a specialized vocabulary.
-
-%\item The \emph{body of knowledge} that describes the given domain using the essential concepts, and it is composed by:
-
-%\begin{itemize}
-%\item The hierarchy (class/sub-class) resulting from "\emph{is-a}" relations between concepts;
-%\item The definition of important relations between concepts apart from the \emph{is-a} relation (e.g. \emph{part-of}, and \emph{same-as} relations);
-%\item The \emph{axiomatization} of semantic constraints between those concepts and relations.
-%\end{itemize}
-%\end{enumerate}
+\citeonline{WongLiuBennamoun2012, SugumaranStorey2002} define the fundamental components of an ontology as: individuals, classes, attributes, and relations. Individuals are instances or objects that constitute the basic or ground level of ontologies. The classes are sets, collections, concepts, types of objects, or kinds of things. Attributes are aspects, properties, features, characteristics, or parameters that classes can have. Relations are ways in which classes and individuals can be related to one another. In addition to these fundamental components, an ontology as a theory of concept \cite{Mizoguchi2004} is also constituted by the following two elements: (1) a \emph{set of essential concepts} that result from the articulation of basic knowledge present in a given domain, in which the concepts can be represent using a specialized vocabulary; and
+(2) a \emph{body of knowledge} that describes the given domain using the essential concepts. In this sense, the body of knowledge is composed by:
+\begin{itemize}
+\item The hierarchy (\emph{class}/\emph{sub-class}) resulting from \aspas{\emph{is-a}} relations between concepts;
+\item The definition of \emph{important relations} (e.g. \aspas{\emph{part-of},} and \aspas{\emph{same-as}}) between concepts apart from the \aspas{\emph{is-a}} relation;
+\item The \emph{axiomatization} of semantic constraints between those concepts and relations.
+\end{itemize}
 
 %Usually, when developing ontologies, large amount of time is spent over the discussing about the terminology to be used (vocabulary) rather than understanding the critical concepts of the domain \cite{isotani2010ontological,mizoguchi2003part}. However, to create a good ontology the definition of concepts is more important, and the labeling of these concepts pass to have less importance. Thus, when there are terminological problems, it is not a bad practice to use a sentence or a provisional term to denote a concept. For this concept-oriented viewpoint process, the quality of an ontology is decided by the knowledge that can be explained by the ontology and the essential properties of concepts that are explicitly represented it \cite{mizoguchi2004tutorial}.
 
@@ -210,26 +762,26 @@ This formalization is achieved through ontology engineering in which the similar
 %\item \emph{application ontologies} describe concepts depending both on the particular domain (domain ontology) and task (task ontology). These concepts often correspond to roles played by domain entities while performing a certain activity with the resolution of a problem. The concepts defined in this type of ontologies are often described by specializations of domain and task ontologies.
 %\end{itemize}
 
-%\begin{figure}[thbp]
-%\begin{center}
-%\includegraphics[width=0.5\textwidth]{ontologies-level-dependence.png}
-%\caption[Types of ontologies according to level of dependence]{Types of ontologies according to level of dependence (Adapted from \cite{guarino1997semantic}).}
-%\label{fig:ontologies-level-dependence}
-%\end{center}
-%\end{figure}
+\begin{figure}[htb]
+ \caption{Types of ontologies according to level of dependence}
+ \label{fig:ontologies-level-dependence}
+ \centering
+ \includegraphics[width=0.45\textwidth]{images/chap-general-background/ontologies-level-dependence.png}
+ \fdireta{Guarino1997a}
+\end{figure}
 
 \subsubsection{Lightweight Ontologies and Heavyweight Ontologies}
 \label{subsubsec:lightweight-ontologies}
 
 %Based on the level of formal representation, ontologies can be classified in lightweight ontologies and heavyweight ontologies. As we can see in the Figure \ref{fig:spectrum-ontologies}, at one extreme, there are lightweight ontologies that consist of terms with little or no specification of the meaning. At the other end of the spectrum, we have heavyweight ontologies that comprise ontologies rigorously formalized by logical theories. As we move along the continuum, the amount of meaning specified and the degree of formality increases, reducing possible ambiguities \cite{uschold2004ontologies}.
 
-%\begin{figure}[thbp]
-%\begin{center}
-%\includegraphics[width=0.85\textwidth]{spectrum-ontologies.png}
-%\caption[The spectrum of lightweight and heavyweight ontologies]{The spectrum of lightweight and heavyweight ontologies (Taken from \cite{wong2012ontology}).}
-%\label{fig:spectrum-ontologies}
-%\end{center}
-%\end{figure}
+\begin{figure}[htb]
+ \caption{The spectrum of lightweight and heavyweight ontologies}
+ \label{fig:spectrum-ontologies}
+ \centering
+ \includegraphics[width=1\textwidth]{images/chap-general-background/spectrum-ontologies.png}
+ \fdireta{WongLiuBennamoun2012}
+\end{figure}
 
 %The \emph{ligthweight ontologies} are ontologies based on topical hierarchies with lack rigorous conceptual definitions, principled conceptual organization, and label-concept distinctions. As instance of this kind of ontologies, we have terms, glossaries, thesauri, and database schemas. The main purpose of this kind of ontology is to provide a weak categorization of content to improve search engine functionality. Thus, the ligthweight ontologies are broadly used on the Web to categorize a large amount of data, such as available data on Web portals. However, these ontologies tend to be very usage-dependent and user-dependent of applications.
 
@@ -240,132 +792,158 @@ This formalization is achieved through ontology engineering in which the similar
 \subsection{Ontology Representation}
 \label{subsec:ontology-representation}
 
-%Nowadays, the ontologies can be represented in two ways, one representation is the formal representation that is used for computer consumption, and another representation is the graphical representation for human comprehension. Both representations are relevant for this dissertation and they affect the quality of the representation of ontology.
+Nowadays, the ontologies can be represented in two ways, one representation is the formal representation that is used for computer consumption, and another representation is the graphical representation for human comprehension.
 
 \subsubsection{Formal Representation}
 \label{subsubsec:formal-representation}
 
-%To allow the formal representation for computer consumption, there are many languages that have been proposed using the predicate logics, description logics or frame based languages \cite{mizoguchi2004tutorial}. However, the most popular language and framework to describe ontologies is the Web Ontology Language (OWL) language that is based on the Resource Description Framework (RDF)/RDF-Schema.
+To allow the formal representation for a direct computer consumption, there are many languages that have been proposed using the predicate logics, description logics or frame based languages. The most popular language and framework to describe ontologies is the Web Ontology Language (OWL) language that is based on the Resource Description Framework (RDF)/RDF-Schema.
 
-%The RDF specification was developed by the World Wide Web Consortium (W3C) for metadata description. It is formally represented in the eXtensible Markup Language (XML) employing triplets that contain a subject node, predicate, and object node ($<$subject, predicate, object$>$). Each node in the triplet can be a web resource (URI reference), a value (literal) or a document identifier (to represent a blank node). A set of triples also can become a node itself, and a property is a semantic relation between nodes (subject and object).
+The RDF specification was developed by the World Wide Web Consortium (W3C) for metadata description. It is formally represented in the eXtensible Markup Language (XML) employing triplets that contain a subject node, predicate, and object node ($<$subject, predicate, object$>$). Each node in the triplet can be a web resource (URI reference), a value (literal) or a document identifier (to represent a blank node). A set of triples also can become a node itself, and a property is a semantic relation between nodes (subject and object).
 
-%To represent triplets, the RDF/RDF-Schema specifications define classes, properties, and relationships that can be used to describe these triples as statements about resources. It also includes definition of tags and hierarchical structures (taxonomy) providing the basic elements for the description of ontologies. However, the RDF-Schema has some limitation, especially to support computational reasoning on data available through the internet \cite{patel2005building}. Thus, the OWL specification provides the expressive language to develop ontologies.
+To represent triplets, the RDF/RDF-Schema specifications define classes, properties, and relationships that can be used to describe these triples as statements about resources. It also includes definition of tags and hierarchical structures (taxonomy) providing the basic elements for the description of ontologies. However, the RDF-Schema has some limitation, especially to support computational reasoning on data available through the internet \cite{Patel-Schneider2005}. Thus, the OWL specification provides an expressive language to develop ontologies.
 
-%OWL is a language developed and endorsed by the W3C to satisfy the formalism for the Semantic Web (SW). It allows the SW applications to understand and answer queries of agents (people or other programs) by reasoning on Web content by ontological descriptions. OWL was developed based on DAML+OIL \cite{horrocks2002damloil} with a formal specification influenced by description logics, the frames paradigms and the OWL exchange syntax (namely RDF/XML) \cite{horrocks2003shiq}.
+OWL is a language developed and endorsed by the W3C to satisfy the formalism for the Semantic Web (SW). It allows the SW applications to understand and answer queries of agents (people or other programs) by reasoning on Web content by ontological descriptions. OWL was developed based on DAML+OIL \cite{Horrocksothers2002} with a formal specification influenced by description logics, the frames paradigms and the OWL exchange syntax (namely RDF/XML) \cite{HorrocksPatel-SchneidervanHarmelen2003}.
 
-%There are three variants of OWL referred as OWL Lite, OWL DL and OWL Full. These three variants allow to achieve a good balance between scalability and expressive power. According to the OWL specification, each variant is an extension of its simpler predecessor. Thus, OWL Lite is used manly for classification hierarchy and simple constraints; OWL DL gives maximum expressiveness retaining computational completeness and decidability; and OWL Full gives maximum expressiveness, however with no computational guarantees, the reasoning process using OWL Full may not be completed in a finite time. Figure \ref{fig:owl-example} shows as example part of an ontology related to bicycle in OWL.
+There are three variants of OWL referred as OWL Lite, OWL DL and OWL Full. These three variants allow to achieve a good balance between scalability and expressive power. According to the OWL specification, each variant is an extension of its simpler predecessor. Thus, OWL Lite is used manly for classification hierarchy and simple constraints; OWL DL gives maximum expressiveness retaining computational completeness and decidability; and OWL Full gives maximum expressiveness, however with no computational guarantees, the reasoning process using OWL Full may not be completed in a finite time. \autoref{fig:owl-example} shows as example part of an ontology to represent the formalization of bicycle in OWL language.
 
-%\begin{figure}[thbp]
-%\begin{center}
-%\includegraphics[width=0.65\textwidth]{owl-example.png}
-%\caption[Part of bicycle ontology represented using OWL]{Part of bicycle ontology represented using OWL (Taken from \cite{isotani2010ontological}).}
-%\label{fig:owl-example}
-%\end{center}
-%\end{figure}
 
-%Since this dissertation will use graphical representation to describe the ontologies, we do not detail the RDF/RDF-Schema and OWL languages. RDF/RDF-Schema and OWL can be automatically generated by graphical ontology editors, such as Prot\'{e}g\'{e} \cite{noy2001creating}, OntoEdit \cite{sure2002ontoedit} and Hozo \cite{kozaki2002hozo}.
+\begin{figure}[htb]
+ \caption{Part of bicycle ontology in the OWL}
+ \label{fig:owl-example}
+ \centering
+ \includegraphics[width=0.85\textwidth]{images/chap-general-background/owl-example.png}
+ \fdireta{Isotani2009}
+\end{figure}
 
-%\newpage
+
+As the author of this dissertation used the graphical representation to describe the ontological structures, details of the RDF/RDF-Schema and OWL languages are not detailed in this section. The RDF/RDF-Schema and OWL are automatically generated by graphical ontology editors, such as Prot\'{e}g\'{e} \cite{NoySintekDeckerCrubezyFergersonMusen2001}, OntoEdit \cite{SureErdmannAngeleStaabStuderWenke2002} and Hozo \cite{KozakiKitamuraIkedaMizoguchi2002}.
+
 \subsubsection{Graphical representation}
 \label{subsubsec:graphical-representation}
 
-%Since an ontology is mainly composed by concepts and their relations, the graph is a common representation of ontologies, where the nodes represent concepts and the arrows represent relations between concepts \cite{dieng1998comparison}. Figure \ref{fig:graph-bicycle-ontology} shows an example of an ontology referred to bicycle. In this ontology, the concept of a bicycle is a specialization of vehicle represented using \emph{is-a} relation ($<$bicycle \emph{is-a} vehicle$>$). In ontology engineering, we can say that the class vehicle is a super-class of the class bicycle, and the bicycle is specialized into a sport bicycle and city bicycle. Finally, this Figure shows that the bicycle has attributes: color and weight. And the bicycle using the part-of relation is composed by elements: wheel, handlebar, frame and pedal. In this Figure, the scheme of colors helps the reader identify the relationship between concepts.
+As an ontology is mainly composed by concepts and their relations, the graph is a common representation of ontologies, where the nodes represent concepts and the arrows represent relations between concepts \cite{DiengHug1998}. \autoref{fig:graph-bicycle-ontology} shows the graphical representation of an ontology referred to bicycle. In this ontology, the concept of a bicycle is a specialization of vehicle represented using \emph{is-a} relation ($<$bicycle \emph{is-a} vehicle$>$). In this ontology, the class \aspas{\emph{City bicycle}} and \aspas{\emph{Sport bicycle}} are related to the class \aspas{\emph{Bicycle}} by the arrows \aspas{\emph{is-a}} to indicate that the bicycle is specialized into sport bicycle and city bicycle, and the class \aspas{\emph{Bicycle}} is associated to the class \aspas{\emph{Vehicle}} by the arrows \aspas{\emph{is-a}} to indicate that vehicle is a super-class of the class bicycle. The attributes \aspas{\emph{Color}} and \aspas{\emph{Weight}} are indicated by the arrows \aspas{\emph{attribute-of}.} Finally, the arrows \aspas{\emph{part-of}} indicate the elements that compose a bicycle, and these elements are: \emph{Wheel}, \emph{Handlebar}, \emph{Frame}, and \emph{Pedal}. The scheme of colors in this figure helps the reader identify the relationship between concepts.
 
-%\begin{figure}[thbp]
-%\begin{center}
-%\includegraphics[width=0.8\textwidth]{graph-bicycle-ontology.png}
-%\caption[A simple example of a bicycle ontology]{A simple example of a bicycle ontology (Taken from \cite{isotani2010ontological}).}
-%\label{fig:graph-bicycle-ontology}
-%\end{center}
-%\end{figure}
+\begin{figure}[htb]
+ \caption{A graph representation of a bicycle ontology}
+ \label{fig:graph-bicycle-ontology}
+ \centering
+ \includegraphics[width=1\textwidth]{images/chap-general-background/graph-bicycle-ontology.png}
+ \fdireta{Isotani2009}
+\end{figure}
 
-%Although the representation of ontologies using graphs is the most common, it suffers deficiencies that do not help to capture important elements in an ontology \cite{devedzic2006semantic}, especially when trying to represent roles. Therefore, we decide to use the model of roles propose by \cite{ mizoguchi2007the}, and the Hozo ontology editor \cite{kozaki2002hozo} that is an authoring environment for building ontologies based on the model of roles.
+Although the representation of ontologies using graphs is the most common, it suffers deficiencies that do not help to capture important elements in an ontology \cite{Devedzic2006}, especially when trying to represent the model of roles proposed by \citeonline{MizoguchiSunagawaKozakiKitamura2007}. 
 
-%Hozo editor adequately deals with the differentiating of basic concepts (e.g. human, and artefact) from role concepts (e.g. learner, and reward) based on the model of roles. In this model, to deal with the concept of role, the following three classes are introduced: (a) Role concept - A concept representing a role that depends on a context (e.g. learner role that depends on the school); (b) Basic concept - A concept that does not need other concepts to be defined (e.g. human); and (c) Role holder - An instance of a base concept that is holding the role (e.g. learner). The basic concepts are used as class constraints, and the instances that satisfy the class constraints play the role, becoming role holders. For example as shown in the Figure \ref{fig:learner-role-hozo}, "In a learning environment there is a vacancy for a learner, and a person, whose name is Geiser, fills the position, becoming a learner in the particular environment." The person who plays a role is referred as a role holder. Thus, Geiser becomes a learner in the learning environment by playing the learner role. The top of the figure shows how the concepts around a role are related to each other and in the bottom is shown the representation in Hozo (without the instantiation of the person's name).
+To deal with the modeling of ontologies based on the model of role, the Hozo ontology editor \cite{KozakiKitamuraIkedaMizoguchi2002} has been proposed as an authoring environment in which the differentiating of basic concepts (e.g. human, and artifact) from role concepts (e.g. learner, and reward) is described as frames diagrams. In this graphical representation based on frames, to deal with the concept of role, the following three classes are defined:
 
-%\begin{figure}[thbp]
-%\begin{center}
-%\includegraphics[width=0.65\textwidth]{learner-role-hozo.png}
-%\caption[The learner role represented using Hozo]{The learner role represented using Hozo (Adapted from \cite{isotani2010ontological}).}
-%\label{fig:learner-role-hozo}
-%\end{center}
-%\end{figure}
+\begin{description}
+  \item[Role concept] - A concept representing a role that depends on a context (e.g. learner role that depends on the school);
+  \item[Basic concept] - A concept that does not need other concepts to be defined (e.g. human); and
+  \item[Role holder] - An instance of a base concept that is holding the role (e.g. learner). 
+\end{description}
 
-%Figure \ref{fig:hozo-bicycle-ontology} shows the representation of bicycle ontology using Hozo representation. In this figure, the relations part-of and attribute-of is respectively represented by labels "p/o" and "a/o" that appear in front of each slot. Thus, the frame, pedal, handlebar, and wheels are part of the bicycle. Observe that in the context of bicycle, a wheel (basic concept) can play the role of front wheel or rear wheel (role concepts). Thus, a particular instance of a wheel that plays one of these roles (front wheel role or rear wheel role) is referred to as role holder. In summary, a front wheel is an instance of wheel playing the front wheel role.
+The basic concepts are used as class constraints, and the instances that satisfy the class constraints play the role, becoming role holders. For example as shown in the \autoref{fig:learner-role-hozo}, \aspas{In a learning environment there is a vacancy for a learner, and a person, whose name is Geiser, fills the position, becoming a learner in the particular environment.} The person who plays a role is referred as a role holder. Thus, \emph{Geiser} becomes a \emph{learner} in the \emph{learning environment} by playing the \emph{learner role}. The top of the figure shows how the concepts around a role are related to each other and in the bottom is shown the representation in Hozo.
 
-%\begin{figure}[thbp]
-%\begin{center}
-%\includegraphics[width=0.95\textwidth]{hozo-bicycle-ontology.png}
-%\caption[Example of bicycle ontology represented using Hozo]{Example of bicycle ontology represented using Hozo (Taken from \cite{isotani2010ontological}).}
-%\label{fig:hozo-bicycle-ontology}
-%\end{center}
-%\end{figure}
+
+\begin{figure}[htb]
+ \caption{The learner role holder in Hozo representation}
+ \label{fig:learner-role-hozo}
+ \centering
+ \includegraphics[width=0.85\textwidth]{images/chap-general-background/learner-role-hozo.png}
+ \fautor
+\end{figure}
+
+\autoref{fig:hozo-bicycle-ontology} shows the representation of bicycle ontology using Hozo representation. In this figure, the relations part-of and attribute-of is respectively represented by labels \aspas{\emph{p/o}} and \aspas{\emph{a/o}} that appear in front of each slot. Thus, the frame, pedal, handlebar, and wheels are part of the bicycle. Observe that in the context of bicycle, a wheel (basic concept) can play the role of front wheel or rear wheel (role concepts). Thus, a particular instance of a wheel that plays one of these roles (front wheel role or rear wheel role) is referred to as role holder. In summary, a front wheel is an instance of wheel playing the front wheel role.
+
+\begin{figure}[htb]
+ \caption{Example of bicycle ontology using Hozo representation}
+ \label{fig:hozo-bicycle-ontology}
+ \centering
+ \includegraphics[width=1\textwidth]{images/chap-general-background/hozo-bicycle-ontology.png}
+ \fdireta{Isotani2009}
+\end{figure}
 
 \subsection{Ontology Engineering}
 \label{subsec:ontology-engineering}
 
-%According to \cite{devedzic2002understanding}, ontology engineering encompasses a set of activities conducted during the conceptualization, design, implementation and deployment of ontologies. It covers topics including philosophy, metaphysics, knowledge representation formalisms, development methodology, knowledge sharing and reuse, knowledge management, business process modeling, common sense knowledge, systematization of domain knowledge, information retrieval from the Internet, standardization, and evaluation.
+Ontology engineering encompasses a set of activities conducted during the conceptualization, design, implementation and deployment of ontologies \cite{Devedzic2002,Devedzic2006}. It covers topics including philosophy, metaphysics, knowledge representation formalisms, development methodology, knowledge sharing and reuse, knowledge management, business process modeling, common sense knowledge, systematization of domain knowledge, information retrieval from the Internet, standardization, and evaluation.
 
-%The development of ontologies is a time-consuming and difficult task that need knowledge about the target domain, theoretical background on otology research, and the skills to properly define the concepts and develop the body of knowledge. Thus, to facilitate the development of ontologies, there are several methodologies and methods for building ontologies. According to \cite{mizoguchi2004tutorial}, these methods are categorized into a three layer guideline as shown in Figure \ref{fig:three-layer-model}, in which:
+Developing ontologies is a time-consuming and difficult task that requires knowledge about the target domain, theoretical background on ontology formalization, and the skills to properly define the concepts and elements as body of knowledge in ontologies. Thus, to facilitate the development of ontologies, there are several formal methodologies and methods that have been proposed. The guidelines of these methodologies and methods are categorized into three layers shown in \autoref{fig:three-layer-model} \cite{Mizoguchi2004}, in which:
 
-%\begin{enumerate}
-%\item \textbf{Top-layer} is the coarsest level which specifies the whole building process with standard software development life cycles. The ontological methodologies of top layer have a set of guidelines associated with conventional software development processes and practices.
-%\item \textbf{Middle-layer} is the generic constraints and guidelines that specify a set of major steps and their order of execution. In each step of middle layer, the detailed information about the activities to be completed, and the way for each activity should be carried out. 
-%\item \textbf{Bottom layer} is the most fine-grain guidelines that enable the construction of concepts hierarchy. It describes guidelines to create explicit semantic structures from identified concepts in the target world.
-%\end{enumerate}
+\begin{enumerate}
+\item \textbf{Top-layer} contains the coarsest level of guidelines that specifies the whole building process with standard software development life cycles. The guidelines described in this layer correspond to ontological methods and methodologies associated with conventional software development processes and practices.
 
-%\begin{figure}[thbp]
-%\begin{center}
-%\includegraphics[width=0.75\textwidth]{three-layer-model.png}
-%\caption[Three-layer model of ontology building methodology]{Three-layer model of ontology building methodology (Taken from \cite{mizoguchi2004tutorial}).}
-%\label{fig:three-layer-model}
-%\end{center}
-%\end{figure}
+\item \textbf{Middle-layer} describes the generic constraints and guidelines that specify a set of major steps and their order of execution. In each step of middle layer, the detailed information about the activities to be completed, and the way for each activity should be carried out. 
 
-%Most of the existing methodologies are concerned mainly with the top-layer. Some examples are METHONTOLOGY \cite{fernandez1997methontology}, On-To-Knowledge \cite{sure2004knowledge}, and Ushold and King’s methodology \cite{uschold1995towards}. Unfortunately, only a few methodologies deal with the middle and bottom layers.  The main problem of having few methodologies for the development of the middle and bottom layers is the lack of support for novices. Thus, the chances of creating a good ontology at the end of some process decreases condonably without guidelines for ontological development covering all the layers.
+\item \textbf{Bottom-layer} corresponds to the most fine-grain guidelines that enable the construction of concepts hierarchy. It describes guidelines to create explicit semantic structures from identified concepts in the target world.
+\end{enumerate}
 
-%In this sense, \cite{mizoguchi2004tutorial} offers guidelines to support the development of ontologies at the middle and bottom layers using the Activity-First Method for task ontology development \cite{mizoguchi1995ontology}. Thus, in this dissertation, we will utilizes these guidelines to create the ontology OntoGaCLeS. In the rest of this section, we present an overview of guidelines proposed by Mizoguchi in \cite{mizoguchi2004tutorial, mizoguchi2003part, mizoguchi2004part}.
 
-%\subsubsection{Middle Layer Guidelines}
-%\label{subsubsec:middle-layer}
+\begin{figure}[htb]
+ \caption{Three-layer classification model of guidelines proposed in methodologies and methods to develop ontologies}
+ \label{fig:three-layer-model}
+ \centering
+ \includegraphics[width=0.75\textwidth]{images/chap-general-background/three-layer-model.png}
+ \fdireta{Mizoguchi2004}
+\end{figure}
 
-%\begin{enumerate}
-%\item Identify concepts rather than terms. As ontology is totally independent of terminological problems, one cannot stress the importance of this distinction too much. Since people will be easily trapped by the endless terminological discussion departing from the underlying conceptual structure of the target domain.
-%\item Use mixed and flexible strategies of top-down, bottom-up and middle-out. Never stick to only one of the strategies. 
-%\item Whenever possible, identify and use top-level ontology in the early phase of the development process to govern the rest of the steps. 
-%\item When you deal with a concept, identify its main components, using “part-of” relation as well as its main attributes. You can thus find and extend candidates of concepts to be included in the ontology. 
-%\item Definition of axioms should be done after finishing is-a hierarchy building and informal term definition. 
-%\item Note that you cannot define any concept completely in theory. Therefore, do not stick to the definition of each term too much. At the best, you only can give necessary conditions of them. Term definition in the early phase can be rough. Detailed definition of a term should be done after you grasp the whole structure of the ontology, that is, after building is-a hierarchy. 
-%\item Never try to seriously define a term one by one. Definition of a concept needs sufficient contextual information, which is usually not available in the early phase. Terms are related to each other and could have several meanings, which should be clarified by the context given. 
-%\item Arrange and resolve the terminological issues(how to name a concept) at the last step. 
+Most of the currently existing methods and methodologies describe guidelines concerned mainly with the top-layer. Some examples are METHONTOLOGY \cite{Fernandez-LopezGomez-PerezJuristo1997}, On-To-Knowledge \cite{SureStaabStuder2004}, and Ushold and King's methodology \cite{UscholdKing1995}. Unfortunately, only a few of them deal with the middle and bottom layers.  The main problem of having few methodologies for the development of the middle and bottom layers is that the chances of creating a good ontology at the end of some process decreases.
 
-%\item When you find the necessity to define more than one meaning for one term, then you are facing the terminological problem. Each term should correspond to exactly one concept in ontology, since you are not building a dictionary, but a well-organized conceptual structure. Each term is only a label of the concept. You of course can build a dictionary after building ontology.
+In this sense, \citeonline{Mizoguchi2004} proposed a set of guidelines to support the development of ontologies at the middle and bottom layers based the Activity-First Method \cite{Mizoguchi1995}, and in this dissertation, the author of this dissertation utilized these guidelines to create the ontology OntoGaCLeS. Therefore, the rest of this section presents an overview of guidelines \cite{Mizoguchi2003,Mizoguchi2004a,Mizoguchi2004} that were summarized by \citeonline{Isotani2009} as described as follows:
 
-%\item Put a higher priority on is-a hierarchy construction than term definition. Carefully designed is-a hierarchy gives you a correct context to define a term.
-%\item When you get stuck with a term definition, follow either one of the following : 
-%\begin{itemize}
-%\item Multiple meanings? Then concentrate on meaning one by one. 
-%\item Multiple Viewpoints? Make the viewpoint explicit and then try it again 
-%\item Check if you are discussing terminology.
-%\item Use is-a hierarchy to give enough context. 
-%\end{itemize}
-%\end{enumerate}
+\subsubsection*{Middle Layer Guidelines}
+\label{subsubsec:middle-layer}
 
-\subsubsection{Bottom Layer Guidelines}
+\begin{enumerate}
+\item Identify concepts rather than terms. As ontology is totally independent of terminological problems, one cannot stress the importance of this distinction too much. Since people will be easily trapped by the endless terminological discussion departing from the underlying conceptual structure of the target domain.
+
+\item Use mixed and flexible strategies of top-down, bottom-up and middle-out. Never stick to only one of the strategies. 
+
+\item Whenever possible, identify and use top-level ontology in the early phase of the development process to govern the rest of the steps. 
+
+\item When you deal with a concept, identify its main components, using \aspas{\emph{part-of}} relation as well as its main attributes. You can thus find and extend candidates of concepts to be included in the ontology. 
+
+\item Definition of axioms should be done after finishing is-a hierarchy building and informal term definition. 
+
+\item Note that you cannot define any concept completely in theory. Therefore, do not stick to the definition of each term too much. At the best, you only can give necessary conditions of them. Term definition in the early phase can be rough. Detailed definition of a term should be done after you grasp the whole structure of the ontology, that is, after building is-a hierarchy. 
+
+\item Never try to seriously define a term one by one. Definition of a concept needs sufficient contextual information, which is usually not available in the early phase. Terms are related to each other and could have several meanings, which should be clarified by the context given. 
+
+\item Arrange and resolve the terminological issues (how to name a concept) at the last step. 
+
+\item When you find the necessity to define more than one meaning for one term, then you are facing the terminological problem. Each term should correspond to exactly one concept in ontology, since you are not building a dictionary, but a well-organized conceptual structure. Each term is only a label of the concept. You of course can build a dictionary after building ontology.
+
+\item Put a higher priority on is-a hierarchy construction than term definition. Carefully designed is-a hierarchy gives you a correct context to define a term.
+
+\item When you get stuck with a term definition, follow either one of the following : 
+\begin{itemize}
+\item Multiple meanings? Then concentrate on meaning one by one. 
+\item Multiple Viewpoints? Make the viewpoint explicit and then try it again 
+\item Check if you are discussing terminology.
+\item Use is-a hierarchy to give enough context. 
+\end{itemize}
+\end{enumerate}
+
+\subsubsection*{Bottom Layer Guidelines}
 \label{subsubsec:bottom-layer}
 
-%According to \cite{isotani2010ontological}, the following list summarizes the guidelines for the bottom layer:
+\begin{enumerate}
+\item \emph{Identify essential properties} for each concept considered essential in the scope of a given problem. These essential properties facilitate to create more stable concepts and hierarchies during the ontology development process.
 
-%\begin{enumerate}
-%\item \emph{Identify essential properties} for each concept considered essential in the scope of a given problem. These essential properties facilitate to create more stable concepts and hierarchies during the ontology development process.
-%\item \emph{Make correct use of the role-concept} that can be defined as the association of a concept to a particular role within a given context. When developing an ontology, one should carefully distinguish the difference between role-concept, role-holder, and basic concepts. Such differentiation helps to treat multiple meanings as introduced previously in the guidelines for the Middle layer.
-%\item \emph{Be careful when using is-a relation} in ontologies is different from the one utilized by object- oriented programming. The is-a relation applies only for classes. Furthermore, for given classes A and B the relation $<$class A is-a class B$>$ is true if and only if the instance set of A is a subset of the instance set of B. Therefore building a relation such as $<$teacher is-a human$>$ is ontologically incorrect, since \emph{teacher} is not an ontologically-valid class because there is no person (no instance of class person) whose intrinsic property is being a teacher. Thus, in ontology, it is inappropriate to model $<$Mizoguchi instance-of Teacher$>$ and $<$Teacher is-a Human$>$ (What happens if Mizoguchi quits his job?).
-%\item \emph{Be careful when using part-of relation} such as functional, qualification, spatial and etc. Thus, it needs to be used carefully, especially avoid part-of relation to create class hierarchies such as $<$man part-of human$>$. Such an expression is valid only when you want to deal with man as a subspecies of human.
-%\item \emph{Pay attention to the difference between is-a and part-of relations}. Usually, the meaning of is-a and part-of relations is easy to distinguish. The former indicates generic vs. specific relations between classes. The latter is often utilized to specify the composition of a thing (although, part-of can be used in other situations). However, sometimes when developing an ontology, one can encounter difficulties to distinguish their difference. For example, which of the following relation is correct: $<$Dog part-of mammal living in Japan$>$ or $<$Dog is-a mammal living in Japan$>$? People agree that $<$Dog is-a mammal$>$ is correct. However, by adding the \emph{living in Japan} phrase to mammal the distinction is not quite that easy because \emph{mammal living in Japan} seems to represent species, and therefore, $<$\emph{dog-species} part-of  \emph{mammal-species} living in Japan$>$ could be considered. Thus, the distinction between is-a and part-of relation is not always easy.
-%\item \emph{Avoid the use of multiple inheritances} Creating multiple inheritances is the source of many problems to keep the consistency of the representation. In particular, propagating the essential properties is a problem since each concept should be recognized and represented by their own essential properties.
-%\item \emph{Some boundary between similar concepts can be vague} When developing an ontology some boundaries between similar concepts do not need to be strongly conceptualized. An example is the distinction between the concepts black and white. Since the distinction between them is based on the ambiguous color gray, we cannot give a clear and unique boundary between black and white (although we recognize their existence).
-%\item \emph{Create terms if there is no label to represent a concept}. If you cannot find an appropriate term to represent a concept, then you can temporarily label them with some sentences or marks (e.g., concept 1 and concept 2) until you can come up with a good label. When the body of the ontology is good enough to represent the target domain, you can revise the labels of each concept.
-%\end{enumerate}
+\item \emph{Make correct use of the role-concept} that can be defined as the association of a concept to a particular role within a given context. When developing an ontology, one should carefully distinguish the difference between role-concept, role-holder, and basic concepts. Such differentiation helps to treat multiple meanings as introduced previously in the guidelines for the Middle layer.
+
+\item \emph{Be careful when using is-a relation} in ontologies is different from the one utilized by object- oriented programming. The is-a relation applies only for classes. Furthermore, for given classes A and B the relation $<$class A is-a class B$>$ is true if and only if the instance set of A is a subset of the instance set of B. Therefore building a relation such as $<$teacher is-a human$>$ is ontologically incorrect, since \emph{teacher} is not an ontologically-valid class because there is no person (no instance of class person) whose intrinsic property is being a teacher. Thus, in ontology, it is inappropriate to model $<$Mizoguchi instance-of Teacher$>$ and $<$Teacher is-a Human$>$.% (What happens if Mizoguchi quits his job?).
+
+\item \emph{Be careful when using part-of relation} such as functional, qualification, spatial and etc. Thus, it needs to be used carefully, especially avoid part-of relation to create class hierarchies such as $<$man part-of human$>$. Such an expression is valid only when you want to deal with man as a subspecies of human.
+
+\item \emph{Pay attention to the difference between is-a and part-of relations}. Usually, the meaning of is-a and part-of relations is easy to distinguish. The former indicates generic vs. specific relations between classes. The latter is often utilized to specify the composition of a thing (although, part-of can be used in other situations). However, sometimes when developing an ontology, one can encounter difficulties to distinguish their difference. For example, which of the following relation is correct: $<$Dog part-of mammal living in Japan$>$ or $<$Dog is-a mammal living in Japan$>$? People agree that $<$Dog is-a mammal$>$ is correct. However, by adding the \emph{living in Japan} phrase to mammal the distinction is not quite that easy because \emph{mammal living in Japan} seems to represent species, and therefore, $<$\emph{dog-species} part-of  \emph{mammal-species} living in Japan$>$ could be considered. Thus, the distinction between is-a and part-of relation is not always easy.
+
+\item \emph{Avoid the use of multiple inheritances} Creating multiple inheritances is the source of many problems to keep the consistency of the representation. In particular, propagating the essential properties is a problem since each concept should be recognized and represented by their own essential properties.
+
+\item \emph{Some boundary between similar concepts can be vague} When developing an ontology some boundaries between similar concepts do not need to be strongly conceptualized. An example is the distinction between the concepts black and white. Since the distinction between them is based on the ambiguous color gray, we cannot give a clear and unique boundary between black and white (although we recognize their existence).
+
+\item \emph{Create terms if there is no label to represent a concept}. If you cannot find an appropriate term to represent a concept, then you can temporarily label them with some sentences or marks (e.g., concept 1 and concept 2) until you can come up with a good label. When the body of the ontology is good enough to represent the target domain, you can revise the labels of each concept.
+\end{enumerate}
 
 
 
