@@ -1,3 +1,4 @@
+
 \chapter[Ontological Structures to Personalize the Gamification in CL Scenarios]{Ontological Structures to Personalize the Gamification in Collaborative Learning Scenarios}
 \label{chapter:ontogacles-1}
 
@@ -246,7 +247,7 @@ The individual motivational strategies based on gamification models currently de
 \subsection{Individual Gameplay Strategy (I-gameplay strategy)}
 \label{sec:individual-gameplay-strategy}
 
-The guidelines extracted from the literature of gamification, game design and serious games are implemented through the design of way in which the users will experience their interactions with the game-like system \cite{FabricatoreLopez2014, NackeDrachenG"obel2010, Schell2008}. Such design in gamification is frequently called as gameful design \cite{DeterdingDixonKhaledNacke2011, DichevDichevaAngelovaAgre2014}, and it has been formalized by the author of this thesis under the concept of \emph{individual gameplay strategy} (\emph{I-gameplay strategy}). In this sense, the gameplay of a gamified CL scenario is defined by the way in which the interactions between the participants and the game elements could occur. When a participant interacts with the game elements, the rules defined in the gamified CL scenario process his/her inputs causing changes in the game elements, and these modifications are communicated to the participant. These rules and changes are related to individual motivational goals that must be achieved by the participants, so that each participant has his/her own strategy to interact with the gamified CL scenario to achieve these goals. This strategy of interaction is the individual gameplay strategy, and it has been formalized by the ontological structure shown in \autoref{fig:ontological-structure-individual-gameplay-strategy}.
+The guidelines extracted from the literature of gamification, game design and serious games are implemented through the design of way in which the users will experience their interactions with the game-like system \cite{FabricatoreLopez2014, NackeDrachenGobel2010, Schell2008}. Such design in gamification is frequently called as gameful design \cite{DeterdingDixonKhaledNacke2011, DichevDichevaAngelovaAgre2014}, and it has been formalized by the author of this thesis under the concept of \emph{individual gameplay strategy} (\emph{I-gameplay strategy}). In this sense, the gameplay of a gamified CL scenario is defined by the way in which the interactions between the participants and the game elements could occur. When a participant interacts with the game elements, the rules defined in the gamified CL scenario process his/her inputs causing changes in the game elements, and these modifications are communicated to the participant. These rules and changes are related to individual motivational goals that must be achieved by the participants, so that each participant has his/her own strategy to interact with the gamified CL scenario to achieve these goals. This strategy of interaction is the individual gameplay strategy, and it has been formalized by the ontological structure shown in \autoref{fig:ontological-structure-individual-gameplay-strategy}.
 
 \begin{figure}[!htbp]
  \caption[Ontological structure to represent individual gameplay strategy]{Ontological structure to represent \aspas{\emph{Individual gameplay strategy}} (at the top). At the bottom, the \aspas{\emph{Coop. CMPT gameplay strategy}} (bottom-left), and the \aspas{\emph{Achievement fun gameplay strategy}} (bottom-right)}
@@ -321,31 +322,22 @@ In this section, following these steps, the building of an ontological model to 
 
 The identification of player roles to gamify a CL scenario is carried out by analyzing the expected behaviors to be externalized for these roles and the CL roles. Possible counterproductive behaviors indicate what player roles cannot be assigned to a participant when he/she plays the CL role. \autoref{tab:player-roles-in-peer-tutoring-cl-scenarios} shows the result of this step (1) for the CL roles of \aspas{\emph{Peer-Tutor}} and \aspas{\emph{Peer-Tutee}} defined in CL Scenarios based on the Peer-tutoring theory. Counterproductive behaviors of player roles are avoided to not interfere with the expected behaviors of CL roles. Thus, for example, participants who are playing the CL roles of Peer-tutor and Peer-tutee cannot play the \emph{Griefer roles} because they want to negatively affect other users.
 
-\setlongtables{\small
-\begin{longtable}{lcc}
-\caption[Dodecad player roles that can be assigned for participants of a Peer-tutoring scenario]{Dodecad player roles that can be assigned for participants of a Peer-tutoring scenario}
-\tabularnewline
-\hline\hline
-\multicolumn{1}{l}{}&
-\multicolumn{1}{c}{\textbf{Peer-Tutor}}&
-\multicolumn{1}{c}{\textbf{Peer-Tutee}}\tabularnewline
-\multicolumn{1}{l}{}&
-\multicolumn{1}{c}{\footnotesize(explaining)}&
-\multicolumn{1}{c}{\footnotesize(passive learning)}\tabularnewline
-\hline
-\endfirsthead\caption[]{\em (continued)} \tabularnewline
-\hline
-\multicolumn{1}{l}{}&
-\multicolumn{1}{c}{\textbf{Peer-Tutor}}&
-\multicolumn{1}{c}{\textbf{Peer-Tutee}}\tabularnewline
-\multicolumn{1}{l}{}&
-\multicolumn{1}{c}{\footnotesize(explaining)}&
-\multicolumn{1}{c}{\footnotesize(passive learning)}\tabularnewline
-\hline
-\endhead
-\hline
-\endfoot
+\begin{quadro}[htb]
+\caption{Dodecad player roles that can be assigned for participants of a Peer-tutoring scenario}
 \label{tab:player-roles-in-peer-tutoring-cl-scenarios}
+\centering
+\scriptsize
+\begin{tabular}{|l|c|c|}
+
+\hline%\hline
+\multicolumn{1}{|l}{}&
+\multicolumn{1}{|c}{\textbf{Peer-Tutor}}&
+\multicolumn{1}{|c|}{\textbf{Peer-Tutee}}\tabularnewline
+\multicolumn{1}{|l}{}&
+\multicolumn{1}{|c}{\footnotesize(explaining)}&
+\multicolumn{1}{|c|}{\footnotesize(passive learning)}\tabularnewline
+\hline
+\hline
 
 \textbf{Achiever}&\multirow{2}{*}{Yes}&\multirow{2}{*}{Yes}\tabularnewline
 {\footnotesize(accomplishing, comparing)}& & \tabularnewline
@@ -395,8 +387,10 @@ The identification of player roles to gamify a CL scenario is carried out by ana
 {\footnotesize(troublemaking, defying)}&{\footnotesize(negatively affect to others)}&{\footnotesize(negatively affect to others)}\tabularnewline
 
 \hline
-\end{longtable}
-}
+\end{tabular}
+ \fautor
+\end{quadro}
+
 
 \subsubsection*{Step (2): Identifying Restrictions and Elements of Motivational Strategies}
 
@@ -405,47 +399,57 @@ To identify the restrictions and elements of individual motivational strategies 
 \autoref{tab:individual-motivational-strategies-in-peer-tutoring-cl-scenarios} shows the result obtained in this step for the definition of individual motivational strategies in the ontological model to personalize the gamification in Peer-tutoring CL scenarios. The rows indicate the player roles (\emph{I-Player role}) for the participant in focus (\emph{I}), and the columns indicate the player roles (\emph{You-Player role}) for the participant (\emph{You}) who interacts with the participant in focus (\emph{I}). The individual gameplay strategies and their elements are indicated in the crossed cells. These strategies were defined from common guidelines for each pair of player roles. Thus, an individual gameplay strategy has been formalized in the ontological model when there are common expected behaviors indicated in the guidelines of player roles \aspas{\emph{I-Player role}} and \aspas{\emph{You-Player role}.}
  
 
-\setlongtables\begin{landscape}{\small
-\begin{longtable}{|l|c|c|c|c|c|c|}
-\caption[Individual motivational strategies identified for the building of an ontological model to personalize the gamification in Peer-tutoring scenarios]{Individual motivational strategies identified for the building of an ontological model to personalize the gamification in Peer-tutoring scenarios}
-\tabularnewline
-\hline\hline
-\multicolumn{1}{|l|}{}&
-\multicolumn{1}{c|}{\textbf{Achiever}}&
-\multicolumn{1}{c|}{\textbf{Socializer}}&
-\multicolumn{1}{c|}{\textbf{Philanthropist}}&
-\multicolumn{1}{c|}{\textbf{Consumer}}&
-\multicolumn{1}{c|}{\textbf{Networker}}&
-\multicolumn{1}{c|}{\textbf{Self-seeker}}\tabularnewline
-\multicolumn{1}{|l|}{}&
-\multicolumn{1}{c|}{\tiny{(\emph{accomplishing, comparing})}}&
-\multicolumn{1}{c|}{\tiny{(\emph{helping})}}&
-\multicolumn{1}{c|}{\tiny{(\emph{giving, helping, sharing})}}&
-\multicolumn{1}{c|}{\tiny{(\emph{accomplishing, comparing})}}&
-\multicolumn{1}{c|}{\tiny{(\emph{helping})}}&
-\multicolumn{1}{c|}{\tiny{(\emph{giving, helping, sharing})}}\tabularnewline
-\hline
-\endfirsthead\caption[]{\em (continued)} \tabularnewline
-\hline
-\multicolumn{1}{|l|}{}&
-\multicolumn{1}{c|}{\textbf{Achiever}}&
-\multicolumn{1}{c|}{\textbf{Socializer}}&
-\multicolumn{1}{c|}{\textbf{Philanthropist}}&
-\multicolumn{1}{c|}{\textbf{Consumer}}&
-\multicolumn{1}{c|}{\textbf{Networker}}&
-\multicolumn{1}{c|}{\textbf{Self-seeker}}\tabularnewline
-\multicolumn{1}{|l|}{}&
-\multicolumn{1}{c|}{\tiny{(\emph{accomplishing, comparing})}}&
-\multicolumn{1}{c|}{\tiny{(\emph{helping})}}&
-\multicolumn{1}{c|}{\tiny{(\emph{giving, helping, sharing})}}&
-\multicolumn{1}{c|}{\tiny{(\emph{accomplishing, comparing})}}&
-\multicolumn{1}{c|}{\tiny{(\emph{helping})}}&
-\multicolumn{1}{c|}{\tiny{(\emph{giving, helping, sharing})}}\tabularnewline
-\hline
-\endhead
-\hline
-\endfoot
+%\setlongtables
+\begin{landscape}%{\small
+%\begin{longtable}{|l|c|c|c|c|c|c|}
+%\caption[Individual motivational strategies identified for the building of an ontological model to personalize the gamification in Peer-tutoring scenarios]{Individual motivational strategies identified for the building of an ontological model to personalize the gamification in Peer-tutoring scenarios}
+%\tabularnewline
+
+
+
+\begin{quadro}[htb]
+\caption{Individual motivational strategies identified for the building of an ontological model to personalize the gamification in Peer-tutoring scenarios}
 \label{tab:individual-motivational-strategies-in-peer-tutoring-cl-scenarios}
+\centering
+\scriptsize
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline%\hline
+\multicolumn{1}{|l|}{}&
+\multicolumn{1}{c|}{\textbf{Achiever}}&
+\multicolumn{1}{c|}{\textbf{Socializer}}&
+\multicolumn{1}{c|}{\textbf{Philanthropist}}&
+\multicolumn{1}{c|}{\textbf{Consumer}}&
+\multicolumn{1}{c|}{\textbf{Networker}}&
+\multicolumn{1}{c|}{\textbf{Self-seeker}}\tabularnewline
+\multicolumn{1}{|l|}{}&
+\multicolumn{1}{c|}{\tiny{(\emph{accomplishing, comparing})}}&
+\multicolumn{1}{c|}{\tiny{(\emph{helping})}}&
+\multicolumn{1}{c|}{\tiny{(\emph{giving, helping, sharing})}}&
+\multicolumn{1}{c|}{\tiny{(\emph{accomplishing, comparing})}}&
+\multicolumn{1}{c|}{\tiny{(\emph{helping})}}&
+\multicolumn{1}{c|}{\tiny{(\emph{giving, helping, sharing})}}\tabularnewline
+\hline
+%\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+%\multicolumn{1}{|l|}{}&
+%\multicolumn{1}{c|}{\textbf{Achiever}}&
+%\multicolumn{1}{c|}{\textbf{Socializer}}&
+%\multicolumn{1}{c|}{\textbf{Philanthropist}}&
+%\multicolumn{1}{c|}{\textbf{Consumer}}&
+%\multicolumn{1}{c|}{\textbf{Networker}}&
+%\multicolumn{1}{c|}{\textbf{Self-seeker}}\tabularnewline
+%\multicolumn{1}{|l|}{}&
+%\multicolumn{1}{c|}{\tiny{(\emph{accomplishing, comparing})}}&
+%\multicolumn{1}{c|}{\tiny{(\emph{helping})}}&
+%\multicolumn{1}{c|}{\tiny{(\emph{giving, helping, sharing})}}&
+%\multicolumn{1}{c|}{\tiny{(\emph{accomplishing, comparing})}}&
+%\multicolumn{1}{c|}{\tiny{(\emph{helping})}}&
+%\multicolumn{1}{c|}{\tiny{(\emph{giving, helping, sharing})}}\tabularnewline
+%\hline
+%\endhead
+%\hline
+%\endfoot
+%\label{tab:individual-motivational-strategies-in-peer-tutoring-cl-scenarios}
 &
 \multicolumn{1}{p{3cm}|}{\tiny\emph{Gamifying for Dodecad Achievers}}& & &
 \multicolumn{1}{p{3cm}|}{\tiny\emph{Gamifying for Dodecad Achievers and Consumer}}& &  \tabularnewline
@@ -487,7 +491,7 @@ To identify the restrictions and elements of individual motivational strategies 
 \multicolumn{1}{p{3cm}|}{\tiny{$\bullet$ Satisfaction of mastery}}& & \tabularnewline
 {\tiny(\emph{accomplishing, comparing})}&
 \multicolumn{1}{p{3cm}|}{\tiny{$\bullet$ Internalization from extrinsic to intrinsic motivation}}& & &
-\multicolumn{1}{p{3cm}|}{}& & \tabularnewline \newpage
+\multicolumn{1}{p{3cm}|}{}& & \tabularnewline% \newpage
 \hline
 
 & &
@@ -511,8 +515,12 @@ To identify the restrictions and elements of individual motivational strategies 
 \multicolumn{1}{p{3cm}|}{\tiny{$\bullet$ Internalization from extrinsic to intrinsic motivation}}& & &
 \multicolumn{1}{p{3cm}|}{}\tabularnewline
 \hline
-\end{longtable}
-}\end{landscape}
+%\end{longtable}
+%}
+\end{tabular}
+ \fautor
+\end{quadro}
+\end{landscape}
 
 To illustrate the identification of restrictions and elements in the individual motivational strategy (\emph{Y<=I-mot goal}), let us see the \aspas{\emph{Gamifying for Dodecad Achiever and Conqueror}} indicated in \autoref{tab:individual-motivational-strategies-in-peer-tutoring-cl-scenarios}, this strategy was identified from the guidelines of Dodecad model in which the behaviors of \emph{accomplishing} and \emph{comparing} are indicated as adequate to motivate achievers and consumers. In this case, the expected benefits to accomplish a goal, and then, compare it against the accomplishments of others is enjoyable for achievers. This benefit is represented as the individual motivational goal \aspas{\emph{Satisfaction of mastery}} (\emph{I-mot goal}) based on the Dan Pink motivation theory \cite{Pink2011}. According to this theory, mastery is a inherit human need that love to get better at stuff enjoying satisfaction from personal achievement and progress.
  
@@ -520,25 +528,35 @@ To illustrate the identification of restrictions and elements in the individual 
 
 Individual gameplay strategies (\emph{I-gameplay strategy}) are inferred from the individual motivational strategies (\emph{Y<=I-mot goal}) identified in the step (2). Game elements are defined to support the behaviors indicated in the guidelines of individual motivational strategies, and so obtain the expected benefits indicated as individual motivational goal. \autoref{tab:individual-gameplay-strategies-peer-tutoring-cl-scenarios} shows the results of this step for the ontological model to personalize the gamification in Peer-tutoring scenarios.
 
-\setlongtables{\small
-\begin{longtable}{l|l|l}
-\caption[Individual gameplay strategies to gamify Peer-tutoring scenarios]{Individual gameplay strategies to gamify Peer-tutoring scenarios}
-\tabularnewline
-\hline\hline
-\multicolumn{1}{p{4.75cm}}{\centering\textbf{Achievement fun}}&
-\multicolumn{1}{|p{4.75cm}|}{\centering\textbf{Social fun}}&
-\multicolumn{1}{p{4.75cm}}{\centering\textbf{Facilitated-personal fun}}\tabularnewline
-\hline
-\endfirsthead\caption[]{\em (continued)} \tabularnewline
-\hline
-\multicolumn{1}{p{4.75cm}}{\centering\textbf{Achievement fun}}&
-\multicolumn{1}{|p{4.75cm}|}{\centering\textbf{Social fun}}&
-\multicolumn{1}{p{4.75cm}}{\centering\textbf{Facilitated-personal fun}}\tabularnewline
-\hline
-\endhead
-\hline
-\endfoot
+
+
+\begin{quadro}[htb]
+\caption{Individual gameplay strategies to gamify Peer-tutoring scenarios}
 \label{tab:individual-gameplay-strategies-peer-tutoring-cl-scenarios}
+\centering
+\small
+\begin{tabular}{l|l|l}
+
+
+%\setlongtables{\small
+%\begin{longtable}{l|l|l}
+%\caption{Individual gameplay strategies to gamify Peer-tutoring scenarios}
+%\tabularnewline
+\hline%\hline
+\multicolumn{1}{p{4.75cm}}{\centering\textbf{Achievement fun}}&
+\multicolumn{1}{|p{4.75cm}|}{\centering\textbf{Social fun}}&
+\multicolumn{1}{p{4.75cm}}{\centering\textbf{Facilitated-personal fun}}\tabularnewline
+%\hline
+%\endfirsthead\caption[]{\em (continued)} \tabularnewline
+%\hline
+%\multicolumn{1}{p{4.75cm}}{\centering\textbf{Achievement fun}}&
+%\multicolumn{1}{|p{4.75cm}|}{\centering\textbf{Social fun}}&
+%\multicolumn{1}{p{4.75cm}}{\centering\textbf{Facilitated-personal fun}}\tabularnewline
+\hline
+%\endhead
+\hline
+%\endfoot
+%\label{tab:individual-gameplay-strategies-peer-tutoring-cl-scenarios}
 
 Primary focus (P):&
 Primary focus (P):&
@@ -627,8 +645,12 @@ $\bullet$ Virtual economy system\tabularnewline
 $\bullet$ Lottery system\tabularnewline
 
 \hline
-\end{longtable}
-}
+%\end{longtable}
+%}
+\end{tabular}
+ \fautor
+\end{quadro}
+
 
 The individual gameplay strategies indicated in the \autoref{tab:individual-gameplay-strategies-peer-tutoring-cl-scenarios} are:
 
