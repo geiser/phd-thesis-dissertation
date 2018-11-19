@@ -2,24 +2,35 @@
 \chapter{General Background and Fundamental Concepts}
 \label{chapter:general-background}
 
-This chapter presents the general background and fundamental concepts related to the domain problem that is addressed in this thesis. At the first section (\autoref{sec:cscl-and-scripted-collaboration}), an overview of the CSCL field and scripted collaboration is presented to provide a comprehensive and clear understanding about the research context. %This section also describes in detail the motivation problem caused by the scripted collaboration when CL activities are orchestrated and structured by CSCL scripts, as well as, the related works and current computer-based solutions to deal with this problem.
-The \autoref{sec:gamification} elaborates an overview of gamification, and the best practices and theories related to this technology. % Furthermore, this section presents related works that use gamification in the context of CSCL and other contexts to deal with the motivation problem are presented in this section.
-Finally, the \autoref{sec:ontologies-and-ontology-engineering} presents the fundamentals of ontologies and ontology engineering.% This sections also discusses how ontologies is currently used to support the systematic formalization of theory-based knowledge, and how this formalization, in the field of artificial intelligence in education, is used to overcome problems that are similar to those that must be solved to provide a computational support in the gamification of CL scenarios with theoretical justifications based on the best practices and theories related to gamification.
+This chapter presents the general background and fundamental concepts related to the domain problem that is addressed in this thesis.
+At the first section (\autoref{sec:cscl-and-scripted-collaboration}), an overview of the CSCL field and scripted collaboration is presented to provide a comprehensive and clear understanding about the research context.
+This section also describes in detail the motivational problems in scripted collaboration, as well as, the related works and current approaches to deal with this problem.
+
+The \autoref{sec:gamification} presents an overview of gamification, and the theoretical foundation of this technology.
+This section also presents a briefly revision of research works that have realized in gamification in the context of CSCL and other educational contexts.
+Finally, \autoref{sec:ontologies-and-ontology-engineering} presents the fundamentals of ontologies and ontology engineering.
+This sections also discusses how ontologies is currently used to support the systematic formalization of theory-based knowledge, and how this formalization, in the field of CSCL, is currently used.
+% to overcome some problems that are similar to those that must be solved to provide a computational support in the gamification of CL scenarios with theoretical justifications.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{CSCL and Scripted Collaboration}
 \label{sec:cscl-and-scripted-collaboration}
 
-Although CL has a long history in education, it is not until the early 1990s that the research field dedicated to study how to provide support for the CL through the use of Internet and computational technology had gained attention and strength \cite{StahlKoschmannSuthers2006}. Such research field known as Computer-Supported Collaborative Learning (CSCL) is a multidisciplinary field that combines studies from the cognitive psychology education and from the computer science to effectively enhance the CL process through the use of computational technology \cite{HoppeOgataSoller2007}.
+Although CL has a long history in education, it is not until the early 1990s that the research field known as Computer-Supported Collaborative Learning (CSCL) had gained attention and strength \cite{StahlKoschmannSuthers2006}.
+CSCL is the field dedicated to study how to provide support for CL through the use of Internet and computational technology.
+This research field is a multidisciplinary field that combines studies from the Cognitive Psychology Education and from the Computer Science to effectively enhance the CL process \cite{HoppeOgataSoller2007}.
 
-The general aim of CSCL field is to develop technologies to support or create situations in which two or more students learn together through the interaction among them \cite{Dillenbourg1999}. In these situations, the learning outcomes is consequence of students' interactions and how these interactions affect the individual learning for each one of the students. In consequence, to enable a well-though-out design of CL, the CSCL scripts have been proposed by the CSCL community as the technology to facilitate the social and cognitive processes of learning by describing the way in which the learners will interact with each other in a CL scenario \cite{HarrerKobbeMalzahn2007}.
+The general aim of CSCL field is to develop technologies to support or create situations in which two or more students learn together through the interaction among them \cite{Dillenbourg1999}.
+In these situations, the learning outcomes is consequence of students' interactions and how these interactions affect the individual learning for each one of the students. In consequence, to enable a well-though-out design of CL, the CSCL scripts have been proposed by the CSCL community as the technology to facilitate the social and cognitive processes of learning by describing the way in which the learners will interact with each other in a CL scenario \cite{HarrerKobbeMalzahn2007}.
 
 \subsection{CSCL Scripts}
 \label{sec:cscl-scripts}
 
-CSCL scripts are the technology that describes how to structure and orchestrate the CL process to attain a set of pedagogical objectives defined by an instructional design \cite{DillenbourgJermann2007}. Such description is provided in the CSCL scripts through prescribed instructions that indicates how to facilitate the social and cognitive processes in group activities \cite{Dillenbourg2002}. These prescribed instructions are defined by instructors, like teachers or instructional designers, as a way to attain a set of learning goals, and they indicate the way in which students should collaborate, they constrain the interactions among the participants, they specify the roles for the participants, they indicate the distribution of task, tools, and resources used in the CL process.
-
-In order to narrow the number of elements used to describe the CSCL scripts, and provide a common and sharable description of CSCL scripts, \citeonline{KobbeWeinbergerDillenbourgHarrerHamalainenHakkinenFischer2007} propose a framework that is currently wide accepted by the community as the common specification to describe the CSCL scripts using natural language. This framework formalizes the CSCL scripts as a set of components and mechanisms illustrate in \autoref{fig:components-and-mechanisms-of-cscl-scripts}.
+CSCL scripts are the technology that describes the way of student should collaborate to achieve positive learning outcomes.
+These scripts basically structure and orchestrate the CL process to attain pedagogical objectives usually defined by an instructional design \cite{DillenbourgJermann2007}.
+In this sense, the CSCL scripts are prescribed instructions that indicates how to facilitate the social and cognitive processes in group activities \cite{Dillenbourg2002}.
+In order to narrow the number of elements used to describe the CSCL scripts, and provide a common and sharable description of CSCL scripts, \citeonline{KobbeWeinbergerDillenbourgHarrerHamalainenHakkinenFischer2007} propose a framework that is currently wide accepted by the community as the common specification to describe the CSCL scripts using natural language.
+This framework formalizes the CSCL scripts as a set of components and mechanisms illustrate in \autoref{fig:components-and-mechanisms-of-cscl-scripts}.
 
 
 \begin{figure}[htb]
@@ -30,9 +41,19 @@ In order to narrow the number of elements used to describe the CSCL scripts, and
  \fadaptada{Fischer2007}
 \end{figure}
 
-The structural \emph{components} of CSCL scripts are the participants, groups, activities, roles and resources. The component of \emph{participants} is used to describe the participants, such as learners, monitors, and teachers. Although this description can be abstract or concrete and simple or complex, it is often presented in a simple manner with rules that indicate conditions to participate in the CL process. The component of \emph{activities} describes what will be performed by the participants in the CL process to attain the learning goals defined by the instructional designers. The component of \emph{roles} describes the privileges, obligations and expectations of participants in the CL process. The component of \emph{groups} of participants defines through hierarchical structures how the students are grouped according to the participants' characteristics. The component of \emph{resources} describes the learning objects (e.g. content, material, and tools) that can be used by the participants during the CL process.
+The structural \textbf{components} of CSCL scripts are the participants, groups, activities, roles and resources.
+The component of \emph{participants} is used to describe the participants, such as learners, monitors, and teachers. 
+Although this description can be abstract or concrete and simple or complex, it is often presented in a simple manner with a set of rules that indicates conditions to participate in the CL process.
+The component of \emph{activities} describes what will be performed by the participants in the CL process to attain the learning goals defined by the instructional designers.
+The component of \emph{roles} describes the privileges, obligations and expectations of participants in the CL process.
+The component of \emph{groups} of participants defines by hierarchical structures how the students are grouped according to the participants' characteristics.
+The component of \emph{resources} describes the learning objects (e.g. content resources, material, and tools) that can be used by the participants during the CL process.
 
-The \emph{mechanisms} of CSCL scripts are the group formation, component distribution and sequencing. The mechanism of \emph{group formation} consists in the specifications of how the participants will be distributed over the groups. The mechanism of \emph{task distribution} provides the specification about how the components of scripts are distributed over groups using the mapping of groups, activities, roles, and resources. The mechanism of \emph{sequencing} consists in the definition of how the components and groups defined in scripts are distributed over time. In general, this sequencing describes the execution order of activities in the CL process.
+The \textbf{mechanisms} of CSCL scripts are the group formation, component distribution and sequencing.
+The mechanism of \emph{group formation} consists in the specifications of how the participants will be distributed over the groups in the CL process.
+The mechanism of \emph{task distribution} provides the specification about how the components of scripts are distributed over groups using the mapping of groups, activities, roles, and resources.
+The mechanism of \emph{sequencing} consists in the definition of how the components and groups defined in scripts are distributed over time.
+In general, this sequencing describes the interaction among the group members in the CL process.
 
 \begin{quadro}[htb]
 \caption{Components and mechanisms of social script}
@@ -72,60 +93,293 @@ Each case group receives one case study, and the roles are distributed in a way 
 \end{quadro}
 
 
-\autoref{qua:social-script-framework-kobbe} shows the description of the \emph{social script} \cite{WeinbergerErtlFischerMandl2005} using the framework proposed by \citeonline{KobbeWeinbergerDillenbourgHarrerHamalainenHakkinenFischer2007}. In this example, the CL scenarios orchestrated by the social script foster the acquisition of knowledge through a set of case studies (\emph{resources}) that are analyzed and reviewed by the students groups. The number of students in each group is equal to the number of case studies, and the ideal number is three. In the first step of sequencing, each learner playing the \emph{analysis} role writes down an analysis of case study, and then, he critiques the analyses made by other learners playing the \emph{critics} role. In the second step of sequencing, each learner revises his/her own analysis, taking into consideration the critiques received by the other learners in the case group.
+\autoref{qua:social-script-framework-kobbe} shows the description of the \emph{social script} \cite{WeinbergerErtlFischerMandl2005} using the framework proposed by \citeonline{KobbeWeinbergerDillenbourgHarrerHamalainenHakkinenFischer2007}.
+In this example, the CL scenarios orchestrated by the social script foster the acquisition of knowledge through a set of case studies (\emph{resources}) that are analyzed and reviewed by the students groups.
+The number of students in each group is equal to the number of case studies, and the ideal number is three.
+In the first step of sequencing, each learner playing the \emph{analysis} role writes down an analysis of case study, and then, he critiques the analyses made by other learners playing the \emph{critics} role.
+In the second step of sequencing, each learner revises his/her own analysis, taking into consideration the critiques received by the other learners in the case group.
 
-Having the description of CSCL scripts only in natural language does not allow the computers programs to interpret them, and to run a CL scenario following the instructions indicated by the scripts without human intervention. Therefore, to represent the CSCL scripts in a computer readable manner, the IMS-Learning Design\footnote{URL: \url{http://www.imsglobal.org/learningdesign/}} (IMS-LD) specification has been adopted by different tools, such as (web)COLLAGE \cite{Hernandez-LeoVillasclaras-FernandezAsensio-PerezDimitriadisJorrin-AbellanRuiz-RequiesRubia-Avi2006,Villasclaras-FernandezHernandez-LeoAsensio-PerezDimitriadis2013}, CIAN \cite{MolinaRedondoOrtega2012}, LeadFlow4LD \cite{Palomino-RamirezBote-LorenzoAsensio-PerezDimitriadis2008}, NUCLEO \cite{SanchoFuentes-FernandezFernandez-Manjon2008}, CoLearn \cite{StylianakisArapiMoumoutzisChristodoulakis2013}, CeLS \cite{RonenKohen-Vacs2009}, and LAMS \cite{Romero-MorenoOrtegaTroyano2007}, as the language to describe CSCL scripts.
+Having the description of CSCL scripts only in natural language does not allow the computers programs to interpret them, and to run a CL scenario following the instructions indicated by the scripts without human intervention.
+Therefore, to represent the CSCL scripts in a computer readable manner, the IMS-Learning Design\footnote{URL: \url{http://www.imsglobal.org/learningdesign/}} (IMS-LD) specification has been adopted by different tools, such as (web)COLLAGE \cite{Hernandez-LeoVillasclaras-FernandezAsensio-PerezDimitriadisJorrin-AbellanRuiz-RequiesRubia-Avi2006,Villasclaras-FernandezHernandez-LeoAsensio-PerezDimitriadis2013}, CIAN \cite{MolinaRedondoOrtega2012}, LeadFlow4LD \cite{Palomino-RamirezBote-LorenzoAsensio-PerezDimitriadis2008}, NUCLEO \cite{SanchoFuentes-FernandezFernandez-Manjon2008}, CoLearn \cite{StylianakisArapiMoumoutzisChristodoulakis2013}, CeLS \cite{RonenKohen-Vacs2009}, and LAMS \cite{Romero-MorenoOrtegaTroyano2007}, as the language to describe CSCL scripts.
  
-Despite the benefits that brings the use of the IMS-LD specification to represent CSCL scripts, several researchers had indicated that this language is insufficient to fully support the modeling of CSCL scripts \cite{AlharbiAthaudaChiong2014, CaeiroAnidoLlamas2003}. Of course, the purpose of IMS-LD specification is not to provide a full support for describing CSCL scripts in a computer-readable manner, the IMS-LD has been developed as a neutral, generic and flexible educational modeling language to describe a wide range of pedagogies approaches - the teaching strategies, pedagogical goals and their associated activities \cite{Koper2005}. In this sense, to support the representation of CSCL scripts in a computer-readable manner, a wide variety of extensions on the IMS-LD elements has been proposed in by several researchers \cite{Bote-LorenzoVaquero-GonzalezVega-GorgojoDimitriadisAsensio-PerezGomez-SanchezHernandez-Leo2004, LeoPerezDimitriadis2004, MagnisalisDemetriadis2012, MiaoHoeksemaHoppeHarrer2005, Vega-GorgojoBote-LorenzoGomez-SanchezDimitriadisAsensio-Perez2005}.
+Despite the benefits that brings the use of the IMS-LD specification to represent CSCL scripts, several researchers have indicated that this language is insufficient to fully support the modeling of CSCL scripts \cite{AlharbiAthaudaChiong2014, CaeiroAnidoLlamas2003}.
+Of course, the purpose of IMS-LD specification is not to provide a full support for describing CSCL scripts, the IMS-LD has been developed as a neutral, generic and flexible educational modeling language to describe a wide range of pedagogies approaches - the teaching strategies, pedagogical goals and their associated activities \cite{Koper2005}.
+In this sense, to support the representation of CSCL scripts in a computer-readable manner, a wide variety of extensions on the IMS-LD elements has been proposed in by several researchers \cite{Bote-LorenzoVaquero-GonzalezVega-GorgojoDimitriadisAsensio-PerezGomez-SanchezHernandez-Leo2004, LeoPerezDimitriadis2004, MagnisalisDemetriadis2012, MiaoHoeksemaHoppeHarrer2005, Vega-GorgojoBote-LorenzoGomez-SanchezDimitriadisAsensio-Perez2005}.
 
-Instead, to simply provide a computer-readable representation of CSCL scripts, the work of \citeonline{Isotani2009, IsotaniMizoguchiIsotaniCapeliIsotanideAlbuquerqueBittencourtJaques2013} proposes the formalization of these scripts in a computer-understandable manner through the use of ontologies. This solution consists in a set of ontological structures that makes the description of CSCL scripts more semantically-rich, allowing the explicit specification of learning goals, purposes, and other relevant information that cannot be represented using the IMS-LD specification, i.e., learning strategies, group goals, interaction patters from learning theories. Providing this formalization in the CL ontology, \citeonline{IsotaniMizoguchiIsotaniCapeliIsotanideAlbuquerqueBittencourtJaques2013} demonstrates that intelligent-theory aware systems can interpret these scripts and provide advice and recommendation to support for the modeling of learners' development \cite{InabaIkedaMizoguchi2003}, the formation of effective groups \cite{IsotaniMizoguchi2008a}, and the instructional design of CL activities \cite{IsotaniMizoguchiIsotaniCapeliIsotanideAlbuquerqueBittencourtJaques2013}.
+Instead to provide a simple computer-readable representation of CSCL scripts, the work of \citeonline{Isotani2009, IsotaniMizoguchiIsotaniCapeliIsotanideAlbuquerqueBittencourtJaques2013} proposes the formalization of CSCL scripts in a computer-understandable manner through the use of ontologies.
+This solution consists in an ontology that makes the description of CSCL scripts as ontological structures to represent CL scenarios with a semantically-rich representation, allowing the explicit specification of learning goals, purposes, and other relevant information that cannot be represented using the IMS-LD specification, i.e., learning strategies, group goals, and interaction patters from learning theories.
+This formalization has been used by intelligent-theory aware systems to provide advice and recommendation for supporting the modeling of learners' development \cite{InabaIkedaMizoguchi2003}, the formation of effective groups \cite{IsotaniMizoguchi2008a}, and the instructional design of CL activities \cite{IsotaniMizoguchiIsotaniCapeliIsotanideAlbuquerqueBittencourtJaques2013}.
 
 \subsection{Levels of Abstraction and Granularity of CSCL Scripts}
 \label{sec:level-of-abstraction-and-granularity-of-cscl-scripts}
 
-CSCL scripts have different levels of abstraction and granularity in the description of CL scenarios \cite{Dillenbourg2002, DillenbourgJermann2007, Villasclaras-FernandezIsotaniHayashiMizoguchi2009}. This classification of scripts in two dimension, abstraction and granularity, gives them an enormous flexibility to be reused in the instructional design process of CL scenarios, and it also allows the use of multiple scripts to describe different aspects of CL scenario in separated scripts. Whereas the levels of abstraction classify a script according to the completeness of elements described by them, from the most abstract to the most concrete, the levels of granularity classify the scripts according to the aggregation level of elements described by them, from the most coarser grained to the finest grained.
+CSCL scripts have different levels of abstraction and granularity in the description of CL scenarios \cite{Dillenbourg2002, DillenbourgJermann2007, Villasclaras-FernandezIsotaniHayashiMizoguchi2009}.
+The classification of CSCL scripts in two dimension, according to the level of abstraction and to the level of granularity, gives them an enormous flexibility to be reused in the instructional design process of CL scenarios, and it also allows the use of multiple scripts to describe different aspects of CL scenario in separated scripts.
+The levels of abstraction classify the CSCL scripts according to the completeness of elements described by them, from the most abstract to the most concrete.
+The levels of granularity classify the CSCL scripts according to the aggregation level of elements described by them, from the most coarser grained to the finest grained.
 
 According to \citeonline{DillenbourgJermann2007}, a CSCL script can be classified in one of the four levels of abstraction defined as follows as:
 
 \begin{description}
-\item[\emph{Script Schemata}:] are scripts use to describe the core instructional design principles whereby is expected to trigger interactions among participants in the CL process. In this sense, these scripts are defined in a content free didactic form, so that they can be used to describe patterns of CL. Examples of script schemata are the Jigsaw script \cite{Aronson1978, KordakiSiempos2010}, conflict script \cite{WeinbergerErtlFischerMandl2005}, and reciprocal script \cite{King2007}. The jigsaw script describes a CL scenario in which the principle of interaction consists in the grouping and re-grouping of participants with complementary information to share their knowledge. The conflict script describes a CL scenario to group learners with contradictory knowledges or opinions to instigate the discussion. The reciprocal script describes a CL scenario that assigns alternate roles to the students for facilitating questioning and tutoring activities.
+\item[\emph{Script Schemata}:] are CSCL scripts used to describe the core instructional design principles whereby is expected to trigger interactions among participants in the CL process.
+In this sense, these scripts are defined in a content free didactic form, so that they can be used to describe patterns of CL.
+Examples of script schemata are the Jigsaw script \cite{Aronson1978, KordakiSiempos2010}, conflict script \cite{WeinbergerErtlFischerMandl2005}, and reciprocal script \cite{King2007}.
+The \emph{jigsaw} script describes a CL scenario in which the principle of interaction consists in the grouping and re-grouping of participants with complementary information to share their knowledge.
+The \emph{conflict} script describes a CL scenario to group learners with contradictory knowledges or opinions to instigate the discussion.
+The \emph{reciprocal} script describes a CL scenario that assigns alternate roles to the students for facilitating questioning and tutoring activities.
 
-\item[\emph{Script Classes}:] are specialization of scripts schemata for a specific learning context. This specialization is not absolute complete, so that script classes are independent in the content-domain and student data. The script classes cover a range of scripts that describe variations of a prototype with particular details related to a specific learning context of a script schemata to facilitate its adoption. These details are, for example, the number of participants, and the king of content (matter) that will be taught. In this sense, a script class is based in a script schemata to describe CL scenarios for a specific learning context. For instance, the Universanté Script \cite{DillenbourgJermann2007} is a script class based on Jigsaw schema that was designed to describe CL scenarios for learning contexts with different thematic groups and participants from different nations.
+\item[\emph{Script Classes}:] are specialization of CSCL scripts schemata instantiated for a specific learning context.
+This specialization is not absolute complete, so that script classes are CSCL scripts with an independent content-domain and without specific student data.
+The script classes cover a range of scripts that describe variations of a prototype with particular details related to a specific learning context of a script schemata to facilitate its adoption.
+These details are, for example, the number of participants, and the king of content (matter) that will be taught.
+In this sense, a script class is an instance of script schemata in which the elements of CSCL scripts are specified for a learning context.
+For instance, the Universanté Script \cite{DillenbourgJermann2007} is a script class based on Jigsaw schema designed to describe CL scenarios for learning contexts with different thematic groups and participants from different nations.
 
-\item[\emph{Script Instances}:] are scripts in which the content-domain are specified for a particular situation. A script instance is more concrete than a script class, and it has been instantiated from a script schema or class to be reusable more or less by teachers who only need to define participants' data. These scripts are more concrete that script classes, but they are independent in the particularities of students and learning environment.
+\item[\emph{Script Instances}:] are scripts in which the content-domain are specified for a particular situation.
+A script instance is more concrete than a script class, and it has been instantiated from a script schema or class to be reusable more or less by teachers who only need to define participants' data.
+These scripts are more concrete that script classes, but they are independent in the particularities of students and learning environment.
 
-\item[\emph{Script Sessions}:] are scripts in which the content-domain and participants data are specified to be directly executed in a learning environment. In this sense, these scripts detail the information of participants and content-domain in the most concrete level defining, for example, the students' names and the deadlines of activities. A CL scenario that is described by a script session is known as CL session, and when it is represented in a script session using a computer-readable formalization, it can be directly executed in a learning environment to orchestrate and conduct the CL process.
+\item[\emph{Script Sessions}:] are scripts in which the content-domain and participants data are specified to be directly executed in a learning environment.
+In this sense, these scripts detail the information of participants and content-domain in the most concrete level defining, for example, the students' names and the deadlines of activities.
+A CL scenario that is described by a script session is known as CL session, and when it is represented in a script session using a computer-readable formalization, it can be directly executed in a learning environment to orchestrate and conduct the CL process.
 \end{description}
 
-Different benefits from the use of script schemata and classes as patterns are obtained in the instructional design process of CL scenarios \cite{AlharbiAthaudaChiong2014, ChallcoBittencourtIsotani2016, MiaoHoeksemaHoppeHarrer2005}. During the design/authoring phase, repositories of script schemata and classes facilitate the sharing and reuse of these scripts in distributed learning environments \cite{PrietoAsensio-PerezMunoz-CristobalDimitriadisJorrin-AbellanGomez-Sanchez2013, PrietoTchounikineAsensio-PerezSobreiraDimitriadis2014}. The structures of script schemata and classes are used as templates to create new script schemata and classes \cite{AndreasHarrerUlrchHoppe2007, RonenKohen-Vacs2009}. 
+Different benefits from the use of script schemata and classes as patterns are obtained in the instructional design process of CL scenarios \cite{AlharbiAthaudaChiong2014, ChallcoBittencourtIsotani2016, MiaoHoeksemaHoppeHarrer2005}. During the design/authoring phase, repositories of script schemata and classes facilitate the sharing and reuse of these scripts in distributed learning environments \cite{PrietoAsensio-PerezMunoz-CristobalDimitriadisJorrin-AbellanGomez-Sanchez2013, PrietoTchounikineAsensio-PerezSobreiraDimitriadis2014}.
+The structures of script schemata and classes are used as templates to create new script schemata and classes \cite{AndreasHarrerUlrchHoppe2007, RonenKohen-Vacs2009}. 
 
-During the instantiation/production phase, script schemata and classes provide advice and recommendation that help the CL practitioners to instantiate these scripts and to obtain CL sessions \cite{MagnisalisDemetriadis2012a, PrietoAsensio-PerezDimitriadisGomez-SanchezMunoz-Cristobal2011,Alario-HoyosBote-LorenzoGomez-SanchezAsensio-PerezVega-GorgojoRuiz-Calleja2013}. Script schemata and classes facilitate the generation of computer-interpretable scripts, they provide information to support the search of applicable learning material and tools for the CL scenario \cite{Bote-LorenzoVaquero-GonzalezVega-GorgojoDimitriadisAsensio-PerezGomez-SanchezHernandez-Leo2004, IsotaniMizoguchi2008a, Vega-GorgojoBote-LorenzoGomez-SanchezDimitriadisAsensio-Perez2005}. The script schemata and classes are also uses to obtain recommendation about how to bind individuals in groups and roles according to the knowledge described in these scripts \cite{IsotaniMizoguchiIsotaniCapeliIsotanideAlbuquerqueBittencourtJaques2013,Villasclaras-FernandezHernandez-GonzaloLeoAsensio-PerezDimitriadisMartinez-Mones2009}.
+During the instantiation/production phase, script schemata and classes provide advice and recommendation that help the CL practitioners to instantiate these scripts and to obtain CL sessions \cite{MagnisalisDemetriadis2012a, PrietoAsensio-PerezDimitriadisGomez-SanchezMunoz-Cristobal2011,Alario-HoyosBote-LorenzoGomez-SanchezAsensio-PerezVega-GorgojoRuiz-Calleja2013}.
+Script schemata and classes facilitate the generation of computer-interpretable scripts, and they provide information to support the search of applicable learning material and tools for the CL scenario \cite{Bote-LorenzoVaquero-GonzalezVega-GorgojoDimitriadisAsensio-PerezGomez-SanchezHernandez-Leo2004, IsotaniMizoguchi2008a, Vega-GorgojoBote-LorenzoGomez-SanchezDimitriadisAsensio-Perez2005}.
+The script schemata and classes are also uses to obtain recommendation about how to bind individuals in groups and roles according to the knowledge described in these scripts \cite{IsotaniMizoguchiIsotaniCapeliIsotanideAlbuquerqueBittencourtJaques2013,Villasclaras-FernandezHernandez-GonzaloLeoAsensio-PerezDimitriadisMartinez-Mones2009}.
 
 Regarding to the level of granularity \cite{FischerKollarStegmannWeckerZottmann2013}, the CSCL scripts can be classified in macro-scripts and micro-scripts.
 
 \begin{description}
-\item[\emph{Macro-scripts}:] are scripts that basically describe the CL process in a courser-grained level without detailing the specific interactions among participants. A macro-script describes how to attain a set of pedagogical objective indicating the sequencing of individual and group activities that must be follow by participants. Thus, for example, in the Jigsaw macro-script, to promotes the individual accountability and positive interdependence, the sequencing of activities consists in three activities: an individual activity, expert group activity, and jigsaw group activity. In the individual activity, each student studies a particular part of a whole problem. In the expert group, the students of different groups that study the same part of the whole problem meet together for exchanging ideas. At last activity, students of each jigsaw group meet to contribute with their expertise to solve the whole problem.
+\item[\emph{Macro-scripts}:] are CSCL scripts that basically describe the CL process in a courser-grained level without detailing the specific interactions among participants.
+A macro-script describes how to attain a set of pedagogical objective indicating the sequencing of individual and group activities that must be follow by participants.
+Thus, for example, in the Jigsaw macro-script, to promotes the individual accountability and positive interdependence, the sequencing of activities consists in three activities: an individual activity, expert group activity, and jigsaw group activity.
+In the individual activity, each student studies a particular part of a whole problem.
+In the expert group, the students of different groups that study the same part of the whole problem meet together for exchanging ideas.
+At last activity, students of each jigsaw group meet to contribute with their expertise to solve the whole problem.
 
-\item[\emph{Micro-scripts}:] are scripts that describe the CL process in a fine-grained level \cite{WeinbergerFischerStegmann2005}, they indicate, for example, the dialogues that must happen among student to achieve the pedagogical objectives, and they are intended to describe the communication model between participants. Thus, for example, to facilitate the negotiation and elaboration of a domain concepts, \citeonline{WeinbergerErtlFischerMandl2005} describe a micro-scripts for online peer discussion using a sequence of sentence openers (e.g. my proposal for an adjustment of the analysis is….) that prompted learners to contribute with the discussion and critique one another's contributions.
+\item[\emph{Micro-scripts}:] are CSCL scripts that describe the CL process in a fine-grained level \cite{WeinbergerFischerStegmann2005}.
+A micro-script basically indicates the dialogues that must happen among student to achieve the pedagogical objectives, and they are intended to describe the communication model between participants.
+Thus, to facilitate the negotiation and elaboration of a domain concepts, \citeonline{WeinbergerErtlFischerMandl2005} describe a micro-scripts for on-line peer discussion using a sequence of sentence openers (e.g. \aspas{my proposal for an adjustment of the analysis is…}) that prompted learners to contribute with the discussion and critique one another's contributions.
 \end{description}
 
-As can be noticed above, the macro-scripts and micro-scripts have a hierarchical relationship to describe the CL process of CL activities. The micro-scripts describe the communication process in a CL activity \cite{WeinbergerFischerStegmann2005}, whereas the macro-scripts describe groups, roles, and flow of CL activities \cite{DillenbourgHong2008}. Despite this explicit hierarchical relationship, there are few models and tools in which all the elements of macro-scripts and micro-scripts are combined to support the design of CL scenarios \cite{AlharbiAthaudaChiong2014, ChallcoBittencourtIsotani2016}. \citeonline{Hernandez-LeoVillasclaras-FernandezAsensio-PerezDimitriadisRetalis2006} propose a hierarchical model in which schemata and classes of macro-scripts and micro-scripts are used as templates to generate scripts. In the work of \citeonline{ChallcoGerosaBittencourtIsotani2014}, the hierarchical relationships of macro-scripts and micro-scripts is represented as hierarchical task networks to support the automatic generation of unit of learning.
+As can be noticed above, CSCL macro-scripts and micro-scripts have a hierarchical relationship to describe the CL process.
+The micro-scripts describe the communication process in a CL activity \cite{WeinbergerFischerStegmann2005}, whereas the macro-scripts describe groups, roles, and flow of CL activities \cite{DillenbourgHong2008}.
+Despite this explicit hierarchical relationship, there are few models and tools in which all the elements of macro-scripts and micro-scripts are combined to support the design of CL scenarios \cite{AlharbiAthaudaChiong2014, ChallcoBittencourtIsotani2016}.
+\citeonline{Hernandez-LeoVillasclaras-FernandezAsensio-PerezDimitriadisRetalis2006} propose a hierarchical model in which schemata and classes of macro-scripts and micro-scripts are used as templates to generate scripts.
+To support the automatic generation of unit of learning, the hierarchical relationships of macro-scripts and micro-scripts is represented as hierarchical task networks in the work of \citeonline{ChallcoGerosaBittencourtIsotani2014}.
 
-In the CL ontology \cite{IsotaniInabaIkedaMizoguchi2009}, and therefore in the ontology OntoGaCLeS, the hierarchical relationship between the macro-scripts and micro-scripts is not explicitly described as a direct link between macro-scripts and micro-scripts. The hierarchical relationship is implicitly described as part of the conceptualization of events and processes proposed by \citeonline{GaltonMizoguchi2009}. Based on in this conceptualization in which the representation of an event can be constituted by many distinct sub-events to describe a process, the hierarchical relationship of macro- and micro-scripts can be inferred from these events that are explicitly described in the CL ontology and the ontology OntoGaCLeS.
+In the CL ontology \cite{IsotaniInabaIkedaMizoguchi2009}, and therefore in the ontology OntoGaCLeS proposed in this thesis, the hierarchical relationship between the macro-scripts and micro-scripts is not explicitly described as a direct link between macro-scripts and micro-scripts.
+The hierarchical relationship of these scripts is implicitly described as part of the ontological structures to represent events and processes proposed by \citeonline{GaltonMizoguchi2009}.
+Based on this conceptualization in which an event can be constituted by many distinct sub-events to describe a process, the hierarchical relationship of CSCL macro-scrips and micro-scripts can be extracted from the events used to describe the CL process.
 
-\subsection{Motivation Problem Caused by the Scripted Collaboration}
+\subsection{Motivational Problems in Scripted Collaboration}
 \label{subsec:motivation-problem}
 
-The motivation problem caused by the scripted collaboration should be interpreted in his dissertation as the negative effects caused by the scripts on participants' motivation, and implicitly it also includes the negative effects on the learning outcome. 
-\citeonline{Dillenbourg2002} indicated that there may be a danger to overscript the CL process. The sequencing of interactions is rejected by some students when they had difficulties to adapt to perform structured tasks, in specially, for highly coercive scripts which dictate interaction in a very detailed and inflexible way. This kind of scripting collaboration prevent the independent, exploratory thinking, and when they are designed with high degree of coercion, it decreases student motivation. 
+In this PhD thesis dissertation, \aspas{\emph{the motivational problems in scripted collaboration}} should be interpreted as the negative effects caused on the participants' motivation by the use of CSCL scripts to orchestrate and structure the CL process.
+
+Motivation is a critical factor that influences the cognitive learning process \cite{DeciRyan1985}.
+Indeed, better learning outcomes are associate with the motivation of participants who demonstrate better curiosity, persistence, and performance for the learning activities \cite{DeciRyan1985,Serrano-CamaraParedes-VelascoAlcoverVelazquez-Iturbide2014}.
+In fact, high levels of motivation (intrinsic and extrinsic motivation) for the participants of a CL scenario are associated with their improvement of learning outcomes \cite{SerranoCamaraParedesVelascoVelazquez-Iturbide2012}.
+In this sense, avoiding motivational problems is essential to entice the students to have a better participation in a CL process as well as to complete it.
+
+
+By motivational problems, this thesis explicitly refers to the lack of motivation and the demotivation that the participants can experienced during the CL process.
+The lack of motivation, also known as \aspas{\emph{amotivation}} \cite{DeciRyan2010}, occurs when a participant feels the absence of motivation to participate in the CL activity.
+This absence of motivation is related to individual's experiences that cause negative feelings (i.e. incompetence, helplessness) when he/she face with the CL activity. 
+In this sense, in a well-though-out CL scenario, the amotivation problem is caused by general outcomes expectation that are unrealistic. 
+
+
+
+Dornyei (2005: 143) defines de-motivation as “specific external forces that reduce or diminish the motivational basis of a behavioral intention or an ongoing action”.
+
+Deci and Ryan (1985) uses a similar term “amotivation”, which means “ the relative absence of motivation that is not caused by a lack of initial interest but rather by the individual’s experiencing feelings of incompetence and helplessness when faced with the activity.” Though both of these terms concern lack of motivation, they differ in that amotivation is related to general outcomes expectations that are unrealistic for some reason whereas de-motivation concern specific external causes. 
+
+A de-motivated learner is someone who was once motivated but has lost his or her commitment /interest for some reason. De-motives are the negative counterparts of motives. Some de-motives can lead to general amotivation regarding the particular activity whereas others may have no effect on amotivation as long as the negative external motives cease to exist. Dornyei points out that de-motivation does not mean that all the positive influences that originally made up the motivational basis of a behavior have been got rid of. It only means that a strong negative factor restrains the present motivation with some other positive motives still remain ready to be activated. For example, a Chinese student may lose his interest in learning English as soon as he passed the CET-4.
+
+
+% ======= %
+
+The students' motivation is one of the most important aspect that should be considered to obtain a well-thought-out designed learning scenario.
+
+
+
+Lack of motivation caused by negative attitude toward CL process \cite{}. Students prefer to work individually \cite{}, \cite{}, \cite{}. 
+Lack of motivation indicated as the absence of motivation caused by negative attitudes toward the CL process, such as the feeling that the teamwork is an obligation imposed by the instructor, the .
+
+
+Students are unwilling to participate in groups.
+Backward students prefer teamwork to work less and take advantage of the work developed by their mates.
+In general, students prefer to work individually.
+Team-works are more time-consuming for students.
+Students can no longer aspire to higher marks when team-working
+
+
+% ======= %
+
+
+Many studies indicated that non-motivated students 
+
+
+
+In peer-moderated discussions as a way of scripted collaboration in which the moderator plays the role of CSCL script, studies indicate that the lack of motivation directly affects the knowledge elaboration and transfer \cite{XieKe2009}. The level of participation is also indicated as factor affected by the lack of motivation in \cite{MazzoliniMaddison2003}, causing superficial interaction \cite{WeinbergerErtlFischerMandl2005} and insufficient peer referencing \cite{Hewitt2005}.
+
+
+\cite{AdamsWilsonWu1997} is the 
+
+
+
+
+In \cite{WuVassilevaSunFang2014}, the lack of motivation to participate in a CL process using Wiki systems is pointed out as a problem caused by the missing of an effective incentive mechanism. Thereby, by providing tools that increase the awareness of task conflict, the lack of motivation caused by Wiki issues for the CL process are addressed.
+
+In the context of CSCL, several studies indicate that students dropped out the CL process as consequence of their lack motivation to participate in the CSCL scripts \cite{Hamalainen2008, PapadopoulosDemetriadisStamelos2009}.
+
+\citeonline{Dillenbourg2013} indicates the dropping out of the CL process as an extraneous events that occurs (unavoidable): Classroom life is full of events that do not belong to the kernel, for example: (i) The kernel is a script with 3 complementary roles but one team member drops out the course at mid term.
+
+% =====  %
+
+Malhotra and Galletta (2003) study motivation factors with regard to the implementation of knowledge management systems. Furthermore, they discard the traditional distinction between intrinsic and extrinsic factors as opposites. Intrinsic and extrinsic motivation is seen as part of a continuum where users (and learners) transition from a status of lack of motivation, through a series of externally-driven regulations and incentives, to reach a self-determined level of intrinsic regulations which increases their curiosity and determination to achieve a specific objective.
+
+Malhotra, Y. & Galletta, D. (2003). Role of commitment and motivation in knowledge management systems implementation: Theory, conceptualization, and measurement of antecedents of success. In Proceedings of 36th annual Hawaii international conference on systems sciences (pp. 1–10).
+
+% ===== %
+
+The study results indicate that motivation influences the relationship between team interactions and perceived learning. Enjoyment is affected by motivation and perceptions of team members’ contributions, with the implication that students who perceive that the team interactions are adding value to their education will better enjoy learning and will experience higher-level learning outcomes.
+
+\cite{GomezWuPasserini2010}
+
+
+% ===== %
+
+No significant negative relationship was found between contributions to discourse and lack of motivation \cite{RientiesTempelaardenBosscheGijselaersSegers2009}.
+
+The study of \citeonline{RientiesTempelaardenBosscheGijselaersSegers2009} indicates that highly intrinsically motivated students in CL sessions become central and prominent contributors to cognitive discourse.
+ 
+
+Although negative effects on participants' motivation were found in the medium and high degree of scripting, this low motivation did not negatively related to knowledge acquisition \cite{StegmannMuGehlen-BaumFischer2011}.
+
+
+% ===== %
+
+
+In CL process with long duration, students' motivation can decrease over time if they do not perceive
+
+
+
+Although the concept of attitude toward computers has gained recognition as a critical determinant in use and acceptance of information technology, there is no single, universally accepted definition of the computer attitude construct.
+
+
+students should overcome is the lack of motivation.
+
+
+
+When a learner lacks of motivation, he/she can from concentrating on any instructional and learning process (Jeamu, Kim, & Lee, 2008).
+
+
+by which the students start to learn as well as to complete a learning process.
+
+
+Motivation is also an essential to sustain students' participation in a learning scenario. 
+
+
+
+concepts in  education (Rodgers and Withrow-Thorton, 2005, Vallerand et al., 1992). It is a 
+
+
+psychological attribute that entices 
+
+students to learn as well as to complete learning activities (Green & Sulbaran, 2006). 
+
+
+
+
+, and, by consequence, on the learning outcomes.
+
+
+caused by the use of CSCL scripts
+
+ 
+
+it also includes the negative effects on the learning outcomes that occur in consequence  
+
+it also includes the negative effect that the  problem can cause on their 
+
+ implicitly it also includes the negative effects on their learning outcome.
+
+
+Motivation 
+
+
+An underlying theory base of good instruction generally involves instructional design considerations for motivation (Bohlin, Milheim, & Viechnicki, 1990). Motivation is 
+
+
+
+
+It's pointed out in different studies 
+CSCL scripts with too much structure support may lead to a lack of motivation , 
+
+
+Through a questionnaire in the 3rd year students of Translation and Interpreting in Spain, \citeonline{Barros2011} identified that some students are not motivated to participate in a CL process because they prefer to work individually, they see teamwork as a obligation imposed by the instructor, they see difficulties in achieving optimal performance working in group, and they did not have interest.
+
+The aim of our approach was to try to break down some of the barriers to participation, including lack of confidence, lack of experience and the lack of motivation.
+
+Lack of motivation was also mentioned as one of the reason for not participating in a CL process \cite{LofstromNevgi2007}.
+
+
+
+\citeonline{Dillenbourg2002} indicated that there may be a danger to overscript the CL process. The sequencing of interactions is rejected by some students when they had difficulties to adapt to perform structured tasks, in specially, for highly coercive scripts which dictate interaction in a very detailed and inflexible way. This kind of scripting collaboration prevent the independent, exploratory thinking, and when they are designed with high degree of coercion, it decreases students' motivation, causing demotivation.
+
+
+
 
 Similar to the research works of \citeonline{RummelSpada2007,WeinbergerStegmannFischer2010}, this thesis dissertation argues that the scripted collaboration may cause motivational problems and reactance towards the script based on the self-determination theory \cite{DeciRyan2010} as a central element for motivation. Depending on the individual attribution pattern, students would suffer motivational problems to uphold learning efforts, e.g., when students do not have a optimal fit between the external scripts (guidelines provided by the system that specifies the sequencing) and the internal script (low-structure script in the mind of students), and the external script provides scaffolds that guide procedures for which internal scripts are already represented by the learner or where a learner might even hold more effective or efficient internal script, the performance of the learner will decrease \cite{StegmannMuGehlen-BaumFischer2011}.
 
-In the same direction, negative effects on the participants' motivation have been pointed out by many researchers who have successfully applied CSCL scripts to enhance and/or to mediated the CL process. For example, \citeonline{Brehm1966} proved that, for some students, overlaying scripting produces reactance, and the work of \citeonline{KollarFischerSlotta2005} indicates that motivation loss for students occurred when there is a overlaying of scripting. When the scripted collaboration is over extended for a long period of time and over many collaborative sessions, the motivation problem occurs \cite{HronHesseReinhardPicard1997,SchmittWeinberger2018}.
+In the same direction, negative effects on the participants' motivation have been pointed out by many researchers who have successfully applied CSCL scripts to enhance and/or to mediated the CL process. For example, \citeonline{Brehm1966} proved that, for some students, overlaying scripting produces reactance, and the work of \citeonline{KollarFischerSlotta2005} indicates that motivation loss for students occurred when there is a overlaying of scripting. When the scripted collaboration is over extended for a long period of time and over many collaborative sessions, the motivational problems occur \cite{HronHesseReinhardPicard1997,SchmittWeinberger2018}.
 
 %Against this background, an important question is, whether central elements of a collaboration script can be learned from a scripted session, and then serve to promote subsequent unscripted collaboration (in the following called learning-from-script hypothesis). Such learning effect of a collabora- tion script would make it unnecessary to continue the scripting and risk mo- tivational drawbacks, but collaborators could themselves maintain a fruitful collaboration following their internalized script rules.
 
-%In the following paragraphs, we first discuss some relevant approaches to deal with the motivation problem caused by the scripting collaboration found in the literature that are related to the approach proposed in this dissertation.%We characterize our collaboration script within a classification framework proposed by Dillenbourg (2002) and introduce the experimental paradigm it has been investigated with. We provide empirical support for our hypothesis from a recent study (see Rummel & Spada, 2005b)
+%In the following paragraphs, we first discuss some relevant approaches to deal with the motivational problems caused by the scripting collaboration found in the literature that are related to the approach proposed in this dissertation.%We characterize our collaboration script within a classification framework proposed by Dillenbourg (2002) and introduce the experimental paradigm it has been investigated with. We provide empirical support for our hypothesis from a recent study (see Rummel & Spada, 2005b)
+
+In relation to the demotivation, many studies has shown the relation of this fact to the persistence and dropout \cite{Hart2012,Grau-ValldoseraMinguillon2014,HartnettGeorgeDron2011}.
+Learners who are intrinsically motivated might have an advantage in preventing learning difficulties
+
+
+
+
+Motivation is a core factor in the learning–teaching process to improve active learning (Pintrich, 2003), because motivation concerns energy, direction, persistence and equifinality – all aspects of activation and intention (Ryan & Deci, 2000a). The literature shows a high diversity in terms and approaches about motivation (Murphy & Alexander, 2000). From these different conceptual models, the self-determination theory can be a theoretical framework very useful to understand motivation within the educational and academic contexts (Deci et al., 1991, Vansteenkiste et al., 2006). 
+
+ Self-determination theory (Deci & Ryan, 1985) emphasizes the importance of the development of internal human resources for personal development and self-regulation of behavior. Self-determination is based in intrinsic motivation, or prototypical manifestation of the human tendency toward learning and creativity, and in self-regulation, which is concerned with how the people assume social values and extrinsic contingencies and progressively transform these into personal values and self-motivation (Ryan & Deci, 2000a).
+
+There are several dimensions of motivation depending on the level of self-determination, ranging through a continuum from more to less self-determination:
+1.
+Intrinsic motivation refers to doing something because it is inherently interesting or enjoyable; intrinsic motivation is an important phenomenon for educators because it is a natural wellspring of learning and achievement that can be systematically catalyzed or undermined by instructor practices, and because intrinsic motivation produces results in high-quality learning and creativity (Ryan & Deci, 2000b).
+
+2.
+Extrinsic motivation via identified regulation – a more self-determined or somewhat internal regulation – implies an option as it occurs when the behavior is considered important for the subject’s goals and values.
+
+3.
+Extrinsic motivation via external regulation – a less self-determined or more external regulation – refers to doing something because it leads to a separable outcome – to obtain a reward or to avoid a punishment.
+
+4.
+Amotivation, the least self-determined dimension, implies non-regulation and occurs when individuals do not perceive the contingencies between the behavior and its consequences, and behavior has not intrinsic or extrinsic motivators (Ryan & Deci, 2000a).
+
+
+These authors note that each type of motivation leads to different consequences. Previous research carried on from this model has shown that the most self-determined forms of motivation (i.e., intrinsic motivation and identified regulation) are more closely associated with positive consequences such as the natural propensities for growth and integration, as well as personal well-being and constructive social development. On the other hand, the most negative consequences, for instance, a low self-esteem and avoidance behaviors, are linked to lower levels of self-determination, such as amotivation and external regulation.
+
+Moreover, self-determination theory postulates that social and environmental factors affect motivation, facilitating or inhibiting intrinsic motivation and its potential positive consequences. These factors are present in educational contexts, especially in collaborative learning and group active learning where social interaction, sensemaking processes and collective processes in distributing, sharing and interpreting information and knowledge play a central role (Alcover, Gil, & Barrasa, 2004). Research results point out that, rather than focusing on rewards for motivating students’ learning, it is important to focus more on how to facilitate intrinsic motivation (Deci, Kostner, & Ryan, 2001). One of the environmental factors that may be more relevant in educational settings to enhance motivation refers to the learning strategies and teaching methodologies used (Schunk, Pintrich, & Meece, 2008). Therefore, to research the educational methodologies and group and collaborative learning from an intrinsic motivation view is very interesting and relevant in the EHEA context.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Dornyei (2005: 143) defines de-motivation as “specific external forces that reduce or diminish the motivational basis of a behavioral intention or an ongoing action”. Deci and Ryan (1985) uses a similar term “amotivation”, which means “ the relative absence of motivation that is not caused by a lack of initial interest but rather by the individual’s experiencing feelings of incompetence and helplessness when faced with the activity.” Though both of these terms concern lack of motivation, they differ in that amotivation is related to general outcomes expectations that are unrealistic for some reason whereas de-motivation concern specific external causes. A de-motivated learner is someone who was once motivated but has lost his or her commitment /interest for some reason. De-motives are the negative counterparts of motives. Some de-motives can lead to general amotivation regarding the particular activity whereas others may have no effect on amotivation as long as the negative external motives cease to exist. Dornyei points out that de-motivation does not mean that all the positive influences that originally made up the motivational basis of a behavior have been got rid of. It only means that a strong negative factor restrains the present motivation with some other positive motives still remain ready to be activated. For example, a Chinese student may lose his interest in learning English as soon as he passed the CET-4.
+
+2.2 Research on De-motivation
+2.2.1 Christophel and Gorham’s study
+Christophel and Gorham (1995, 1992) initiated two different investigations of de-motivation with both qualitative and quantitative techniques. The results indicate that most subjects attribute de-motivation to what the teacher had done or had been responsible for. Gorham and Christophel (1992) also summarized a rank of order of the frequency of the various demotives, with first five categories as dissatisfaction with grading and assignments; the teacher being boring, bored, unorganized and unprepared; the dislike of the subject area; the inferior organization of the teaching material and the teacher being unapproachable, self-centered, biased, condescending and insulting. This rank offers a initiative insight into the true nature of teacher’s role in de-motivation.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Gamification}
@@ -646,7 +900,8 @@ In the same way of the framework proposed by \citeonline{Bunchball2010}, as show
 \subsubsection{Persuasive Game Design Models}
 \label{subsub:persuasive-game-design-models}
 
-Developing persuasive technology in the form of games has become a common practice. These types of games referred as persuasive games have been designed with the the primary purpose of changing  players' behaviors, feelings, or thoughts. In the last decade, several persuasive games have been developed by researchers as a novel approach to modifying users' behaviors. For example, \aspas{\emph{What Remains}?} is a persuasive game in which using stories are used to personalize the Alzheimers' patients care giving \cite{CadamuroVisch2013}, \aspas{\emph{Smoke}?} is a persuasive game aimed to support players in smoking cessation \cite{KhaledBarrNobleFischerBiddle2007a}, and \aspas{\emph{OrderUP}!} is a persuasivegame that motivates healthy eating habits \cite{GrimesKantrooGrinter2010}.
+Developing persuasive technology in the form of games has become a common practice. These types of games referred as persuasive games have been designed with the the primary purpose of changing  players' behaviors, feelings, or thoughts. In the last decade, several persuasive games have been developed by researchers as a novel approach to modifying users' behaviors. For example, \aspas{\emph{What Remains}?} is a persuasive game in which using stories are used to personalize the Alzheimers' patients care giving \cite{CadamuroVisch2013}, \aspas{\emph{Smoke}?} is a persuasive game aimed to support players in smoking cessation \cite{KhaledBarrNobleFischerBiddle2007a}, and \aspas{\emph{OrderUP}!} is a persuasive
+game that motivates healthy eating habits \cite{GrimesKantrooGrinter2010}.
 
 Despite the growing interest of researchers in using and develop persuasive games, little attention has been given to develop models that would help the designers to design persuasive games and/or tailored these games to increase their efficacy at achieving their intended objective of motivating behavior change. In the following paragraphs, a model-driven persuasive game design proposed by \cite{OrjiVassilevaMandryk2014} is summarized.
 

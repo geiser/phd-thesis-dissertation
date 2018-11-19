@@ -12,7 +12,7 @@
 %   Curso                 = doutorado/mestrado
 %   Situação do trabalho  = pre-defesa/pos-defesa (exceto para qualificação)
 %   Versão para impressão = impressao
-\documentclass[doutorado, pre-defesa]{packages/icmc}
+\documentclass[doutorado, pos-defesa]{packages/icmc}
 
 % ---------------------------------------------------------------------------
 % Pacotes Opcionais
@@ -29,6 +29,13 @@
 \usepackage{graphicx}
 \usepackage{soul}
 % ---------------------------------------------------------------------------
+
+\hypersetup{linkcolor=black,
+citecolor=black,        % color of links to bibliography
+filecolor=black,      % color of file links
+urlcolor=black}
+
+
 \algnewcommand{\LeftComment}[1]{\Statex \(\triangleright\) #1}
 
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
@@ -38,8 +45,8 @@
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
 % Tanto na capa quanto nas folhas de rosto apenas a primeira letra da primeira palavra (ou nomes próprios) devem estar em letra maiúscula, todas as demais devem ser em letra minúscula.
-\tituloEN{Gamification of collaborative learning scenarios: an ontological engineering approach to deal with the motivation problem caused by computer-supported collaborative learning scripts}
-\tituloPT{Gamificação de cenários de aprendizagem colaborativa: uma abordagem de engenharia de ontologias para lidar com o problema de motivação causado por scripts de aprendizagem colaborativa com suporte computacional}
+\tituloEN{Gamification of collaborative learning scenarios: an ontological engineering approach to deal with motivational problems in scripted collaboration}
+\tituloPT{Gamificação de cenários de aprendizagem colaborativa: uma abordagem de engenharia de ontologias para lidar com problemas motivacionais na colaboração com scripts}
 
 
 \autor[Challco, G. C.]{Geiser Chalco Challco}
@@ -61,17 +68,17 @@
 \textoresumo[english]{
 Increase both students' motivation and learning outcomes in Collaborative Learning (CL) activities is a challenge that the Computer-Supported Collaborative Learning (CSCL) community has been addressing in the past last years.
 The use of CSCL scripts to structure and orchestrate the CL process has been shown to be effective to support meaningful interactions and better learning, but the scripted collaboration often does not motivate students to participate in the CL process, which makes more difficult the use of scripts over time in CL activities.
-To deal with the motivation problems, the researchers, educators and practitioners are now looking at gamification as a solution to motivate and engage students.
+To deal with the motivational problems, the researchers, educators and practitioners are now looking at gamification as a solution to motivate and engage students.
 However, the gamification is a complex task, requiring from instructional designers and practitioners, knowledge about game elements (such as leaderboards and point systems), game design (e.g. how to combine game elements) and their impact on motivation, engagement and learning.
 Moreover, the gamification is too context-dependent, requiring personalization for each participant and situation.
 Thus, to address these issues, an ontological engineering approach to gamify CL sessions has been proposed and conducted in this dissertation.
 In this approach, an ontology has been formalized to enable the systematic representation of knowledge extracted from theories and best practices related to gamification.
-In this ontology, the concepts, extracted from practices and theories related to gamification, and identified as relevant to deal with the motivation problem caused by the scripted collaboration, have been formalized as ontological structures to be used by computer-based mechanisms and procedures in intelligent-theory aware systems.
+In this ontology, the concepts, extracted from practices and theories related to gamification, and identified as relevant to deal with the motivational problem caused by the scripted collaboration, have been formalized as ontological structures to be used by computer-based mechanisms and procedures in intelligent-theory aware systems.
 These mechanisms and procedures with ontological structures aim to provide support to give advices and recommendations that will help instructional designers and practitioners to gamify CL sessions. 
-To validate this approach, and to demonstrate its effectiveness and efficiency into deal with the motivation problem caused by the scripted collaboration, four empirical studies were conducted in real situations at the University of São Paulo with undergraduate Computer Science and Computer Engineering students.
-The results of the empirical studies demonstrated that, for CL activities where the CSCL scripts are used as a method to orchestrate and structure the CL process, the ontological engineering approach to gamify CL scenarios is an effective and efficient solution to deal with the motivation problem because the CL sessions obtained by this approach affected in a proper way the participants' motivation and learning outcomes.
+To validate this approach, and to demonstrate its effectiveness and efficiency into deal with the motivational problems caused by the scripted collaboration, four empirical studies were conducted in real situations at the University of São Paulo with undergraduate Computer Science and Computer Engineering students.
+The results of the empirical studies demonstrated that, for CL activities where the CSCL scripts are used as a method to orchestrate and structure the CL process, the ontological engineering approach to gamify CL scenarios is an effective and efficient solution to deal with the motivational problems because the CL sessions obtained by this approach affected in a proper way the participants' motivation and learning outcomes.
 }{
-Ontologies, Gamification, Computer-Supported Collaborative Learning, Scripts, Motivation Problem
+Ontologies, Gamification, Computer-Supported Collaborative Learning, Scripts, Motivational Problem
 }
 
 % Resumo em PORTUGUÊS
@@ -100,7 +107,7 @@ Ontologias, Gamificação, Aprendizagem Colaborativa com Suporte Computacional, 
 % ----------------------------------------------------------
 
 % Inserir a ficha catalográfica
-\incluifichacatalografica{tex/pre-textual/ficha-catalografica.pdf}
+%\incluifichacatalografica{tex/pre-textual/ficha-catalografica.pdf}
 
 % DEDICATÓRIA / AGRADECIMENTO / EPÍGRAFE
 %\textodedicatoria*{tex/pre-textual/dedicatoria}
@@ -108,16 +115,16 @@ Ontologias, Gamificação, Aprendizagem Colaborativa com Suporte Computacional, 
 %\textoepigrafe*{tex/pre-textual/epigrafe}
 
 % Inclui a lista de figuras
-\incluilistadefiguras
+%\incluilistadefiguras
 
 % Inclui a lista de tabelas
-\incluilistadetabelas
+%\incluilistadetabelas
 
 % Inclui a lista de quadros
-\incluilistadequadros
+%\incluilistadequadros
 
 % Inclui a lista de algoritmos
-\incluilistadealgoritmos
+%\incluilistadealgoritmos
 
 % Inclui a lista de códigos
 %\incluilistadecodigos
@@ -132,22 +139,21 @@ Ontologias, Gamificação, Aprendizagem Colaborativa com Suporte Computacional, 
 % Início do documento
 % ----
 \begin{document}
-% ----------------------------------------------------------
-% ELEMENTOS TEXTUAIS
-% ----------------------------------------------------------
+% ---------------------------------------------------------- % ELEMENTOS TEXTUAIS %
+----------------------------------------------------------
 \textual
 
 \newcommand{\comando}[1]{\textbf{$\backslash$#1}}
 
 
 \input{tex/introduction}
-\input{tex/general-background}
-\input{tex/ontogacles-1}
-\input{tex/ontogacles-2}
-\input{tex/model-gmif}
-\input{tex/mechanisms-procedures}
-\input{tex/evaluation}
-\input{tex/conclusions}
+%\input{tex/general-background}
+%\input{tex/ontogacles-1}
+%\input{tex/ontogacles-2}
+%\input{tex/model-gmif}
+%\input{tex/mechanisms-procedures}
+%\input{tex/evaluation}
+%\input{tex/conclusions}
 
 % ---
 % Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
@@ -183,12 +189,12 @@ Ontologias, Gamificação, Aprendizagem Colaborativa com Suporte Computacional, 
 % ---
 % Inicia os apêndices
 % ---
-\begin{apendicesenv}
- \input{tex/appendix/ontology-ontogacles}
- \input{tex/appendix/outliers}
- \input{tex/appendix/validation-motivation-surveys}
- \input{tex/appendix/irt-models}
-\end{apendicesenv}
+%\begin{apendicesenv}
+% \input{tex/appendix/ontology-ontogacles}
+% \input{tex/appendix/outliers}
+% \input{tex/appendix/validation-motivation-surveys}
+% \input{tex/appendix/irt-models}
+%\end{apendicesenv}
 % ---
 
 % ----------------------------------------------------------
@@ -198,9 +204,9 @@ Ontologias, Gamificação, Aprendizagem Colaborativa com Suporte Computacional, 
 % ---
 % Inicia os anexos
 % ---
-\begin{anexosenv}
- \input{tex/annex}
-\end{anexosenv}
+%\begin{anexosenv}
+% \input{tex/annex}
+%\end{anexosenv}
 % ---
 
 \end{document}
