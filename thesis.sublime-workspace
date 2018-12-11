@@ -8,9 +8,57 @@
 	"buffers":
 	[
 	],
-	"build_system": "",
+	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		]
 	],
 	"build_varint": "",
 	"command_palette":
@@ -45,14 +93,21 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/gcc/Documents/Theses & Dissertations/phd-thesis"
+		"/Users/gcc/Documents/Theses & Dissertations/phd-thesis",
+		"/Users/gcc/Documents/Theses & Dissertations/phd-thesis/tex"
 	],
 	"file_history":
 	[
+		"/Users/gcc/Documents/Theses & Dissertations/phd-thesis/thesis.sublime-project",
+		"/Users/gcc/Documents/Theses & Dissertations/phd-thesis/thesis.tex",
+		"/Users/gcc/Documents/Theses & Dissertations/phd-thesis/tex/general-background.tex",
+		"/Users/gcc/Downloads/client_id.json",
+		"/Users/gcc/Downloads/lista04/similarityGen.m",
+		"/Users/gcc/Documents/Theses & Dissertations/phd-thesis/tex/introduction.tex"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -66,6 +121,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"amotiva"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -90,7 +146,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -123,11 +179,15 @@
 	{
 		"height": 0.0
 	},
+	"output.latextools":
+	{
+		"height": 256.0
+	},
 	"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
 	"project": "thesis.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -165,7 +225,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 159.0,
+	"side_bar_width": 333.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
