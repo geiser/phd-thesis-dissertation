@@ -1,0 +1,208 @@
+
+This is 
+
+
+%\begin{algoritmo}
+%\caption{Algorithm to check conditions to assign player roles to the participants of a CL session $s$, and to set a priority queue in the gamified CL scenarios $scenarios$ using the set of desired conditions that are satisfied by those participants}
+%\label{algorithm:select-gamified-cl-scenarios-for
+%\begin{algorithmic}[1]\small
+%\Function{setPriorityQueueByDesiredConds}{$scenarios$, $s$}
+
+%\EndFunction
+%\end{algorithmic}
+%\end{algoritmo}
+
+
+
+\newpage
+\begin{algoritmo}
+\caption{Algorithm to set player roles and game elements in a CL session}
+\label{algorithm:set-player-roles-and-game-elements}
+\begin{algorithmic}[1]\small
+\Procedure{Setup\_Player\_Roles\_and\_Game\_Elements}{$s$, $ontModel$}
+  \State $scenarios \gets$ \Call{selectGamifiedCLSessionsFor}{$ontModel$, $s$}
+  \State $q \gets$ \Call{setPriorityQueueByDesiredConds}{$scenarios$, $s$}
+    
+    \ForAll{$g$ in $setGamifiedCLscenarios$}
+      
+      \ForAll{$ms$ in getRoleHolders($g$, \aspas{Motivational strategy})}
+        \State $i\_role \gets$ getWholeConcept(getLabel(getRole($ms$, \aspas{I-player role})))
+        \ForAll{$p$ in getRolePlayingThings($session$, getConstraintConcepts($ms$, \aspas{I-player role}))}
+          \If{satisfyConditions($p$, getConstraintConcepts($i\_role$, \aspas{Necessary conditions}))}
+            \State $n \gets n+1$
+            \State $d \gets d+$noSatisfiedConditions($p$, getConstraintConcepts($i\_role$,\aspas{Desired conditions}))
+          \EndIf
+        \EndFor
+      \EndFor
+      
+
+    \EndFor
+
+    \LeftComment{Setting player roles if no one restriction is violated in the ind. mot. strategies}
+    
+    \State $g \gets$ null
+    \State $player\_roles \gets []$
+
+    \While{Not is\_empty($q$) And $g = null$}
+      \State $i\_player\_rh\_things \gets []$
+      \State $u\_player\_rh\_things \gets []$
+      \State $g \gets$ pull\_highest\_priority\_element($q$)
+      \ForAll{$ms$ in getRoleHolders($g$, \aspas{Motivational strategy})}
+        \ForAll{$p$ in getRolePlayingThings($session$, \aspas{CL Role Holder})}
+          \State $player\_role \gets$ getBestPlayerRole($p$, $session$, $ms$)
+          \If{$player\_role$ = getRole($ms$, \aspas{I-player role})}
+            \State $i\_player\_rh\_things[ms] \gets i\_player\_rh\_things[ms] \cup \{p\}$
+          \ElsIf{$player\_role$ = getRole($ms$, \aspas{You-player role})}
+            \State $u\_player\_rh\_things[ms] \gets u\_player\_rh\_things[ms] \cup \{p\}$
+          \EndIf
+        \EndFor
+      \EndFor
+
+      \ForAll{$ms$ in getRoleHolders($g$, \aspas{Motivational strategy})}
+        \State $i\_min \gets$ getMinimumCardinality(getRoleHolder($ms$, \aspas{I-player role}))
+        \State $i\_max \gets$ getMaximumCardinality(getRoleHolder($ms$, \aspas{I-player role}))
+        \State $u\_min \gets$ getMinimumCardinality(getRoleHolder($ms$, \aspas{You-player role}))
+        \State $u\_max \gets$ getMaximumCardinality(getRoleHolder($ms$, \aspas{You-player role}))
+        \If{size($i\_player\_rh\_things[ms]$) $< i\_min$ Or size($i\_player\_rh\_things[ms]$) $> i\_max$}
+          \State $g \gets$ null
+        \EndIf
+        \If{size($u\_player\_rh\_things[ms]$) $< u\_min$ Or size($u\_player\_rh\_things[ms]$) $> u\_max$}
+          \State $g \gets$ null
+        \EndIf
+      \EndFor
+      \If{Not $g = null$}
+        \ForAll{$ms$ in getRoleHolders($g$, \aspas{Motivational strategy})}
+          \State $i\_role$ getRole($ms$, \aspas{I-player role})
+          \State $u\_role$ getRole($ms$, \aspas{You-player role})
+          \State $player\_roles[i\_role] \gets player\_roles[i\_role] \cup i\_player\_rh\_things[ms]$
+          \State $player\_roles[u\_role] \gets player\_roles[u\_role] \cup u\_player\_rh\_things[ms]$
+        \EndFor
+      \EndIf
+    \EndWhile
+    \LeftComment{Setting game elements using the i-gameplay structure}
+    \State $game\_elements \gets []$
+    \If{Not $g = null$}
+      \ForAll{$indGameplay$ in getRoleHolders($g$, \aspas{Gameplay strategy})}
+        
+        \State $game\_elements \gets$ getConstraintConcepts($indGameplay$, \aspas{What to use})
+
+        \ForAll{$role$ in getConstraintConcepts($indGameplay$, \aspas{Primary focus (P)})}
+          \ForAll{$p$ in $player\_roles[role]$}
+            \State $game\_elements[p] \gets game\_elements[p] \cup elements$
+          \EndFor
+        \EndFor
+      \EndFor
+    \EndIf
+%\ForAll{$p$ in getRoleHolders($indGameplay$,
+%\aspas{Primary focus (P)})}       \State add($game\_elements[p]$, $elements$)     \EndFor   \EndFor
+\EndProcedure
+\end{algorithmic}
+\end{algoritmo}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\State $i\_neces\_conds \gets$ getConstraintConcepts($i\_role$, \aspas{Necessary conditions})
+%    \State $i\_desir\_conds \gets$ getConstraintConcepts($i\_role$, \aspas{Desired conditions})
+%    \ForAll{$sub\_i\_role$ in getLowerConceptList($i\_role$)}
+%      \State $sub\_i\_neces\_conds \gets$ getConstraintConcepts($sub\_i\_role$, \aspas{Necessary conditions})
+%      \State $sub\_i\_desir\_conds \gets$ getConstraintConcepts($sub\_i\_role$, \aspas{Desired conditions})
+%      \If{nroSatisfiedConditions($p$, $sub\_i\_neces\_conds$) $>$ nroSatisfiedConditions($p$, $sub\_i\_neces\_conds$)}
+%        \State $i\_neces\_conds \gets sub\_i\_neces\_conds$
+%        \State $i\_desir\_conds \gets sub\_i\_desir\_conds$
+%      \EndIf
+%    \EndFor
+
+%    \State $u\_neces\_conds \gets$ getConstraintConcepts($u\_role$, \aspas{Necessary conditions})
+%    \State $u\_desir\_conds \gets$ getConstraintConcepts($u\_role$, \aspas{Desired conditions})
+
+
+Given a set of inherited player roles, the
+
+\begin{algoritmo}
+\caption{Algorithm to get the best player role to be assigned for a participant \aspas{$p$} in a CL session \aspas{$s$} according to a motivational strategy \aspas{$ms$}}
+\label{algorithm:get-best-player-role}
+\begin{algorithmic}[1]\small
+\Function{getBestPlayerRole}{$p$, $s$, $ms$}
+  \State $iPlayerRoles \gets$ \Call{inheritedRolesFor}{\aspas{I-Player role}, $ms$}
+  \State $iConstraints \gets$ \Call{constraintConceptsFor}{$iPlayerRoles$}
+  \State $iParticipants \gets$ \Call{rolePlayingThingsFor}{$iConstraints$, $s$}
+  \State $youPlayerRoles \gets$ \Call{inheritedRolesFor}{\aspas{You-Player role}, $ms$}
+  \State $youConstraints \gets$ \Call{constraintConceptsFor}{$youPlayerRoles$}
+  \State $youParticipants \gets$ \Call{rolePlayingThingsFor}{$youConstraints$, $s$}
+  \If{$p \in (iParticipants \setminus youParticipants)$}
+    \State \Return \Call{satisfyNecessaryConditions}{$p$, $iPlayerRoles$, $s$}
+  \ElsIf{$p \in (youParticipants \setminus iParticipants)$}
+    \State \Return \Call{satisfyNecessaryConditions}{$p$, $youPlayerRoles$, $s$}
+  \ElsIf{$p \in (iParticipants \cap youParticipants)$}
+    \State $iPlayerRole \gets$ \Call{satisfyNecessaryConditions}{$p$, $iPlayerRoles$, $s$}
+    \State $youPlayerRole \gets$ \Call{satisfyNecessaryConditions}{$p$, $youPlayerRoles$, $s$}
+    \If{$iPlayerRole \neq null \land youPlayerRole \neq null$}
+      \State $iNo \gets$ \Call{noSatisfiedDesiredConditions}{$p$, $iPlayerRole$, $s$}
+      \State $youNo \gets$ \Call{noSatisfiedDesiredConditions}{$p$, $youPlayerRole$, $s$}
+      \If{$iNo \geq youNo$} \Return $iPlayerRole$
+      \ElsIf{$iNo < youNo$} \Return $youPlayerRole$
+      \EndIf
+    \ElsIf{$iPlayerRole \neq null$} \Return $iPlayerRole$
+    \ElsIf{$youPlayerRole \neq null$} \Return $youPlayerRole$
+    \EndIf
+  \EndIf
+  \State \Return $null$
+\EndFunction
+\end{algorithmic}
+\end{algoritmo}
+
+
+\begin{algoritmo}
+\caption{Algorithm to select the player role from the set \aspas{$prs$} in which all the necessary conditions are satisfied by the participant $p$ in a CL session \aspas{$s$}}
+\label{algorithm:satisfy-necessary-conditions}
+\begin{algorithmic}[1]\small
+\Function{satisfyNecessaryCondition}{$p$, $pr$, $s$}
+  \State $wcPlayerRole \gets$ \Call{roleAsWholeConcept}{$pr$}
+  \ForAll{$wcPlayerRole \in$ \Call{subConcepts}{$wcPlayerRole$} $\cup \{wcPlayerRole\}$}
+    \State $c \gets 0$
+    \State $condRoles \gets$ \Call{inheritedRolesFor}{\aspas{Necessary condition}, $wcPlayerRole$}
+    \ForAll{$cond \in$ \Call{constraintConcepts}{$condRoles$}}
+      \State $params \gets \{($\aspas{holder}$, p)\}$
+      \If{\Call{isA}{$cond$, \aspas{Attitudinal state}}} $params \gets params \cup \{($\aspas{target}$, s)\}$
+      \EndIf
+      \If{\Call{insByRolePlayingThings}{$cond$, $params$} $\neq \emptyset$} $c \gets c+1$
+      \EndIf
+    \EndFor
+    \If{\Call{size}{$conds$} $\neq 0 \land$ \Call{size}{$conds$} $= c$} \Return $true$
+    \EndIf
+  \EndFor
+  \State \Return $false$
+\EndFunction
+
+\Function{satisfyNecessaryConditions}{$p$, $prs$, $s$}
+  \ForAll{$pr \in prs$}
+    \If{\Call{satisfyNecessaryCondition}{$p$, $pr$, $s$}} \Return $pr$
+    \EndIf
+  \EndFor
+  \State \Return $null$
+\EndFunction
+\end{algorithmic}
+\end{algoritmo}
+
+
+A computer-based model for a unify modeling of the learners' growth process and the principle of good balance between challenges and abilities defined in the flow theory.
+
+
+
+
+
+2014-criwg
