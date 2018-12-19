@@ -1,10 +1,10 @@
 \chapter[Computer-based Mechanisms and Procedures to Gamify CL Sessions]{Computer-based Mechanisms and Procedures to Gamify Collaborative Learning Sessions}
 \label{chapter:computer-based-mechanisms-procedures}
 
-The purpose of this chapter is to show how the ontology OntoGaCLeS, and the GIMF model, presented in previous chapters, can be used in intelligent theory-aware systems to gamify CL sessions, and thus, to deal with the motivation problem caused by the scripted collaboration.
-The \autoref{sec:conceptual-flow-gamify-cl-sessions} presents a conceptual flow to gamify CL sessions proposed as a computer-based procedure that should be used by intelligent theory-aware systems to extract knowledge encoded in the ontology OntoGaCLeS, and then to provide suggestions based on theoretical justification.
+The purpose of this chapter is to show how the ontology OntoGaCLeS, and the GIMF model, presented in previous chapters, can be used in intelligent tools to gamify CL sessions, and thus, to deal with the motivational problems in scripted collaborative learning.
+The \autoref{sec:conceptual-flow-gamify-cl-sessions} presents a conceptual flow to gamify CL sessions proposed as a computational procedure that should be used by intelligent theory-aware tools to extract knowledge encoded in the ontology OntoGaCLeS, and then to provide suggestions based on its theoretical justification.
 In \autoref{sec:reference-architecture}, a reference architecture based on the conceptual flow to gamify CL sessions is presented.
-This architecture has been proposed to support the building of computer-based mechanisms that provide support in intelligent-theory aware systems for dealing with the motivation problem caused by the scripted collaboration.
+This architecture has been proposed to support the building of computational mechanisms that provide support in intelligent tools for dealing with motivational problems in scripted collaborative learning.
 
 Part of the work described in this chapter was published by the author of this PhD thesis dissertation in the scientific
 articles:
@@ -12,19 +12,19 @@ articles:
 \begin{itemize}
 \item \aspas{\emph{An Ontology Engineering Approach to Gamify Collaborative Learning Scenarios}} published in the 20\textsuperscript{th} International Conference on Collaboration and Technology, CRIWG 2014, held in Santiago, Chile \cite{ChallcoMoreiraMizoguchiIsotani2014}.
 
-\item \aspas{\emph{Gamification of Collaborative Learning Scenarios: Structuring Persuasive Strategies Using Game Elements and Ontologies}} published in the 1\textsuperscript{st} International Workshop on Social Computing in Digital Education, SocialEdu 2015, held in Stanford, CA, USA \cite{ChallcoMizoguchiBittencourtIsotani2015}.
+\item \aspas{\emph{Gamification of Collaborative Learning Scenarios: Structuring Persuasive Strategies Using Game Elements and Ontologies}} published in the 1\textsuperscript{st} International Workshop on Social Computing in Digital Education, SocialEdu 2015, held in Stanford, CA, USA \cite{ChallcoMizoguchiBittencourtIsotani2016}.
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section[Conceptual Flow to Gamify CL Sessions Using the Ontology OntoGaCLeS]{Conceptual Flow to Gamify Collaborative Learning Sessions Using the Ontology OntoGaCLeS}
 \label{sec:conceptual-flow-gamify-cl-sessions}
 
-As was mentioned before in previous chapters, to avoid the motivation problem caused by the scripted collaboration towards the gamification, it is necessary to solve the context-dependency related to the participants, and the context-dependency related to the target behavior being gamified.
+As was mentioned before in previous chapters, to avoid the motivational problems in scripted collaborative learning through gamification, it is necessary to solve the context-dependency related to the participants, and the context-dependency related to the target behavior being gamified.
 In this sense, the gamification should be applied in the most concrete level of CL scenarios in which the content-domain and participants are well defined.
-This kind of CL scenario is the CL session, a scenario in which the group members, CL roles and sequencing of actions to be performed by the group members are well established.
+This type of CL scenario corresponds to the CL session, a scenario in which the group members, the CL roles and the sequencing of actions to be performed by the group members are well established.
 
 \autoref{fig:conceptual-flow-gamify-cl-sessions} shows the conceptual flow proposed to gamify CL sessions using the ontology OntoGaCLeS.
-This flow has been developed from the viewpoint of an instructional designer who employs suggestions given by intelligent-theory aware systems, which in turn use the knowledge encoded in the ontology OntoGaCLeS as a source of information to provide these suggestions.
+This flow has been developed from the viewpoint of an instructional designer who employs suggestions given by intelligent-theory aware tools, which in turn use the knowledge encoded in the ontology OntoGaCLeS as a source of information to provide these suggestions.
 
 \begin{figure}[htb]
   \caption{Conceptual flow to gamify collaborative learning sessions using the ontology OntoGaCLeS}
@@ -34,7 +34,7 @@ This flow has been developed from the viewpoint of an instructional designer who
   \fautor
 \end{figure}
 
-Therefore, the basic stages to be accomplished in the conceptual flow to gamify CL sessions by intelligent-theory aware systems are:
+Therefore, the basic stages to be accomplished in the conceptual flow to gamify CL sessions by using the ontology OntoGaCLeS are:
 
 \begin{description}
 \item[Stage (1):] to set \emph{player roles} and \emph{game elements} for each participant in the CL session,
@@ -45,10 +45,13 @@ Therefore, the basic stages to be accomplished in the conceptual flow to gamify 
 \subsection{Stage (1): Set Player Roles \& Game Elements}
 
 For each participant in the CL session, using the information extracted from the ontology OntoGaCLeS, the task to gamify CL sessions should set the player roles and game elements to solve the context-dependency of gamification related to the participants' individual traits and characteristics.
-In the ontology OntoGaCLeS, this information has been encoded as models to personalize gamification in CL scenarios based on player types models (\autoref{chapter:ontogacles-1}).
-Based on these model, ontological structures to represent gamified CL scenarios (\autoref{subsec:gamified-cl-scenario} are used as a source of information by an intelligent-theory aware to give suggestions about the player roles and game elements that would be assigned for the participants of a CL session.
+In the ontology OntoGaCLeS, this information is encoded as models to personalize gamification in CL scenarios based on player types models (\autoref{chapter:ontogacles-1}).
+Based on these models, ontological structures to represent gamified CL scenarios (\autoref{subsec:gamified-cl-scenario} are used as a source of information by an intelligent-theory aware tool to give suggestions about the player roles and game elements that would be assigned for each participant in the CL session.
 
-Having a set of ontological structures to represent CL scenarios in the variable \aspas{$ontModel$} as an ontology-based model to personalize the gamification in CL scenarios, the \autoref{algorithm:set-player-roles-and-game-elements} is a procedure to obtain a map of player roles and participants in the array \aspas{$playerRoles$,} where the keys represent the player roles and the values for the element \aspas{$playerRoles[pr]$} are lists of participants that will be play the player role \aspas{$pr$}. The procedure also establishes in the array \aspas{$gameElements$} a map between the player roles (\emph{keys}) and game elements (\emph{values}) that will be employed to motivate the participants of these player roles.
+Having a set of ontological structures to represent CL scenarios in the variable \aspas{$ontModel$} as an ontology-based model to personalize the gamification in CL scenarios, the \autoref{algorithm:set-player-roles-and-game-elements} is a procedure to obtain a map of player roles and participants in the array \aspas{$playerRoles$,} where the keys represent the player roles and the values for the element \aspas{$playerRoles[pr]$} are lists of participants that will be playing the player role \aspas{$pr$}.
+The procedure also establishes in the array \aspas{$gameElements$} a map between the player roles (\emph{keys}) and game elements (\emph{values}) that will be employed to motivate the participants of these player roles.
+
+%%%% gcc %%%
 
 The steps of \autoref{algorithm:set-player-roles-and-game-elements} in a narrative form is described as follows:
 
@@ -556,7 +559,7 @@ and to improve the modeling of gamified I\_L events.
 
 \autoref{fig:reference-architecture} shows the proposed reference architecture for building the next generation of
 intelligent systems, referred to as intelligent theory-aware systems, that can be created and used to deal with the
-motivation problem by the gamification of CL sessions. This reference architecture aims to help two stakeholders,
+motivational problems by the gamification of CL sessions. This reference architecture aims to help two stakeholders,
 \emph{instructional designer} and emph{gamify expert}, to accomplish their activities in two different environments
 denominated aspas{emph{Intelligent theory-aware authoring environment}} and aspas{emph{Gamification-framework editing
 environment}.}
@@ -574,7 +577,7 @@ the following support-systems:
 \item A emph{Player Roles \& Game Elements Decision Support System} - as a
 system that analyzes the profile data of participants in the CL session, and based on this data, helps the
 instructional designer can make decisions about the player roles that will be assigned for those participants, and
-which game elements should be introduced in the learning environment to deal with the motivation problem;
+which game elements should be introduced in the learning environment to deal with the motivational problems;
 
 \item A emph{CL Gameplay Design Support System} - as a system that, based on the player roles and game elements assigned
 for the participants of a CL session, provides suggestions to define the interactions between the game elements and
@@ -647,7 +650,7 @@ maintenance of game design strategies, persuasive game design strategies, and ga
 %to provide support in the gamification of CL scenarios
 
 %a reference architecture based on this flow to build computer-based mechanisms that provide support in intelligent-
-%theory aware systems for dealing with the motivation problem caused by the scripted collaboration
+%theory aware systems for dealing with motivational problems in scripted collaborative learning
 
 
 %reference architecture for semantic-web intelligent theory-aware systems that will employ the ontology OntoGaCLeS
