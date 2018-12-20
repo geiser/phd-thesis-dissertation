@@ -113,7 +113,8 @@ sympy-plots-for-*.tex/
 
 # Remove MS Office files
 ~*.docx
-*.docx
-*.pptx
+~*.pptx
+~*.doc
+~*.ppt
 
 
